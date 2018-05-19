@@ -1,0 +1,29 @@
+---
+title: "Use of ShoeScrapeR"
+author: "Susan VanderPlas"
+date: "5/19/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(ShoeScrapeR)
+library(tidyverse)
+
+# Create a data frame of all combinations of parameters type and population
+
+fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
+                        population = c("all", "women", "men", "boys", "girls"),
+                        stringsAsFactors = F) %>%
+  as_data_frame() %>%
+  mutate(path = "../inst/photos/")
+
+shoe_res <- fcn_opts %>%
+  group_by_all() %>%
+  pmap_df(scrape_soles)
+
+```

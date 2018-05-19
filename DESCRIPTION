@@ -1,0 +1,11 @@
+Package: ShoeScrapeR
+Type: Package
+Title: Scrape Sole Images from Zappos.com
+Version: 0.1.0
+Author: Susan VanderPlas
+Maintainer: Susan VanderPlas <srvanderplas@gmail.com>
+Description: Pulls shoe pictures from Zappos and saves them to a directory
+License: GPL3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

@@ -1,0 +1,127 @@
+library(rvest)
+library(V8)
+library(scrapeR)
+library(tidyverse)
+library(purrr)
+library(splashr)
+
+#' Get image of the sole from a url of a Zappo's shoe
+#'
+#' Pass in a url of the style https://www.zappos.com/p/...
+#' @param i url
+#' @param path path to save files
+#' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
+get_bottom_image <- function(i, path = "inst/photos/") {
+  # i is the shoe page link
+
+  if (!dir.exists(path)) {
+    dir.create(path, recursive == T)
+  }
+
+  photoname <- stringr::str_replace(i, "https://www.zappos.com/p/", "") %>%
+    stringr::str_replace_all("/", "_") %>%
+    unique()
+
+  dlfile <- paste0(path, photoname, ".jpg")
+  if (!file.exists(dlfile)) {
+    photolinks <- try(splashr::render_html(url = i))
+
+    if (class(photolinks) == "try-error") {
+      return(FALSE)
+    } else {
+      photolinks <- photolinks %>%
+        rvest::html_nodes(css = "button span img")
+    }
+
+    # Which one is bottom?
+    bottomphoto <- which(rvest::html_attr(photolinks, "alt") == "BOTT")
+
+    if (length(bottomphoto) > 0) {
+
+      Sys.sleep(3)
+      photolinks %>%
+        # Get photo link
+        rvest::html_attr("src") %>%
+        # Only keep photo of sole
+        magrittr::extract(bottomphoto) %>%
+        # Get higher resolution
+        stringr::str_replace("SR106,78", "SX480") %>%
+        download.file(destfile = dlfile)
+      # print(TRUE)
+      return(TRUE)
+    } else {
+      # print(FALSE)
+      return(FALSE)
+    }
+  }
+  # print(TRUE)
+  return(TRUE)
+}
+
+#' Function to scrape shoe sole data from Zappos.com
+#'
+#' @param type One of new, best, relevance, or rating. Defaults to relevance.
+#' @param population One of all, women, men, boys, girls. Defaults to all.
+#' @param path Path to save files
+#' @return list of links and whether or not the image of the sole was downloaded
+#' @import magrittr
+#' @export
+scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "/inst/photos/") {
+
+  if (!splashr::splash_active()) {
+    system("docker run -p 8050:8050 -p 5023:5023 scrapinghub/splash &")
+  }
+
+  if (substr(path, nchar(path), nchar(path)) != "/") {
+    path <- paste0(path, "/")
+  }
+
+  if (type == "new") {
+    ext <- "?s=isNew/desc/goLiveDate/desc/recentSalesStyle/desc/"
+  } else if (type == "best") {
+    ext <- "?s=recentSalesStyle/desc/"
+  } else if (type == "rating") {
+    ext <- "?s=productRating/desc/"
+  } else if (type == "relevance") {
+    ext <- ""
+  } else {
+    ext <- ""
+    warning("type not recognized. Proceeding with relevance as the sort term.\n")
+  }
+
+  if (population == "women") {
+    pop <- "women-shoes"
+  } else if (population == "men") {
+    pop <- "men-shoes"
+  } else if (population == "girls") {
+    pop <- "girls-shoes"
+  } else if (population == "boys") {
+    pop <- "boys-shoes"
+  } else if (population == "all") {
+    pop <- "shoes"
+  } else {
+    warning("population type not recognized. Proceeding as if 'all' was selected.\n")
+    pop <- "shoes"
+  }
+
+  stopifnot(is.numeric(pages))
+
+  url <- sprintf("https://www.zappos.com/%s/CK_XAeICAQE.zso%s", pop, ext)
+
+  shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
+  shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
+
+  links <- map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
+    unlist(recursive = F) %>%
+    map(rvest::html_attr, name = "href", default = NA) %>%
+    paste0("https://www.zappos.com", .) %>%
+    unique()
+
+  links <- links[str_detect(links, "/p/")] # Ensures shoes
+
+  data_frame(
+    url = links,
+    soleDL = unlist(map(links, get_bottom_image, path = path))
+  )
+}
+

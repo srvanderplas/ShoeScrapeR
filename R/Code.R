@@ -15,7 +15,7 @@ get_bottom_image <- function(i, path = "inst/photos/") {
   # i is the shoe page link
 
   if (!dir.exists(path)) {
-    dir.create(path, recursive == T)
+    dir.create(path, recursive =  T)
   }
 
   photoname <- stringr::str_replace(i, "https://www.zappos.com/p/", "") %>%
@@ -26,7 +26,7 @@ get_bottom_image <- function(i, path = "inst/photos/") {
   if (!file.exists(dlfile)) {
     photolinks <- try(splashr::render_html(url = i))
 
-    if (class(photolinks) == "try-error") {
+    if ("try-error" %in% class(photolinks)) {
       return(FALSE)
     } else {
       photolinks <- photolinks %>%
@@ -66,7 +66,7 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @import magrittr
 #' @export
-scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "/inst/photos/") {
+scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/") {
 
   if (!splashr::splash_active()) {
     system("docker run -p 8050:8050 -p 5023:5023 scrapinghub/splash &")

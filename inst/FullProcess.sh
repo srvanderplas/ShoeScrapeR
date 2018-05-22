@@ -24,8 +24,7 @@
   EDGE_DIR="./edges/"
   SLICE_DIR="./slice64/"
   SLICE_DIR2="./slice128/"
-  SMALL_DIR="./toosmall64/"
-  SMALL_DIR2="./toosmall128/"
+  SMALL_DIR="./rejects/"
 
   whiteTHR=253
 
@@ -56,10 +55,6 @@
   if [ ! -d "$SMALL_DIR" ]; then
       mkdir "$SMALL_DIR"
   fi
-  
-  if [ ! -d "$SMALL_DIR2" ]; then
-      mkdir "$SMALL_DIR2"
-  fi
     
 
 
@@ -84,10 +79,7 @@ format_picture () {
   NORM_DIR="./normalized/"
   EDGE_DIR="./edges/"
   SLICE_DIR="./slice64/"
-  SLICE_DIRNAME="slice"
   SLICE_DIR2="./slice128/"
-  SMALL_DIR="./toosmall64/"
-  SMALL_DIR2="./toosmall128/"
   
   # echo $origfile
   # echo $basefile
@@ -136,11 +128,11 @@ format_picture () {
   fi
 
     # Actually slice images
-    convert $EDGE_DIR$basefile -quiet -gravity Center -crop 64x64 $SLICE_DIR$basenoext'_%03d.png'
-    convert $EDGE_DIR$offset64$basefile -quiet -gravity Center -crop 64x64 $SLICE_DIR$basenoext'_%03d.5.png'
+    convert $EDGE_DIR$basefile -quiet -gravity Center -crop 64x64 $SLICE_DIR$basenoext'_64_%03d.png'
+    convert $EDGE_DIR$offset64$basefile -quiet -gravity Center -crop 64x64 $SLICE_DIR$basenoext'_64_%03d.5.png'
 
-    convert $EDGE_DIR$basefile -quiet -gravity Center -crop 128x128 $SLICE_DIR2$basenoext'_%03d.png'
-    convert $EDGE_DIR$offset128$basefile -quiet -gravity Center -crop 128x128 $SLICE_DIR2$basenoext'_%03d.5.png'
+    convert $EDGE_DIR$basefile -quiet -gravity Center -crop 128x128 $SLICE_DIR2$basenoext'_128_%03d.png'
+    convert $EDGE_DIR$offset128$basefile -quiet -gravity Center -crop 128x128 $SLICE_DIR2$basenoext'_128_%03d.5.png'
 }
 
 export -f format_picture
@@ -148,31 +140,29 @@ export -f format_picture
 ls ./photos | parallel format_picture {}
 
 ##### Remove Useless Images ####################################################
-
 filter_images() {
   whiteThr=253
   imgval=$(convert $1 -format "%[fx:mean*255]" info:)
   imgval=$(printf %.0f $imgval)
-  imgsize=$(identify -format "%[fx:%w==%h]" $1)
-  imgwid=$(convert $1 -format "%[fx:max(w,h)]" info:)
-  filename="./toosmall$imgwid/$(basename $1)"
+  imgsize=$(identify -format "%[fx:%w!=%h]" $1)
+  filename="./rejects/$(basename $1)"
 
-  # Remove images which are too white
-  if (("$imgval" > "$whiteThr")); then
-    # echo "removing $1: mean value $imgval"
-    rm $1;
+  toowhite=$(( $imgval > $whiteThr ))
+  if (( $toowhite == 1 )); then 
+    echo "removing $1: mean value $imgval"
   fi;
+  
+  if (( $imgsize == 1 )); then
+    echo "moving $1 to small pics folder $filename"
+  fi;
+  
+  removefile=$(( `expr $toowhite + $imgsize` > 0 ))
 
-  # Remove images of the wrong size if they have not already been removed
-  if [ -d $1 ]; then
-    if (($imgsize)); then
-      # echo "moving $1 to small pics folder $filename"
-      mv $1 $filename
-    fi;
+  if (( $removefile == 1 )); then
+    mv $1 $filename
   fi;
 }
 export -f filter_images
 
 find $SLICE_DIR -type f  | parallel filter_images
 find $SLICE_DIR2 -type f  | parallel filter_images
-

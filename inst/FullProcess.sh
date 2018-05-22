@@ -159,14 +159,14 @@ filter_images() {
 
   # Remove images which are too white
   if (("$imgval" > "$whiteThr")); then
-    echo "removing $1: mean value $imgval"
+    # echo "removing $1: mean value $imgval"
     rm $1;
   fi;
 
   # Remove images of the wrong size if they have not already been removed
   if [ -d $1 ]; then
     if (($imgsize)); then
-      echo "moving $1 to small pics folder $filename"
+      # echo "moving $1 to small pics folder $filename"
       mv $1 $filename
     fi;
   fi;

@@ -69,7 +69,9 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/") {
 
   if (!splashr::splash_active()) {
-    system("docker run -p 8050:8050 -p 5023:5023 scrapinghub/splash &")
+    # install_splash(tag = "3.0")
+    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:3.0 &")
+    start_splash()
   }
 
   if (substr(path, nchar(path), nchar(path)) != "/") {

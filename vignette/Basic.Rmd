@@ -7,10 +7,16 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ShoeScrapeR)
+library(tidyverse)
+library(stringr)
+library(rmarkdown)
+library(knitr)
 ```
 
+To initially scrape the data, use the following commands to pull shoe sole images from Zappos: 
 
-```{r}
+```{r, eval = F}
 library(ShoeScrapeR)
 library(tidyverse)
 
@@ -28,3 +34,124 @@ shoe_res <- fcn_opts %>%
   unique()
 
 ```
+
+The next step is to use a sequence of bash commands to slice and dice the pictures.
+
+1. Convert to PNGs with topng.sh
+2. Crop white space and normalize color space with crop.sh
+3. Use Canny Edge detection to get object outlines
+4. Create offset images (+32+32, +64+64) 
+4. Slice into 64x64 and 128x128 chunks (edge detected and cropped/fullcolor)
+5. Move chunks that are not the requisite size into a different directory
+6. Move chunks that are mostly white into a different directory
+
+```{bash, eval = F}
+# Working directory change is necessary to use script as written
+cd ../inst/
+
+# Process image with bash script
+./FullProcess.sh
+```
+
+### The initial image:
+```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+set.seed(302856928)
+
+imbase <- sample(list.files("../inst/photos", full.names = T), size = 1)
+imbasename <- basename(imbase) %>% str_replace(".jpg", "")
+include_graphics(imbase)
+```
+
+### Converted to PNG:
+```{r, echo = F,  out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+impng <- imbase %>%
+  str_replace("photos", "pngs") %>%
+  str_replace("jpg", "png")
+include_graphics(impng)
+```       
+
+### Cropped:
+```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+imcrop <- imbase %>%
+  str_replace("photos", "cropped") %>%
+  str_replace("jpg", "png")
+include_graphics(imcrop)
+```
+
+### Edge Detected: 
+```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+imedge <- imbase %>%
+  str_replace("photos", "edges") %>%
+  str_replace("jpg", "png")
+include_graphics(imedge)
+```
+
+The edge detection algorithm cannot distinguish between parts of the upper and parts of the sole. In addition, parts of the sole which would not be replicated in the shoe print are shown in the image. This isn't avoidable without a smarter algorithm for identifying parts of shoes.
+
+### Offsets: 
+
+In addition to the unpadded images shown in the previous two steps, we add padding of 1/2 the size of the squares we will use to generate the feature inputs (e.g. 32 and 64 px of padding for 64 and 128 pixel squares, respectively). This ensures that we have offset coverage and features don't get missed because of unfortunate grid placement. 
+
+```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+imoffset <- c(
+  list.files(path = "../inst/edges", 
+             pattern = paste0("offset", ".*", imbasename), 
+             recursive = T, full.names = T),
+  list.files(path = "../inst/cropped", 
+             pattern = paste0("offset", ".*", imbasename), 
+             recursive = T, full.names = T)
+)
+include_graphics(imoffset)
+```
+
+### Chunks:
+
+The chunks generated from the edge-detected image (no offset) are shown below. Note that some chunks are not 64x64; these are not kept. In addition, any chunk with a mean pixel average (greyscale) of more than 253 (out of 255) is also removed - these chunks don't have enough feature detail to be worth sorting manually. 
+
+```{r, echo = F, message=F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+useful <- read_csv("../inst/useful_files.csv") %>%
+  mutate(file = iconv(file, to = "ASCII"))
+unuseful <- read_csv("../inst/not_useful_files.csv") %>%
+  mutate(file = iconv(file, to = "ASCII"))
+
+imchunk <- bind_rows(useful, unuseful) %>%
+  filter(str_detect(file, imbasename)) %>%
+  mutate(isoffset = str_detect(file, "\\.5"),
+         targetsize = str_extract(file, "_(color)?64|128_") %>%
+           str_replace("_", ""),
+         targetcol = ifelse(str_detect(targetsize, "color"), "color", ""),
+         targetsize = str_replace(targetsize, "color", "") %>%
+           as.numeric()
+         ) %>%
+  arrange(targetsize, isoffset, file) %>%
+  mutate(path = ifelse(keep == 1, sprintf("../inst/rejects/%s", file),
+                       sprintf("../inst/%sslice%d/%s", targetcol, targetsize, file)))
+
+include_graphics(filter(imchunk, targetcol == "" & !isoffset & targetsize == 64)$path)
+```
+
+64x64 chunks which were kept (size, whiteness filters) from the no-offset image:
+
+```{r, echo = F, out.extra='style="padding:2px;"', out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+include_graphics(filter(imchunk, keep == 0 & !isoffset & targetcol == "" & targetsize == 64)$path)
+```
+
+64x64 chunks kept from both the offset and no-offset images:
+
+```{r, echo = F, out.extra='style="padding:2px;"', out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+include_graphics(filter(imchunk, keep == 0 & targetcol == "" & targetsize == 64)$path)
+```
+
+Zoomed in a bit for detail: 
+
+```{r, echo = F, out.width = "12%", out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+include_graphics(filter(imchunk, keep == 0 & targetcol == "" & targetsize == 64)$path)
+```
+
+
+The corresponding full-color version: 
+
+```{r, echo = F, out.width = "12%", out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+include_graphics(filter(imchunk, keep == 0 & targetcol == "color" & targetsize == 64)$path)
+```
+

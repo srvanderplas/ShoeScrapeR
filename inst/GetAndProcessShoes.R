@@ -19,4 +19,4 @@ shoe_res <- fcn_opts %>%
 
 setwd("../inst/")
 # Process image with bash script
-system("./FullProcess.sh")
+system("./ParallelProcess.sh")

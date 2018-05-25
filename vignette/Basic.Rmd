@@ -38,19 +38,22 @@ shoe_res <- fcn_opts %>%
 The next step is to use a sequence of bash commands to slice and dice the pictures.
 
 1. Convert to PNGs with topng.sh
-2. Crop white space and normalize color space with crop.sh
-3. Use Canny Edge detection to get object outlines
-4. Create offset images (+32+32, +64+64) 
-4. Slice into 64x64 and 128x128 chunks (edge detected and cropped/fullcolor)
-5. Move chunks that are not the requisite size into a different directory
-6. Move chunks that are mostly white into a different directory
+2. Crop white space with crop.s
+3. Use Canny Edge detection to get object outlines (if -e specified)
+4. Mirror the image (if -m specified) 
+5. Offset the image NxN pixels (if -o N specified)
+6. Crop the image so that it corresponds to an exact replica of the chunk size (specified with --size N)
+7. Slice the image into chunks
+8. Test each chunk to ensure that it has at least a few non-white pixels (if the average pixel value is greater than 253, the chunk is discarded)
 
-```{bash, eval = F}
+By default the parallel process script uses all 4 combinations of -e and -m flags (e.g. no edge detect + not mirrored, edge detect + mirrored, no edge detect + mirrored, edge detect + not mirrored) to create a set of 64x64 chunks. Offsets are not used by default but the option exists. 
+
+```{bash, eval = F, echo = T}
 # Working directory change is necessary to use script as written
 cd ../inst/
 
 # Process image with bash script
-./FullProcess.sh
+./ParallelProcess.sh
 ```
 
 ### The initial image:
@@ -65,7 +68,7 @@ include_graphics(imbase)
 ### Converted to PNG:
 ```{r, echo = F,  out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
 impng <- imbase %>%
-  str_replace("photos", "pngs") %>%
+  str_replace("photos", "./processed/pngs") %>%
   str_replace("jpg", "png")
 include_graphics(impng)
 ```       
@@ -73,85 +76,83 @@ include_graphics(impng)
 ### Cropped:
 ```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
 imcrop <- imbase %>%
-  str_replace("photos", "cropped") %>%
+  str_replace("photos", "./processed/toslice") %>%
   str_replace("jpg", "png")
 include_graphics(imcrop)
+```
+
+### Mirrored: 
+
+Before cropping the image to a multiple of the desired image chunk size, we will in some cases mirror the image. This prevents the bottom edge of the image from being excluded from all relevant chunks and allows for a slightly different set of chunks, which expands the amount of data available to train the neural network. The mirrored and unmirrored images are shown below.
+
+```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+immirror <- imbase %>%
+  str_replace("photos", "processed/toslice") %>%
+  str_replace("\\.jpg", "_flip.png")
+include_graphics(c(imcrop, immirror))
 ```
 
 ### Edge Detected: 
 ```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
 imedge <- imbase %>%
-  str_replace("photos", "edges") %>%
-  str_replace("jpg", "png")
+  str_replace("photos", "processed/toslice") %>%
+  str_replace("\\.jpg", "_edge.png")
 include_graphics(imedge)
 ```
 
 The edge detection algorithm cannot distinguish between parts of the upper and parts of the sole. In addition, parts of the sole which would not be replicated in the shoe print are shown in the image. This isn't avoidable without a smarter algorithm for identifying parts of shoes.
 
-### Offsets: 
+### Cropping to Chunk-Multiple size:
 
-In addition to the unpadded images shown in the previous two steps, we add padding of 1/2 the size of the squares we will use to generate the feature inputs (e.g. 32 and 64 px of padding for 64 and 128 pixel squares, respectively). This ensures that we have offset coverage and features don't get missed because of unfortunate grid placement. 
+Next, some calculations are performed about the size of the image compared to the size of the NxN chunks we're creating, and the image is cropped so that only full-size chunks are created. This means we won't have to sort through the created chunks to ensure that they're the correct size later on. Both the flipped and unflipped images are shown below. Notte that the portion of the image which is cropped out during this step is different in the flipped image than in the unflipped image, ensuring chunk-wise coverage of the entire picture.
 
 ```{r, echo = F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-imoffset <- c(
-  list.files(path = "../inst/edges", 
-             pattern = paste0("offset", ".*", imbasename), 
-             recursive = T, full.names = T),
-  list.files(path = "../inst/cropped", 
-             pattern = paste0("offset", ".*", imbasename), 
-             recursive = T, full.names = T)
-)
-include_graphics(imoffset)
+edgefiles <- list.files(path = "../inst/processed/toslice", 
+                        pattern = paste0(imbasename, "(_flip)?_edge_crop"),
+                        full.names = T)
+include_graphics(edgefiles)
 ```
 
 ### Chunks:
 
-The chunks generated from the edge-detected image (no offset) are shown below. Note that some chunks are not 64x64; these are not kept. In addition, any chunk with a mean pixel average (greyscale) of more than 253 (out of 255) is also removed - these chunks don't have enough feature detail to be worth sorting manually. 
+The chunks generated from the edge-detected image are shown below. Note that some chunks are not 64x64; these are not kept. In addition, any chunk with a mean pixel average (greyscale) of more than 253 (out of 255) is also removed - these chunks don't have enough feature detail to be worth sorting manually. 
 
 ```{r, echo = F, message=F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-useful <- read_csv("../inst/useful_files.csv") %>%
-  mutate(file = iconv(file, to = "ASCII"))
-unuseful <- read_csv("../inst/not_useful_files.csv") %>%
-  mutate(file = iconv(file, to = "ASCII"))
+chunkfiles <- list.files(path = "../inst/processed/slices", 
+                         pattern = paste0(imbasename, "_edge_crop\\d{3}x\\d{3}_sz64_\\d{3}.png"),
+                         full.names = T, recursive = T)
 
-imchunk <- bind_rows(useful, unuseful) %>%
-  filter(str_detect(file, imbasename)) %>%
-  mutate(isoffset = str_detect(file, "\\.5"),
-         targetsize = str_extract(file, "_(color)?64|128_") %>%
-           str_replace("_", ""),
-         targetcol = ifelse(str_detect(targetsize, "color"), "color", ""),
-         targetsize = str_replace(targetsize, "color", "") %>%
-           as.numeric()
-         ) %>%
-  arrange(targetsize, isoffset, file) %>%
-  mutate(path = ifelse(keep == 1, sprintf("../inst/rejects/%s", file),
-                       sprintf("../inst/%sslice%d/%s", targetcol, targetsize, file)))
-
-include_graphics(filter(imchunk, targetcol == "" & !isoffset & targetsize == 64)$path)
+include_graphics(chunkfiles)
 ```
 
-64x64 chunks which were kept (size, whiteness filters) from the no-offset image:
+The chunks from the mirrored image. Note that they contain slightly different features due to the alignment of the chunk grid relative to the shoe sole. 
 
-```{r, echo = F, out.extra='style="padding:2px;"', out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-include_graphics(filter(imchunk, keep == 0 & !isoffset & targetcol == "" & targetsize == 64)$path)
-```
+```{r, echo = F, message=F, out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
+chunkfiles_mirror <- list.files(path = "../inst/processed/slices", 
+                                pattern = paste0(imbasename, "_flip_edge_crop"),
+                                full.names = T)
 
-64x64 chunks kept from both the offset and no-offset images:
-
-```{r, echo = F, out.extra='style="padding:2px;"', out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-include_graphics(filter(imchunk, keep == 0 & targetcol == "" & targetsize == 64)$path)
+include_graphics(chunkfiles_mirror)
 ```
 
 Zoomed in a bit for detail: 
 
 ```{r, echo = F, out.width = "12%", out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-include_graphics(filter(imchunk, keep == 0 & targetcol == "" & targetsize == 64)$path)
+include_graphics(c(chunkfiles, chunkfiles_mirror))
 ```
 
 
 The corresponding full-color version: 
 
 ```{r, echo = F, out.width = "12%", out.extra='style="background-color: #FF0000;padding:2px; margin:5px;"'}
-include_graphics(filter(imchunk, keep == 0 & targetcol == "color" & targetsize == 64)$path)
+chunkfiles <- list.files(path = "../inst/processed/slices", 
+                         pattern = paste0(imbasename, "_crop"),
+                         full.names = T)
+include_graphics(chunkfiles)
+chunkfiles_mirror <- list.files(path = "../inst/processed/slices", 
+                                pattern = paste0(imbasename, "_flip_crop"),
+                                full.names = T)
+include_graphics(chunkfiles_mirror)
 ```
 
+At this point the chunks can be sorted by prominent shapes. Right now, this has to be done manually.

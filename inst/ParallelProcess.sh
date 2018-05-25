@@ -236,7 +236,7 @@ process_shoe() {
   wkfile=$wkfile'_sz'$SIZE
   szstr=$SIZE'x'$SIZE
       
-  convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr BMP3:$SLICE_DIR/$wkfile'_%03d.png'
+  convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr $SLICE_DIR/$wkfile'_%03d.png'
 
 }
 export -f process_shoe

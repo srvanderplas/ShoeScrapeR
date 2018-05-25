@@ -1,9 +1,3 @@
-library(rvest)
-library(V8)
-library(scrapeR)
-library(tidyverse)
-library(purrr)
-library(splashr)
 
 #' Get image of the sole from a url of a Zappo's shoe
 #'
@@ -11,6 +5,7 @@ library(splashr)
 #' @param i url
 #' @param path path to save files
 #' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
+#' @importFrom magrittr '%>%'
 get_bottom_image <- function(i, path = "inst/photos/") {
   # i is the shoe page link
 
@@ -64,14 +59,14 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 #' @param population One of all, women, men, boys, girls. Defaults to all.
 #' @param path Path to save files
 #' @return list of links and whether or not the image of the sole was downloaded
-#' @import magrittr
+#' @importFrom magrittr '%>%'
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/") {
 
   if (!splashr::splash_active()) {
     # install_splash(tag = "3.0")
     # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:3.0 &")
-    start_splash()
+    splashr::start_splash()
   }
 
   if (substr(path, nchar(path), nchar(path)) != "/") {
@@ -113,15 +108,15 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
   shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
   shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
 
-  links <- map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
+  links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
     unlist(recursive = F) %>%
-    map(rvest::html_attr, name = "href", default = NA) %>%
+    purrr::map(rvest::html_attr, name = "href", default = NA) %>%
     paste0("https://www.zappos.com", .) %>%
     unique()
 
-  links <- links[str_detect(links, "/p/")] # Ensures shoes
+  links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
 
-  data_frame(
+  dplyr::data_frame(
     url = links,
     soleDL = unlist(map(links, get_bottom_image, path = path))
   )

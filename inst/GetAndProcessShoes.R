@@ -3,6 +3,7 @@
 library(ShoeScrapeR)
 library(tidyverse)
 library(stringr)
+library(odbc)
 
 if (system2("hostname", stdout=T) == "bigfoot") {
   setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
@@ -31,3 +32,22 @@ system("git push")
 
 # Process image with bash script
 system("./ParallelProcess.sh")
+
+
+chunkfiles <- list.files("processed/toslice/", full.names = F)
+chunkfiles <- sort(chunkfiles)
+chunk_df <- data_frame(
+  image = str_replace(chunkfiles, ".png", ""),
+  crop = str_extract(chunkfiles, "\\d{3}x\\d{3}"),
+  flip = str_detect(chunkfiles, "_flip") %>% as.numeric(),
+  edge = str_detect(chunkfiles, "_edge") %>% as.numeric()
+) %>%
+  filter(!is.na(crop)) %>%
+  mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3}x\\d{3}', replacement = ''))
+
+# Write image list to database
+con <- dbConnect(odbc::odbc(), "shoefeatures-connector")
+chunkfilesintable <- dbReadTable(con, "files")
+towrite <- anti_join(chunk_df, chunkfilesintable)
+dbWriteTable(con, "files", towrite, append = T)
+dbDisconnect(con)

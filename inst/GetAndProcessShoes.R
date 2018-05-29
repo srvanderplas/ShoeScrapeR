@@ -4,8 +4,8 @@ library(ShoeScrapeR)
 library(tidyverse)
 library(stringr)
 
-# setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
-setwd("/storage/Rprojects/ShoeScrapeR/inst/")
+setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
+# setwd("/storage/Rprojects/ShoeScrapeR/inst/")
 
 # Create a data frame of all combinations of parameters type and population
 

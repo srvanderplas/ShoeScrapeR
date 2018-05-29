@@ -4,8 +4,11 @@ library(ShoeScrapeR)
 library(tidyverse)
 library(stringr)
 
-setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
-# setwd("/storage/Rprojects/ShoeScrapeR/inst/")
+if (system2("hostname", stdout=T) == "bigfoot") {
+  setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
+} else {
+  setwd("/storage/Rprojects/ShoeScrapeR/inst/")
+}
 
 # Create a data frame of all combinations of parameters type and population
 

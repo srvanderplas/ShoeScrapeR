@@ -21,27 +21,16 @@ die() {
 }
 
 filter_images() {
-  usefulfile='useful_files.csv'
-  unusefulfile='not_useful_files.csv'
   
   whiteThr=253
   
   imgval=$(convert $1 -format "%[fx:mean*255]" info:)
   imgvalint=$(printf %.0f $imgval)
-  # imgsize=$(identify -format "%[fx:w!=h]" $1 )
-  # imw=$(identify -format "%w" $1)
-  # imh=$(identify -format "%h" $1)
 
   toowhite=$(( $imgvalint > $whiteThr ))
   if (( $toowhite == 1 )); then
     echo "removing $1: mean value $imgval"
-  fi;
-
-  if (( $toowhite == 1 )); then
     rm $1
-    echo $savestr >> $unusefulfile;
-  else 
-    echo $savestr >> $usefulfile;
   fi;
 }
 export -f filter_images
@@ -237,7 +226,12 @@ process_shoe() {
   szstr=$SIZE'x'$SIZE
       
   convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr $SLICE_DIR/$wkfile'_%03d.png'
-
+  
+  chunklist=$(ls $SLICE_DIR/$wkfile*.png)
+  for i in $SLICE_DIR/$wkfile*.png; do 
+    filter_images $i
+  done
+  
 }
 export -f process_shoe
 # 

@@ -58,10 +58,11 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 #' @param type One of new, best, relevance, or rating. Defaults to relevance.
 #' @param population One of all, women, men, boys, girls. Defaults to all.
 #' @param path Path to save files
+#' @param query search string
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @importFrom magrittr '%>%'
 #' @export
-scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/") {
+scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
 
   if (!splashr::splash_active()) {
     # install_splash(tag = "3.0")
@@ -103,7 +104,14 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
 
   stopifnot(is.numeric(pages))
 
-  url <- sprintf("https://www.zappos.com/%s/CK_XAeICAQE.zso%s", pop, ext)
+
+  if (query == "") {
+    url <- sprintf("https://www.zappos.com/%s/CK_XAeICAQE.zso%s", pop, ext)
+  } else {
+    slash <- paste0(str_replace_all(query, " ", "-"), "-", pop)
+    qstring <- paste0("&t=", str_replace_all(query, " ", "+"))
+    url <- sprintf("https://www.zappos.com/%s/.zso%s%s", slash, ext, qstring)
+  }
 
   shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
   shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)

@@ -14,6 +14,7 @@ if (system2("hostname", stdout=T) == "bigfoot") {
 
 fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
                         population = c("all", "women", "men", "boys", "girls"),
+                        query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
   as_data_frame() %>%
   mutate(path = "photos/")

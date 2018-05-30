@@ -41,7 +41,7 @@ ui <- fluidPage(
           multiple = T
         ) %>%
           shinyInput_label_embed(
-            bs_button("Help", button_type=c("info"), class = "btn btn-info btn-sm") %>%
+            bs_button("Help", button_type="info", button_size = "extra-small") %>%
             bs_attach_modal(id_modal = "help-modal")
             #   bs_embed_tooltip(title = "Select features which make up at least 25% of the area of the image.", placement = "botttom")
           ) ,
@@ -56,7 +56,7 @@ ui <- fluidPage(
       ),
       column(
         width = 2, 
-        tags$label(HTML("&nbsp;")),
+        # tags$label(HTML("&nbsp;")),
         class = "form-group",
         align = "center",
         textInput(
@@ -178,6 +178,22 @@ server <- function(input, output) {
   })
   
   ## Need to write code to submit ratings to database
+  
+  # observe({
+  #   validate(need(length(input$user) > 0, "Please input your name"))
+  #   
+  #   writedf <- data_frame(
+  #     image = newFile()$image,
+  #     slice = newFile()$slice,
+  #     rater = input$user,
+  #     feature = input$features,
+  #     comment = input$comment
+  #   )
+  #   
+  #   conn <- poolCheckout(con)
+  #   dbWriteTable(conn, "ratings", writedf, append = T)
+  #   poolReturn(conn)
+  # })
   
   ## Need to add comment field to rating
   

@@ -67,7 +67,8 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
   if (!splashr::splash_active()) {
     # install_splash(tag = "3.0")
     # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:3.0 &")
-    splashr::start_splash()
+    container <- splashr::start_splash()
+    on.exit(splashr::stop_splash(container))
   }
 
   if (substr(path, nchar(path), nchar(path)) != "/") {

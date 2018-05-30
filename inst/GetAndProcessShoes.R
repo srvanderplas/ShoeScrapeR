@@ -4,6 +4,7 @@ library(ShoeScrapeR)
 library(tidyverse)
 library(stringr)
 library(odbc)
+library(DBI)
 
 if (system2("hostname", stdout=T) == "bigfoot") {
   setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")

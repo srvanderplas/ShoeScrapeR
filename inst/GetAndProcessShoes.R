@@ -45,9 +45,26 @@ chunk_df <- data_frame(
   filter(!is.na(crop)) %>%
   mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3}x\\d{3}', replacement = ''))
 
+slicefiles <- list.files("processed/slices/", full.names = T) %>% sort()
+slice_df <- data_frame(
+  slice = basename(slicefiles),
+  path = slicefiles,
+  crop = str_extract(slice, "\\d{3}x\\d{3}"),
+  flip = str_detect(slice, "_flip") %>% as.numeric(),
+  edge = str_detect(slice, "_edge") %>% as.numeric(),
+  image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3}x\\d{3}_sz\\d{2,}_\\d{3}.png", "")
+) %>%
+  mutate(slice = str_extract(slice, "\\d{3}.png") %>% str_replace(".png", "") %>% as.numeric) %>%
+  select(image, slice, path, crop, flip, edge)
+
+
 # Write image list to database
 con <- dbConnect(odbc::odbc(), "shoefeatures-connector")
 chunkfilesintable <- dbReadTable(con, "files")
 towrite <- anti_join(chunk_df, chunkfilesintable)
 dbWriteTable(con, "files", towrite, append = T)
+slicefilesintable <- dbReadTable(con, "slices")
+towrite <- anti_join(slice_df, slicefilesintable)
+dbWriteTable(con, "slices", towrite, append = T)
 dbDisconnect(con)
+

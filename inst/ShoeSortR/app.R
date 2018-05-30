@@ -41,22 +41,27 @@ ui <- fluidPage(
           multiple = T
         ) %>%
           shinyInput_label_embed(
-            shiny_iconlink() %>%
-              bs_embed_tooltip(title = "Select features which make up at least 25% of the area of the image.")
-          ),
+            bs_button("Help", button_type=c("info"), class = "btn btn-info btn-sm") %>%
+            bs_attach_modal(id_modal = "help-modal")
+            #   bs_embed_tooltip(title = "Select features which make up at least 25% of the area of the image.", placement = "botttom")
+          ) ,
         bs_modal(id = "help-modal", title = "Feature help", body = HTML(feature_def_table), size = "large"),
-        a("Feature definitions and examples", href = "#", role = "button") %>%
-          bs_attach_modal(id_modal = "help-modal")
-      ),
-      column(
-        width = 2, 
-        class = "form-group",
-        align = "center",
-        tags$label(HTML("&nbsp;")),
+        # a("Feature definitions and examples", href = "#", role = "button") %>%
+        # bs_attach_modal(id_modal = "help-modal")
         checkboxInput(
           inputId = "nofeatures",
           label = "No Features Present", 
           value = FALSE
+        )
+      ),
+      column(
+        width = 2, 
+        tags$label(HTML("&nbsp;")),
+        class = "form-group",
+        align = "center",
+        textInput(
+          inputId = "comment",
+          label = "Comment"
         )
       ),
       column(
@@ -182,4 +187,5 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
 

@@ -40,7 +40,7 @@ get_bottom_image <- function(i, path = "inst/photos/") {
         # Only keep photo of sole
         magrittr::extract(bottomphoto) %>%
         # Get higher resolution
-        stringr::str_replace("SR106,78", "SX480") %>%
+        stringr::str_replace("SR106,78", "SX1024") %>%
         download.file(destfile = dlfile)
       # print(TRUE)
       return(TRUE)
@@ -65,12 +65,12 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
 
   if (!splashr::splash_active()) {
-    # install_splash(tag = "3.0")
-    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:3.0 &")
+    splashr::install_splash(tag = "latest")
+    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
     container <- splashr::start_splash()
     on.exit({
       splashr::stop_splash(container)
-      try(system("docker rm /splashr"))
+      # try(system("docker rm /splashr"))
     })
   }
 

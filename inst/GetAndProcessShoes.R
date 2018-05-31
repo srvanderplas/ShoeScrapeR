@@ -23,7 +23,7 @@ fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
 
 shoe_res <- fcn_opts %>%
   group_by_all() %>%
-  pmap_df(scrape_soles) %>%
+  pmap_dfr(scrape_soles) %>%
   unique()
 
 system("git add photos/*")

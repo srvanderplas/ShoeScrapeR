@@ -12,6 +12,9 @@ get_bottom_image <- function(i, path = "inst/photos/") {
   if (!dir.exists(path)) {
     dir.create(path, recursive =  T)
   }
+  if (i == "") {
+    return(NA)
+  }
 
   photoname <- stringr::str_replace(i, "https://www.zappos.com/p/", "") %>%
     stringr::str_replace_all("/", "_") %>%
@@ -125,17 +128,22 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
     url <- sprintf("https://www.zappos.com/%s/.zso%s%s", slash, ext, qstring)
   }
 
-  shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
-  shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
-
-  links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
-    unlist(recursive = F) %>%
-    purrr::map(rvest::html_attr, name = "href", default = NA) %>%
-    paste0("https://www.zappos.com", .) %>%
-    unique()
-
-  links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
-
+  links <- ""
+  
+  try({
+    shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
+    shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
+    
+    links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
+      unlist(recursive = F) %>%
+      purrr::map(rvest::html_attr, name = "href", default = NA) %>%
+      paste0("https://www.zappos.com", .) %>%
+      unique()
+    
+    links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
+    
+  })
+  
   dplyr::data_frame(
     url = links,
     soleDL = unlist(map(links, get_bottom_image, path = path))

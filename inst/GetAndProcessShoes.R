@@ -15,7 +15,7 @@ if (system2("hostname", stdout=T) == "bigfoot") {
 # Create a data frame of all combinations of parameters type and population
 
 fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
-                        population = c("all", "women", "men", "boys", "girls"),
+                        population = c("all", "women", "men"),
                         query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
   as_data_frame() %>%

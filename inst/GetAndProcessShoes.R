@@ -30,6 +30,8 @@ shoe_res <- fcn_opts %>%
   pmap_dfr(scrape_soles) %>%
   unique()
 
+system("docker stop $(docker ps -a -q) & docker rm $(docker ps -a -q)")
+
 system("git add photos/*")
 system("git commit -a -m 'Automatic Update'")
 system("git push")

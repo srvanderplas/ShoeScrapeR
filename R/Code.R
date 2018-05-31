@@ -74,9 +74,10 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
     if (length(dps) > 1) {
       container <- str_split(dps[2], "\\s{1,}")[[1]][1]
       splashr::stop_splash(container)
-      dps <- system("docker ps -a -l", intern = T)
+      dps <- system("docker ps -a -q", intern = T)
       if (length(dps) > 1) {
-        system("docker rm splashr")
+        sprintf("docker stop %s", dps) %>% system()
+        sprintf("docker rm %s", dps) %>% system()
       }
     }
     container <- splashr::start_splash()

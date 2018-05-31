@@ -29,7 +29,7 @@ shoe_res <- fcn_opts %>%
   group_by_all() %>%
   pmap_dfr(scrape_soles) %>%
   unique()
-# 
+
 # system("docker stop $(docker ps -a -q)")
 # system("docker rm $(docker ps -a -q)")
 

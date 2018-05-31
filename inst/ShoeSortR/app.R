@@ -21,10 +21,10 @@ ui <- fluidPage(
         width = 3,
         use_bs_tooltip(),
         use_bs_popover(),
-        textInput(inputId = "user", label = "Name") %>%
+        textInput(inputId = "user", label = "ID") %>%
           shinyInput_label_embed(
             shiny_iconlink() %>%
-              bs_embed_tooltip(title = "Your name")
+              bs_embed_tooltip(title = "Your name or an anonymous nickname")
           ),
         NULL
       ),
@@ -48,10 +48,21 @@ ui <- fluidPage(
         bs_modal(id = "help-modal", title = "Feature help", body = HTML(feature_def_table), size = "large"),
         # a("Feature definitions and examples", href = "#", role = "button") %>%
         # bs_attach_modal(id_modal = "help-modal")
-        checkboxInput(
-          inputId = "nofeatures",
-          label = "No Features Present", 
-          value = FALSE
+        div(
+          style = "display: inline-block;margin-right: 5px;",
+          checkboxInput(
+            inputId = "nofeatures",
+            label = "No Features Present", 
+            value = FALSE
+          )
+        ), 
+        div(
+          style = "display: inline-block;margin-right: 5px;", 
+          checkboxInput(
+            inputId = "bwfeatures",
+            label =  "Features not identifiable in BW version",
+            value = FALSE
+          )
         )
       ),
       column(
@@ -94,10 +105,21 @@ ui <- fluidPage(
   )
 )
 
-server <- function(input, output) {
-  print(getwd())
+server <- function(input, output, session) {
+  
+  update <- reactiveValues(n = 0)
+  
+  observe({
+    update$n
+    isolate({
+      updateSelectizeInput(session, inputId = "features", selected = "")
+      updateCheckboxInput(session, inputId = "nofeatures", value = F)
+      updateCheckboxInput(session, inputId = "bwfeatures", value = F)
+    })
+  })
   
   newFile <- reactive({
+    update$n
     conn <- poolCheckout(con)
     z <- dbSendQuery(conn, "SELECT image, slice, flip, crop FROM slices 
                                 WHERE (image, slice) NOT IN (
@@ -106,97 +128,110 @@ server <- function(input, output) {
                             ORDER BY RAND() LIMIT 1;")
     zz <- dbFetch(z)
     poolReturn(conn)
+    # print(zz)
     zz
   })
-  
-  edge_slice <- reactive({
-    filename <- sprintf("%s%s_edge_crop%s_sz64_%03d.png",
-                        newFile()$image,
-                        ifelse(newFile()$flip == 1, "_flip", ""),
-                        newFile()$crop,
-                        newFile()$slice)
-    
-    file.path("../", "processed", "slices", filename)
-  })
-  
-  color_slice <- reactive({
-    filename <- sprintf("%s%s_crop%s_sz64_%03d.png",
-                        newFile()$image,
-                        ifelse(newFile()$flip == 1, "_flip", ""),
-                        newFile()$crop,
-                        newFile()$slice)
-    
-    file.path("../", "processed", "slices", filename)
-  })
-  
-  edge_full <- reactive({
-    filename <- sprintf("%s%s_edge_crop%s.png",
-                        newFile()$image,
-                        ifelse(newFile()$flip == 1, "_flip", ""),
-                        newFile()$crop)
-    file.path("../", "processed", "toslice", filename)
-  })
-  
-  color_full <- reactive({
-    filename <- sprintf("%s%s_crop%s.png",
-                        newFile()$image,
-                        ifelse(newFile()$flip == 1, "_flip", ""),
-                        newFile()$crop)
-    file.path("../", "processed", "toslice", filename)
-  })
-  
+
   output$edgeSlice <- renderImage({
-    list(src = edge_slice(), contentType = "image/png", 
+    nf <- newFile()
+    filename <- sprintf("%s%s_edge_crop%s_sz64_%03d.png",
+                        nf$image,
+                        ifelse(nf$flip == 1, "_flip", ""),
+                        nf$crop,
+                        nf$slice)
+    
+    fp <- file.path("../", "processed", "slices", filename)
+    
+    res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
          style = "background-color: grey;padding:3px; margin:5px;",
          alt = "64x64 slice of edge-detected shoe outsole image")
+    # print(res)
+    res
   })
   
   output$colorSlice <- renderImage({
-    list(src = color_slice(), contentType = "image/png", 
+    nf <- newFile()
+    filename <- sprintf("%s%s_crop%s_sz64_%03d.png",
+                        nf$image,
+                        ifelse(nf$flip == 1, "_flip", ""),
+                        nf$crop,
+                        nf$slice)
+    
+    fp <- file.path("../", "processed", "slices", filename)
+    
+    res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
          style = "background-color: grey;padding:3px; margin:5px;",
          alt = "64x64 slice of color shoe outsole image")
+    # print(res)
+    res
   })
   
   output$edgeFull <- renderImage({
-    dims <- str_extract_all(isolate(newFile()$crop), "\\d{2,}", simplify = T) %>% as.numeric()
-    aratio <- dims[1]/dims[2]
-    list(src = edge_full(), contentType = "image/png", 
-         # width = aratio*256, height = 256,  
-         alt = "Edge-detected shoe outsole image")
+    
+    nf <- newFile()
+    filename <- sprintf("%s%s_edge_crop%s.png",
+                        nf$image,
+                        ifelse(nf$flip == 1, "_flip", ""),
+                        nf$crop)
+    fp <- file.path("../", "processed", "toslice", filename)
+    
+    res <- list(src = fp, contentType = "image/png", 
+                alt = "Edge-detected shoe outsole image")
+    # print(res)
+    res
   })
   
   output$colorFull <- renderImage({
-    dims <- str_extract_all(isolate(newFile()$crop), "\\d{2,}", simplify = T) %>% as.numeric()
-    aratio <- dims[1]/dims[2]
-    list(src = color_full(), contentType = "image/png", 
-         # width = aratio*256, height = 256,  
+    nf <- newFile()
+    filename <- sprintf("%s%s_crop%s.png",
+                        nf$image,
+                        ifelse(nf$flip == 1, "_flip", ""),
+                        nf$crop)
+    fp <- file.path("../", "processed", "toslice", filename)
+    
+    res <- list(src = fp, contentType = "image/png", 
          alt = "Color shoe outsole image")
+    # print(res)
+    res
   })
   
   ## Need to write code to submit ratings to database
+  writeDB <- reactive({
+    validate(
+      need(length(input$user) > 0, "Please input your name"),
+      need(length(input$features) > 0 | input$nofeatures == TRUE, "Please select some features")
+    )
+    
+    featurelist <- ifelse(input$nofeatures, "None", input$features)
+    
+    writedf <- data_frame(
+      image = newFile()$image,
+      slice = newFile()$slice,
+      rater = input$user,
+      feature = featurelist,
+      colorOnly = as.numeric(input$bwfeatures),
+      comment = input$comment
+    )
+    
+    conn <- poolCheckout(con)
+    res <- dbWriteTable(conn, "ratings", writedf, append = T)
+    poolReturn(conn)
+    
+    if (res) {
+      update$n <- update$n + 1
+      print(update$n)
+      "Database updated!"
+    } else {
+      "Something went wrong"
+    }
+  })
   
-  # observe({
-  #   validate(need(length(input$user) > 0, "Please input your name"))
-  #   
-  #   writedf <- data_frame(
-  #     image = newFile()$image,
-  #     slice = newFile()$slice,
-  #     rater = input$user,
-  #     feature = input$features,
-  #     comment = input$comment
-  #   )
-  #   
-  #   conn <- poolCheckout(con)
-  #   dbWriteTable(conn, "ratings", writedf, append = T)
-  #   poolReturn(conn)
-  # })
   
-  ## Need to add comment field to rating
-  
-  
-  
+  observeEvent(input$submit, {
+    showNotification(writeDB(), duration = 5)
+  })
 }
 
 # Run the application 

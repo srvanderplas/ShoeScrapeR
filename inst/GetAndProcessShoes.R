@@ -67,5 +67,13 @@ dbWriteTable(con, "files", towrite, append = T)
 slicefilesintable <- dbReadTable(con, "slices")
 towrite <- anti_join(slice_df, slicefilesintable)
 dbWriteTable(con, "slices", towrite, append = T)
-dbDisconnect(con)
 
+# Ensure all files in database actually exist
+todrop <- filter(slicefilesintable, !file.exists(path))
+if (nrow(todrop) > 0) {
+  ids <- paste(todrop$id, collapse = ", ")
+  query <- sprintf("DELETE FROM slices WHERE id in (%s);", ids)
+  qres <- dbSendStatement(con, query)
+  dbClearResult(qres)
+}
+dbDisconnect(con)

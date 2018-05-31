@@ -68,18 +68,17 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
 
   if (!splashr::splash_active()) {
-    # splashr::install_splash(tag = "latest")
     # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
-    dps <- system("docker ps -a -l", intern = T)
-    if (length(dps) > 1) {
-      container <- str_split(dps[2], "\\s{1,}")[[1]][1]
-      splashr::stop_splash(container)
+    dps <- system("docker ps -a -q", intern = T)
+    if (length(dps) > 0) {
+      splashr::stop_splash(dps)
       dps <- system("docker ps -a -q", intern = T)
       if (length(dps) > 1) {
         sprintf("docker stop %s", dps) %>% system()
         sprintf("docker rm %s", dps) %>% system()
       }
     }
+    # splashr::install_splash(tag = "latest")
     container <- splashr::start_splash()
     on.exit({
       splashr::stop_splash(container)

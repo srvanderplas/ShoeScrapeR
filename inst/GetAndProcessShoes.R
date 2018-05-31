@@ -9,8 +9,8 @@ library(DBI)
 # system("source activate test")
 
 # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
-reticulate::use_virtualenv("test")
-library(docker)
+# system("echo $PATH")
+# library(docker)
 
 if (system2("hostname", stdout=T) == "bigfoot") {
   setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")

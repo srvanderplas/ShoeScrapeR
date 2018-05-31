@@ -109,8 +109,6 @@ server <- function(input, output) {
     zz
   })
   
-  ## Need to write code to serve up each image
-  
   edge_slice <- reactive({
     filename <- sprintf("%s%s_edge_crop%s_sz64_%03d.png",
                         newFile()$image,

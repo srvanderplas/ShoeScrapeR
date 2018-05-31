@@ -245,4 +245,4 @@ find ./photos -type f | parallel process_shoe {}
 find ./photos -type f | parallel process_shoe -m -e {}
 find ./photos -type f |  parallel process_shoe -m {}
 
-find -path ./inst/processed/slices -type f  | parallel filter_images
+# find -path ./inst/processed/slices -type f  | parallel filter_images

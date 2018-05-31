@@ -8,7 +8,7 @@ library(DBI)
 
 # system("source activate test")
 
-system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
+# system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
 
 if (system2("hostname", stdout=T) == "bigfoot") {
   setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
@@ -29,9 +29,9 @@ shoe_res <- fcn_opts %>%
   group_by_all() %>%
   pmap_dfr(scrape_soles) %>%
   unique()
-
-system("docker stop $(docker ps -a -q)")
-system("docker rm $(docker ps -a -q)")
+# 
+# system("docker stop $(docker ps -a -q)")
+# system("docker rm $(docker ps -a -q)")
 
 system("git add photos/*")
 system("git commit -a -m 'Automatic Update'")

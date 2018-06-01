@@ -67,24 +67,26 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
 
-  if (!splashr::splash_active()) {
-    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
-    dps <- system("docker ps -a -q", intern = T)
-    if (length(dps) > 0) {
-      splashr::stop_splash(dps)
-      dps <- system("docker ps -a -q", intern = T)
-      if (length(dps) > 1) {
-        sprintf("docker stop %s", dps) %>% system()
-        sprintf("docker rm %s", dps) %>% system()
-      }
-    }
-    # splashr::install_splash(tag = "latest")
-    container <- splashr::start_splash()
-    on.exit({
-      splashr::stop_splash(container)
-      # try(system("docker rm /splashr"))
-    })
-  }
+  
+  stopifnot(splashr::splash_active())
+  # if (!splashr::splash_active()) {
+  #   # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
+  #   dps <- system("docker ps -a -q", intern = T)
+  #   if (length(dps) > 0) {
+  #     splashr::stop_splash(dps)
+  #     dps <- system("docker ps -a -q", intern = T)
+  #     if (length(dps) > 1) {
+  #       sprintf("docker stop %s", dps) %>% system()
+  #       sprintf("docker rm %s", dps) %>% system()
+  #     }
+  #   }
+  #   # splashr::install_splash(tag = "latest")
+  #   container <- splashr::start_splash()
+  #   on.exit({
+  #     splashr::stop_splash(container)
+  #     # try(system("docker rm /splashr"))
+  #   })
+  # }
 
   if (substr(path, nchar(path), nchar(path)) != "/") {
     path <- paste0(path, "/")

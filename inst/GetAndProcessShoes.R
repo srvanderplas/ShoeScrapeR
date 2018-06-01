@@ -6,11 +6,17 @@ library(stringr)
 library(odbc)
 library(DBI)
 
-# system("source activate test")
-
-# system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
-# system("echo $PATH")
-# library(docker)
+# Deal with docker
+available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
+running_containers <- system("docker ps --filter name='splash' -q", intern = T)
+stopped_containers <- available_containers[! available_containers %in% running_containers]
+if (length(running_containers) == 0) {
+  container <- splashr::start_splash()
+}
+if (length(stopped_containers) > 1) {
+  # Clean up stopped containers
+  system(sprintf("docker rm %s", stopped_containers))
+}
 
 if (system2("hostname", stdout=T) == "bigfoot") {
   setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
@@ -53,20 +59,20 @@ chunk_df <- data_frame(
   edge = str_detect(chunkfiles, "_edge") %>% as.numeric()
 ) %>%
   filter(!is.na(crop)) %>%
-  mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3}x\\d{3}', replacement = ''))
+  mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}', replacement = ''))
 
 slicefiles <- list.files("processed/slices/", full.names = T) %>% sort()
 slice_df <- data_frame(
   slice = basename(slicefiles),
   path = slicefiles,
-  crop = str_extract(slice, "\\d{3}x\\d{3}"),
+  crop = str_extract(slice, "\\d{3,}x\\d{3,}"),
   flip = str_detect(slice, "_flip") %>% as.numeric(),
   edge = str_detect(slice, "_edge") %>% as.numeric(),
   size = str_extract(slice, "_sz\\d{2,}") %>% str_replace("_sz", "") %>% as.numeric(),
-  image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3}x\\d{3}_sz\\d{2,}_\\d{3}.png", "")
+  image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}_sz\\d{2,}_\\d{3}.png", "")
 ) %>%
   mutate(slice = str_extract(slice, "\\d{3}.png") %>% str_replace(".png", "") %>% as.numeric) %>%
-  select(image, slice, path, crop, flip, edge)
+  select(image, slice, path, crop, flip, edge, size)
 
 
 # Write image list to database

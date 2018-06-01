@@ -7,8 +7,8 @@ library(pool) # Multithread db connection
 
 con <- dbPool(drv = odbc::odbc(), dsn = "shoefeatures-connector")
 
-full_im_dir <- "../processed/toslice"
-slice_dir <- "../processed/slices"
+full_im_dir <- "../processed/toslice480"
+slice_dir <- "../processed/slices480"
 addResourcePath("photos", "../photos")
 addResourcePath("processed", "../processed")
 
@@ -140,13 +140,13 @@ server <- function(input, output, session) {
                         nf$crop,
                         nf$size,
                         nf$slice)
-    
+    print(filename)
     fp <- file.path("../", "processed", "slices", filename)
     
     res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
          style = "background-color: grey;padding:3px; margin:5px;",
-         alt = "64x64 slice of edge-detected shoe outsole image")
+         alt = "Slice of edge-detected shoe outsole image")
     # print(res)
     res
   })
@@ -165,7 +165,7 @@ server <- function(input, output, session) {
     res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
          style = "background-color: grey;padding:3px; margin:5px;",
-         alt = "64x64 slice of color shoe outsole image")
+         alt = "Slice of color shoe outsole image")
     # print(res)
     res
   })

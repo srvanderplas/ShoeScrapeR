@@ -32,7 +32,7 @@ ui <- fluidPage(
         width = 5,
         selectizeInput(
           inputId = "features",
-          label = "Features in 64x64 chunk",
+          label = "Features in image chunk",
           choices = c("Circle/Ellipse", "Parallel Lines", "Chevron", 
                       "Triangle", "Star", "Hexagon", "Pentagon", 
                       "Square/Diamond", "Rectangle/Rounded Rectangle",
@@ -121,9 +121,9 @@ server <- function(input, output, session) {
   newFile <- reactive({
     update$n
     conn <- poolCheckout(con)
-    z <- dbSendQuery(conn, "SELECT image, slice, flip, crop FROM slices 
-                                WHERE (image, slice) NOT IN (
-                                    SELECT image, slice FROM ratings
+    z <- dbSendQuery(conn, "SELECT image, slice, size, flip, crop FROM slices 
+                                WHERE (image, slice, size) NOT IN (
+                                    SELECT image, slice, size FROM ratings
                                 ) 
                             ORDER BY RAND() LIMIT 1;")
     zz <- dbFetch(z)
@@ -134,10 +134,11 @@ server <- function(input, output, session) {
 
   output$edgeSlice <- renderImage({
     nf <- newFile()
-    filename <- sprintf("%s%s_edge_crop%s_sz64_%03d.png",
+    filename <- sprintf("%s%s_edge_crop%s_sz%d_%03d.png",
                         nf$image,
                         ifelse(nf$flip == 1, "_flip", ""),
                         nf$crop,
+                        nf$size,
                         nf$slice)
     
     fp <- file.path("../", "processed", "slices", filename)
@@ -152,10 +153,11 @@ server <- function(input, output, session) {
   
   output$colorSlice <- renderImage({
     nf <- newFile()
-    filename <- sprintf("%s%s_crop%s_sz64_%03d.png",
+    filename <- sprintf("%s%s_crop%s_sz%d_%03d.png",
                         nf$image,
                         ifelse(nf$flip == 1, "_flip", ""),
                         nf$crop,
+                        nf$size,
                         nf$slice)
     
     fp <- file.path("../", "processed", "slices", filename)

@@ -48,7 +48,7 @@ chunkfiles <- list.files("processed/toslice/", full.names = F)
 chunkfiles <- sort(chunkfiles)
 chunk_df <- data_frame(
   image = str_replace(chunkfiles, ".png", ""),
-  crop = str_extract(chunkfiles, "\\d{3}x\\d{3}"),
+  crop = str_extract(chunkfiles, "\\d{3,}x\\d{3,}"),
   flip = str_detect(chunkfiles, "_flip") %>% as.numeric(),
   edge = str_detect(chunkfiles, "_edge") %>% as.numeric()
 ) %>%
@@ -62,6 +62,7 @@ slice_df <- data_frame(
   crop = str_extract(slice, "\\d{3}x\\d{3}"),
   flip = str_detect(slice, "_flip") %>% as.numeric(),
   edge = str_detect(slice, "_edge") %>% as.numeric(),
+  size = str_extract(slice, "_sz\\d{2,}") %>% str_replace("_sz", "") %>% as.numeric(),
   image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3}x\\d{3}_sz\\d{2,}_\\d{3}.png", "")
 ) %>%
   mutate(slice = str_extract(slice, "\\d{3}.png") %>% str_replace(".png", "") %>% as.numeric) %>%

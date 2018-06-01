@@ -157,7 +157,7 @@ process_shoe() {
   fi
 
   # Crop
-  if [ ! -f $CROP_DIR/$basefile ] || [ "$OVERWRITE" ]; then
+  if [ ! -f $TMP_DIR/$basefile ] || [ "$OVERWRITE" ]; then
     convert $PNG_DIR/$basefile -trim $TMP_DIR/$basefile
   fi
 

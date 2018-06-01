@@ -89,18 +89,18 @@ ui <- fluidPage(
     column(
       width = 6,
       align = "center",
-      imageOutput("edgeSlice", height = "256px"),
+      imageOutput("edgeSlice"),
       br(),
       h3("Context: "),
-      imageOutput("edgeFull", width = "95%", height = "auto")
+      imageOutput("edgeFull")
     ),
     column(
       width = 6, 
       align = "center",
-      imageOutput("colorSlice", height = "256px"),
+      imageOutput("colorSlice"),
       br(),
       h3(HTML("&nbsp")),
-      imageOutput("colorFull", width = "95%", height = "auto")
+      imageOutput("colorFull")
     )
   )
 )
@@ -180,6 +180,7 @@ server <- function(input, output, session) {
     fp <- file.path("../", "processed", "toslice", filename)
     
     res <- list(src = fp, contentType = "image/png", 
+                width = "95%", height = "auto",
                 alt = "Edge-detected shoe outsole image")
     # print(res)
     res
@@ -194,7 +195,8 @@ server <- function(input, output, session) {
     fp <- file.path("../", "processed", "toslice", filename)
     
     res <- list(src = fp, contentType = "image/png", 
-         alt = "Color shoe outsole image")
+                width = "95%", height = "auto",
+                alt = "Color shoe outsole image")
     # print(res)
     res
   })

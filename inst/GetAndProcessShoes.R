@@ -77,19 +77,24 @@ slice_df <- data_frame(
 
 # Write image list to database
 con <- dbConnect(odbc::odbc(), "shoefeatures-connector")
-chunkfilesintable <- dbReadTable(con, "files")
-towrite <- anti_join(chunk_df, chunkfilesintable)
-dbWriteTable(con, "files", towrite, append = T)
-slicefilesintable <- dbReadTable(con, "slices")
-towrite <- anti_join(slice_df, slicefilesintable)
-dbWriteTable(con, "slices", towrite, append = T)
-
-# Ensure all files in database actually exist
-todrop <- filter(slicefilesintable, !file.exists(path))
-if (nrow(todrop) > 0) {
-  ids <- paste(todrop$id, collapse = ", ")
-  query <- sprintf("DELETE FROM slices WHERE id in (%s);", ids)
-  qres <- dbSendStatement(con, query)
-  dbClearResult(qres)
+if (exists("con")) {
+  chunkfilesintable <- dbReadTable(con, "files")
+  towrite <- anti_join(chunk_df, chunkfilesintable)
+  dbWriteTable(con, "files", towrite, append = T)
+  slicefilesintable <- dbReadTable(con, "slices")
+  towrite <- anti_join(slice_df, slicefilesintable)
+  dbWriteTable(con, "slices", towrite, append = T)
+  
+  # Ensure all files in database actually exist
+  todrop <- filter(slicefilesintable, !file.exists(path))
+  if (nrow(todrop) > 0) {
+    ids <- paste(todrop$id, collapse = ", ")
+    query <- sprintf("DELETE FROM slices WHERE id in (%s);", ids)
+    qres <- dbSendStatement(con, query)
+    dbClearResult(qres)
+  }
+  
+  dbDisconnect(con)
+} else {
+  stop("Couldn't connect to database")
 }
-dbDisconnect(con)

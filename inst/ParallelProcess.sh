@@ -240,9 +240,13 @@ export -f process_shoe
 # process_shoe -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 # process_shoe -e -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 
-find ./photos -type f | parallel process_shoe -e -x 128 {}
-find ./photos -type f | parallel process_shoe -x 128 {}
-find ./photos -type f | parallel process_shoe -m -e -x 128 {}
-find ./photos -type f |  parallel process_shoe -m -x 128 {}
+find ./photos -type f | parallel -j40 process_shoe -e -x 128 {}
+find ./photos -type f | parallel -j40 process_shoe -x 128 {}
+find ./photos -type f | parallel -j40 process_shoe -m -e -x 128 {}
+find ./photos -type f | parallel -j40 process_shoe -m -x 128 {}
 
-# find -path ./inst/processed/slices -type f  | parallel filter_images
+find ./photos -type f | parallel -j40 process_shoe -e -x 256 {}
+find ./photos -type f | parallel -j40 process_shoe -x 256 {}
+find ./photos -type f | parallel -j40 process_shoe -m -e -x 256 {}
+find ./photos -type f | parallel -j40 process_shoe -m -x 256 {}
+

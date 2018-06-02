@@ -58,7 +58,7 @@ ui <- fluidPage(
           style = "display: inline-block;margin-right: 5px;",
           checkboxInput(
             inputId = "nofeatures",
-            label = "No Features Present", 
+            label = "No Useful Features Present/Not a Sole", 
             value = FALSE
           )
         ), 
@@ -130,6 +130,7 @@ server <- function(input, output, session) {
     q <- sprintf("SELECT image, slice, size, flip, crop 
                   FROM slices 
                   WHERE (image, slice, size) NOT IN (SELECT image, slice, size FROM ratings) 
+                  AND (image) IN (SELECT  image FROM ratings)
                   AND RAND()<=0.0001 LIMIT %d;", chunksize)
     z <- dbSendQuery(conn, q)
     zz <- dbFetch(z)
@@ -152,13 +153,13 @@ server <- function(input, output, session) {
                         nf$size,
                         nf$slice)
     # print(filename)
-    fp <- file.path("../", "processed", "slices", filename)
+    fp <- file.path("..", "processed", "slices", filename)
     
     res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
          style = "background-color: grey;padding:3px; margin:5px;",
          alt = "Slice of edge-detected shoe outsole image")
-    # print(res)
+    print(res)
     res
   })
   
@@ -171,7 +172,7 @@ server <- function(input, output, session) {
                         nf$size,
                         nf$slice)
     
-    fp <- file.path("../", "processed", "slices", filename)
+    fp <- file.path("..", "processed", "slices", filename)
     
     res <- list(src = fp, contentType = "image/png", 
          width = 256, height = 256,  
@@ -188,12 +189,12 @@ server <- function(input, output, session) {
                         nf$image,
                         ifelse(nf$flip == 1, "_flip", ""),
                         nf$crop)
-    fp <- file.path("../", "processed", "toslice", filename)
+    fp <- file.path("..", "processed", "toslice", filename)
     
-    res <- list(src = fp, contentType = "image/png", 
+    res <- list(contentType = "image/png", 
                 width = "95%", height = "auto",
-                alt = "Edge-detected shoe outsole image")
-    # print(res)
+                alt = "Edge-detected shoe outsole image", src = fp)
+    # message(res$src)
     res
   })
   
@@ -203,11 +204,11 @@ server <- function(input, output, session) {
                         nf$image,
                         ifelse(nf$flip == 1, "_flip", ""),
                         nf$crop)
-    fp <- file.path("../", "processed", "toslice", filename)
+    fp <- file.path("..", "processed", "toslice", filename)
     
-    res <- list(src = fp, contentType = "image/png", 
+    res <- list(contentType = "image/png", 
                 width = "95%", height = "auto",
-                alt = "Color shoe outsole image")
+                alt = "Color shoe outsole image", src = fp)
     # print(res)
     res
   })
@@ -218,7 +219,7 @@ server <- function(input, output, session) {
     if (nchar(input$user) == 0) {
       return("Please add a nickname/user ID")
     }
-    if (length(input$features) > 0 | input$nofeatures == TRUE) {
+    if (!(length(input$features) > 0 | input$nofeatures == TRUE)) {
       return("Please select some features")
     }
     

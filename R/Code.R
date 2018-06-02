@@ -12,6 +12,9 @@ get_bottom_image <- function(i, path = "inst/photos/") {
   if (!dir.exists(path)) {
     dir.create(path, recursive =  T)
   }
+  if (i == "") {
+    return(NA)
+  }
 
   photoname <- stringr::str_replace(i, "https://www.zappos.com/p/", "") %>%
     stringr::str_replace_all("/", "_") %>%
@@ -40,7 +43,7 @@ get_bottom_image <- function(i, path = "inst/photos/") {
         # Only keep photo of sole
         magrittr::extract(bottomphoto) %>%
         # Get higher resolution
-        stringr::str_replace("SR106,78", "SX480") %>%
+        stringr::str_replace("SR106,78", "SX1920") %>%
         download.file(destfile = dlfile)
       # print(TRUE)
       return(TRUE)
@@ -64,11 +67,26 @@ get_bottom_image <- function(i, path = "inst/photos/") {
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
 
-  if (!splashr::splash_active()) {
-    # install_splash(tag = "3.0")
-    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:3.0 &")
-    splashr::start_splash()
-  }
+  
+  stopifnot(splashr::splash_active())
+  # if (!splashr::splash_active()) {
+  #   # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
+  #   dps <- system("docker ps -a -q", intern = T)
+  #   if (length(dps) > 0) {
+  #     splashr::stop_splash(dps)
+  #     dps <- system("docker ps -a -q", intern = T)
+  #     if (length(dps) > 1) {
+  #       sprintf("docker stop %s", dps) %>% system()
+  #       sprintf("docker rm %s", dps) %>% system()
+  #     }
+  #   }
+  #   # splashr::install_splash(tag = "latest")
+  #   container <- splashr::start_splash()
+  #   on.exit({
+  #     splashr::stop_splash(container)
+  #     # try(system("docker rm /splashr"))
+  #   })
+  # }
 
   if (substr(path, nchar(path), nchar(path)) != "/") {
     path <- paste0(path, "/")
@@ -113,17 +131,22 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
     url <- sprintf("https://www.zappos.com/%s/.zso%s%s", slash, ext, qstring)
   }
 
-  shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
-  shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
-
-  links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
-    unlist(recursive = F) %>%
-    purrr::map(rvest::html_attr, name = "href", default = NA) %>%
-    paste0("https://www.zappos.com", .) %>%
-    unique()
-
-  links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
-
+  links <- ""
+  
+  try({
+    shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
+    shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
+    
+    links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
+      unlist(recursive = F) %>%
+      purrr::map(rvest::html_attr, name = "href", default = NA) %>%
+      paste0("https://www.zappos.com", .) %>%
+      unique()
+    
+    links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
+    
+  })
+  
   dplyr::data_frame(
     url = links,
     soleDL = unlist(map(links, get_bottom_image, path = path))

@@ -95,7 +95,7 @@ ui <- fluidPage(
     column(
       width = 6,
       align = "center",
-      imageOutput("edgeSlice"),
+      imageOutput("edgeSlice", height = "256px"),
       br(),
       h3("Context: "),
       imageOutput("edgeFull")
@@ -103,7 +103,7 @@ ui <- fluidPage(
     column(
       width = 6, 
       align = "center",
-      imageOutput("colorSlice"),
+      imageOutput("colorSlice", height = "256px"),
       br(),
       h3(HTML("&nbsp")),
       imageOutput("colorFull")

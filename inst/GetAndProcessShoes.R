@@ -81,16 +81,27 @@ if (exists("con")) {
   chunkfilesintable <- dbReadTable(con, "files")
   towrite <- anti_join(chunk_df, chunkfilesintable)
   dbWriteTable(con, "files", towrite, append = T)
+  
   slicefilesintable <- dbReadTable(con, "slices")
   towrite <- anti_join(slice_df, slicefilesintable)
   dbWriteTable(con, "slices", towrite, append = T)
   
   # Ensure all files in database actually exist
-  todrop <- filter(slicefilesintable, !file.exists(path))
-  if (nrow(todrop) > 0) {
-    ids <- paste(todrop$id, collapse = ", ")
-    query <- sprintf("DELETE FROM slices WHERE id in (%s);", ids)
-    qres <- dbSendStatement(con, query)
+  todropslices <- filter(slicefilesintable, !file.exists(path))
+  todropfiles <- filter(chunkfilesintable, !file.exists(file.path("processed/toslice/", paste0(image, ".png"))))
+  if (nrow(todropslices) > 0) {
+    # Drop all rows in tmp table and overwrite
+    dbWriteTable(con, "dropslices", todropslices, append = F, overwrite = T)
+    
+    qres <- dbSendStatement(con, "DELETE FROM slices WHERE path NOT IN (SELECT path FROM dropslices)")
+    dbClearResult(qres)
+  }
+  
+  if (nrow(todropfiles) > 0) {
+    # Drop all rows in tmp table and overwrite
+    dbWriteTable(con, "dropfiles", todropfiles, append = F, overwrite = T)
+    
+    qres <- dbSendStatement(con, "DELETE FROM files WHERE (path) NOT IN (SELECT path FROM dropfiles)")
     dbClearResult(qres)
   }
   

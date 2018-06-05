@@ -22,7 +22,11 @@ die() {
 
 filter_images() {
   
-  whiteThr=253
+  if [[ $1 =~ color ]] ; then 
+    whiteThr=250
+  else 
+    whiteThr=253
+  fi
   
   imgval=$(convert $1 -format "%[fx:mean*255]" info:)
   imgvalint=$(printf %.0f $imgval)
@@ -226,27 +230,35 @@ process_shoe() {
   szstr=$SIZE'x'$SIZE
       
   convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr $SLICE_DIR/$wkfile'_%03d.png'
-  
-  chunklist=$(ls $SLICE_DIR/$wkfile*.png)
+ 
   for i in $SLICE_DIR/$wkfile*.png; do 
     filter_images $i
   done
   
 }
 export -f process_shoe
-# 
+
+# Test with single shoe
 # process_shoe photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 # process_shoe -e photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 # process_shoe -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 # process_shoe -e -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 
-find ./photos -type f | parallel -j40 process_shoe -e -x 128 {}
-find ./photos -type f | parallel -j40 process_shoe -x 128 {}
-find ./photos -type f | parallel -j40 process_shoe -m -e -x 128 {}
-find ./photos -type f | parallel -j40 process_shoe -m -x 128 {}
+# 64x64 chunks
+find ./photos -type f | parallel -j40 --joblog /tmp/log64e process_shoe -e -x 64 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log64 process_shoe -x 64 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log64em process_shoe -m -e -x 64 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log64m process_shoe -m -x 64 {}
 
-find ./photos -type f | parallel -j40 process_shoe -e -x 256 {}
-find ./photos -type f | parallel -j40 process_shoe -x 256 {}
-find ./photos -type f | parallel -j40 process_shoe -m -e -x 256 {}
-find ./photos -type f | parallel -j40 process_shoe -m -x 256 {}
+# 128x128 chunks
+find ./photos -type f | parallel -j40 --joblog /tmp/log128e process_shoe -e -x 128 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log128 process_shoe -x 128 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log128em process_shoe -m -e -x 128 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log128m process_shoe -m -x 128 {}
+
+# 256x256 chunks
+find ./photos -type f | parallel -j40 --joblog /tmp/log256e process_shoe -e -x 256 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log256 process_shoe -x 256 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log256em process_shoe -m -e -x 256 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log256m process_shoe -m -x 256 {}
 

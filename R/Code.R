@@ -153,3 +153,62 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
   )
 }
 
+#' Function to reconstruct paths from MySQL setup
+#' 
+#' Returns paths of all matching images
+#' @param image image name from zappos download. Must be specified.
+#' @param full TRUE = full image, FALSE = slice (default). Must be specified.
+#' @param flip 0 or 1
+#' @param edge 0 (color) or 1 (edge-detected)
+#' @param crop crop size string
+#' @param size chunk size string
+#' @param slice index of slice
+#' @return image path(s)
+#' @export
+#' @importFrom magrittr '%>%'
+reconstruct_path <- function(image, full = F, flip = NULL, edge = NULL, 
+                             crop = NULL, size = NULL, slice = NULL) {
+  stopifnot(is.character(image) & !is.null(full))
+  
+  # Define default strings
+  flipstr <- edgestr <- cropstr <- sizestr <- slicestr <- ".*"
+  
+  if (!is.null(flip)) {
+    stopifnot(is.logical(flip) | (is.numeric(flip) && flip %in% c(0, 1)))
+    
+    flipstr <- ifelse(flip, "_flip", "")
+  }
+  
+  if (!is.null(edge)) {
+    stopifnot(is.logical(edge) | (is.numeric(edge) && edge %in% c(0, 1)))
+
+    edgestr <- ifelse(edge, "_edge", "")
+  }
+  
+  if (!is.null(crop)) {
+    stopifnot(is.character(crop))
+    
+    cropstr <- paste0("_crop", crop)
+  }
+  
+  if (full) {
+    pathbits <- paste(unique(c(flipstr, edgestr, cropstr)), collapse = "", sep = "")
+    return(file.path("processed", "toslice", sprintf("%s%s.png", image, pathbits)))
+  } else {
+    if (!is.null(size)) {
+      stopifnot(is.numeric(size) | (is.character(size) & !is.na(as.numeric(size))))
+      
+      sizestr <- paste0("_sz", size)
+    }
+    
+    if (!is.null(slice)) {
+      stopifnot(is.numeric(slice) | (is.character(slice) & !is.na(as.numeric(slice))))
+      
+      slicestr <- paste0("_", slice)
+    }
+    
+    pathbits <- paste(unique(c(flipstr, edgestr, cropstr, sizestr, slicestr)), collapse = "", sep = "")
+    
+    return(file.path("processed", "slices", sprintf("%s%s.png", image, pathbits)))
+  }
+}

@@ -11,8 +11,19 @@ available_containers <- system("docker ps --filter name='splash' -a -q", intern 
 running_containers <- system("docker ps --filter name='splash' -q", intern = T)
 stopped_containers <- available_containers[! available_containers %in% running_containers]
 if (length(running_containers) == 0) {
-  container <- splashr::start_splash()
+  if (length(available_containers) > 0) {
+    system(sprintf("docker start %s", available_containers[1]))
+    available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
+    stopped_containers <- available_containers[! available_containers %in% running_containers]
+  } else {
+    container <- splashr::start_splash()
+    available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
+    stopped_containers <- available_containers[! available_containers %in% running_containers]
+  }
 }
+
+stopifnot(splashr::splash_active())
+
 if (length(stopped_containers) > 1) {
   # Clean up stopped containers
   system(sprintf("docker rm %s", stopped_containers))
@@ -109,3 +120,4 @@ if (exists("con")) {
 } else {
   stop("Couldn't connect to database")
 }
+

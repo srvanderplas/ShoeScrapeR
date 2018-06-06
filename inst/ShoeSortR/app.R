@@ -30,7 +30,7 @@ ui <- fluidPage(
         textInput(inputId = "user", label = "ID") %>%
           shinyInput_label_embed(
             shiny_iconlink() %>%
-              bs_embed_tooltip(title = "Your name or an anonymous nickname")
+              bs_embed_tooltip(title = "Your name or an anonymous nickname", placement = "bottom")
           )
       ),
       column(
@@ -271,8 +271,7 @@ server <- function(input, output, session) {
       feature = featurelist,
       colorOnly = as.numeric(input$bwfeatures),
       comment = input$comment
-    ) %>%
-      unnest()
+    ) 
     
     # print(writedf)
     

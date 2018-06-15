@@ -58,66 +58,66 @@ system("git push")
 
 
 # Process image with bash script
-system("./ParallelProcess.sh")
+# system("./ParallelProcess.sh")
 
 
-chunkfiles <- list.files("processed/toslice/", full.names = F)
-chunkfiles <- sort(chunkfiles)
-chunk_df <- data_frame(
-  image = str_replace(chunkfiles, ".png", ""),
-  crop = str_extract(chunkfiles, "\\d{3,}x\\d{3,}"),
-  flip = str_detect(chunkfiles, "_flip") %>% as.numeric(),
-  edge = str_detect(chunkfiles, "_edge") %>% as.numeric()
-) %>%
-  filter(!is.na(crop)) %>%
-  mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}', replacement = ''))
-
-slicefiles <- list.files("processed/slices/", full.names = T) %>% sort()
-slice_df <- data_frame(
-  slice = basename(slicefiles),
-  path = slicefiles,
-  crop = str_extract(slice, "\\d{3,}x\\d{3,}"),
-  flip = str_detect(slice, "_flip") %>% as.numeric(),
-  edge = str_detect(slice, "_edge") %>% as.numeric(),
-  size = str_extract(slice, "_sz\\d{2,}") %>% str_replace("_sz", "") %>% as.numeric(),
-  image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}_sz\\d{2,}_\\d{3}.png", "")
-) %>%
-  mutate(slice = str_extract(slice, "\\d{3}.png") %>% str_replace(".png", "") %>% as.numeric) %>%
-  select(image, slice, path, crop, flip, edge, size)
-
-
-# Write image list to database
-con <- dbConnect(odbc::odbc(), "shoefeatures-connector")
-if (exists("con")) {
-  chunkfilesintable <- dbReadTable(con, "files")
-  towrite <- anti_join(chunk_df, chunkfilesintable)
-  dbWriteTable(con, "files", towrite, append = T)
-  
-  slicefilesintable <- dbReadTable(con, "slices")
-  towrite <- anti_join(slice_df, slicefilesintable)
-  dbWriteTable(con, "slices", towrite, append = T)
-  
-  # Ensure all files in database actually exist
-  todropslices <- filter(slicefilesintable, !file.exists(path))
-  todropfiles <- filter(chunkfilesintable, !file.exists(file.path("processed/toslice/", paste0(image, ".png"))))
-  if (nrow(todropslices) > 0) {
-    # Drop all rows in tmp table and overwrite
-    dbWriteTable(con, "dropslices", todropslices, append = F, overwrite = T)
-    
-    qres <- dbSendStatement(con, "DELETE FROM slices WHERE path NOT IN (SELECT path FROM dropslices)")
-    dbClearResult(qres)
-  }
-  
-  if (nrow(todropfiles) > 0) {
-    # Drop all rows in tmp table and overwrite
-    dbWriteTable(con, "dropfiles", todropfiles, append = F, overwrite = T)
-    
-    qres <- dbSendStatement(con, "DELETE FROM files WHERE (path) NOT IN (SELECT path FROM dropfiles)")
-    dbClearResult(qres)
-  }
-  
-  dbDisconnect(con)
-} else {
-  stop("Couldn't connect to database")
-}
-
+# chunkfiles <- list.files("processed/toslice/", full.names = F)
+# chunkfiles <- sort(chunkfiles)
+# chunk_df <- data_frame(
+#   image = str_replace(chunkfiles, ".png", ""),
+#   crop = str_extract(chunkfiles, "\\d{3,}x\\d{3,}"),
+#   flip = str_detect(chunkfiles, "_flip") %>% as.numeric(),
+#   edge = str_detect(chunkfiles, "_edge") %>% as.numeric()
+# ) %>%
+#   filter(!is.na(crop)) %>%
+#   mutate(image = str_replace(image, pattern = '(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}', replacement = ''))
+# 
+# slicefiles <- list.files("processed/slices/", full.names = T) %>% sort()
+# slice_df <- data_frame(
+#   slice = basename(slicefiles),
+#   path = slicefiles,
+#   crop = str_extract(slice, "\\d{3,}x\\d{3,}"),
+#   flip = str_detect(slice, "_flip") %>% as.numeric(),
+#   edge = str_detect(slice, "_edge") %>% as.numeric(),
+#   size = str_extract(slice, "_sz\\d{2,}") %>% str_replace("_sz", "") %>% as.numeric(),
+#   image = str_replace(slice, "(_flip)?(_edge)?_crop\\d{3,}x\\d{3,}_sz\\d{2,}_\\d{3}.png", "")
+# ) %>%
+#   mutate(slice = str_extract(slice, "\\d{3}.png") %>% str_replace(".png", "") %>% as.numeric) %>%
+#   select(image, slice, path, crop, flip, edge, size)
+# 
+# 
+# # Write image list to database
+# con <- dbConnect(odbc::odbc(), "shoefeatures-connector")
+# if (exists("con")) {
+#   chunkfilesintable <- dbReadTable(con, "files")
+#   towrite <- anti_join(chunk_df, chunkfilesintable)
+#   dbWriteTable(con, "files", towrite, append = T)
+#   
+#   slicefilesintable <- dbReadTable(con, "slices")
+#   towrite <- anti_join(slice_df, slicefilesintable)
+#   dbWriteTable(con, "slices", towrite, append = T)
+#   
+#   # Ensure all files in database actually exist
+#   todropslices <- filter(slicefilesintable, !file.exists(path))
+#   todropfiles <- filter(chunkfilesintable, !file.exists(file.path("processed/toslice/", paste0(image, ".png"))))
+#   if (nrow(todropslices) > 0) {
+#     # Drop all rows in tmp table and overwrite
+#     dbWriteTable(con, "dropslices", todropslices, append = F, overwrite = T)
+#     
+#     qres <- dbSendStatement(con, "DELETE FROM slices WHERE path NOT IN (SELECT path FROM dropslices)")
+#     dbClearResult(qres)
+#   }
+#   
+#   if (nrow(todropfiles) > 0) {
+#     # Drop all rows in tmp table and overwrite
+#     dbWriteTable(con, "dropfiles", todropfiles, append = F, overwrite = T)
+#     
+#     qres <- dbSendStatement(con, "DELETE FROM files WHERE (path) NOT IN (SELECT path FROM dropfiles)")
+#     dbClearResult(qres)
+#   }
+#   
+#   dbDisconnect(con)
+# } else {
+#   stop("Couldn't connect to database")
+# }
+# 

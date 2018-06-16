@@ -30,9 +30,9 @@ if (length(stopped_containers) > 1) {
 }
 
 if (system2("hostname", stdout=T) == "bigfoot") {
-  setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/inst/")
+  setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/extra/")
 } else {
-  setwd("/storage/Rprojects/ShoeScrapeR/inst/")
+  setwd("/storage/Rprojects/ShoeScrapeR/extra/")
 }
 
 # Create a data frame of all combinations of parameters type and population

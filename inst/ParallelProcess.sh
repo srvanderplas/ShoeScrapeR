@@ -146,9 +146,9 @@ process_shoe() {
     mkdir "$TMP_DIR"
   fi
   
-  if [ ! -d "$SLICE_DIR" ]; then
-    mkdir "$SLICE_DIR"
-  fi  
+  # if [ ! -d "$SLICE_DIR" ]; then
+  #   mkdir "$SLICE_DIR"
+  # fi  
   
   # Ensure the simple operations are done
   # Convert to PNG
@@ -181,59 +181,59 @@ process_shoe() {
     fi
   fi
   
-  wkfileprev=$wkfile
-  if [ "$OFFSET" -gt "0" ]; then 
-    wkfile=$wkfile'_offset'$OFFSET
-    if [ ! -f $TMP_DIR/$wkfile.png ] || [ "$OVERWRITE" ]; then
-      convert $TMP_DIR/$wkfileprev.png \
-        -gravity northeast \
-        -background white \
-        -extent $(identify -format '%[fx:W+$OFFSET]x%[fx:H+$OFFSET]' $TMP_DIR/$wkfileprev'.png' ) \
-        $TMP_DIR/$wkfile.png
-    fi
-  fi
-  
-  # Prepare for cropping image
-  
-  imw=$(identify -format "%w" $TMP_DIR/$wkfileprev.png)
-  imh=$(identify -format "%h" $TMP_DIR/$wkfileprev.png)
-  
-  full_tile_w=$(( $imw / $SIZE ))
-  full_tile_h=$(( $imh / $SIZE ))
-  
-  vcanv_w=$(( ($full_tile_w) * $SIZE ))  
-  vcanv_h=$(( ($full_tile_h) * $SIZE ))
-
-  cx=$(( ($vcanv_w - $imw ) / 2 ))
-  cy=$(( ($vcanv_h - $imh ) / 2 ))
-  
-  if [ "$cy" -ge "0" ]; then
-    cy='+'$cy
-  fi
-  if [ "$cx" -ge "0" ]; then
-    cx='+'$cx
-  fi
-  
-  vcanvszstr=$vcanv_w'x'$vcanv_h
-  
-  wkfileprev=$wkfile
-  wkfile=$wkfile'_crop'$vcanvszstr
-  
-  # echo "Full tiles: $full_tile_w x  $full_tile_h, cropping image to $vcanvszstr from $cx, $cy"
-  # echo "convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr$cx$cy -crop $vcanvszstr $TMP_DIR/$wkfile.png"
-  # convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr$cx$cy -crop $vcanvszstr $TMP_DIR/$wkfile.png
-  convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr+0+0 -crop $vcanvszstr $TMP_DIR/$wkfile.png
-  
-  
-  wkfileprev=$wkfile
-  wkfile=$wkfile'_sz'$SIZE
-  szstr=$SIZE'x'$SIZE
-      
-  convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr $SLICE_DIR/$wkfile'_%03d.png'
- 
-  for i in $SLICE_DIR/$wkfile*.png; do 
-    filter_images $i
-  done
+  # wkfileprev=$wkfile
+  # if [ "$OFFSET" -gt "0" ]; then 
+  #   wkfile=$wkfile'_offset'$OFFSET
+  #   if [ ! -f $TMP_DIR/$wkfile.png ] || [ "$OVERWRITE" ]; then
+  #     convert $TMP_DIR/$wkfileprev.png \
+  #       -gravity northeast \
+  #       -background white \
+  #       -extent $(identify -format '%[fx:W+$OFFSET]x%[fx:H+$OFFSET]' $TMP_DIR/$wkfileprev'.png' ) \
+  #       $TMP_DIR/$wkfile.png
+  #   fi
+  # fi
+  # 
+  # # Prepare for cropping image
+  # 
+  # imw=$(identify -format "%w" $TMP_DIR/$wkfileprev.png)
+  # imh=$(identify -format "%h" $TMP_DIR/$wkfileprev.png)
+  # 
+  # full_tile_w=$(( $imw / $SIZE ))
+  # full_tile_h=$(( $imh / $SIZE ))
+  # 
+  # vcanv_w=$(( ($full_tile_w) * $SIZE ))  
+  # vcanv_h=$(( ($full_tile_h) * $SIZE ))
+  # 
+  # cx=$(( ($vcanv_w - $imw ) / 2 ))
+  # cy=$(( ($vcanv_h - $imh ) / 2 ))
+  # 
+  # if [ "$cy" -ge "0" ]; then
+  #   cy='+'$cy
+  # fi
+  # if [ "$cx" -ge "0" ]; then
+  #   cx='+'$cx
+  # fi
+  # 
+  # vcanvszstr=$vcanv_w'x'$vcanv_h
+  # 
+  # wkfileprev=$wkfile
+  # wkfile=$wkfile'_crop'$vcanvszstr
+  # 
+  # # echo "Full tiles: $full_tile_w x  $full_tile_h, cropping image to $vcanvszstr from $cx, $cy"
+  # # echo "convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr$cx$cy -crop $vcanvszstr $TMP_DIR/$wkfile.png"
+  # # convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr$cx$cy -crop $vcanvszstr $TMP_DIR/$wkfile.png
+  # convert $TMP_DIR/$wkfileprev.png -repage $vcanvszstr+0+0 -crop $vcanvszstr $TMP_DIR/$wkfile.png
+  # 
+  # 
+  # wkfileprev=$wkfile
+  # wkfile=$wkfile'_sz'$SIZE
+  # szstr=$SIZE'x'$SIZE
+  #     
+  # convert $TMP_DIR/$wkfileprev.png -quiet -crop $szstr $SLICE_DIR/$wkfile'_%03d.png'
+  # 
+  # for i in $SLICE_DIR/$wkfile*.png; do 
+  #   filter_images $i
+  # done
   
 }
 export -f process_shoe
@@ -244,21 +244,23 @@ export -f process_shoe
 # process_shoe -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 # process_shoe -e -m photos/adidas-originals-gazelle-tactile-yellow-black-gold_product_8894439_color_695418.jpg
 
-# 64x64 chunks
-find ./photos -type f | parallel -j40 --joblog /tmp/log64e process_shoe -e -x 64 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log64 process_shoe -x 64 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log64em process_shoe -m -e -x 64 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log64m process_shoe -m -x 64 {}
+find ./photos -type f | parallel -j40 --joblog /tmp/log64 process_shoe {}
 
-# 128x128 chunks
-find ./photos -type f | parallel -j40 --joblog /tmp/log128e process_shoe -e -x 128 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log128 process_shoe -x 128 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log128em process_shoe -m -e -x 128 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log128m process_shoe -m -x 128 {}
-
-# 256x256 chunks
-find ./photos -type f | parallel -j40 --joblog /tmp/log256e process_shoe -e -x 256 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log256 process_shoe -x 256 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log256em process_shoe -m -e -x 256 {}
-find ./photos -type f | parallel -j40 --joblog /tmp/log256m process_shoe -m -x 256 {}
+# # 64x64 chunks
+# find ./photos -type f | parallel -j40 --joblog /tmp/log64e process_shoe -e -x 64 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log64 process_shoe -x 64 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log64em process_shoe -m -e -x 64 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log64m process_shoe -m -x 64 {}
+# 
+# # 128x128 chunks
+# find ./photos -type f | parallel -j40 --joblog /tmp/log128e process_shoe -e -x 128 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log128 process_shoe -x 128 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log128em process_shoe -m -e -x 128 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log128m process_shoe -m -x 128 {}
+# 
+# # 256x256 chunks
+# find ./photos -type f | parallel -j40 --joblog /tmp/log256e process_shoe -e -x 256 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log256 process_shoe -x 256 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log256em process_shoe -m -e -x 256 {}
+# find ./photos -type f | parallel -j40 --joblog /tmp/log256m process_shoe -m -x 256 {}
 

@@ -58,7 +58,7 @@ system("git push")
 
 
 # Process image with bash script
-# system("./ParallelProcess.sh")
+system("../inst/ParallelProcess.sh")
 
 
 # chunkfiles <- list.files("processed/toslice/", full.names = F)

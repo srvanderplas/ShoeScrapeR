@@ -134,10 +134,10 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
   links <- ""
   
   try({
-    shoeLinks <- url %>% paste(c("", sprintf("?p%d", 1:pages)), sep = "")
+    shoeLinks <- url %>% paste(c("", sprintf("&p=%d", 1:pages)), sep = "")
     shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
     
-    links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "#searchPage a") %>%
+    links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "article a") %>%
       unlist(recursive = F) %>%
       purrr::map(rvest::html_attr, name = "href", default = NA) %>%
       paste0("https://www.zappos.com", .) %>%

@@ -1,0 +1,2366 @@
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.0.0     ✔ purrr   0.2.5
+✔ tibble  1.4.2     ✔ dplyr   0.7.6
+✔ tidyr   0.8.1     ✔ stringr 1.3.1
+✔ readr   1.1.1     ✔ forcats 0.3.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: methods
+Status of splash instance on [http://localhost:8050]: ok. Max RSS: 71.86719 Mb
+
+Status of splash instance on [http://localhost:8050]: ok. Max RSS: 71.89062 Mb
+
+trying URL 'https://m.media-amazon.com/images/I/71SI-JSY3nL._SX1920_.jpg'
+Content type 'image/jpeg' length 147863 bytes (144 KB)
+==================================================
+downloaded 144 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71flWCXzj1L._SX1920_.jpg'
+Content type 'image/jpeg' length 153902 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Empty reply from server
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Empty reply from server
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+trying URL 'https://m.media-amazon.com/images/I/61XaMHT0DjL._SX1920_.jpg'
+Content type 'image/jpeg' length 114457 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71fGDnqjdaL._SX1920_.jpg'
+Content type 'image/jpeg' length 152148 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61wvYbfinNL._SX1920_.jpg'
+Content type 'image/jpeg' length 110639 bytes (108 KB)
+==================================================
+downloaded 108 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61jT3q1HGML._SX1920_.jpg'
+Content type 'image/jpeg' length 106206 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61Uw2Z+y+UL._SX1920_.jpg'
+Content type 'image/jpeg' length 93213 bytes (91 KB)
+==================================================
+downloaded 91 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71PKDPYHmKL._SX1920_.jpg'
+Content type 'image/jpeg' length 119096 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://m.media-amazon.com/images/I/714mUenPZAL._SX1920_.jpg'
+Content type 'image/jpeg' length 167729 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Recv failure: Connection reset by peer
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Failed to connect to localhost port 8050: Connection refused
+Error: splashr::splash_active() is not TRUE
+[master 1ef9ac0] Automatic Update
+ 9 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 extra/photos/adidas-originals-kids-swift-run-c-little-kid-olive_product_9069195_color_529.jpg
+ create mode 100644 extra/photos/blowfish-sistee-brown-rancher-dyecut_product_9083887_color_765166.jpg
+ create mode 100644 extra/photos/dansko-hartley-black-nubuck_product_9054843_color_84.jpg
+ create mode 100644 extra/photos/hush-puppies-aidi-mocc-slip-on-taupe-nubuck_product_9075825_color_21.jpg
+ create mode 100644 extra/photos/minnetonka-thunderbird-ii-grey_product_7739184_color_401.jpg
+ create mode 100644 extra/photos/olukai-miki-li-pearl-blush-pale-grey_product_9069911_color_760130.jpg
+ create mode 100644 extra/photos/roxy-bayshore-sport-black_product_9073850_color_3.jpg
+ create mode 100644 extra/photos/soludos-velvet-llama-sneaker-navy_product_8984988_color_9.jpg
+ create mode 100644 extra/photos/teva-arrowood-2-wp-black_product_9067685_color_3.jpg
+remote: fatal: pack exceeds maximum allowed size        
+fatal: The remote end hung up unexpectedly
+error: pack-objects died of signal 13
+error: failed to push some refs to 'git@github.com:srvanderplas/ShoeScrapeR.git'

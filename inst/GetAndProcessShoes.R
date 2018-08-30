@@ -29,12 +29,6 @@ if (length(stopped_containers) > 1) {
   system(sprintf("docker rm %s", stopped_containers))
 }
 
-if (system2("hostname", stdout=T) == "bigfoot") {
-  setwd("/home/srvander/Rprojects/CSAFE/ShoeScrapeR/extra/")
-} else {
-  setwd("/storage/Rprojects/ShoeScrapeR/extra/")
-}
-
 # Create a data frame of all combinations of parameters type and population
 
 fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
@@ -42,7 +36,7 @@ fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
                         query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
   as_data_frame() %>%
-  mutate(path = "photos/")
+  mutate(path = here::here("extra/photos/"))
 
 shoe_res <- fcn_opts %>%
   group_by_all() %>%
@@ -52,7 +46,10 @@ shoe_res <- fcn_opts %>%
 # system("docker stop $(docker ps -a -q)")
 # system("docker rm $(docker ps -a -q)")
 
-system("git add photos/*")
+system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
+#system("git add photos/*")
+system("ls extra/photos/* > image_manifest")
+system("git add image_manifest inst/cron.log")
 system("git commit -a -m 'Automatic Update'")
 system("git push")
 

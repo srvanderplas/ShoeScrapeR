@@ -48,7 +48,7 @@ shoe_res <- fcn_opts %>%
 
 system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
 #system("git add photos/*")
-system("ls extra/photos/* > image_manifest")
+system("ls -al extra/photos/* > image_manifest")
 system("git add image_manifest inst/cron.log")
 system("git commit -a -m 'Automatic Update'")
 system("git push")

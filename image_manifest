@@ -313,6 +313,7 @@
 -rw-r--r-- 1 srvander systemd-journal 224945 May 31 14:08 extra/photos/allrounder-by-mephisto-speed-dark-brown-suede-t-vintage_product_8926391_color_706311.jpg
 -rw-r--r-- 1 srvander systemd-journal 213958 May 31 13:31 extra/photos/allrounder-by-mephisto-speed-zinc-suede-t-vintage_product_8926391_color_706315.jpg
 -rw-r--r-- 1 srvander systemd-journal 110896 Aug 29 21:03 extra/photos/altra-footwear-lone-peak-4-black_product_9083002_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 112650 Aug 30 09:32 extra/photos/altra-footwear-lone-peak-4-teal-gray_product_9083002_color_235106.jpg
 -rw-r--r-- 1 srvander systemd-journal 209152 Jun  8 21:07 extra/photos/altra-footwear-torin-knit-3-5-black_product_9082990_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 346416 Jun  4 21:03 extra/photos/amiana-15-a5360-little-kid-big-kid-adult-gold_product_8590374_color_385.jpg
 -rw-r--r-- 1 srvander systemd-journal 431457 Jun  4 21:03 extra/photos/amiana-15-a5360-little-kid-big-kid-adult-silver_product_8590374_color_632.jpg
@@ -856,7 +857,9 @@
 -rw-r--r-- 1 srvander systemd-journal 174060 Aug 29 21:02 extra/photos/birkenstock-pasadena-mocha-nubuck_product_9087371_color_466.jpg
 -rw-r--r-- 1 srvander systemd-journal 140525 Aug 16 21:01 extra/photos/birkenstock-rena-taupe-leather_product_9087338_color_687.jpg
 -rw-r--r-- 1 srvander systemd-journal 293402 May 31 11:26 extra/photos/birkenstock-yara-tobacco_product_7503990_color_859.jpg
+-rw-r--r-- 1 srvander systemd-journal 127314 Aug 30 09:32 extra/photos/blackstone-mid-sneaker-charcoal_product_9151512_color_275.jpg
 -rw-r--r-- 1 srvander systemd-journal 231346 Aug 29 21:07 extra/photos/blackstone-slip-on-cap-toe-black_product_9151511_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 179238 Aug 30 09:32 extra/photos/blackstone-slip-on-cap-toe-rusty-brown_product_9151511_color_24547.jpg
 -rw-r--r-- 1 srvander systemd-journal 279748 Jun 17 03:27 extra/photos/bloch-eclipse-leather-nude_product_8656308_color_521.jpg
 -rw-r--r-- 1 srvander systemd-journal 199598 Jun 19 21:01 extra/photos/bloch-omnia-black_product_9084518_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 198786 Jun 19 21:01 extra/photos/bloch-omnia-black-white_product_9084518_color_151.jpg
@@ -900,6 +903,8 @@
 -rw-r--r-- 1 srvander systemd-journal 136609 Aug 11 03:05 extra/photos/blowfish-kids-brekki-k-little-kid-big-kid-tobacco-spindal-pu_product_9092866_color_767578.jpg
 -rw-r--r-- 1 srvander systemd-journal 136360 Aug 11 03:05 extra/photos/blowfish-kids-kalipso-k-little-kid-big-kid-black-san-antonio_product_9092811_color_767565.jpg
 -rw-r--r-- 1 srvander systemd-journal  78109 Aug 11 03:05 extra/photos/blowfish-kids-kalipso-k-little-kid-big-kid-chocolate-san-antonio_product_9092811_color_767569.jpg
+-rw-r--r-- 1 srvander systemd-journal  85787 Aug 30 09:36 extra/photos/blowfish-kids-kelwen-k-b-little-kid-big-kid-black-wrangler-pu_product_9093291_color_767829.jpg
+-rw-r--r-- 1 srvander systemd-journal 134965 Aug 30 09:35 extra/photos/blowfish-kids-kelwen-k-b-little-kid-big-kid-whiskey-eastwood-pu_product_9093291_color_767584.jpg
 -rw-r--r-- 1 srvander systemd-journal 123676 Aug 11 03:06 extra/photos/blowfish-kids-kewler-k-little-kid-big-kid-mauve-rural_product_9092815_color_767571.jpg
 -rw-r--r-- 1 srvander systemd-journal 172171 Aug 27 21:02 extra/photos/blowfish-kids-kia-k-little-kid-big-kid-black-spindal-pu_product_9092816_color_767579.jpg
 -rw-r--r-- 1 srvander systemd-journal  86285 Aug 27 21:02 extra/photos/blowfish-kids-kia-k-little-kid-big-kid-chocolate-spindal-pu_product_9092816_color_767580.jpg
@@ -1346,6 +1351,8 @@
 -rw-r--r-- 1 srvander systemd-journal 115876 Aug 25 21:02 extra/photos/chinese-laundry-chelsea-black-grain-pu_product_9130427_color_375311.jpg
 -rw-r--r-- 1 srvander systemd-journal 144637 Aug  6 12:31 extra/photos/chinese-laundry-daria-black-fine-suede_product_9130428_color_108799.jpg
 -rw-r--r-- 1 srvander systemd-journal  88519 Aug 20 03:03 extra/photos/chinese-laundry-daria-black_product_9130428_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal  83386 Aug 30 09:34 extra/photos/chinese-laundry-emy-black-suede_product_9136524_color_106.jpg
+-rw-r--r-- 1 srvander systemd-journal 115536 Aug 30 09:32 extra/photos/chinese-laundry-finn-bootie-white-smooth-leather_product_8965574_color_1388.jpg
 -rw-r--r-- 1 srvander systemd-journal 284156 Jun 12 21:00 extra/photos/chinese-laundry-gavin-flat-silver-sequins_product_8965620_color_29302.jpg
 -rw-r--r-- 1 srvander systemd-journal 181700 Aug 16 03:02 extra/photos/chinese-laundry-gemmy-brick-cow-leather_product_9147743_color_787813.jpg
 -rw-r--r-- 1 srvander systemd-journal 168809 Aug 14 03:00 extra/photos/chinese-laundry-gemmy-white-cow-leather_product_9147743_color_157529.jpg
@@ -1465,6 +1472,7 @@
 -rw-r--r-- 1 srvander systemd-journal  98974 Aug 22 21:18 extra/photos/clarks-poise-leah-black-leather_product_9095218_color_72.jpg
 -rw-r--r-- 1 srvander systemd-journal 135237 Aug 10 13:21 extra/photos/clarks-sharon-dolly-navy-suede_product_9084463_color_500.jpg
 -rw-r--r-- 1 srvander systemd-journal 154860 Aug 17 03:06 extra/photos/clarks-spiced-isla-tan-nubuck_product_9095214_color_670.jpg
+-rw-r--r-- 1 srvander systemd-journal  83106 Aug 30 09:36 extra/photos/clarks-tealia-luck-black-leather-1_product_8909346_color_227295.jpg
 -rw-r--r-- 1 srvander systemd-journal  74108 Aug 16 03:08 extra/photos/clarks-tealia-maye-narrative-navy-patent_product_9084471_color_768671.jpg
 -rw-r--r-- 1 srvander systemd-journal 247740 Jun  4 21:08 extra/photos/clarks-tri-carrie-black-nubuck_product_9002862_color_84.jpg
 -rw-r--r-- 1 srvander systemd-journal 210982 Jun  4 21:08 extra/photos/clarks-tri-carrie-tan-nubuck_product_9002862_color_670.jpg
@@ -1643,6 +1651,7 @@
 -rw-r--r-- 1 srvander systemd-journal 113101 Aug 21 21:18 extra/photos/comfortiva-alora-black-multi-kid-suede-montana-new-castle_product_9107713_color_772949.jpg
 -rw-r--r-- 1 srvander systemd-journal 154144 Aug 21 21:19 extra/photos/comfortiva-aniston-aztec-brown-rodeo_product_9107710_color_707108.jpg
 -rw-r--r-- 1 srvander systemd-journal 133770 Aug 21 21:18 extra/photos/comfortiva-aniston-black-toscana_product_9107710_color_471979.jpg
+-rw-r--r-- 1 srvander systemd-journal 142708 Aug 30 09:37 extra/photos/comfortiva-maloree-cognac-duster_product_9107731_color_772968.jpg
 -rw-r--r-- 1 srvander systemd-journal 101755 Aug 29 21:11 extra/photos/comfortiva-nicole-smoke-distressed-foil-suede-metallic-taupe-spirit-metallic_product_9107743_color_772976.jpg
 -rw-r--r-- 1 srvander systemd-journal 308550 Jun 17 21:28 extra/photos/converse-chuck-taylor-all-star-70-hi-pioneer-blue-egret-egret_product_8898310_color_697209.jpg
 -rw-r--r-- 1 srvander systemd-journal 227176 Jun  4 17:56 extra/photos/converse-chuck-taylor-all-star-70-hi-true-navy-black-egret_product_8262995_color_750209.jpg
@@ -1883,6 +1892,7 @@
 -rw-r--r-- 1 srvander systemd-journal 157859 May 31 14:02 extra/photos/dansko-audra-wine-suede_product_9054818_color_1731.jpg
 -rw-r--r-- 1 srvander systemd-journal 171424 Jun  4 17:46 extra/photos/dansko-farah-chocolate-burnished-calf_product_9054820_color_132765.jpg
 -rw-r--r-- 1 srvander systemd-journal  93213 Aug 30 03:01 extra/photos/dansko-hartley-black-nubuck_product_9054843_color_84.jpg
+-rw-r--r-- 1 srvander systemd-journal 146235 Aug 30 09:36 extra/photos/dansko-hartley-chocolate-nubuck_product_9054843_color_293.jpg
 -rw-r--r-- 1 srvander systemd-journal 141317 Aug 28 21:11 extra/photos/dansko-hartley-grey-nubuck_product_9054843_color_405.jpg
 -rw-r--r-- 1 srvander systemd-journal 201440 May 31 14:01 extra/photos/dansko-holland-black-suede_product_9054841_color_106.jpg
 -rw-r--r-- 1 srvander systemd-journal 251658 May 31 14:01 extra/photos/dansko-holland-charcoal-suede_product_9054841_color_5852.jpg
@@ -1899,6 +1909,7 @@
 -rw-r--r-- 1 srvander systemd-journal 108757 Aug  6 12:30 extra/photos/dansko-peyton-sand-burnished-nubuck_product_9054899_color_752329.jpg
 -rw-r--r-- 1 srvander systemd-journal  92941 Aug 10 03:02 extra/photos/dansko-preston-black-burnished-nubuck_product_9054898_color_260261.jpg
 -rw-r--r-- 1 srvander systemd-journal 120129 Aug 11 03:13 extra/photos/dansko-preston-wine-burnished-nubuck_product_9054898_color_699776.jpg
+-rw-r--r-- 1 srvander systemd-journal 173703 Aug 30 09:36 extra/photos/dansko-pro-bow-wine-milled-nubuck_product_9054897_color_501427.jpg
 -rw-r--r-- 1 srvander systemd-journal 362115 Jun 16 21:13 extra/photos/dansko-professional-blue-damask-patent_product_122568_color_727510.jpg
 -rw-r--r-- 1 srvander systemd-journal 218279 Jun 13 21:02 extra/photos/dansko-professional-box-leather-mens-black-box_product_8364959_color_11369.jpg
 -rw-r--r-- 1 srvander systemd-journal 241494 Jun 16 21:13 extra/photos/dansko-professional-color-weave-patent_product_122568_color_727509.jpg
@@ -1974,11 +1985,14 @@
 -rw-r--r-- 1 srvander systemd-journal  83765 Aug 29 21:18 extra/photos/deer-stags-argos-black-blue_product_9110305_color_2557.jpg
 -rw-r--r-- 1 srvander systemd-journal 180353 Jul  5 21:01 extra/photos/deer-stags-mentor-brown_product_8974142_color_6.jpg
 -rw-r--r-- 1 srvander systemd-journal  77699 Aug 29 21:19 extra/photos/deer-stags-rhodes-black-black_product_9110307_color_183092.jpg
+-rw-r--r-- 1 srvander systemd-journal 185386 Aug 30 09:34 extra/photos/diadora-b-elite-l-white-saltire-navy-c2816_product_9093822_color_768072.jpg
 -rw-r--r-- 1 srvander systemd-journal 226259 Jun 16 03:03 extra/photos/diadora-capitano-md-black-white-silver_product_8648780_color_8002.jpg
 -rw-r--r-- 1 srvander systemd-journal 155024 May 31 14:11 extra/photos/diadora-forte-md-lpu-white-fluo-yellow-black_product_8751182_color_165366.jpg
 -rw-r--r-- 1 srvander systemd-journal 233509 Jun  1 10:22 extra/photos/diadora-forte-w-md-lpu-electric-blue-white-lime_product_8751183_color_381379.jpg
+-rw-r--r-- 1 srvander systemd-journal 128748 Aug 30 09:33 extra/photos/diamond-supply-co-barca-black-black_product_9123324_color_183092.jpg
 -rw-r--r-- 1 srvander systemd-journal 192692 Aug 29 21:04 extra/photos/diamond-supply-co-barca-powder-blue_product_9123324_color_570.jpg
 -rw-r--r-- 1 srvander systemd-journal 144812 Aug 29 21:01 extra/photos/diamond-supply-co-barca-white-leather_product_9123324_color_15.jpg
+-rw-r--r-- 1 srvander systemd-journal 153486 Aug 30 09:33 extra/photos/diamond-supply-co-boo-j-xl-burgundy_product_9123319_color_7.jpg
 -rw-r--r-- 1 srvander systemd-journal 152405 Aug 29 21:04 extra/photos/diamond-supply-co-boo-j-xl-grey-suede_product_9123319_color_478744.jpg
 -rw-r--r-- 1 srvander systemd-journal 168553 Aug 29 21:03 extra/photos/diamond-supply-co-series-low-navy_product_9123317_color_9.jpg
 -rw-r--r-- 1 srvander systemd-journal 246384 Jun 17 21:02 extra/photos/diane-von-furstenberg-frankie-black_product_9079382_color_3.jpg
@@ -2306,6 +2320,7 @@
 -rw-r--r-- 1 srvander systemd-journal 231312 Jun 15 03:00 extra/photos/ecco-shape-45-sleek-pump-dune-cow-nubuck_product_8868551_color_748911.jpg
 -rw-r--r-- 1 srvander systemd-journal  98334 Aug 25 03:00 extra/photos/ecco-shape-45-sleek-slip-on-bordeaux-morillo_product_8868552_color_768345.jpg
 -rw-r--r-- 1 srvander systemd-journal 174912 Jun  8 21:26 extra/photos/ecco-shape-m-35-pump-black-calf-leather_product_8917838_color_6333.jpg
+-rw-r--r-- 1 srvander systemd-journal  96951 Aug 30 09:34 extra/photos/ecco-shape-pointy-flat-black-black_product_9094788_color_183092.jpg
 -rw-r--r-- 1 srvander systemd-journal 139386 Aug 17 21:03 extra/photos/ecco-skyler-45-wedge-mary-jane-black-cow-nubuck_product_9094735_color_553410.jpg
 -rw-r--r-- 1 srvander systemd-journal 148706 Aug 11 03:05 extra/photos/ecco-skyler-wedge-bootie-black-dark-silver-cow-leather_product_8918272_color_768286.jpg
 -rw-r--r-- 1 srvander systemd-journal 134083 Jun 12 21:04 extra/photos/ecco-soft-7-cap-toe-black-black-cow-leather_product_9045333_color_635303.jpg
@@ -2354,6 +2369,7 @@
 -rw-r--r-- 1 srvander systemd-journal 110874 Aug 15 21:06 extra/photos/ecco-sport-exostrike-hydromax-mocha_product_9094726_color_464.jpg
 -rw-r--r-- 1 srvander systemd-journal 141977 Aug 15 21:06 extra/photos/ecco-sport-noyce-gore-tex-high-birch-birch_product_9094721_color_103850.jpg
 -rw-r--r-- 1 srvander systemd-journal 140543 Aug 15 21:06 extra/photos/ecco-sport-noyce-gore-tex-high-black_product_9094721_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 147930 Aug 30 09:34 extra/photos/ecco-sport-offroad-2-0-sandal-black-powder_product_9047737_color_75159.jpg
 -rw-r--r-- 1 srvander systemd-journal 104640 Aug 10 03:04 extra/photos/ecco-sport-offroad-sandal-indigo-5_product_8777168_color_285109.jpg
 -rw-r--r-- 1 srvander systemd-journal 205913 May 31 16:15 extra/photos/ecco-sport-premium-offroad-powder-powder_product_9047722_color_214172.jpg
 -rw-r--r-- 1 srvander systemd-journal 154745 Aug 29 21:08 extra/photos/ecco-sport-premium-offroad-white-powder_product_9047722_color_10624.jpg
@@ -2435,6 +2451,7 @@
 -rw-r--r-- 1 srvander systemd-journal 208660 Aug  6 12:30 extra/photos/emerica-wino-g6-mid-x-pendleton-grey-gum_product_9075187_color_94638.jpg
 -rw-r--r-- 1 srvander systemd-journal 195290 Aug 28 21:07 extra/photos/emu-australia-kids-amity-big-kid-chestnut_product_9065191_color_278.jpg
 -rw-r--r-- 1 srvander systemd-journal 135253 Aug 28 21:06 extra/photos/emu-australia-kids-beach-mini-big-kid-chestnut_product_9065279_color_278.jpg
+-rw-r--r-- 1 srvander systemd-journal 213692 Aug 30 09:37 extra/photos/emu-australia-kids-jolie-toddler-little-kid-big-kid-fuchsia_product_9065227_color_1334.jpg
 -rw-r--r-- 1 srvander systemd-journal 277476 Jun 17 03:10 extra/photos/emu-australia-kids-leo-lion-toddler-little-kid-big-kid-chestnut_product_8745034_color_278.jpg
 -rw-r--r-- 1 srvander systemd-journal 199883 Jun  9 03:02 extra/photos/emu-australia-kids-little-creatures-shark-toddler-little-kid-big-kid-putty_product_7968373_color_580.jpg
 -rw-r--r-- 1 srvander systemd-journal 272256 Jun 20 21:22 extra/photos/emu-australia-kids-little-creatures-walker-lamb-infant-natural_product_8170135_color_19.jpg
@@ -2858,6 +2875,7 @@
 -rw-r--r-- 1 srvander systemd-journal 119085 Aug 21 21:11 extra/photos/gola-trainer-navy-off-white_product_9168747_color_348856.jpg
 -rw-r--r-- 1 srvander systemd-journal 118010 Aug 21 21:11 extra/photos/gola-trainer-off-white-off-white_product_9168747_color_326115.jpg
 -rw-r--r-- 1 srvander systemd-journal 182030 Aug 29 21:05 extra/photos/gordon-rush-connery-black_product_9049361_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 176186 Aug 30 09:31 extra/photos/gordon-rush-connery-cognac_product_9049361_color_184651.jpg
 -rw-r--r-- 1 srvander systemd-journal 117235 Aug 28 03:01 extra/photos/gravati-4-eyelet-plain-toe-oxford-black_product_9110376_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 137496 Aug 28 21:06 extra/photos/gravati-5-eyelet-oxford-bordeaux_product_9110375_color_189.jpg
 -rw-r--r-- 1 srvander systemd-journal 229397 Jun  7 21:08 extra/photos/gravati-6-eyelet-cap-toe-oxford-black_product_9110366_color_3.jpg
@@ -3040,6 +3058,8 @@
 -rw-r--r-- 1 srvander systemd-journal 114483 Aug 29 21:04 extra/photos/hush-puppies-heather-puff-ballet-dark-taupe-suede_product_9075829_color_20242.jpg
 -rw-r--r-- 1 srvander systemd-journal 142708 Aug 29 21:04 extra/photos/hush-puppies-heather-puff-ballet-navy-leather_product_9075829_color_492.jpg
 -rw-r--r-- 1 srvander systemd-journal 160194 Aug 21 21:09 extra/photos/hush-puppies-kids-bella-toddler-navy_product_9064615_color_9.jpg
+-rw-r--r-- 1 srvander systemd-journal 189156 Aug 30 09:37 extra/photos/hush-puppies-kids-bella-toddler-rose-gold_product_9064615_color_35560.jpg
+-rw-r--r-- 1 srvander systemd-journal 204411 Aug 30 09:37 extra/photos/hush-puppies-kids-jesse-toddler-stone_product_9064614_color_652.jpg
 -rw-r--r-- 1 srvander systemd-journal 159421 Aug  9 21:00 extra/photos/hush-puppies-kids-lazy-genius-little-kid-big-kid-navy_product_9064712_color_9.jpg
 -rw-r--r-- 1 srvander systemd-journal 186978 Aug 21 21:09 extra/photos/hush-puppies-kids-marley-toddler-silver_product_9064616_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 113619 Aug 20 21:05 extra/photos/hush-puppies-kids-school-moccasin-ts-field-little-kid-big-kid-black_product_9064716_color_3.jpg
@@ -3121,9 +3141,11 @@
 -rw-r--r-- 1 srvander systemd-journal 236516 Aug 14 21:01 extra/photos/jambu-kids-pythera-toddler-little-kid-big-kid-silver_product_8917063_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 224702 Aug 16 03:01 extra/photos/jambu-kids-rowan-toddler-little-kid-big-kid-black_product_9093245_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 214593 Aug 16 03:02 extra/photos/jambu-kids-rowan-toddler-little-kid-big-kid-pink_product_9093260_color_559.jpg
+-rw-r--r-- 1 srvander systemd-journal 102780 Aug 30 09:32 extra/photos/jambu-rumson-too-charcoal_product_9091279_color_275.jpg
 -rw-r--r-- 1 srvander systemd-journal 439597 Jun  9 03:07 extra/photos/jambu-rushmore-water-resistant-brown-full-grain-leather-kid-suede_product_8922092_color_705411.jpg
 -rw-r--r-- 1 srvander systemd-journal 462235 Jun  9 03:07 extra/photos/jambu-rushmore-water-resistant-midnight-full-grain-leather-kid-suede_product_8922092_color_705401.jpg
 -rw-r--r-- 1 srvander systemd-journal 130178 Aug 18 21:00 extra/photos/jambu-sunkist-black-chive_product_9091396_color_334032.jpg
+-rw-r--r-- 1 srvander systemd-journal 144572 Aug 30 09:35 extra/photos/jambu-toronto-black_product_9091418_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 173427 Aug 21 21:12 extra/photos/janie-and-jack-faux-leather-bow-ballet-infant-brown_product_9123649_color_6.jpg
 -rw-r--r-- 1 srvander systemd-journal 158059 Aug 21 21:12 extra/photos/janie-and-jack-loafer-crib-shoe-infant-navy_product_9123646_color_9.jpg
 -rw-r--r-- 1 srvander systemd-journal 258060 Jun 16 21:12 extra/photos/jbu-chloe-navy_product_8647117_color_9.jpg
@@ -3174,6 +3196,7 @@
 -rw-r--r-- 1 srvander systemd-journal 253793 Jun 20 14:33 extra/photos/jessica-simpson-lasnia-pewter-multi-glitter-gabor_product_9103482_color_706922.jpg
 -rw-r--r-- 1 srvander systemd-journal 166765 Aug 27 03:02 extra/photos/jessica-simpson-lucina-teal-lagoon-crytal-satin_product_8928473_color_771803.jpg
 -rw-r--r-- 1 srvander systemd-journal 232926 Aug  7 21:02 extra/photos/jessica-simpson-parisah-2-platinum-shimmer-sand_product_8986675_color_771821.jpg
+-rw-r--r-- 1 srvander systemd-journal 201179 Aug 30 09:33 extra/photos/jessica-simpson-parisah-3-nude-blush-lovely-lace_product_9103511_color_771822.jpg
 -rw-r--r-- 1 srvander systemd-journal 227797 Jun 12 21:17 extra/photos/jessica-simpson-parisah-white-rumba-snake_product_8975017_color_752224.jpg
 -rw-r--r-- 1 srvander systemd-journal 160745 Jun 12 21:15 extra/photos/jessica-simpson-paveny-black-glitter-gabor_product_9054729_color_728448.jpg
 -rw-r--r-- 1 srvander systemd-journal 162091 Jun 12 21:17 extra/photos/jessica-simpson-paveny-nude-blush-crystal-satin_product_9054729_color_713165.jpg
@@ -3191,6 +3214,8 @@
 -rw-r--r-- 1 srvander systemd-journal 149171 Aug 12 03:01 extra/photos/jewel-badgley-mischka-jaylee-silver_product_9129796_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 155404 Aug 28 03:01 extra/photos/jewel-badgley-mischka-jazmine-black_product_9129797_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 178893 Aug 26 03:02 extra/photos/jewel-badgley-mischka-jazmine-grape_product_9129797_color_956.jpg
+-rw-r--r-- 1 srvander systemd-journal 200976 Aug 30 09:33 extra/photos/jewel-badgley-mischka-jean-light-gold_product_9129798_color_38788.jpg
+-rw-r--r-- 1 srvander systemd-journal 126915 Aug 30 09:33 extra/photos/jewel-badgley-mischka-jean-silver_product_9129798_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 182726 Aug 23 03:00 extra/photos/jewel-badgley-mischka-maddison-light-gold_product_9126526_color_38788.jpg
 -rw-r--r-- 1 srvander systemd-journal  84046 Aug 27 21:00 extra/photos/jil-sander-navy-jn31003a-black_product_9153047_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal  68093 Aug 26 03:01 extra/photos/jil-sander-navy-jn31003a-dark-red_product_9153047_color_4188.jpg
@@ -3224,6 +3249,7 @@
 -rw-r--r-- 1 srvander systemd-journal 114255 Aug  6 21:01 extra/photos/johnston-murphy-waterproof-prentiss-xc4-r-casual-dress-plain-toe-sneaker-black-waterproof-full-grain_product_9014623_color_435437.jpg
 -rw-r--r-- 1 srvander systemd-journal 226451 Jun 17 21:15 extra/photos/johnston-murphy-xc4-waterproof-hollis-chukka-mahogany-waterproof-full-grain_product_8924370_color_435438.jpg
 -rw-r--r-- 1 srvander systemd-journal 109041 Aug 17 03:02 extra/photos/john-varvatos-jet-slip-on-black_product_9027068_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 113062 Aug 30 09:36 extra/photos/john-varvatos-laceless-low-top-smoke_product_9037882_color_1162.jpg
 -rw-r--r-- 1 srvander systemd-journal  99649 Aug 28 21:09 extra/photos/john-varvatos-multilace-low-cobalt_product_9119095_color_546999.jpg
 -rw-r--r-- 1 srvander systemd-journal 291619 Jun  8 21:36 extra/photos/john-varvatos-waverly-covered-chelsea-mineral-black_product_9000773_color_265455.jpg
 -rw-r--r-- 1 srvander systemd-journal 100923 Aug 23 21:01 extra/photos/joie-bickson-stud-black-lamb-nappa_product_9165539_color_35673.jpg
@@ -3325,6 +3351,7 @@
 -rw-r--r-- 1 srvander systemd-journal 289025 Jun  8 21:30 extra/photos/kamik-kids-riptide-toddler-little-kid-big-kid-navy-lime_product_9002160_color_1850.jpg
 -rw-r--r-- 1 srvander systemd-journal 224826 May 31 13:27 extra/photos/kamik-kids-snobuster-1-toddler-little-kid-big-kid-black_product_8565262_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 126980 Aug 22 21:03 extra/photos/kamik-kids-snobuster-2-toddler-little-kid-big-kid-navy-blue_product_9068220_color_3395.jpg
+-rw-r--r-- 1 srvander systemd-journal 119196 Aug 30 09:32 extra/photos/kamik-kids-snowcoastp-toddler-little-kid-big-kid-grape-lavender_product_9068118_color_68321.jpg
 -rw-r--r-- 1 srvander systemd-journal 215155 May 31 12:57 extra/photos/kamik-kids-stomp-2-toddler-little-kid-big-kid-olive_product_8648913_color_529.jpg
 -rw-r--r-- 1 srvander systemd-journal 244707 May 31 12:55 extra/photos/kamik-kids-stomp-toddler-little-kid-big-kid-black_product_126235_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 274085 May 31 12:52 extra/photos/kamik-kids-stomp-toddler-little-kid-big-kid-navy_product_126235_color_9.jpg
@@ -3755,7 +3782,10 @@
 -rw-r--r-- 1 srvander systemd-journal 127276 Aug 29 21:08 extra/photos/lartiste-by-spring-step-marivel-black_product_9108773_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 129430 Aug 29 21:08 extra/photos/lartiste-by-spring-step-marivel-brown_product_9108773_color_6.jpg
 -rw-r--r-- 1 srvander systemd-journal 133815 Aug 25 21:00 extra/photos/lartiste-by-spring-step-maryellen-black-multi_product_9108775_color_80.jpg
+-rw-r--r-- 1 srvander systemd-journal 123603 Aug 30 09:36 extra/photos/lartiste-by-spring-step-maryellen-turquoise-multi_product_9108775_color_14509.jpg
 -rw-r--r-- 1 srvander systemd-journal 178242 Aug 29 21:08 extra/photos/lartiste-by-spring-step-oda-brown-multi_product_9108780_color_3091.jpg
+-rw-r--r-- 1 srvander systemd-journal 134221 Aug 30 09:35 extra/photos/lartiste-by-spring-step-toolie-black_product_9108742_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal  97222 Aug 30 09:34 extra/photos/lartiste-by-spring-step-toolie-blue_product_9108742_color_158.jpg
 -rw-r--r-- 1 srvander systemd-journal 260512 Jun 17 21:27 extra/photos/la-sportiva-akasha-black-yellow_product_8630184_color_155.jpg
 -rw-r--r-- 1 srvander systemd-journal 271440 Jun 17 21:27 extra/photos/la-sportiva-helios-2-0-fjord_product_8630187_color_151036.jpg
 -rw-r--r-- 1 srvander systemd-journal 145218 Aug 11 03:06 extra/photos/la-sportiva-lycan-gtx-carbon-apple-green_product_9058364_color_724130.jpg
@@ -4051,6 +4081,7 @@
 -rw-r--r-- 1 srvander systemd-journal 163435 May 31 12:21 extra/photos/merrell-jungle-moc-nubuck-brown-nubuck_product_7460711_color_222.jpg
 -rw-r--r-- 1 srvander systemd-journal 224831 May 31 12:21 extra/photos/merrell-jungle-moc-taupe-suede_product_7460781_color_691.jpg
 -rw-r--r-- 1 srvander systemd-journal 227852 Jun  8 03:07 extra/photos/merrell-kids-alpine-casual-boot-waterproof-big-kid-brown_product_8689786_color_6.jpg
+-rw-r--r-- 1 srvander systemd-journal 222863 Aug 30 09:34 extra/photos/merrell-kids-bare-steps-sneaker-toddler-navy_product_9066285_color_9.jpg
 -rw-r--r-- 1 srvander systemd-journal 218356 Jun  4 21:14 extra/photos/merrell-kids-hilltop-mid-quick-close-waterproof-big-kid-brown-suede-mesh_product_8721258_color_115167.jpg
 -rw-r--r-- 1 srvander systemd-journal 233671 Jun 20 14:25 extra/photos/merrell-kids-hilltop-mid-quick-close-waterproof-little-kid-grey-multi-suede-mesh_product_8721070_color_633439.jpg
 -rw-r--r-- 1 srvander systemd-journal 460944 May 31 11:26 extra/photos/merrell-kids-hydro-toddler-little-kid-navy-green_product_8448931_color_20316.jpg
@@ -4365,6 +4396,7 @@
 -rw-r--r-- 1 srvander systemd-journal 177639 Aug 22 21:09 extra/photos/naturino-arezzo-aw18-little-kid-big-kid-blue-tan_product_9122303_color_22786.jpg
 -rw-r--r-- 1 srvander systemd-journal 130618 Aug 29 21:10 extra/photos/naturino-brooklyn-aw18-toddler-little-kid-royal-blue_product_9122417_color_605.jpg
 -rw-r--r-- 1 srvander systemd-journal 149741 Aug 22 21:02 extra/photos/naturino-bruges-star-vl-aw18-toddler-little-kid-navy_product_9122423_color_9.jpg
+-rw-r--r-- 1 srvander systemd-journal 174647 Aug 30 09:35 extra/photos/naturino-dragon-aw18-toddler-little-kid-navy_product_9122418_color_9.jpg
 -rw-r--r-- 1 srvander systemd-journal 130049 Aug 15 21:08 extra/photos/naturino-falcotto-venus-vl-aw18-toddler-denim_product_9122309_color_346.jpg
 -rw-r--r-- 1 srvander systemd-journal 244224 Aug 27 03:02 extra/photos/naturino-falcotto-venus-vl-aw18-toddler-gunmetal_product_9125308_color_411.jpg
 -rw-r--r-- 1 srvander systemd-journal 231876 Aug 29 21:11 extra/photos/naturino-falcotto-walt-vl-aw18-toddler-gunmetal_product_9125310_color_411.jpg
@@ -4379,6 +4411,7 @@
 -rw-r--r-- 1 srvander systemd-journal 129275 Aug 26 21:03 extra/photos/naturino-villag-aw18-toddler-little-kid-black_product_9122900_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 151601 Aug 26 03:00 extra/photos/naturino-villag-aw18-toddler-little-kid-silver_product_9122900_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 137968 Aug 22 21:02 extra/photos/naturino-volterra-aw18-toddler-little-kid-big-kid-black_product_9122421_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 144933 Aug 30 09:37 extra/photos/naturino-willy-vl-aw18-little-kid-big-kid-blue_product_9122412_color_158.jpg
 -rw-r--r-- 1 srvander systemd-journal 344813 Jun 16 21:13 extra/photos/neil-barrett-chain-derby-black_product_9001552_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 204336 Aug 20 21:15 extra/photos/new-balance-1260-v7-steel-poisonberry_product_8906920_color_700512.jpg
 -rw-r--r-- 1 srvander systemd-journal 217536 Aug  9 03:03 extra/photos/new-balance-420v4-mineral-sage-wild-indigo_product_8991090_color_765518.jpg
@@ -4429,6 +4462,7 @@
 -rw-r--r-- 1 srvander systemd-journal 206298 Jun  8 21:04 extra/photos/new-balance-classics-ws574-silver-mint_product_9042338_color_420812.jpg
 -rw-r--r-- 1 srvander systemd-journal 196331 Jun  7 21:03 extra/photos/new-balance-classics-ws574-sunrise-glo_product_9042338_color_657876.jpg
 -rw-r--r-- 1 srvander systemd-journal 240186 Jun  9 21:01 extra/photos/new-balance-classics-wz501-black_product_9042334_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 114204 Aug 30 09:34 extra/photos/new-balance-classics-wz501v1-cadet-blue-vapor_product_9051370_color_751011.jpg
 -rw-r--r-- 1 srvander systemd-journal 270413 Jun  8 21:42 extra/photos/new-balance-fresh-foam-1080v8-clear-sky-vivid-coral-black_product_8950823_color_729985.jpg
 -rw-r--r-- 1 srvander systemd-journal 299312 Jun 16 21:00 extra/photos/new-balance-fresh-foam-cruz-v1-black-sunrise-glo_product_8861414_color_746491.jpg
 -rw-r--r-- 1 srvander systemd-journal 234741 Jun 16 21:00 extra/photos/new-balance-fresh-foam-cruz-v1-white-munsell-vivid-coral_product_8861414_color_746490.jpg
@@ -4749,6 +4783,7 @@
 -rw-r--r-- 1 srvander systemd-journal  78810 Aug 21 21:04 extra/photos/nina-collina-black-peau_product_9145429_color_92.jpg
 -rw-r--r-- 1 srvander systemd-journal  81412 Aug 21 21:04 extra/photos/nina-collina-platino-reflective-suedette_product_9145429_color_737681.jpg
 -rw-r--r-- 1 srvander systemd-journal  77955 Aug 21 21:04 extra/photos/nina-collina-true-silver-reflective-suedette_product_9145429_color_737688.jpg
+-rw-r--r-- 1 srvander systemd-journal 123513 Aug 30 09:31 extra/photos/nina-deanne-antique-gold-metallic-fabric_product_9145446_color_784768.jpg
 -rw-r--r-- 1 srvander systemd-journal 125451 Aug  8 03:01 extra/photos/nina-diora-silver-dreamland_product_9107114_color_680591.jpg
 -rw-r--r-- 1 srvander systemd-journal 131192 Aug 15 03:01 extra/photos/nina-kids-averi-toddler-little-kid-big-kid-gold_product_9088657_color_385.jpg
 -rw-r--r-- 1 srvander systemd-journal 139318 Aug  6 12:30 extra/photos/nina-kids-aylee-toddler-little-kid-big-kid-black_product_9088658_color_3.jpg
@@ -4779,6 +4814,7 @@
 -rw-r--r-- 1 srvander systemd-journal 201890 Jun  9 03:02 extra/photos/nina-kids-nataly-toddler-little-kid-white_product_7752617_color_14.jpg
 -rw-r--r-- 1 srvander systemd-journal  79516 Aug 29 21:04 extra/photos/nina-madolyn-black-satin_product_9145453_color_99.jpg
 -rw-r--r-- 1 srvander systemd-journal  79923 Aug 29 21:01 extra/photos/nina-madolyn-new-navy-satin_product_9145453_color_134446.jpg
+-rw-r--r-- 1 srvander systemd-journal  93041 Aug 30 09:31 extra/photos/nina-madolyn-stone-satin_product_9145453_color_238870.jpg
 -rw-r--r-- 1 srvander systemd-journal 140540 Aug  7 03:03 extra/photos/nina-taela-new-navy-navy-satin-rose-applique_product_9108410_color_772788.jpg
 -rw-r--r-- 1 srvander systemd-journal 111937 Aug  6 12:30 extra/photos/nina-tonya-eggplant-satin_product_9107118_color_3520.jpg
 -rw-r--r-- 1 srvander systemd-journal 132354 Aug  8 03:01 extra/photos/nina-tonya-silver-glitter_product_9107118_color_19916.jpg
@@ -4830,6 +4866,8 @@
 -rw-r--r-- 1 srvander systemd-journal 123272 Aug 26 21:02 extra/photos/nine-west-seraphim-white-leather_product_9136274_color_15.jpg
 -rw-r--r-- 1 srvander systemd-journal 124449 Jun 21 03:03 extra/photos/nine-west-shoreside-dorsay-pump-black-black-bella-nappa-isa-kid-suede_product_8989175_color_729277.jpg
 -rw-r--r-- 1 srvander systemd-journal 197891 Jun  4 17:39 extra/photos/nine-west-tatiana-pump-black-leather_product_8262050_color_72.jpg
+-rw-r--r-- 1 srvander systemd-journal  90558 Aug 30 09:34 extra/photos/nine-west-watervelt-black-black-leather_product_9136280_color_4418.jpg
+-rw-r--r-- 1 srvander systemd-journal 125866 Aug 30 09:35 extra/photos/nine-west-watervelt-silver-metallic_product_9136280_color_934.jpg
 -rw-r--r-- 1 srvander systemd-journal 297310 May 31 12:03 extra/photos/not-rated-aleksa-peach_product_9042129_color_4912.jpg
 -rw-r--r-- 1 srvander systemd-journal 248134 Jun 13 21:00 extra/photos/not-rated-anna-sand_product_9042108_color_621.jpg
 -rw-r--r-- 1 srvander systemd-journal 180051 Aug  6 21:05 extra/photos/not-rated-anouk-black-microfiber_product_9108724_color_78.jpg
@@ -5265,6 +5303,7 @@
 -rw-r--r-- 1 srvander systemd-journal 142791 Aug 10 13:23 extra/photos/primigi-kids-pfa-24393-little-kid-black-leather_product_9096385_color_72.jpg
 -rw-r--r-- 1 srvander systemd-journal 352657 Aug 23 21:01 extra/photos/primigi-kids-pfa-24393-little-kid-black-patent_product_9096350_color_89.jpg
 -rw-r--r-- 1 srvander systemd-journal 174579 Aug 14 03:03 extra/photos/primigi-kids-pfa-24393-little-kid-blue-patent_product_9096350_color_164.jpg
+-rw-r--r-- 1 srvander systemd-journal 167306 Aug 30 09:34 extra/photos/primigi-kids-pfa-24394-toddler-little-kid-black_product_9096724_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 288855 Jun  8 21:17 extra/photos/primigi-kids-phd-14167-toddler-red_product_9022186_color_585.jpg
 -rw-r--r-- 1 srvander systemd-journal 102327 Aug 25 21:02 extra/photos/primigi-kids-pro-23857-toddler-little-kid-bordo_product_9096692_color_3259.jpg
 -rw-r--r-- 1 srvander systemd-journal 338882 Aug 29 21:00 extra/photos/primigi-kids-pro-23858-little-kid-black_product_9096718_color_3.jpg
@@ -5461,6 +5500,8 @@
 -rw-r--r-- 1 srvander systemd-journal 217879 Jun 17 03:18 extra/photos/red-wing-heritage-6-moc-toe-briar-oil-slick_product_7371513_color_191375.jpg
 -rw-r--r-- 1 srvander systemd-journal 149755 Jun 17 03:18 extra/photos/red-wing-heritage-6-moc-toe-copper-rough-tough_product_7371513_color_257559.jpg
 -rw-r--r-- 1 srvander systemd-journal 240617 Aug 29 21:09 extra/photos/reebok-crossfit-nano-8-0-cloud-grey-blue-slate-spirit-white-white_product_8995621_color_753716.jpg
+-rw-r--r-- 1 srvander systemd-journal 150404 Aug 30 09:36 extra/photos/reebok-crossfit-nano-8-0-spirit-white-cool-shadow-white-lemon-zest_product_8995621_color_753715.jpg
+-rw-r--r-- 1 srvander systemd-journal 124937 Aug 30 09:35 extra/photos/reebok-crossfit-nano-8-0-white-skull-grey-pure-silver_product_8995621_color_753713.jpg
 -rw-r--r-- 1 srvander systemd-journal 157622 Jun  8 21:41 extra/photos/reebok-kids-classic-leather-big-kid-athletic-navy-white-ice_product_7132225_color_341247.jpg
 -rw-r--r-- 1 srvander systemd-journal 208734 May 31 13:26 extra/photos/reebok-kids-classic-leather-big-kid-crisp-blue-white-gum_product_7132225_color_780195.jpg
 -rw-r--r-- 1 srvander systemd-journal 182070 Jun  1 10:40 extra/photos/reebok-kids-classic-leather-big-kid-desert-glow-white-gum_product_7132225_color_780194.jpg
@@ -5589,6 +5630,7 @@
 -rw-r--r-- 1 srvander systemd-journal 221048 Aug 28 21:09 extra/photos/rieker-d3816-thetkla-16-jeans-negro_product_9148002_color_786367.jpg
 -rw-r--r-- 1 srvander systemd-journal 207234 Aug 27 21:02 extra/photos/rieker-d5800-kaja-00-pazifik-metallic-navy_product_8909489_color_786506.jpg
 -rw-r--r-- 1 srvander systemd-journal 296435 Aug 28 21:09 extra/photos/rieker-d5811-kaja-11-black_product_9148016_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 132846 Aug 30 09:35 extra/photos/rieker-d7310-milla-04-black_product_9148021_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 145372 Aug 29 21:02 extra/photos/rieker-d7364-milla-64-schwarz-schwarz-metallic-schwarz_product_9148030_color_786392.jpg
 -rw-r--r-- 1 srvander systemd-journal 215157 Jun 17 21:20 extra/photos/rieker-d8570-emilia-70-black-black_product_8949980_color_183092.jpg
 -rw-r--r-- 1 srvander systemd-journal 309546 Jun 17 21:20 extra/photos/rieker-d8782-cheyenne-82-asphalt-whitelake-cigar_product_8950054_color_713241.jpg
@@ -5760,6 +5802,8 @@
 -rw-r--r-- 1 srvander systemd-journal 243757 Jun 20 14:11 extra/photos/rupert-sanderson-glynn-black-nappa-stretch_product_9136170_color_5100.jpg
 -rw-r--r-- 1 srvander systemd-journal 205592 Jun 20 14:10 extra/photos/rupert-sanderson-lullaby-sunrise-velvet_product_9136173_color_780934.jpg
 -rw-r--r-- 1 srvander systemd-journal 199799 Jun 20 14:10 extra/photos/rupert-sanderson-vision-black-polished-leather_product_9136168_color_1184.jpg
+-rw-r--r-- 1 srvander systemd-journal 213952 Aug 30 09:36 extra/photos/ryka-adel-alpine-green_product_9169911_color_218846.jpg
+-rw-r--r-- 1 srvander systemd-journal 172296 Aug 30 09:37 extra/photos/ryka-adel-blue_product_9169911_color_158.jpg
 -rw-r--r-- 1 srvander systemd-journal 168517 Aug 29 21:10 extra/photos/ryka-adel-grey_product_9169911_color_401.jpg
 -rw-r--r-- 1 srvander systemd-journal 241162 Jun 16 21:30 extra/photos/ryka-felicity-black_product_9125716_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 330458 Jun 15 03:02 extra/photos/ryka-hydro-sport-medieval-blue-sunlight-teal_product_8161033_color_709003.jpg
@@ -5767,6 +5811,7 @@
 -rw-r--r-- 1 srvander systemd-journal 282408 Jun  8 03:00 extra/photos/ryka-kailee-mint-grey_product_9027913_color_235624.jpg
 -rw-r--r-- 1 srvander systemd-journal 275172 Jun  4 17:45 extra/photos/ryka-savannah-red-pink_product_8840698_color_12077.jpg
 -rw-r--r-- 1 srvander systemd-journal 109374 Aug 28 03:00 extra/photos/ryka-terrie-black_product_9160350_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 117056 Aug 30 09:35 extra/photos/ryka-terrie-medium-blue_product_9160350_color_4008.jpg
 -rw-r--r-- 1 srvander systemd-journal 113394 Aug 28 03:00 extra/photos/ryka-terrie-wine_product_9160350_color_17.jpg
 -rw-r--r-- 1 srvander systemd-journal 253050 May 31 14:09 extra/photos/ryka-ultimate-forge-grey-black-mint-ice-chrome-silver_product_8372876_color_716900.jpg
 -rw-r--r-- 1 srvander systemd-journal 166608 Jun  4 21:34 extra/photos/ryka-valerie-poetic-pink-white_product_9027941_color_742678.jpg
@@ -5851,6 +5896,7 @@
 -rw-r--r-- 1 srvander systemd-journal  95372 Aug 14 03:03 extra/photos/sam-edelman-rini-black-kid-suede-leather_product_9086331_color_300922.jpg
 -rw-r--r-- 1 srvander systemd-journal 127234 Aug 28 21:12 extra/photos/sam-edelman-rosalie-sand-jungle-leopard-brahma-hair_product_9131022_color_704624.jpg
 -rw-r--r-- 1 srvander systemd-journal 104223 Aug 25 03:01 extra/photos/sam-edelman-stillson-deep-red-kid-suede-leather_product_8919504_color_779748.jpg
+-rw-r--r-- 1 srvander systemd-journal 118416 Aug 30 09:33 extra/photos/sam-edelman-tara-white-stretch-knit_product_9162575_color_792877.jpg
 -rw-r--r-- 1 srvander systemd-journal 134443 Aug 29 21:05 extra/photos/sam-edelman-tara-wine-stretch-knit_product_9162575_color_792876.jpg
 -rw-r--r-- 1 srvander systemd-journal 166531 May 31 12:51 extra/photos/sam-edelman-tinsley-black-matte_product_8605266_color_81304.jpg
 -rw-r--r-- 1 srvander systemd-journal 204224 Jun 16 21:05 extra/photos/sam-edelman-yaro-ankle-strap-sandal-heel-jute-glam-mesh-1_product_8828722_color_766009.jpg
@@ -6365,6 +6411,7 @@
 -rw-r--r-- 1 srvander systemd-journal 217942 Jun  1 10:18 extra/photos/soludos-platform-smoking-slipper-sunset_product_8516844_color_2954.jpg
 -rw-r--r-- 1 srvander systemd-journal 209465 Jun  1 10:18 extra/photos/soludos-platform-smoking-slipper-white-1_product_8516844_color_90782.jpg
 -rw-r--r-- 1 srvander systemd-journal 147863 Aug 30 03:00 extra/photos/soludos-velvet-llama-sneaker-navy_product_8984988_color_9.jpg
+-rw-r--r-- 1 srvander systemd-journal 155382 Aug 30 09:32 extra/photos/soludos-velvet-sheep-sneaker-midnight-blue_product_9137851_color_10391.jpg
 -rw-r--r-- 1 srvander systemd-journal 133204 Aug 29 21:11 extra/photos/soludos-venetian-bootie-black-1_product_8984967_color_125647.jpg
 -rw-r--r-- 1 srvander systemd-journal 188745 Aug 29 21:07 extra/photos/soludos-venetian-loafer-black_product_9137855_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 201219 Aug 29 21:08 extra/photos/soludos-venetian-loafer-navy_product_9137855_color_9.jpg
@@ -6507,6 +6554,7 @@
 -rw-r--r-- 1 srvander systemd-journal 251880 Jun  8 21:35 extra/photos/sperry-saltwater-misty-navy-brown-fur_product_8720664_color_697251.jpg
 -rw-r--r-- 1 srvander systemd-journal 352374 Jun  8 21:35 extra/photos/sperry-saltwater-shiny-quilted-dark-teal_product_8899214_color_43817.jpg
 -rw-r--r-- 1 srvander systemd-journal 121912 Aug 21 21:12 extra/photos/sperry-seaport-elise-loafer-black-multi-leopard_product_9060729_color_756086.jpg
+-rw-r--r-- 1 srvander systemd-journal  90965 Aug 30 09:32 extra/photos/sperry-seaport-penny-snake-red_product_9060745_color_585.jpg
 -rw-r--r-- 1 srvander systemd-journal 164549 Jun  4 17:42 extra/photos/sperry-seaside-washable-black_product_9058173_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 175083 Jun  8 21:01 extra/photos/sperry-seaside-washable-grey_product_9058173_color_401.jpg
 -rw-r--r-- 1 srvander systemd-journal 167129 Jun  4 17:43 extra/photos/sperry-seaside-washable-navy_product_9058173_color_9.jpg
@@ -6520,6 +6568,8 @@
 -rw-r--r-- 1 srvander systemd-journal 142393 Aug 17 03:07 extra/photos/sperry-watertown-ltt-boot-brown-suede_product_9061584_color_231.jpg
 -rw-r--r-- 1 srvander systemd-journal 164270 Aug 17 03:07 extra/photos/sperry-watertown-ltt-boot-dark-brown_product_9061584_color_325.jpg
 -rw-r--r-- 1 srvander systemd-journal 113068 Aug 27 21:00 extra/photos/splendid-callen-greystone-suede_product_9137057_color_423857.jpg
+-rw-r--r-- 1 srvander systemd-journal 118092 Aug 30 09:32 extra/photos/splendid-carla-black_product_9137058_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 109920 Aug 30 09:35 extra/photos/splendid-chester-black_product_9138313_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 138548 Aug 27 03:00 extra/photos/splendid-chester-greystone_product_9138313_color_5818.jpg
 -rw-r--r-- 1 srvander systemd-journal 105765 Aug 27 03:00 extra/photos/splendid-chester-oat_product_9138313_color_526.jpg
 -rw-r--r-- 1 srvander systemd-journal 153628 Aug 28 03:00 extra/photos/splendid-clayton-greystone_product_9160353_color_5818.jpg
@@ -6539,7 +6589,9 @@
 -rw-r--r-- 1 srvander systemd-journal 234611 May 31 13:52 extra/photos/splendid-roselyn-ii-light-taupe_product_8958349_color_434.jpg
 -rw-r--r-- 1 srvander systemd-journal 188613 Jun  4 21:21 extra/photos/spring-step-binzo-black_product_8618641_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 242815 Jun  4 21:21 extra/photos/spring-step-binzo-brown_product_8618641_color_6.jpg
+-rw-r--r-- 1 srvander systemd-journal 243277 Aug 30 09:32 extra/photos/spring-step-carlotta-black_product_9104946_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 184814 Aug 29 21:01 extra/photos/spring-step-carlotta-navy_product_9104946_color_9.jpg
+-rw-r--r-- 1 srvander systemd-journal 154500 Aug 30 09:33 extra/photos/spring-step-carlotta-red_product_9104946_color_585.jpg
 -rw-r--r-- 1 srvander systemd-journal 129910 Aug 20 03:04 extra/photos/spring-step-dayana-black_product_9104951_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 118234 Aug 17 03:04 extra/photos/spring-step-dayana-brown_product_9104951_color_6.jpg
 -rw-r--r-- 1 srvander systemd-journal 115407 Aug 17 03:04 extra/photos/spring-step-elvera-black_product_9104953_color_3.jpg
@@ -6554,6 +6606,7 @@
 -rw-r--r-- 1 srvander systemd-journal 186586 Jun  4 17:53 extra/photos/spring-step-junita-taupe_product_9019225_color_11.jpg
 -rw-r--r-- 1 srvander systemd-journal 159722 Jun 21 03:02 extra/photos/spring-step-kina-black-multi_product_8716243_color_80.jpg
 -rw-r--r-- 1 srvander systemd-journal 187651 Jun 21 03:02 extra/photos/spring-step-kina-white_product_8716243_color_14.jpg
+-rw-r--r-- 1 srvander systemd-journal 126017 Aug 30 09:33 extra/photos/spring-step-montania-navy-suede_product_9104968_color_500.jpg
 -rw-r--r-- 1 srvander systemd-journal 143629 Aug 16 03:02 extra/photos/spring-step-rorie-black_product_8775868_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 116477 Aug 20 03:04 extra/photos/spring-step-rorie-taupe-multi_product_8775868_color_43863.jpg
 -rw-r--r-- 1 srvander systemd-journal 318960 Jun  7 21:02 extra/photos/spring-step-sambai-black_product_9042488_color_3.jpg
@@ -6580,6 +6633,7 @@
 -rw-r--r-- 1 srvander systemd-journal 221479 Jun 12 21:13 extra/photos/stacy-adams-golato-gray_product_8946871_color_8.jpg
 -rw-r--r-- 1 srvander systemd-journal 221638 Jun 12 21:12 extra/photos/stacy-adams-golato-olive_product_8946871_color_529.jpg
 -rw-r--r-- 1 srvander systemd-journal 207071 Jun 12 21:13 extra/photos/stacy-adams-golato-plum_product_8946871_color_568.jpg
+-rw-r--r-- 1 srvander systemd-journal 145377 Aug 30 09:37 extra/photos/stacy-adams-jonas-black_product_9139876_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 117548 Aug 29 21:11 extra/photos/stacy-adams-neville-black-suede_product_9139859_color_106.jpg
 -rw-r--r-- 1 srvander systemd-journal 131849 Aug 26 21:02 extra/photos/stacy-adams-neville-gray-suede_product_9139859_color_394.jpg
 -rw-r--r-- 1 srvander systemd-journal 197045 Aug 22 21:07 extra/photos/stacy-adams-swank-white-multi_product_9159534_color_2927.jpg
@@ -6625,6 +6679,7 @@
 -rw-r--r-- 1 srvander systemd-journal 178605 Aug 29 21:08 extra/photos/steve-madden-ferro-black-fabric_product_9128299_color_68.jpg
 -rw-r--r-- 1 srvander systemd-journal 322861 Jun  4 21:13 extra/photos/steve-madden-fowler-black_product_9088478_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 283530 Jun  4 21:13 extra/photos/steve-madden-fowler-navy_product_9088478_color_9.jpg
+-rw-r--r-- 1 srvander systemd-journal 192729 Aug 30 09:33 extra/photos/steve-madden-fridged-black_product_9129969_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 164262 May 31 14:06 extra/photos/steve-madden-gills-p-sneaker-black-suede_product_9049709_color_106.jpg
 -rw-r--r-- 1 srvander systemd-journal 148570 May 31 14:06 extra/photos/steve-madden-gills-p-sneaker-natural-suede_product_9049709_color_1758.jpg
 -rw-r--r-- 1 srvander systemd-journal  97884 Aug  8 21:01 extra/photos/steve-madden-gills-sneaker-burgundy-suede_product_8839124_color_1122.jpg
@@ -6641,6 +6696,7 @@
 -rw-r--r-- 1 srvander systemd-journal 223401 May 31 16:16 extra/photos/steve-madden-kids-jevers-little-kid-big-kid-blush_product_9023672_color_5249.jpg
 -rw-r--r-- 1 srvander systemd-journal 177213 Aug 20 21:12 extra/photos/steve-madden-kids-jmaggy-little-kid-big-kid-black_product_9106813_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal  93587 Aug 16 03:01 extra/photos/steve-madden-kids-jnghout-little-kid-big-kid-silver_product_9106120_color_632.jpg
+-rw-r--r-- 1 srvander systemd-journal 105879 Aug 30 09:35 extra/photos/steve-madden-kids-jrosie-little-kid-big-kid-black_product_9106816_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 157213 Jun  4 17:52 extra/photos/steve-madden-kids-jsasha-little-kid-big-kid-black_product_9023692_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 175724 Aug 17 03:02 extra/photos/steve-madden-kids-jview-little-kid-big-kid-silver_product_9106096_color_632.jpg
 -rw-r--r-- 1 srvander systemd-journal 214258 May 31 13:34 extra/photos/steve-madden-kids-thenry-toddler-cognac_product_9047192_color_184651.jpg
@@ -6680,6 +6736,7 @@
 -rw-r--r-- 1 srvander systemd-journal 176286 Aug 14 03:03 extra/photos/steve-madden-tabloid-dark-tan_product_9087531_color_342.jpg
 -rw-r--r-- 1 srvander systemd-journal  94866 Aug 26 03:04 extra/photos/steve-madden-tampa-black-suede_product_9111631_color_106.jpg
 -rw-r--r-- 1 srvander systemd-journal  76181 Aug 17 03:13 extra/photos/steve-madden-trace-b-flat-mule-black-suede_product_9127490_color_106.jpg
+-rw-r--r-- 1 srvander systemd-journal 189682 Aug 30 09:37 extra/photos/steve-madden-tynker-black_product_9111668_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 332683 May 31 12:36 extra/photos/steve-madden-vasco-black-suede_product_9080290_color_106.jpg
 -rw-r--r-- 1 srvander systemd-journal 339287 May 31 12:35 extra/photos/steve-madden-vasco-cognac-suede_product_9080290_color_4971.jpg
 -rw-r--r-- 1 srvander systemd-journal 302777 May 31 12:35 extra/photos/steve-madden-vasco-olive-suede_product_9080290_color_963.jpg
@@ -6896,6 +6953,7 @@
 -rw-r--r-- 1 srvander systemd-journal 112537 Aug 27 21:01 extra/photos/ted-baker-hjenno-tan_product_9114002_color_20.jpg
 -rw-r--r-- 1 srvander systemd-journal 224822 Jun 17 21:20 extra/photos/ted-baker-hourb-2-black-high-shine_product_8757830_color_230694.jpg
 -rw-r--r-- 1 srvander systemd-journal 164389 Jun  7 21:14 extra/photos/ted-baker-hourb-2-black-leather_product_8757830_color_72.jpg
+-rw-r--r-- 1 srvander systemd-journal 114277 Aug 30 09:36 extra/photos/ted-baker-immet-2-rose-gold_product_9105238_color_35560.jpg
 -rw-r--r-- 1 srvander systemd-journal  92898 Aug 29 21:05 extra/photos/ted-baker-jhorge-black_product_9114009_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal  92856 Aug 29 21:01 extra/photos/ted-baker-jhorge-dark-red_product_9114009_color_4188.jpg
 -rw-r--r-- 1 srvander systemd-journal 199423 Jun 17 03:22 extra/photos/ted-baker-kaliix-light-blue-suede_product_9050640_color_5853.jpg
@@ -7109,6 +7167,8 @@
 -rw-r--r-- 1 srvander systemd-journal 269552 Jun 12 21:19 extra/photos/timberland-pro-titan-oxford-soft-toe-haystack-brown-oiled-full-grain-leather_product_7246645_color_67151.jpg
 -rw-r--r-- 1 srvander systemd-journal  20428 Jun  4 21:30 extra/photos/timberland-pro-titan-waterproof-6-safety-toe-dark-mocha_product_7309289_color_23682.jpg
 -rw-r--r-- 1 srvander systemd-journal 115174 Aug 17 03:07 extra/photos/timberland-pro-valor-duty-6-soft-toe-black_product_9055793_color_3.jpg
+-rw-r--r-- 1 srvander systemd-journal 129408 Aug 30 09:34 extra/photos/timberland-sutherlin-bay-tall-boot-black-full-grain_product_9068344_color_69.jpg
+-rw-r--r-- 1 srvander systemd-journal 126255 Aug 30 09:35 extra/photos/timberland-sutherlin-bay-tall-boot-dark-grey-suede_product_9068344_color_17947.jpg
 -rw-r--r-- 1 srvander systemd-journal 244860 May 31 12:48 extra/photos/timberland-white-ledge-mid-waterproof-brown_product_7144940_color_249607.jpg
 -rw-r--r-- 1 srvander systemd-journal 329381 May 31 12:48 extra/photos/timberland-white-ledge-mid-waterproof-wheat_product_7144940_color_716.jpg
 -rw-r--r-- 1 srvander systemd-journal 328722 May 31 13:24 extra/photos/tkees-face-paints-chatty-cheetah_product_8177029_color_429219.jpg
@@ -7168,10 +7228,12 @@
 -rw-r--r-- 1 srvander systemd-journal 296853 Jun 15 21:07 extra/photos/tommy-hilfiger-tai-2-blush-leather_product_9085406_color_15243.jpg
 -rw-r--r-- 1 srvander systemd-journal 286133 Jun  4 21:34 extra/photos/toms-avalon-rose-gold-metallic-woven_product_8771252_color_759495.jpg
 -rw-r--r-- 1 srvander systemd-journal 344243 Jun 18 03:13 extra/photos/toms-avalon-sneaker-black-coated-canvas_product_8639539_color_209289.jpg
+-rw-r--r-- 1 srvander systemd-journal 171484 Aug 30 09:33 extra/photos/toms-balboa-mid-toffee-suede_product_9066572_color_110986.jpg
 -rw-r--r-- 1 srvander systemd-journal 264755 Aug  6 13:09 extra/photos/toms-beverly-infiinity-blue-suede_product_9069231_color_759791.jpg
 -rw-r--r-- 1 srvander systemd-journal 206302 May 31 14:02 extra/photos/toms-cabrillo-deep-cobalt-vintage-flower-heritage-canvas_product_8983363_color_759535.jpg
 -rw-r--r-- 1 srvander systemd-journal 203823 May 31 14:02 extra/photos/toms-cabrillo-infinity-blue-textured-velour-mix_product_8983363_color_759534.jpg
 -rw-r--r-- 1 srvander systemd-journal 199767 May 31 14:02 extra/photos/toms-cabrillo-rose-cloud-textured-velour-mix_product_8983363_color_759536.jpg
+-rw-r--r-- 1 srvander systemd-journal 259984 Aug 30 09:36 extra/photos/toms-camarillo-black-corduroy_product_9068379_color_5295.jpg
 -rw-r--r-- 1 srvander systemd-journal 216696 Jun  8 21:06 extra/photos/toms-camarillo-natural-metallic-granite-fleck_product_9068379_color_759553.jpg
 -rw-r--r-- 1 srvander systemd-journal 250446 Aug 29 21:10 extra/photos/toms-carmel-spice-corduroy_product_9066691_color_759545.jpg
 -rw-r--r-- 1 srvander systemd-journal 354634 May 31 12:23 extra/photos/toms-classic-canvas-black_product_7389627_color_3.jpg
@@ -7210,11 +7272,14 @@
 -rw-r--r-- 1 srvander systemd-journal 175439 Aug  6 13:08 extra/photos/toms-paxton-dark-blush-textural-canvas-quilted-nylon_product_9067465_color_759237.jpg
 -rw-r--r-- 1 srvander systemd-journal 202652 Aug  6 13:09 extra/photos/toms-paxton-shade-suede_product_9066617_color_725381.jpg
 -rw-r--r-- 1 srvander systemd-journal 185308 Jul 16 03:00 extra/photos/toms-payton-bark-oiled-suede-cotton-twill_product_8983334_color_758899.jpg
+-rw-r--r-- 1 srvander systemd-journal 179971 Aug 30 09:35 extra/photos/toms-porter-dark-brown-leather_product_8893922_color_328.jpg
 -rw-r--r-- 1 srvander systemd-journal 208248 Jul 15 03:00 extra/photos/toms-preston-peanut-brown-leather_product_8983358_color_758883.jpg
+-rw-r--r-- 1 srvander systemd-journal 182774 Aug 30 09:32 extra/photos/toms-rio-blush-suede_product_9068352_color_10909.jpg
 -rw-r--r-- 1 srvander systemd-journal 185344 Aug 29 21:07 extra/photos/toms-rio-dark-amber-suede_product_9068352_color_157779.jpg
 -rw-r--r-- 1 srvander systemd-journal 229773 Jun  8 21:23 extra/photos/toms-seasonal-classics-charcoal-herringbone_product_8638638_color_129807.jpg
 -rw-r--r-- 1 srvander systemd-journal 193445 Jun 18 03:01 extra/photos/toms-seasonal-classics-slate-blue-washed-twill_product_8639483_color_661264.jpg
 -rw-r--r-- 1 srvander systemd-journal 214458 Aug  6 13:12 extra/photos/toms-shaye-blush-suede_product_9069162_color_10909.jpg
+-rw-r--r-- 1 srvander systemd-journal 272162 Aug 30 09:36 extra/photos/toms-sunset-stellar-blue-metallic-jaquard_product_8983311_color_759472.jpg
 -rw-r--r-- 1 srvander systemd-journal 208132 Aug  6 21:06 extra/photos/toms-venice-collection-alpargata-birch-technical-knit_product_9066639_color_758678.jpg
 -rw-r--r-- 1 srvander systemd-journal 292110 Jul 15 03:00 extra/photos/toms-venice-collection-alpargata-inspired-woven-blanket-stitch-on-rope_product_9066639_color_759462.jpg
 -rw-r--r-- 1 srvander systemd-journal 289941 Aug  6 21:06 extra/photos/toms-venice-collection-alpargata-washed-camo-blanket-stitch-on-rope_product_9066639_color_759456.jpg
@@ -7894,6 +7959,7 @@
 -rw-r--r-- 1 srvander systemd-journal 149896 Aug 29 21:01 extra/photos/vionic-mara-black_product_9068337_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 164311 Aug 29 21:07 extra/photos/vionic-mara-chocolate_product_9068337_color_18.jpg
 -rw-r--r-- 1 srvander systemd-journal 190542 Aug 21 03:00 extra/photos/vionic-mens-tide-taupe_product_8571301_color_11.jpg
+-rw-r--r-- 1 srvander systemd-journal 180538 Aug 30 09:33 extra/photos/vionic-trinity-chocolate_product_9068504_color_18.jpg
 -rw-r--r-- 1 srvander systemd-journal 215716 Jul  6 21:00 extra/photos/vionic-turner-black-black_product_8982453_color_183092.jpg
 -rw-r--r-- 1 srvander systemd-journal 107225 Aug 24 21:04 extra/photos/vivobarefoot-primus-swimrun-boot-soft-ground-mesh-black-orange_product_9080586_color_2294.jpg
 -rw-r--r-- 1 srvander systemd-journal 119107 Aug 22 21:01 extra/photos/vivobarefoot-primus-swimrun-boot-soft-ground-mesh-black-orange_product_9081201_color_2294.jpg
@@ -7909,6 +7975,7 @@
 -rw-r--r-- 1 srvander systemd-journal  87672 Aug 28 21:08 extra/photos/volatile-bondi-off-white_product_9126672_color_527.jpg
 -rw-r--r-- 1 srvander systemd-journal 111664 Aug 22 21:04 extra/photos/volatile-cannon-black_product_8964941_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal  90149 Aug 29 21:02 extra/photos/volatile-malone-champagne_product_9126707_color_270.jpg
+-rw-r--r-- 1 srvander systemd-journal 117427 Aug 30 09:33 extra/photos/volatile-morie-black_product_9128756_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal 108236 Aug 22 21:08 extra/photos/volatile-pross-black_product_9128772_color_3.jpg
 -rw-r--r-- 1 srvander systemd-journal  91213 Aug 22 21:08 extra/photos/volatile-pross-chocolate_product_9128772_color_18.jpg
 -rw-r--r-- 1 srvander systemd-journal  91446 Aug 22 21:08 extra/photos/volatile-pross-tan_product_9128772_color_20.jpg

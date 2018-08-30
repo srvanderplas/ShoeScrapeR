@@ -47,6 +47,8 @@ shoe_res <- fcn_opts %>%
 # system("docker rm $(docker ps -a -q)")
 
 system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
+
+system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/")
 #system("git add photos/*")
 system("ls -al extra/photos/* > image_manifest")
 system("git add image_manifest inst/cron.log")
@@ -56,8 +58,6 @@ system("git push")
 
 # Process image with bash script
 # system("../inst/ParallelProcess.sh")
-
-
 # chunkfiles <- list.files("processed/toslice/", full.names = F)
 # chunkfiles <- sort(chunkfiles)
 # chunk_df <- data_frame(

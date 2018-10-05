@@ -53,6 +53,7 @@ system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSA
 system("ls -al extra/photos/* > image_manifest")
 system("git add image_manifest inst/cron.log")
 system("git commit -a -m 'Automatic Update'")
+system("git pull")
 system("git push")
 
 

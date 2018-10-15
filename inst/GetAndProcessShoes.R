@@ -50,8 +50,8 @@ system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /hom
 
 system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/")
 #system("git add photos/*")
-system("ls -al extra/photos/* > image_manifest")
-system("git add image_manifest inst/cron.log")
+system("ls -al /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/* > image_manifest")
+system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log")
 system("git commit -a -m 'Automatic Update'")
 system("git pull")
 system("git push")

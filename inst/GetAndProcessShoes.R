@@ -36,7 +36,7 @@ fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
                         query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
   as_data_frame() %>%
-  mutate(path = here::here("extra/photos/"))
+  mutate(path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
 
 shoe_res <- fcn_opts %>%
   group_by_all() %>%

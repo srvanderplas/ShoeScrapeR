@@ -11,46 +11,6 @@ Status of splash instance on [http://localhost:8050]: ok. Max RSS: 72 Mb
 
 Status of splash instance on [http://localhost:8050]: ok. Max RSS: 72 Mb
 
-trying URL 'https://m.media-amazon.com/images/I/71hqWMtGzsL._SX1920_.jpg'
-Content type 'image/jpeg' length 142522 bytes (139 KB)
-==================================================
-downloaded 139 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71nXq3f5i5L._SX1920_.jpg'
-Content type 'image/jpeg' length 191438 bytes (186 KB)
-==================================================
-downloaded 186 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61-8WYFydkL._SX1920_.jpg'
-Content type 'image/jpeg' length 124087 bytes (121 KB)
-==================================================
-downloaded 121 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71JsDPp9RwL._SX1920_.jpg'
-Content type 'image/jpeg' length 167969 bytes (164 KB)
-==================================================
-downloaded 164 KB
-
-trying URL 'https://m.media-amazon.com/images/I/717uva3d2TL._SX1920_.jpg'
-Content type 'image/jpeg' length 140899 bytes (137 KB)
-==================================================
-downloaded 137 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71kdAAjLIcL._SX1920_.jpg'
-Content type 'image/jpeg' length 143166 bytes (139 KB)
-==================================================
-downloaded 139 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71ERrMkdP0L._SX1920_.jpg'
-Content type 'image/jpeg' length 149498 bytes (145 KB)
-==================================================
-downloaded 145 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Xu3WTGdiL._SX1920_.jpg'
-Content type 'image/jpeg' length 101018 bytes (98 KB)
-==================================================
-downloaded 98 KB
-
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
@@ -75,12 +35,6 @@ Error in curl::curl_fetch_memory(url, handle = handle) :
   Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Recv failure: Connection reset by peer
-Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
-Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
-Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Failed to connect to localhost port 8050: Connection refused
 Error in curl::curl_fetch_memory(url, handle = handle) : 

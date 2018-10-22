@@ -6,10 +6,16 @@ library(stringr)
 library(odbc)
 library(DBI)
 
+library(splashr)
+library(docker)
+
 # Deal with docker
 available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
 running_containers <- system("docker ps --filter name='splash' -q", intern = T)
 stopped_containers <- available_containers[! available_containers %in% running_containers]
+
+running_containers
+
 if (length(running_containers) == 0) {
   if (length(available_containers) > 0) {
     system(sprintf("docker start %s", available_containers[1]))

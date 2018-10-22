@@ -7,9 +7,24 @@
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 Loading required package: methods
-Status of splash instance on [http://localhost:8050]: ok. Max RSS: 71 Mb
+[1] "fc42be2085c9"
+Status of splash instance on [http://localhost:8050]: ok. Max RSS: 72 Mb
 
-Status of splash instance on [http://localhost:8050]: ok. Max RSS: 71 Mb
+List of 7
+ $ active  : list()
+ $ argcache: int 0
+ $ fds     : int 15
+ $ leaks   :List of 4
+  ..$ Deferred  : int 50
+  ..$ LuaRuntime: int 1
+  ..$ QTimer    : int 1
+  ..$ Request   : int 1
+ $ maxrss  : int 73508
+ $ qsize   : int 0
+ $ url     : chr "http://localhost:8050"
+ - attr(*, "class")= chr [1:2] "splash_debug" "list"
+NULL
+Status of splash instance on [http://localhost:8050]: ok. Max RSS: 72 Mb
 
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Recv failure: Connection reset by peer
@@ -28,15 +43,11 @@ Error in curl::curl_fetch_memory(url, handle = handle) :
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
+  Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
+  Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
-Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
-Error in curl::curl_fetch_memory(url, handle = handle) : 
-  Failed to connect to localhost port 8050: Connection refused
+  Recv failure: Connection reset by peer
 Error in curl::curl_fetch_memory(url, handle = handle) : 
   Failed to connect to localhost port 8050: Connection refused
 Error in curl::curl_fetch_memory(url, handle = handle) : 

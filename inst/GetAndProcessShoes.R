@@ -62,6 +62,11 @@ system("git commit -a -m 'Automatic Update'")
 system("git pull")
 system("git push")
 
+flist <- list.files("/home/srvander/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
+
+write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
+            "/home/srvander/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
+            row.names = F, col.names = F, quote = F)
 
 # Process image with bash script
 # system("../inst/ParallelProcess.sh")

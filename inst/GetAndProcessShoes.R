@@ -44,9 +44,13 @@ fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
   as_data_frame() %>%
   mutate(path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
 
+try_scrape_soles <- function(...) {
+  try(scrape_soles(...))
+}
+
 shoe_res <- fcn_opts %>%
   group_by_all() %>%
-  pmap_dfr(scrape_soles) %>%
+  pmap_dfr(try_scrape_soles) %>%
   unique()
 
 # system("docker stop $(docker ps -a -q)")

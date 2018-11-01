@@ -88,6 +88,8 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
     sa <- splashr::splash_active()
   }
   stopifnot(sa)
+  
+  Sys.sleep(1)
 
   if (substr(path, nchar(path), nchar(path)) != "/") {
     path <- paste0(path, "/")

@@ -4,10 +4,11 @@
 #' Pass in a url of the style https://www.zappos.com/p/...
 #' @param i url
 #' @param path path to save files
+#' @param crop should image be cropped using magick?
 #' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
 #' @importFrom magrittr '%>%'
 #' @export
-get_bottom_image <- function(i, path = "inst/photos/") {
+get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
   # i is the shoe page link
 
   if (!dir.exists(path)) {
@@ -45,8 +46,15 @@ get_bottom_image <- function(i, path = "inst/photos/") {
         # Get higher resolution
         stringr::str_replace("SR106,78", "SX1920") %>%
         download.file(destfile = dlfile)
+      
+      if (crop) {
+        cmd <- sprintf("convert %s -bordercolor white -border 1x1 -trim +repage -border 5x5 %s", dlfile)
+        system(cmd)
+      }
       # print(TRUE)
       return(tmp == 0)
+      
+      sprintf
     } else {
       # print(FALSE)
       return(FALSE)

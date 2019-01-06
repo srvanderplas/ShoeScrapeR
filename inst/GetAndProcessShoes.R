@@ -6,34 +6,13 @@ library(stringr)
 library(odbc)
 library(DBI)
 
-library(splashr)
+library(RSelenium)
 library(docker)
 
 # Deal with docker
-available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
-running_containers <- system("docker ps --filter name='splash' -q", intern = T)
-stopped_containers <- available_containers[! available_containers %in% running_containers]
-
-running_containers
-
-if (length(running_containers) == 0) {
-  if (length(available_containers) > 0) {
-    system(sprintf("docker start %s", available_containers[1]))
-    available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
-    stopped_containers <- available_containers[! available_containers %in% running_containers]
-  } else {
-    container <- splashr::start_splash()
-    available_containers <- system("docker ps --filter name='splash' -a -q", intern = T)
-    stopped_containers <- available_containers[! available_containers %in% running_containers]
-  }
-}
-
-stopifnot(splashr::splash_active())
-
-if (length(stopped_containers) > 1) {
-  # Clean up stopped containers
-  system(sprintf("docker rm %s", stopped_containers))
-}
+try(system('docker run -d -p 4445:4444 selenium/standalone-firefox'))
+# remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
+# remDr$open()
 
 # Create a data frame of all combinations of parameters type and population
 

@@ -9,8 +9,11 @@
 #' @importFrom magrittr '%>%'
 #' @export
 get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
+  Sys.sleep(1)
   # i is the shoe page link
-
+  remDr <- RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
+  suppressMessages(remDr$open())
+  on.exit(remDr$close())
   if (!dir.exists(path)) {
     dir.create(path, recursive =  T)
   }
@@ -25,20 +28,27 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
   dlfile <- paste0(path, photoname, ".jpg")
   if (!file.exists(dlfile)) {
     # Sys.sleep(1)
-    photolinks <- try(splashr::render_html(url = i))
-
-    if ("try-error" %in% class(photolinks)) {
-      return(FALSE)
-    } else {
-      photolinks <- photolinks %>%
-        rvest::html_nodes(css = "button span img")
+    remDr$navigate(i) 
+    photolinks <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
+    n <- 5
+    loaded <- FALSE
+    while (n > 0 & !loaded) {
+      if ("try-error" %in% class(photolinks)) {
+        return(FALSE)
+      } else {
+        photolinks <- photolinks %>%
+          rvest::html_nodes(css = "button span img")
+      }
+      
+      loaded <- length(photolinks) > 4
+      n <- n - 1
     }
-
+    
     # Which one is bottom?
     bottomphoto <- which(rvest::html_attr(photolinks, "alt") == "BOTT")
-
-    if (length(bottomphoto) > 0) {
-      tmp <- photolinks %>%
+    
+    gbpic <- function(m) {
+      m %>%
         # Get photo link
         rvest::html_attr("src") %>%
         # Only keep photo of sole
@@ -46,13 +56,23 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
         # Get higher resolution
         stringr::str_replace("SR106,78", "SX1920") %>%
         download.file(destfile = dlfile)
+    }
+
+    if (length(bottomphoto) > 0) {
+      tmp <- try(gbpic(photolinks))
       
-      if (crop) {
-        cmd <- sprintf("convert %s -bordercolor white -border 1x1 -trim +repage -border 5x5 %s", dlfile)
+      n <- 5
+      while("try-error" %in% class(tmp) & n > 0) {
+        tmp <- try(gbpic(photolinks))
+        n <- n - 1
+      }
+      
+      if (crop & !("try-error" %in% class(tmp))) {
+        cmd <- sprintf("convert %s -bordercolor white -border 1x1 -trim +repage -border 5x5 %s", dlfile, dlfile)
         system(cmd)
       }
       # print(TRUE)
-      return(tmp == 0)
+      return(!("try-error" %in% class(tmp)))
       
       sprintf
     } else {
@@ -74,28 +94,6 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
 #' @importFrom magrittr '%>%'
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
-
-  sa <- splashr::splash_active()
-  if (!sa) {
-    # system("docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash:latest &")
-    dps <- system("docker ps -a -q", intern = T)
-    if (length(dps) > 0) {
-      splashr::stop_splash(dps)
-      dps <- system("docker ps -a -q", intern = T)
-      if (length(dps) > 1) {
-        sprintf("docker stop %s", dps) %>% system()
-        sprintf("docker rm %s", dps) %>% system()
-      }
-    }
-    # splashr::install_splash(tag = "latest")
-    container <- splashr::start_splash()
-    on.exit({
-      splashr::stop_splash(container)
-      # try(system("docker rm /splashr"))
-    })
-    sa <- splashr::splash_active()
-  }
-  stopifnot(sa)
   
   Sys.sleep(1)
 
@@ -160,7 +158,7 @@ scrape_soles <- function(type = "rating", population = "all", pages = 15, path =
   
   dplyr::data_frame(
     url = links,
-    soleDL = unlist(map(links, get_bottom_image, path = path))
+    soleDL = unlist(purrr::map(links, ~try(get_bottom_image(., path = path))))
   )
 }
 

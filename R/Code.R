@@ -11,8 +11,8 @@
 get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
   Sys.sleep(1)
   # i is the shoe page link
-  remDr <- RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
-  suppressMessages(remDr$open())
+  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox"))
+  rdo <- remDr$open(silent = T)
   on.exit(remDr$close())
   if (!dir.exists(path)) {
     dir.create(path, recursive =  T)
@@ -62,7 +62,7 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
       tmp <- try(gbpic(photolinks))
       
       n <- 5
-      while("try-error" %in% class(tmp) & n > 0) {
+      while ("try-error" %in% class(tmp) & n > 0) {
         tmp <- try(gbpic(photolinks))
         n <- n - 1
       }
@@ -94,8 +94,8 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
 #' @importFrom magrittr '%>%'
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
-  
-  Sys.sleep(1)
+  # 
+  # Sys.sleep(1)
 
   if (substr(path, nchar(path), nchar(path)) != "/") {
     path <- paste0(path, "/")

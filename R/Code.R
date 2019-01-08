@@ -93,7 +93,7 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @importFrom magrittr '%>%'
 #' @export
-scrape_soles <- function(type = "rating", population = "all", pages = 15, path = "inst/photos/", query = "") {
+scrape_soles <- function(type = "rating", population = "all", pages = 3, path = "inst/photos/", query = "") {
   # 
   # Sys.sleep(1)
 

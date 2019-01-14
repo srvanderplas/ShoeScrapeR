@@ -9,9 +9,9 @@
 #' @importFrom magrittr '%>%'
 #' @export
 get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
-  Sys.sleep(1)
+  Sys.sleep(2)
   # i is the shoe page link
-  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox"))
+  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "chrome"))
   rdo <- remDr$open(silent = T)
   on.exit(remDr$close())
   if (!dir.exists(path)) {

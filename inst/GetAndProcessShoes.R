@@ -10,7 +10,12 @@ library(RSelenium)
 library(docker)
 
 # Deal with docker
-try(system('docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-dubnium'))
+# Run the first time to download/set up container
+# try(system('docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.12.0'))
+try(system('docker restart -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.12.0'))
+# try(system('docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
+# try(system('docker restart -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
+
 # remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
 # remDr$open()
 
@@ -113,3 +118,4 @@ write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
 #   stop("Couldn't connect to database")
 # }
 # 
+

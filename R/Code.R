@@ -11,7 +11,7 @@
 get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE) {
   Sys.sleep(1)
   # i is the shoe page link
-  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "chrome"))
+  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
   rdo <- remDr$open(silent = T)
   on.exit(remDr$close())
   if (!dir.exists(path)) {

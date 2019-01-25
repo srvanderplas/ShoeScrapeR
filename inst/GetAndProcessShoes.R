@@ -11,7 +11,7 @@ library(docker)
 
 # Deal with docker
 # try(system('docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
-try(system('docker run -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.12.0'))
+try(system('docker run -p 4443:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.12.0'))
 # try(system('docker restart -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
 # remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
 # remDr$open()

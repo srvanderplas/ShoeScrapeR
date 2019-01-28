@@ -6,10 +6,11 @@
 #' @param path path to save files
 #' @param crop should image be cropped using magick?
 #' @param sleep seconds to wait between image downloads
+#' @param quiet quiet download?
 #' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
 #' @importFrom magrittr '%>%'
 #' @export
-get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0) {
+get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0, quiet = T) {
   Sys.sleep(sleep)
   # i is the shoe page link
   remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
@@ -56,7 +57,7 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0) {
         magrittr::extract(bottomphoto) %>%
         # Get higher resolution
         stringr::str_replace("SR106,78", "SX1920") %>%
-        download.file(destfile = dlfile)
+        download.file(destfile = dlfile, quiet = quiet)
     }
 
     if (length(bottomphoto) > 0) {

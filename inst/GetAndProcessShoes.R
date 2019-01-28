@@ -21,7 +21,7 @@ try(system('docker run -p 4443:4444 -v /dev/shm:/dev/shm selenium/standalone-chr
 
 current_shoe_list <- list.files("/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
 
-fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
+fcn_opts <- expand.grid(type = c("new", "best", "rating"),
                         population = c("all", "women", "men"),
                         query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
@@ -33,10 +33,12 @@ try_scrape_soles <- function(...) {
 }
 
 shoe_res <- fcn_opts %>%
-  sample_n(6) %>%
-  group_by_all() %>%
-  pmap_dfr(try_scrape_soles) %>%
-  unique()
+  mutate(newlinks = pmap(., try_scrape_soles)) %>%
+  unnest() %>%
+  mutate(
+    dl = purrr::map2_lgl(shoe_res$newlinks, shoe_res$path, ~try(get_bottom_image(.x, path = .y, quiet = F)))
+  )
+
 
 # system("docker stop $(docker ps -a -q | grep chrome)")
 # system("docker rm $(docker ps -a -q)")

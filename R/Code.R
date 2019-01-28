@@ -179,10 +179,11 @@ scrape_soles <- function(type = "rating", population = "all", pages = 3,
     }
   })
   
-  dplyr::data_frame(
-    url = links,
-    soleDL = unlist(purrr::map(links, ~try(get_bottom_image(., path = path))))
-  )
+  # dplyr::data_frame(
+  #   url = links,
+  #   soleDL = unlist(purrr::map(links, ~try(get_bottom_image(., path = path))))
+  # )
+  return(links)
 }
 
 #' Function to reconstruct paths from MySQL setup

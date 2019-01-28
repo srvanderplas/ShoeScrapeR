@@ -22,7 +22,7 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0) {
     return(NA)
   }
 
-  photoname <- stringr::str_replace(i, "https://www.zappos.com/p/", "") %>%
+  photoname <- stringr::str_remove(i, "https://www.zappos.com/p/") %>%
     stringr::str_replace_all("/", "_") %>%
     unique()
 
@@ -91,10 +91,15 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0) {
 #' @param population One of all, women, men, boys, girls. Defaults to all.
 #' @param path Path to save files
 #' @param query search string
+#' @param shoelist list of all jpg files in the provided path
+#' @param max_shoes maximum number of shoes to download images from
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @importFrom magrittr '%>%'
 #' @export
-scrape_soles <- function(type = "rating", population = "all", pages = 3, path = "inst/photos/", query = "") {
+scrape_soles <- function(type = "rating", population = "all", pages = 3, 
+                         path = "inst/photos/", query = "", 
+                         shoelist = list.files(path, pattern = "jpg$"),
+                         max_shoes = 400) {
   # 
   # Sys.sleep(1)
 
@@ -155,6 +160,22 @@ scrape_soles <- function(type = "rating", population = "all", pages = 3, path = 
     
     links <- links[stringr::str_detect(links, "/p/")] # Ensures shoes
     
+    link_file_list <- stringr::str_remove(links,"https://www.zappos.com/p/") %>%
+      str_replace_all("/", "_") %>%
+      paste0(., ".jpg")
+    
+    # Only get new links
+    idx <- which(!link_file_list %in% shoelist)
+    if (length(idx) > 0) {
+      message(sprintf("Found %d new shoes", length(idx)))
+      links <- links[idx]
+    }
+    
+    # Only get the specified number of shoes
+    if (length(links) > max_shoes) {
+      message(sprintf("Downsampling to %d shoes to download", max_shoes))
+      links <- sample(links, max_shoes)
+    }
   })
   
   dplyr::data_frame(

@@ -22,7 +22,7 @@ fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
                         population = c("all", "women", "men"),
                         query = c("", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
-  as_data_frame() %>%
+  as_tibble() %>%
   mutate(path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
 
 try_scrape_soles <- function(...) {
@@ -34,7 +34,7 @@ shoe_res <- fcn_opts %>%
   pmap_dfr(try_scrape_soles) %>%
   unique()
 
-# system("docker stop $(docker ps -a -q)")
+# system("docker stop $(docker ps -a -q | grep chrome)")
 # system("docker rm $(docker ps -a -q)")
 
 system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")

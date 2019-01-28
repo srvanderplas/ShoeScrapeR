@@ -18,6 +18,9 @@ try(system('docker run -p 4443:4444 -v /dev/shm:/dev/shm selenium/standalone-chr
 
 # Create a data frame of all combinations of parameters type and population
 
+
+current_shoe_list <- list.files("/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
+
 fcn_opts <- expand.grid(type = c("new", "best", "relevance", "rating"),
                         population = c("all", "women", "men"),
                         query = c("", "boot", "sneakers"),
@@ -30,6 +33,7 @@ try_scrape_soles <- function(...) {
 }
 
 shoe_res <- fcn_opts %>%
+  sample_n(6) %>%
   group_by_all() %>%
   pmap_dfr(try_scrape_soles) %>%
   unique()
@@ -37,13 +41,12 @@ shoe_res <- fcn_opts %>%
 # system("docker stop $(docker ps -a -q | grep chrome)")
 # system("docker rm $(docker ps -a -q)")
 
-system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
+try(system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/"))
 
 try(system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
-#system("git add photos/*")
-system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest")
-system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log")
-system("git commit -a -m 'Automatic Update'")
+try(system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest"))
+try(system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log"))
+try(system("git commit -a -m 'Automatic Update'"))
 system("git pull")
 system("git push")
 

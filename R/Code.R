@@ -10,7 +10,7 @@
 #' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
 #' @importFrom magrittr '%>%'
 #' @export
-get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0, quiet = T) {
+get_bottom_image <- function(i, path = "extra/photos/", crop = TRUE, sleep = 0, quiet = T) {
   Sys.sleep(sleep)
   # i is the shoe page link
   remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
@@ -98,7 +98,7 @@ get_bottom_image <- function(i, path = "inst/photos/", crop = TRUE, sleep = 0, q
 #' @importFrom magrittr '%>%'
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 3, 
-                         path = "inst/photos/", query = "", 
+                         path = "extra/photos/", query = "", 
                          shoelist = list.files(path, pattern = "jpg$"),
                          max_shoes = 400) {
   # 

@@ -161,6 +161,8 @@ download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
 #'
 #' @param type One of new, best, relevance, or rating. Defaults to relevance.
 #' @param population One of all, women, men, boys, girls. Defaults to all.
+#' @param pages Number of pages of links to acquire
+#' @param top_pages Sample pages from the top_pages pages of results
 #' @param path Path to save files
 #' @param query search string
 #' @param shoelist list of all jpg files in the provided path
@@ -168,7 +170,7 @@ download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @importFrom magrittr '%>%'
 #' @export
-scrape_soles <- function(type = "rating", population = "all", pages = 3, 
+scrape_soles <- function(type = "rating", population = "all", pages = 3, top_pages = 15,
                          path = "extra/photos/", query = "", 
                          shoelist = list.files(path, pattern = "jpg$"),
                          max_shoes = 400) {
@@ -221,7 +223,9 @@ scrape_soles <- function(type = "rating", population = "all", pages = 3,
   links <- ""
   
   try({
-    shoeLinks <- url %>% paste(c("", sprintf("&p=%d", 1:pages)), sep = "")
+    pgsample <- sample(1:top_pages, pages, replace = (pages > top_pages))
+    
+    shoeLinks <- url %>% paste(c("", sprintf("&p=%d", pgsample)), sep = "")
     shoeLinkPages <- purrr::map(shoeLinks, xml2::read_html)
     
     links <- purrr::map(shoeLinkPages, rvest::html_nodes, css = "article a") %>%

@@ -6,31 +6,36 @@
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
-docker: Error response from daemon: driver failed programming external connectivity on endpoint keen_ellis (2868ca61a25b45b43f464d1a0be6c563b9d4fcc46cbe2a94c2dbb53bb252ad21): Bind for 0.0.0.0:4443 failed: port is already allocated.
-time="2019-01-31T03:00:04-06:00" level=error msg="error waiting for container: context canceled"
-Found 274 new shoes
+docker: Error response from daemon: driver failed programming external connectivity on endpoint cranky_knuth (61e67dda2cec41cee569a5eb459d46aeebbafeb1219fe507aa41dc71d026d93d): Bind for 0.0.0.0:4443 failed: port is already allocated.
+time="2019-01-31T12:00:05-06:00" level=error msg="error waiting for container: context canceled"
+Found 61 new shoes
+Found 9 new shoes
+Found 34 new shoes
+Found 104 new shoes
+Found 8 new shoes
+Found 20 new shoes
+Found 149 new shoes
 Found 6 new shoes
-Found 31 new shoes
-Found 208 new shoes
-Found 6 new shoes
-Found 31 new shoes
-Found 108 new shoes
-Found 6 new shoes
+Found 23 new shoes
+Found 49 new shoes
+Found 12 new shoes
 Found 27 new shoes
-Found 158 new shoes
-Found 5 new shoes
+Found 43 new shoes
 Found 16 new shoes
-Found 158 new shoes
-Found 5 new shoes
+Found 8 new shoes
+Found 46 new shoes
+Found 11 new shoes
+Found 12 new shoes
+Found 103 new shoes
+Found 13 new shoes
+Found 8 new shoes
+Found 189 new shoes
+Found 35 new shoes
+Found 12 new shoes
+Found 200 new shoes
 Found 24 new shoes
-Found 62 new shoes
-Found 4 new shoes
-Found 19 new shoes
-Found 7 new shoes
-Found 2 new shoes
-Found 4 new shoes
-Found 190 new shoes
-Found 1 new shoes
-Found 7 new shoes
-Error: unexpected SPECIAL in "%>%"
+Found 32 new shoes
+Error in grouped_df_impl(data, unname(vars), drop) : 
+  Column `path` is unknown
+Calls: %>% ... group_by.data.frame -> grouped_df -> grouped_df_impl
 Execution halted

@@ -29,7 +29,7 @@ shoe_res <- fcn_opts %>%
 
 # Clean duplicates
 full_shoe_res <- shoe_res %>%
-  group_by(path, newlinks) %>% 
+  group_by(newlinks) %>% 
   filter(row_number() == 1) %>%
   ungroup() %>%
   mutate(bottom_img = map(newlinks, get_bottom_image))

@@ -60,7 +60,8 @@ regular_zappos_imurl <- function(pagesrc) {
 get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
   Sys.sleep(sleep)
   # i is the shoe page link
-  remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
+  remDr <- suppressMessages(RSelenium::remoteDriver(
+    remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
   rdo <- remDr$open(silent = T)
   on.exit(remDr$close())
   if (!dir.exists(path)) {
@@ -80,15 +81,20 @@ get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
     remDr$navigate(i) 
     
     redir_url <- remDr$getCurrentUrl()[[1]]
-    zappos_division <- stringr::str_extract(redir_url, "\\w*\\.zappos\\.com") %>% str_remove("\\.zappos\\.com")
+    zappos_division <- stringr::str_extract(redir_url, "\\w*\\.zappos\\.com") %>% 
+      str_remove("\\.zappos\\.com")
     
-    pagesrc <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
+    pagesrc <- try(remDr$getPageSource() %>% 
+                     magrittr::extract2(1) %>% 
+                     xml2::read_html())
     n <- 5
     
     # Attempt download again
     while (length(pagesrc) == 0 & n > 0) {
       remDr$navigate(i) 
-      pagesrc <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
+      pagesrc <- try(remDr$getPageSource() %>% 
+                       magrittr::extract2(1) %>% 
+                       xml2::read_html())
       n <- n - 1
     }
     

@@ -3,11 +3,7 @@
 library(ShoeScrapeR)
 library(tidyverse)
 library(stringr)
-library(odbc)
-library(DBI)
-
 library(RSelenium)
-library(docker)
 
 # Deal with docker
 # try(system('docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
@@ -17,13 +13,9 @@ try(system('docker run -p 4443:4444 -v /dev/shm:/dev/shm selenium/standalone-chr
 # remDr$open()
 
 # Create a data frame of all combinations of parameters type and population
-
-
-current_shoe_list <- list.files("/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
-
 fcn_opts <- expand.grid(type = c("new", "best", "rating"),
                         population = c("all", "women", "men"),
-                        query = c("", "boot", "sneakers"),
+                        query = c("shoes", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
   as_tibble() %>%
   mutate(path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
@@ -34,9 +26,23 @@ try_scrape_soles <- function(...) {
 
 shoe_res <- fcn_opts %>%
   mutate(newlinks = pmap(., try_scrape_soles)) %>%
+  unnest()
+
+# Clean duplicates
+full_shoe_res <- shoe_res %>%
+  group_by(path, newlinks) %>% 
+  filter(row_number() == 1) %>%
+  ungroup() %>%
+  mutate(bottom_img = map(newlinks, get_bottom_image))
+
+full_shoe_res <- full_shoe_res %>%
   unnest() %>%
+  filter(!is.na(url))
+
+shoe_specific <- full_shoe_res %>%
+  filter(str_detect(img_type, "Shoes")) %>%
   mutate(
-    dl = purrr::map2_lgl(shoe_res$newlinks, shoe_res$path, ~try(get_bottom_image(.x, path = .y, quiet = F)))
+    dl = purrr::map2_int(url, filename, ~try(download_image(.x, .y)))
   )
 
 

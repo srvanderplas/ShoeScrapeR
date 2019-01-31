@@ -1,16 +1,63 @@
+luxury_zappos_imurl <- function(pagesrc) {
+  n <- 5
+  loaded <- FALSE
+  while (n > 0 & !loaded) {
+    if ("try-error" %in% class(pagesrc)) {
+      return(FALSE)
+    } else {
+      photolinks <- pagesrc %>%
+        rvest::html_nodes(css = "span.msa-image") %>%
+        xml2::xml_parent()
+    }
+    
+    loaded <- length(photolinks) > 4
+    n <- n - 1
+  }
+  
+  # Which one is bottom?
+  # bottomphoto <- which(rvest::html_attr(photolinks, "data-angle") == "713YXP-FQmL")
+  
+  file_url <- photolinks %>%
+    magrittr::extract(3) %>%
+    xml2::xml_child() %>%
+    rvest::html_attr("style") %>%
+    stringr::str_replace("background-image:url\\((.*)\\)", "\\1") %>%
+    # Get higher resolution
+    stringr::str_replace("SR106,78", "SX1920")
+}
+
+regular_zappos_imurl <- function(pagesrc) {
+  n <- 5
+  loaded <- FALSE
+  while (n > 0 & !loaded) {
+    if ("try-error" %in% class(pagesrc)) {
+      return(FALSE)
+    } else {
+      photolinks <- pagesrc %>%
+        rvest::html_nodes(css = "img[alt='BOTT']")
+    }
+    
+    loaded <- length(photolinks) > 4
+    n <- n - 1
+  }
+  
+  file_url <- photolinks %>%
+    rvest::html_attr("src") %>%
+    # Get higher resolution
+    stringr::str_replace("SR106,78", "SX1920")
+}
+
 
 #' Get image of the sole from a url of a Zappo's shoe
 #'
 #' Pass in a url of the style https://www.zappos.com/p/...
 #' @param i url
 #' @param path path to save files
-#' @param crop should image be cropped using magick?
 #' @param sleep seconds to wait between image downloads
-#' @param quiet quiet download?
-#' @return TRUE if image was downloaded (or has been in the past), FALSE otherwise
+#' @return image URL
 #' @importFrom magrittr '%>%'
 #' @export
-get_bottom_image <- function(i, path = "extra/photos/", crop = TRUE, sleep = 0, quiet = T) {
+get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
   Sys.sleep(sleep)
   # i is the shoe page link
   remDr <- suppressMessages(RSelenium::remoteDriver(remoteServerAddr = "localhost", port = 4443L, browserName = "chrome"))
@@ -20,7 +67,7 @@ get_bottom_image <- function(i, path = "extra/photos/", crop = TRUE, sleep = 0, 
     dir.create(path, recursive =  T)
   }
   if (i == "") {
-    return(NA)
+    return(tibble(url = NA, filename = NA))
   }
 
   photoname <- stringr::str_remove(i, "https://www.zappos.com/p/") %>%
@@ -31,59 +78,77 @@ get_bottom_image <- function(i, path = "extra/photos/", crop = TRUE, sleep = 0, 
   if (!file.exists(dlfile)) {
     # Sys.sleep(1)
     remDr$navigate(i) 
-    photolinks <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
+    
+    redir_url <- remDr$getCurrentUrl()[[1]]
+    zappos_division <- stringr::str_extract(redir_url, "\\w*\\.zappos\\.com") %>% str_remove("\\.zappos\\.com")
+    
+    pagesrc <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
     n <- 5
-    loaded <- FALSE
-    while (n > 0 & !loaded) {
-      if ("try-error" %in% class(photolinks)) {
-        return(FALSE)
-      } else {
-        photolinks <- photolinks %>%
-          rvest::html_nodes(css = "button span img")
-      }
-      
-      loaded <- length(photolinks) > 4
+    
+    # Attempt download again
+    while (length(pagesrc) == 0 & n > 0) {
+      remDr$navigate(i) 
+      pagesrc <- try(remDr$getPageSource() %>% magrittr::extract2(1) %>% xml2::read_html())
       n <- n - 1
     }
     
-    # Which one is bottom?
-    bottomphoto <- which(rvest::html_attr(photolinks, "alt") == "BOTT")
+    breadcrumbs <- pagesrc %>%
+      rvest::xml_nodes(css = "#breadcrumbs a") %>%
+      xml2::xml_text() %>%
+      magrittr::extract(-1)
     
-    gbpic <- function(m) {
-      m %>%
-        # Get photo link
-        rvest::html_attr("src") %>%
-        # Only keep photo of sole
-        magrittr::extract(bottomphoto) %>%
-        # Get higher resolution
-        stringr::str_replace("SR106,78", "SX1920") %>%
-        download.file(destfile = dlfile, quiet = quiet)
+    if (length(breadcrumbs) > 2) {
+      breadcrumbs <- rev(breadcrumbs) %>%
+        magrittr::extract(-1)
     }
-
-    if (length(bottomphoto) > 0) {
-      tmp <- try(gbpic(photolinks))
-      
-      n <- 5
-      while ("try-error" %in% class(tmp) & n > 0) {
-        tmp <- try(gbpic(photolinks))
-        n <- n - 1
+    
+    breadcrumbs <- breadcrumbs %>% rev %>%
+      paste(collapse = " > ")
+    
+    if (!"try-error" %in% class(pagesrc)) {
+      if (zappos_division == "luxury") {
+        file_url <- luxury_zappos_imurl(pagesrc)
+      } else {
+        file_url <- regular_zappos_imurl(pagesrc)
       }
-      
-      if (crop & !("try-error" %in% class(tmp))) {
-        cmd <- sprintf("convert %s -bordercolor white -border 1x1 -trim +repage -border 5x5 %s", dlfile, dlfile)
-        system(cmd)
-      }
-      # print(TRUE)
-      return(!("try-error" %in% class(tmp)))
-      
-      sprintf
-    } else {
-      # print(FALSE)
-      return(FALSE)
     }
+    
+    
+  } else {
+    message("File already exists")
+    file_url <- NA
+    breadcrumbs <- "AlreadyExists"
   }
-  # print(TRUE)
-  return(TRUE)
+  tibble(img_type = breadcrumbs[1], url = file_url, filename = dlfile)
+}
+
+
+#' Get image of the sole from a url of a Zappo's shoe
+#'
+#' Pass in a url of the style https://www.zappos.com/p/...
+#' @param i url
+#' @param filename location to save the file
+#' @param crop should image be cropped using magick?
+#' @param sleep seconds to wait between image downloads
+#' @param quiet quiet download?
+#' @return image URL
+#' @importFrom magrittr '%>%'
+#' @export
+download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
+  file_dl <- 1
+  tries <- 5
+  while (!file_dl == 0 & tries > 0) {
+    file_dl <- download.file(url, destfile = filename, quiet = quiet)
+    if (sleep > 0) Sys.sleep(sleep)
+    tries <- tries - 1
+  }
+  
+  if (crop & file_dl) {
+    cmd <- sprintf("convert %s -bordercolor white -border 1x1 -trim +repage -border 5x5 %s", dlfile, dlfile)
+    system(cmd)
+  }
+
+  return(file_dl)
 }
 
 #' Function to scrape shoe sole data from Zappos.com

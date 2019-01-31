@@ -17,15 +17,14 @@ fcn_opts <- expand.grid(type = c("new", "best", "rating"),
                         population = c("all", "women", "men"),
                         query = c("shoes", "boot", "sneakers"),
                         stringsAsFactors = F) %>%
-  as_tibble() %>%
-  mutate(path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/")
+  as_tibble()
 
 try_scrape_soles <- function(...) {
   try(scrape_soles(...))
 }
 
 shoe_res <- fcn_opts %>%
-  mutate(newlinks = pmap(., try_scrape_soles)) %>%
+  mutate(newlinks = pmap(., try_scrape_soles, path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/", top_pages = 15)) %>%
   unnest()
 
 # Clean duplicates

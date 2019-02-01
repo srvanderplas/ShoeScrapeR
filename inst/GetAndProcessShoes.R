@@ -13,6 +13,26 @@ library(RSelenium)
 try(system('docker run -p 4443:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.12.0'))
 # try(system('docker restart -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox'))
 
+# On exit, push to git:
+on.exit({
+  
+  try(system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/"))
+  
+  try(system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
+  try(system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest"))
+  try(system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log"))
+  try(system("git commit -a -m 'Automatic Update'"))
+  system("git pull")
+  system("git push")
+  
+  flist <- list.files("/home/srvander/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
+  
+  write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
+              "/home/srvander/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
+              row.names = F, col.names = F, quote = F)
+  
+})
+
 
 # Create a data frame of all combinations of parameters type and population
 fcn_opts <- expand.grid(type = c("new", "best", "rating"),
@@ -45,19 +65,4 @@ shoe_specific <- full_shoe_res %>%
   mutate(
     dl = purrr::map2_int(url, filename, ~try(download_image(.x, .y)))
   )
-
-try(system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/"))
-
-try(system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
-try(system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest"))
-try(system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log"))
-try(system("git commit -a -m 'Automatic Update'"))
-system("git pull")
-system("git push")
-
-flist <- list.files("/home/srvander/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
-
-write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
-            "/home/srvander/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
-            row.names = F, col.names = F, quote = F)
 

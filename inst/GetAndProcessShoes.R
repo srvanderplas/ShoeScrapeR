@@ -5,6 +5,7 @@ library(purrr)
 library(magrittr)
 library(dplyr)
 library(stringr)
+library(tidyr)
 library(RSelenium)
 
 # Deal with docker

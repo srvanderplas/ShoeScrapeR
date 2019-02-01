@@ -57,7 +57,7 @@ regular_zappos_imurl <- function(pagesrc) {
 #' @param sleep seconds to wait between image downloads
 #' @return image URL
 #' @export
-get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
+get_bottom_image <- function(i, path = "~/Projects/CSAFE/ShoeScrapeR/extra/photos/", sleep = 0) {
   Sys.sleep(sleep)
   # i is the shoe page link
   remDr <- suppressMessages(RSelenium::remoteDriver(
@@ -169,7 +169,7 @@ download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
 #' @return list of links and whether or not the image of the sole was downloaded
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 3, top_pages = 15,
-                         path = "extra/photos/", query = "", 
+                         path = "~/Projects/CSAFE/ShoeScrapeR/extra/photos/", query = "", 
                          shoelist = list.files(path, pattern = "jpg$"),
                          max_shoes = 400) {
   # 

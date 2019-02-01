@@ -51,6 +51,7 @@ regular_zappos_imurl <- function(pagesrc) {
 #' Get image of the sole from a url of a Zappo's shoe
 #'
 #' Pass in a url of the style https://www.zappos.com/p/...
+#' This function requires you have a Selenium chrome installation on port 4443.
 #' @param i url
 #' @param path path to save files
 #' @param sleep seconds to wait between image downloads
@@ -68,7 +69,7 @@ get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
     dir.create(path, recursive =  T)
   }
   if (i == "") {
-    return(tibble(url = NA, filename = NA))
+    return(tibble::tibble(url = NA, filename = NA))
   }
 
   photoname <- stringr::str_remove(i, "https://www.zappos.com/p/") %>%
@@ -121,7 +122,7 @@ get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
     
     
   } else {
-    message("File already exists")
+    # message("File already exists")
     file_url <- NA
     breadcrumbs <- "AlreadyExists"
   }

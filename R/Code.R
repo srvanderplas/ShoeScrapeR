@@ -56,7 +56,6 @@ regular_zappos_imurl <- function(pagesrc) {
 #' @param path path to save files
 #' @param sleep seconds to wait between image downloads
 #' @return image URL
-#' @importFrom magrittr '%>%'
 #' @export
 get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
   Sys.sleep(sleep)
@@ -139,7 +138,6 @@ get_bottom_image <- function(i, path = "extra/photos/", sleep = 0) {
 #' @param sleep seconds to wait between image downloads
 #' @param quiet quiet download?
 #' @return image URL
-#' @importFrom magrittr '%>%'
 #' @export
 download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
   file_dl <- 1
@@ -169,7 +167,6 @@ download_image <- function(url, filename, crop = TRUE, sleep = 0, quiet = T) {
 #' @param shoelist list of all jpg files in the provided path
 #' @param max_shoes maximum number of shoes to download images from
 #' @return list of links and whether or not the image of the sole was downloaded
-#' @importFrom magrittr '%>%'
 #' @export
 scrape_soles <- function(type = "rating", population = "all", pages = 3, top_pages = 15,
                          path = "extra/photos/", query = "", 
@@ -274,7 +271,6 @@ scrape_soles <- function(type = "rating", population = "all", pages = 3, top_pag
 #' @param slice index of slice
 #' @return image path(s)
 #' @export
-#' @importFrom magrittr '%>%'
 reconstruct_path <- function(image, full = F, flip = NULL, edge = NULL, 
                              crop = NULL, size = NULL, slice = NULL) {
   stopifnot(is.character(image) & !is.null(full))

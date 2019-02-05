@@ -46,14 +46,14 @@ shoe_specific <- full_shoe_res %>%
   )
 
 
-message("Sync stage reached")
+warning("Sync stage reached")
 
-try(system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/"))
+system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
 
 try(system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
-try(system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest"))
-try(system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log"))
-try(system("git commit -a -m 'Automatic Update'"))
+system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest")
+system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log")
+system("git commit -a -m 'Automatic Update'")
 system("git pull")
 system("git push")
 

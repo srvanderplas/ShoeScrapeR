@@ -24,8 +24,9 @@ try_scrape_soles <- function(...) {
   try(scrape_soles(...))
 }
 
+wd <- setwd("~/Projects/CSAFE/ShoeScrapeR")
 shoe_res <- fcn_opts %>%
-  mutate(newlinks = pmap(., try_scrape_soles, path = "/home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/", top_pages = 15)) %>%
+  mutate(newlinks = pmap(., try_scrape_soles, path = "extra/photos/", top_pages = 15)) %>%
   unnest()
 
 # Clean duplicates
@@ -48,17 +49,19 @@ shoe_specific <- full_shoe_res %>%
 
 warning("Sync stage reached")
 
-system("rsync -avzu /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /home/srvander/Projects/CSAFE/LabelMe/Images/Shoes/")
+system("rsync -avzu extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/")
 
-try(system("rsync -avzu --no-perms --no-owner --no-group /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
-system("find /home/srvander/Projects/CSAFE/ShoeScrapeR/extra/photos/ -type f -name '*.jpg' > image_manifest")
-system("git add image_manifest /home/srvander/Projects/CSAFE/ShoeScrapeR/inst/cron.log")
+try(system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
+
+system("find extra/photos/ -type f -name '*.jpg' > image_manifest")
+system("git add image_manifest inst/cron.log")
 system("git commit -a -m 'Automatic Update'")
 system("git pull")
 system("git push")
+setwd(wd)
 
-flist <- list.files("/home/srvander/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
+flist <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
 
 write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
-            "/home/srvander/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
+            "~/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
             row.names = F, col.names = F, quote = F)

@@ -29,29 +29,37 @@ Registered S3 method overwritten by 'openssl':
 Registered S3 method overwritten by 'rvest':
   method            from
   read_xml.response xml2
-Found 89 new shoes
-Found 7 new shoes
-Found 39 new shoes
-Found 8 new shoes
+Found 75 new shoes
 Found 6 new shoes
-Found 42 new shoes
-Found 37 new shoes
+Found 39 new shoes
+Found 98 new shoes
 Found 8 new shoes
-Found 33 new shoes
+Found 43 new shoes
+Found 139 new shoes
+Found 4 new shoes
+Found 47 new shoes
 Found 63 new shoes
-Found 34 new shoes
-Found 35 new shoes
-Found 63 new shoes
-Found 25 new shoes
-Found 36 new shoes
-Found 56 new shoes
-Found 29 new shoes
-Found 24 new shoes
-Found 38 new shoes
+Found 41 new shoes
+Found 21 new shoes
+Found 76 new shoes
 Found 28 new shoes
-Found 81 new shoes
-Found 17 new shoes
+Found 25 new shoes
+Found 64 new shoes
+Found 27 new shoes
+Found 33 new shoes
+Found 125 new shoes
+Found 7 new shoes
+Found 31 new shoes
+Found 71 new shoes
+Found 8 new shoes
+Found 27 new shoes
+Found 78 new shoes
 Found 23 new shoes
-Found 94 new shoes
-Found 10 new shoes
-Found 29 new shoes
+Found 38 new shoes
+Error in download.file(url, destfile = filename, quiet = quiet) : 
+  cannot open URL 'https://m.media-amazon.com/images/I/61fPfAhvWQL._SX1920_.jpg'
+In addition: Warning message:
+In download.file(url, destfile = filename, quiet = quiet) :
+  URL 'https://m.media-amazon.com/images/I/61fPfAhvWQL._SX1920_.jpg': status was 'Couldn't resolve host name'
+Error: Can't coerce element 389 from a character to a integer
+Execution halted

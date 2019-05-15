@@ -57,7 +57,7 @@ regular_zappos_imurl <- function(pagesrc) {
 #' @param sleep seconds to wait between image downloads
 #' @return image URL
 #' @export
-get_bottom_image <- function(i, path = "~/Projects/CSAFE/ShoeScrapeR/extra/photos/", sleep = 0) {
+get_bottom_image <- function(i, path = "~/Projects/CSAFE/ShoeScrapeR/extra/photos/", sleep = 1) {
   Sys.sleep(sleep)
   # i is the shoe page link
   remDr <- suppressMessages(RSelenium::remoteDriver(

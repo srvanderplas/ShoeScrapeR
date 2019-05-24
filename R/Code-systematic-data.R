@@ -1,31 +1,30 @@
 #' Get useful search links from Zappos
 #' 
 #' @param url zappos url
+#' @export
 #' @return data frame of link, section type, search type, and other information
 get_useful_searches <- function(url = "https://www.zappos.com/c/shoes") {
   links <- read_html(url) %>%
-    html_nodes("#main > div > div > div.Se > div > ul.Ve a")
+    html_nodes("*[data-slot-id='primary-1'] ul a")
   
-  search_urls <- links %>%
-    html_attrs() %>%
-    purrr::map(., rbind) %>%
-    purrr::map(., as.data.frame) %>%
-    bind_rows() %>%
-    mutate(
-      href = str_remove(href, "\\?.*$"),
-      text = links %>% html_text(trim = T) %>% str_remove_all("[^A-z &]*") %>% remove_from("Crib|(View All)"),
-      parent = links %>% html_node(xpath = "../../../button") %>% html_text() %>% str_remove_all("[^A-z &]*")) %>%
-    select(-c(1:2)) %>%
-    # filter(!str_detect(text, "Crib|(View All)")) %>%
-    arrange(href)
   
-  search_urls
+  purrr::map_dfr(
+    links, 
+    ~tibble(href = html_attr(., "href") %>% if_null_value(NA), 
+            text = html_text(., trim = T) %>% str_remove_all("[^A-z &]*") %>% if_null_value(NA),
+            parent = html_node(., xpath = "../../../button") %>% 
+              html_text() %>% 
+              str_remove_all("[^A-z &]*") %>% 
+              if_null_value(NA))
+  ) %>%
+    filter(!str_detect(text, "Home|Crib|(View All)"))
 }
 
 #' Get all paginated links
 #' 
 #' Looks for Previous Page | 1 | 2 | ... in the html and finds links to all pages
 #' @param url page url
+#' @export
 #' @return a character vector of URLs
 get_all_page_links <- function(url) {
   pagination <- read_html(url) %>%
@@ -37,8 +36,8 @@ get_all_page_links <- function(url) {
   }
   
   get_n_pages <- pagination %>%
-    purrr::map(., html_attr, name = "href", default = "") %>%
-    str_extract("&p=\\d{0,}") %>%
+    purrr::map(., html_attr, name = "href") %>%
+    str_extract("p=\\d{0,}") %>%
     parse_number() %>%
     na.omit() %>% 
     max()
@@ -54,6 +53,7 @@ get_all_page_links <- function(url) {
 #' Get rating from an item
 #' 
 #' @param node pointer to node of item with rating
+#' @export
 #' @return rating and number of reviews
 get_rating <- function(node) {
   rating <- html_nodes(node, css = "*[itemprop='aggregateRating']") 
@@ -94,6 +94,7 @@ remove_from <- function(x, pattern) {
 #' 
 #' Used to get an entire page of links to actual products
 #' @param url url of page to acquire information
+#' @export
 #' @return data frame containing brand, style, price, url, image, and rating 
 #'         information as provided by the HTML structure
 get_all_shoes_on_page <- function(url) {
@@ -141,6 +142,7 @@ get_all_shoes_on_page <- function(url) {
 #' For a URL of a shoe, get all information about the shoe
 #' 
 #' @param url url of page with shoe information
+#' @export
 get_shoe_info <- function(url) {
   page <- read_html(url)
   
@@ -151,34 +153,48 @@ get_shoe_info <- function(url) {
   
   widths <- html_nodes(page, "#pdp-width-select option") %>% html_text() %>% if_null_value("M") %>% remove_from("Choose")
   
-  colors <- html_nodes(page, "#pdp-color-select option") %>% html_text() %>% if_null_value
-  color_values <- html_nodes(page, "#pdp-color-select option") %>% html_attr("value") %>% if_null_value
+  colors <- tibble(
+    color = html_nodes(page, "#pdp-color-select option") %>% html_text() %>% if_null_value,
+    value = html_nodes(page, "#pdp-color-select option") %>% html_attr("value") %>% if_null_value
+  )
   
   description <- html_nodes(page, "*[itemprop='description'] li div") %>% html_text() %>%
     str_remove_all("•") %>%
     str_replace_all("\\s{1,}", " ") %>%
-    str_trim()
+    str_trim() %>% if_null_value() 
   
   images <- html_nodes(page, "#thumbnailsList img") %>%
-    purrr::map_dfr(~tibble(key = html_attr(., "alt"), link = html_attr(., "src"))) %>%
-    mutate(link = stringr::str_replace(link, "SR106,78", "SX1920")) %>%
-    tidyr::spread(key = key, value = link, fill = NA)
+    purrr::map_dfr(~tibble(key = html_attr(., "alt") %>% 
+                             if_null_value("PAIR"), 
+                           link = html_attr(., "src") %>% 
+                             if_null_value())) %>%
+    mutate(link = stringr::str_replace(link, "SR106,78", "SX1920"))
+  
+  brand <- tibble(
+    logo = html_node(page, "*[itemprop='logo']") %>% html_attr("src"),
+    brand_name = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("title"),
+    brand_link = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("href")
+  )
   
   iteminfo <- html_nodes(page, "*[itemprop][content]") %>%
     purrr::map_dfr(~tibble(key = html_attr(., "itemprop"), value = html_attr(., "content"))) %>%
     tidyr::spread(key = key, value = value, fill = NA) %>%
-    mutate(logo = html_node(page, "*[itemprop='logo']") %>% html_attr("src"),
-           brand_name = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("title"),
-           brand_link = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("href"),
+    mutate(brand = list(brand),
            sku = html_nodes(page, "#breadcrumbs div:nth-child(2)") %>% html_text() %>%
              str_remove("SKU ?"),
            category = as.list(category),
            sizes = list(sizes),
            colors = list(colors),
-           color_values = list(color_values),
            widths = list(widths),
-           description = list(description)) %>%
-    bind_cols(images)
+           description = list(description),
+           images = list(images))
   
   iteminfo
 }
+
+tmp <- get_useful_searches() %>%
+  mutate(href = paste0("http://www.zappos.com", href)) 
+
+
+tmp2 <- tmp %>%
+  mutate(shoe_list = purrr::map_df(href, get_all_page_links))

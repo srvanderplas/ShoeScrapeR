@@ -1,6 +1,3 @@
-library(tidyverse)
-library(rvest)
-
 #' Get useful search links from Zappos
 #' 
 #' @param url zappos url
@@ -16,10 +13,10 @@ get_useful_searches <- function(url = "https://www.zappos.com/c/shoes") {
     bind_rows() %>%
     mutate(
       href = str_remove(href, "\\?.*$"),
-      text = links %>% html_text(trim = T) %>% str_remove_all("[^A-z &]*"),
+      text = links %>% html_text(trim = T) %>% str_remove_all("[^A-z &]*") %>% remove_from("Crib|(View All)"),
       parent = links %>% html_node(xpath = "../../../button") %>% html_text() %>% str_remove_all("[^A-z &]*")) %>%
     select(-c(1:2)) %>%
-    filter(!str_detect(text, "Crib|(View All)")) %>%
+    # filter(!str_detect(text, "Crib|(View All)")) %>%
     arrange(href)
   
   search_urls
@@ -79,9 +76,18 @@ get_rating <- function(node) {
 #' 
 #' Used to handle missing nodes in HTML scraping
 #' @param x a list or vector
+#' @param val a value to use as default (by default, NA)
 #' @return NA if x is empty, otherwise, x
-if_null_na <- function(x) {
-  if (length(x) == 0) NA else x
+if_null_value <- function(x, val = NA) {
+  if (length(x) == 0) val else x
+}
+
+#' Remove option from vector
+#' 
+#' @param x character vector of options
+#' @param pattern pattern to check for (regular expression). Matching expressions will be removed.
+remove_from <- function(x, pattern) {
+  x[!str_detect(x, pattern)]
 }
 
 #' For a URL with products, get every product on the page
@@ -104,27 +110,27 @@ get_all_shoes_on_page <- function(url) {
       data_frame(
         brand = html_nodes(., css = "*[itemprop='brand'] *[itemprop='name']") %>% 
           html_text() %>% 
-          if_null_na(),
+          if_null_value(),
         style_name = html_nodes(., css = "p[itemprop='name']") %>% 
           html_text() %>% 
-          if_null_na(),
+          if_null_value(),
         style_type = html_nodes(., css = "a") %>% 
           html_attr("aria-label") %>% 
-          if_null_na() %>% 
+          if_null_value() %>% 
           str_extract("Style:.*$") %>%
           str_trim() %>%
           str_remove("Style: ?") %>% 
           str_remove("Rated.*$"),
         price = html_text(.) %>% 
-          if_null_na %>%
+          if_null_value %>%
           str_extract("\\$\\d{0,}.\\d{2}") %>% 
           parse_number(),
         url = html_node(., css = "a") %>% 
           html_attr("href") %>%
-          if_null_na,
+          if_null_value,
         image_url = html_node(., css = "*[itemprop='image']") %>% 
           html_attr("content") %>%
-          if_null_na
+          if_null_value
       )
     }) %>%
     bind_cols(ratings)
@@ -141,15 +147,38 @@ get_shoe_info <- function(url) {
   category <- html_nodes(page, "#breadcrumbs div a") %>% html_text() %>%
     (function(.) .[!str_detect(., "Back")])
   
-  color_options <- 
+  sizes <- html_nodes(page, "#pdp-size-select option") %>% html_text() %>% if_null_value %>% remove_from("Choose")
+  
+  widths <- html_nodes(page, "#pdp-width-select option") %>% html_text() %>% if_null_value("M") %>% remove_from("Choose")
+  
+  colors <- html_nodes(page, "#pdp-color-select option") %>% html_text() %>% if_null_value
+  color_values <- html_nodes(page, "#pdp-color-select option") %>% html_attr("value") %>% if_null_value
+  
+  description <- html_nodes(page, "*[itemprop='description'] li div") %>% html_text() %>%
+    str_remove_all("•") %>%
+    str_replace_all("\\s{1,}", " ") %>%
+    str_trim()
+  
+  images <- html_nodes(page, "#thumbnailsList img") %>%
+    purrr::map_dfr(~tibble(key = html_attr(., "alt"), link = html_attr(., "src"))) %>%
+    mutate(link = stringr::str_replace(link, "SR106,78", "SX1920")) %>%
+    tidyr::spread(key = key, value = link, fill = NA)
   
   iteminfo <- html_nodes(page, "*[itemprop][content]") %>%
     purrr::map_dfr(~tibble(key = html_attr(., "itemprop"), value = html_attr(., "content"))) %>%
     tidyr::spread(key = key, value = value, fill = NA) %>%
     mutate(logo = html_node(page, "*[itemprop='logo']") %>% html_attr("src"),
+           brand_name = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("title"),
+           brand_link = html_node(page, "*[data-track-value='Brand-Logo']") %>% html_attr("href"),
            sku = html_nodes(page, "#breadcrumbs div:nth-child(2)") %>% html_text() %>%
              str_remove("SKU ?"),
-           category = as.list(category))
+           category = as.list(category),
+           sizes = list(sizes),
+           colors = list(colors),
+           color_values = list(color_values),
+           widths = list(widths),
+           description = list(description)) %>%
+    bind_cols(images)
   
-  
+  iteminfo
 }

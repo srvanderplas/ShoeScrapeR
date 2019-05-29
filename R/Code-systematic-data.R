@@ -144,6 +144,7 @@ get_all_shoes_on_page <- function(url) {
 #' @param url url of page with shoe information
 #' @export
 get_shoe_info <- function(url) {
+  Sys.sleep(runif(1, min = 0.5, max = 5.5))
   page <- read_html(url)
   
   category <- html_nodes(page, "#breadcrumbs div a") %>% html_text() %>%
@@ -182,7 +183,7 @@ get_shoe_info <- function(url) {
     mutate(brand = list(brand),
            sku = html_nodes(page, "#breadcrumbs div:nth-child(2)") %>% html_text() %>%
              str_remove("SKU ?"),
-           category = as.list(category),
+           category = list(category),
            sizes = list(sizes),
            colors = list(colors),
            widths = list(widths),
@@ -192,9 +193,60 @@ get_shoe_info <- function(url) {
   iteminfo
 }
 
+clean_field <- function(x) {
+  str_replace_all(x, "[^A-z]{1,}", "-") %>% str_remove("-$") %>% str_remove("^-") %>% str_to_lower()
+}
+
+# Need to figure out how to set up the file system with picture links to ensure 
+# that everything is parse-able and saved correctly
+clean_shoe_path <- function(df) {
+  df <- df %>%
+    mutate(brand_clean = clean_field(brand),
+           style_clean = clean_field(style_name),
+           type_clean = clean_field(style_type),
+           path_name = sprintf("%s_%s_%s_%s", brand_clean, style_clean, sku, type_clean))
+}
+
+
+library(furrr)
+plan(multicore)
+
 tmp <- get_useful_searches() %>%
-  mutate(href = paste0("http://www.zappos.com", href)) 
+  mutate(search_page = paste0("http://www.zappos.com", href)) %>%
+  mutate(shoe_search = purrr::map(search_page, get_all_page_links)) %>%
+  unnest(shoe_search) %>%
+  mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
 
+tmp3 <- unnest(tmp2) 
 
-tmp2 <- tmp %>%
-  mutate(shoe_list = purrr::map_df(href, get_all_page_links))
+safe_get_shoe <- safely(get_shoe_info)
+
+tmp4 <- tmp3 %>%
+  mutate(shoe_info = future_map(paste0("http://www.zappos.com", url), safe_get_shoe))
+
+i <- 0
+r <- 0
+repeat {
+  # Separate results out
+  tmp4$shoe_data <- purrr::map(tmp4$shoe_info, 'result')
+  tmp4$shoe_error <- purrr::map(tmp4$shoe_info, 'error') %>% 
+    purrr::map_chr(function(x) if_null_value(paste(x, sep = "\n"), NA_character_))
+  
+  # update counters
+  i <- i + 1
+  redo <- which(!is.na(tmp4$shoe_error))
+  
+  # test to determine whether to loop or exit
+  if (i > 5 | length(redo) < 10 | r == length(redo)) {
+    break
+  }
+  
+  message(sprintf("Shoe retrieval failed for %s shoes. Trying again.", length(redo)))
+  
+  tmp4$shoe_info[redo] <- future_map(paste0("http://www.zappos.com", tmp4$url[redo]), safe_get_shoe)
+  r <- length(redo)
+}
+
+tmp4_success <- tmp4 %>% filter(is.na(shoe_error))
+
+tmp5 <- unnest(tmp4_success, shoe_data) %>% arrange(brand, style_name, style_type, sku)

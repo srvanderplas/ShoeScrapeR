@@ -108,7 +108,7 @@ get_all_shoes_on_page <- function(url) {
     # purrr::map(html_nodes, css = "div") %>%
     purrr::map_df(~{
       
-      data_frame(
+      tibble(
         brand = html_nodes(., css = "*[itemprop='brand'] *[itemprop='name']") %>% 
           html_text() %>% 
           if_null_value(),
@@ -147,7 +147,7 @@ get_shoe_info <- function(url) {
   Sys.sleep(runif(1, min = 0.5, max = 5.5))
   page <- read_html(url)
   
-  category <- html_nodes(page, "#breadcrumbs div a") %>% html_text() %>%
+  categories <- html_nodes(page, "#breadcrumbs div a") %>% html_text() %>%
     (function(.) .[!str_detect(., "Back")])
   
   sizes <- html_nodes(page, "#pdp-size-select option") %>% html_text() %>% if_null_value %>% remove_from("Choose")
@@ -178,19 +178,35 @@ get_shoe_info <- function(url) {
   )
   
   iteminfo <- html_nodes(page, "*[itemprop][content]") %>%
-    purrr::map_dfr(~tibble(key = html_attr(., "itemprop"), value = html_attr(., "content"))) %>%
+    purrr::map_dfr(~tibble(key = html_attr(., "itemprop"), 
+                           value = html_attr(., "content"))) %>%
     tidyr::spread(key = key, value = value, fill = NA) %>%
     mutate(brand = list(brand),
-           sku = html_nodes(page, "#breadcrumbs div:nth-child(2)") %>% html_text() %>%
+           sku = html_nodes(page, "#breadcrumbs div:nth-child(2)") %>% 
+             html_text() %>%
              str_remove("SKU ?"),
-           category = list(category),
+           category = list(categories),
            sizes = list(sizes),
            colors = list(colors),
-           widths = list(widths),
+           widths = ifelse(length(widths) > 1, list(widths), widths),
            description = list(description),
            images = list(images))
   
   iteminfo
+}
+
+#' Download one or more images from urls
+#' @param url url to download
+#' @param filename name to save file to
+#' @param path directory to save files in (can be NULL to save in current dir)
+#' @export
+download_image <- function(url, filename, path = NULL, overwrite = F) {
+  assertthat::assert_that(length(url) == length(filename))
+  if (!is.null(path)) assertthat::assert_that(dir.exists(path))
+  
+  destfile <- if (is.null(path)) filename else file.path(path, filename)
+
+  download.file(url, destfile, mode = "wb")
 }
 
 clean_field <- function(x) {
@@ -207,46 +223,3 @@ clean_shoe_path <- function(df) {
            path_name = sprintf("%s_%s_%s_%s", brand_clean, style_clean, sku, type_clean))
 }
 
-
-library(furrr)
-plan(multicore)
-
-tmp <- get_useful_searches() %>%
-  mutate(search_page = paste0("http://www.zappos.com", href)) %>%
-  mutate(shoe_search = purrr::map(search_page, get_all_page_links)) %>%
-  unnest(shoe_search) %>%
-  mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
-
-tmp3 <- unnest(tmp2) 
-
-safe_get_shoe <- safely(get_shoe_info)
-
-tmp4 <- tmp3 %>%
-  mutate(shoe_info = future_map(paste0("http://www.zappos.com", url), safe_get_shoe))
-
-i <- 0
-r <- 0
-repeat {
-  # Separate results out
-  tmp4$shoe_data <- purrr::map(tmp4$shoe_info, 'result')
-  tmp4$shoe_error <- purrr::map(tmp4$shoe_info, 'error') %>% 
-    purrr::map_chr(function(x) if_null_value(paste(x, sep = "\n"), NA_character_))
-  
-  # update counters
-  i <- i + 1
-  redo <- which(!is.na(tmp4$shoe_error))
-  
-  # test to determine whether to loop or exit
-  if (i > 5 | length(redo) < 10 | r == length(redo)) {
-    break
-  }
-  
-  message(sprintf("Shoe retrieval failed for %s shoes. Trying again.", length(redo)))
-  
-  tmp4$shoe_info[redo] <- future_map(paste0("http://www.zappos.com", tmp4$url[redo]), safe_get_shoe)
-  r <- length(redo)
-}
-
-tmp4_success <- tmp4 %>% filter(is.na(shoe_error))
-
-tmp5 <- unnest(tmp4_success, shoe_data) %>% arrange(brand, style_name, style_type, sku)

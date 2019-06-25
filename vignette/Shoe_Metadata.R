@@ -1,0 +1,213 @@
+# Packages
+# ------------------------------------------------------------------------------
+library(furrr)
+library(tidyverse)
+library(magrittr)
+library(rvest)
+library(ShoeScrapeR)
+library(RSQLite)
+# ------------------------------------------------------------------------------
+
+# Parameters
+# ------------------------------------------------------------------------------
+db_location <- "extra/Scraped_Data.sqlite"
+image_save <- "extra/all_photos"
+# ------------------------------------------------------------------------------
+
+# Functions
+# ------------------------------------------------------------------------------
+# Write new rows to pre-existing table (anti-join); if table doesn't exist, 
+# write all rows in data frame; if purge is true overwrite all rows in data 
+# frame
+dbWriteNewRows <- function(con, tablename, df, quiet = F, purge = F) {
+  if (purge) {
+    res <- dbWriteTable(con, tablename, df, overwrite = T)
+    return(res)
+  } 
+  
+  if (tablename %in% dbListTables(con)) {
+      initial_link_db <- dbReadTable(con, tablename)
+      new_rows <- suppressMessages(anti_join(df, initial_link_db))
+      if (nrow(new_rows) > 0 & !quiet) {
+        message(sprintf("%d new rows added", nrow(new_rows)))
+      }
+      res <- dbWriteTable(con, tablename, new_rows, append = T)
+      return(res)
+  } else {
+    if (!quiet) {
+      message(sprintf("Creating %s table and initializing with new data.", 
+                      tablename))
+    }
+    res <- dbWriteTable(con, tablename, df)
+    return(res)
+  }
+  
+  warning("Something went wrong in dbWriteNewRows")
+  return(NA)
+}
+# ------------------------------------------------------------------------------
+
+# Set up database if it doesn't exist
+# ------------------------------------------------------------------------------
+shoe_db_con <- dbConnect(RSQLite::SQLite(), db_location)
+# ------------------------------------------------------------------------------
+
+# Get initial zappos search page results - one tile for each shoe model
+# ------------------------------------------------------------------------------
+plan(multicore)
+initial_links <- get_useful_searches() %>%
+  mutate(search_page = paste0("http://www.zappos.com", href)) %>%
+  mutate(shoe_search = purrr::map(search_page, get_all_page_links)) %>%
+  unnest(shoe_search) %>%
+  mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
+
+initial_link_data <- unnest(initial_links) 
+
+# Write initial results to database
+dbWriteNewRows(shoe_db_con, "initial_link", initial_link_data)
+
+plan(sequential) # Reset multicore
+# ------------------------------------------------------------------------------
+
+# Get shoe-level information from zappos using previously acquired links
+# ------------------------------------------------------------------------------
+safe_get_shoe <- safely(get_shoe_info)
+
+plan(multicore, workers = 24)
+
+urls <- initial_link_data$url # work with smallest possible data to minimize memory use
+# TODO: Come back and only get information for shoes which aren't in the db already
+
+shoe_info <- future_map(paste0("http://www.zappos.com", urls), 
+                        safe_get_shoe, 
+                        .progress = TRUE,
+                        .options = future_options(globals = "urls"))
+# ------------------------------------------------------------------------------
+
+# Assemble shoe info and errors
+# ------------------------------------------------------------------------------
+shoe_data <- purrr::map(shoe_info, "result") %>% 
+  bind_rows(.id = "url") %>%
+  mutate(url = urls[as.numeric(url)]) %>%
+  rename(ratingCount = `reviewCount ratingCount`)
+
+shoe_error_list <- purrr::map(shoe_info, "error") 
+idxs <- purrr::map_lgl(shoe_error_list, ~!is.null(.)) %>% which()
+
+shoe_errors <- tibble(url = urls[idxs], 
+                      message = purrr::map_chr(shoe_error_list[idxs], "message"), 
+                      call = purrr::map(shoe_error_list[idxs], "call") %>% 
+                        as.character())
+rm(shoe_error_list, idxs)
+# ------------------------------------------------------------------------------
+
+# Split shoe info into separate tables
+# ------------------------------------------------------------------------------
+shoe_data_info <- shoe_data %>%
+  select(url, color, image, brand, sku, ratingValue, ratingCount) %>%
+  unnest() %>%
+  select(-logo, -brand_link) %>% # Remove brand logo, brand link because that 
+                                 # should be in a separate table
+  unique() %>%
+  mutate(product_num = str_extract(url, "product/\\d{1,}/") %>% 
+           str_remove_all("\\D"),
+         color_num = str_extract(url, "color/\\d{1,}/") %>% 
+           str_remove_all("\\D"))
+
+categories <- shoe_data %>%
+  select(url, category) %>%
+  unnest() %>%
+  unique()
+
+sizes <- shoe_data %>%
+  select(url, sizes) %>%
+  unnest() %>%
+  unique()
+
+colors <- shoe_data %>%
+  select(url, colors) %>%
+  unnest() %>%
+  unique()
+
+widths <- shoe_data %>% 
+  select(url, widths) %>%
+  unnest() %>%
+  unique()
+
+brands <- shoe_data %>%
+  select(brand) %>%
+  unnest() %>%
+  unique() 
+
+description <- shoe_data %>%
+  select(url, description) %>%
+  mutate(
+    description = purrr::map(
+      description, 
+      ~tibble(row = 1:length(.), text = as.character(.))
+    )
+  ) %>%
+  unnest() %>%
+  unique()
+
+
+# Record whether sub-tables actually succeed
+shoe_data_tables <- tibble(
+  tablename = c("shoes", "categories", "sizes", "colors", 
+                "widths", "brand_info", "description"),
+  data = list(shoe_data_info, categories, sizes, colors, 
+              widths, brands, description),
+  success = purrr::map2_lgl(tablename, data, dbWriteNewRows, 
+                            con = shoe_db_con, purge = T))
+
+rm(categories, sizes, colors, widths, brands, description, shoe_data_info)
+
+# ------------------------------------------------------------------------------
+
+# Download images
+# ------------------------------------------------------------------------------
+
+# Create directory for files (if it doesn't exist)
+if (!dir.exists(image_save)) {
+  dir.create(image_save)
+}
+
+safe_dl_image <- safely(download_image)
+
+# Set up data frame with proper name
+image_files <- shoe_data %>%
+  select(url, images) %>%
+  unnest() %>%
+  rename(view = key, image_link = link) %>%
+  mutate(view = str_remove(view, " View") %>% str_trim) %>%
+  arrange(url) %>%
+  mutate(
+    ext = str_extract(image_link, ".[A-z]{1,}$"),
+    filename = str_replace_all(url, c("/p/" = "", "/" = "_")) %>%
+           paste0(., "_", view, ext)) %>%
+  select(url, view, img_url = image_link, filename = filename) %>%
+  mutate(filename = file.path(image_save, filename))
+
+image_res <- image_files %>%
+  filter(!file.exists(filename)) %>%
+  select(url = img_url, filename) %>%
+  mutate(
+    success = furrr::future_pmap(., safe_dl_image),
+    result = purrr::map_lgl(success, ~ifelse(is.null(.$result), NA, .$result)),
+    error = purrr::map_chr(success, ~ifelse(is.null(.$error), NA, .$error[[1]])))
+
+image_files <- image_files %>%
+  mutate(success = file.exists(filename))
+
+sum(!image_files$success)
+
+dbWriteNewRows(shoe_db_con, "image_location", image_files)
+
+# ------------------------------------------------------------------------------
+
+# Close db connection
+# ------------------------------------------------------------------------------
+dbDisconnect(shoe_db_con)
+git2r::add(path = db_location)
+# ------------------------------------------------------------------------------
+

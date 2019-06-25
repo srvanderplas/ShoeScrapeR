@@ -48,7 +48,7 @@ shoe_specific <- full_shoe_res %>%
 
 warning("Sync stage reached")
 
-system("rsync -avzu -avzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/")
+system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/")
 
 # try(system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ /myfiles/las/research/csafe/ShoeNeuralNet/ShoeImages/"))
 try(system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))

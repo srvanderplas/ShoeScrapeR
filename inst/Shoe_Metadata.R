@@ -243,8 +243,8 @@ write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
             row.names = F, col.names = F, quote = F)
 
 # git housekeeping
-git2r::add("image_manifest")
-git2r::add("inst/cron.log")
+git2r::add(path = "./image_manifest")
+git2r::add(path = "inst/cron.log")
 git2r::commit(all = T, message = "Automatic Update")
 system("git pull")
 system("git push")

@@ -209,6 +209,13 @@ if (nrow(new_shoes) > 0) {
   
   dbWriteNewRows(shoe_db_con, "image_location", image_files)
   
+  image_files %>%
+    filter(view == "Bottom") %>%
+    mutate(filename2 = str_replace(filename, "all_photos", "photos") %>% 
+             str_remove("_Bottom")) %>%
+    filter(!file.exists(filename2)) %>%
+    mutate(copy = purrr::map2_lgl(filename, filename2, file.copy))
+  
   # ------------------------------------------------------------------------------
 }
 # Close db connection
@@ -221,17 +228,12 @@ git2r::add(path = db_location)
 # ------------------------------------------------------------------------------
 warning("Sync stage reached")
 
-image_files %>%
-  filter(view == "Bottom") %>%
-  mutate(filename2 = str_replace(filename, "all_photos", "photos") %>% 
-           str_remove("_Bottom")) %>%
-  filter(!file.exists(filename2)) %>%
-  mutate(copy = purrr::map2_lgl(filename, filename2, file.copy))
+
 
 # Copy files to LabelMe Directory
 try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
 # Back up bottom images to LSS
-try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeSoles/"))
+# try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeSoles/"))
 # Backup all images to LSS
 try(system("rsync -rzu --no-perms --no-owner --no-group extra/all_photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))
 

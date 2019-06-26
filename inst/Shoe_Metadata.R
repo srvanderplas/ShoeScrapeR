@@ -229,11 +229,11 @@ image_files %>%
   mutate(copy = purrr::map2_lgl(filename, filename2, file.copy))
 
 # Copy files to LabelMe Directory
-try(system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
+try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
 # Back up bottom images to LSS
-try(system("rsync -avzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeSoles/"))
+try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeSoles/"))
 # Backup all images to LSS
-try(system("rsync -avzu --no-perms --no-owner --no-group extra/all_photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))
+try(system("rsync -rzu --no-perms --no-owner --no-group extra/all_photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))
 
 # Make image manifest
 system("find extra/photos/ -type f -name '*.jpg' > image_manifest")
@@ -246,6 +246,6 @@ write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
 git2r::add("image_manifest")
 git2r::add("inst/cron.log")
 git2r::commit(all = T, message = "Automatic Update")
-git2r::pull()
-git2r::push()
+system("git pull")
+system("git push")
 # ------------------------------------------------------------------------------

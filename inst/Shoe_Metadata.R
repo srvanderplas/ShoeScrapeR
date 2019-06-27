@@ -233,13 +233,7 @@ if (nrow(new_shoes) > 0) {
   write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
               "~/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
               row.names = F, col.names = F, quote = F)
-  
-  # git housekeeping
-  git2r::add(path = "./image_manifest")
-  git2r::add(path = "inst/cron.log")
-  git2r::commit(all = T, message = "Automatic Update")
-  system("git pull")
-  system("git push")
+
 
   # ------------------------------------------------------------------------------
 }
@@ -250,3 +244,9 @@ dbDisconnect(shoe_db_con)
 git2r::add(path = db_location)
 # ------------------------------------------------------------------------------
 
+# git housekeeping
+git2r::add(path = "./image_manifest")
+git2r::add(path = "inst/cron.log")
+git2r::commit(all = T, message = "Automatic Update")
+system("git pull")
+system("git push")

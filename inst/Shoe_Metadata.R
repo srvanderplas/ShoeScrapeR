@@ -241,12 +241,14 @@ if (nrow(new_shoes) > 0) {
 # Close db connection
 # ------------------------------------------------------------------------------
 dbDisconnect(shoe_db_con)
-git2r::add(path = db_location)
 # ------------------------------------------------------------------------------
 
 # git housekeeping
+# ------------------------------------------------------------------------------
+git2r::add(path = db_location)
 git2r::add(path = "./image_manifest")
 git2r::add(path = "inst/cron.log")
 git2r::commit(all = T, message = "Automatic Update")
 system("git pull")
 system("git push")
+# ------------------------------------------------------------------------------

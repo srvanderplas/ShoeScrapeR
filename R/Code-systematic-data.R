@@ -188,9 +188,10 @@ get_shoe_info <- function(url) {
            category = list(categories),
            sizes = list(sizes),
            colors = list(colors),
-           widths = ifelse(length(widths) > 1, list(widths), widths),
+           widths = as.list(widths),
            description = list(description),
-           images = list(images))
+           images = list(images)) %>%
+    mutate(widths = as.list(widths))
   
   iteminfo
 }

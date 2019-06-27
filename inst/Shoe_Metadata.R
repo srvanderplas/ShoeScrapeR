@@ -59,7 +59,7 @@ shoe_db_con <- dbConnect(RSQLite::SQLite(), db_location)
 plan(multicore)
 initial_links <- get_useful_searches() %>%
   mutate(search_page = paste0("http://www.zappos.com", href)) %>%
-  mutate(shoe_search = purrr::map(search_page, get_all_page_links)) %>%
+  mutate(shoe_search = future_map(search_page, get_all_page_links)) %>%
   unnest(shoe_search) %>%
   mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
 
@@ -85,8 +85,7 @@ if (nrow(new_shoes) > 0) {
   
   shoe_info <- future_map(paste0("http://www.zappos.com", urls), 
                           safe_get_shoe, 
-                          .progress = TRUE,
-                          .options = future_options(globals = "urls"))
+                          .progress = TRUE)
   
   # ------------------------------------------------------------------------------
   

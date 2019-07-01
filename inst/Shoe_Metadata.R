@@ -10,6 +10,7 @@ library(ShoeScrapeR)
 library(RSQLite)
 # ------------------------------------------------------------------------------
 
+setwd("/home/srvander/Projects/CSAFE/ShoeScrapeR/")
 # Parameters
 # ------------------------------------------------------------------------------
 db_location <- "extra/Scraped_Data.sqlite"

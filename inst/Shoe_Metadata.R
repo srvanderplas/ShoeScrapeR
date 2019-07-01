@@ -195,13 +195,18 @@ if (nrow(new_shoes) > 0) {
     mutate(filename = file.path(image_save, filename))
   
   image_res <- image_files %>%
-    filter(!file.exists(filename)) %>%
-    select(url = img_url, filename) %>%
+    mutate(dl = !file.exists(filename)) %>%
+    filter(dl) %>%
+    select(url = img_url, filename)
+  
+  if (nrow(image_res) > 0) {
+    image_res <- image_res %>%
     mutate(
       success = furrr::future_pmap(., safe_dl_image),
       result = purrr::map_lgl(success, ~ifelse(is.null(.$result), NA, .$result)),
       error = purrr::map_chr(success, ~ifelse(is.null(.$error), NA, .$error[[1]])))
-  
+  }
+    
   image_files <- image_files %>%
     mutate(success = file.exists(filename))
   

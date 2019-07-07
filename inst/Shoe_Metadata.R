@@ -10,7 +10,7 @@ library(ShoeScrapeR)
 library(RSQLite)
 # ------------------------------------------------------------------------------
 
-setwd("/home/srvander/Projects/CSAFE/ShoeScrapeR/")
+setwd("~/Projects/CSAFE/ShoeScrapeR/")
 # Parameters
 # ------------------------------------------------------------------------------
 db_location <- "extra/Scraped_Data.sqlite"
@@ -203,7 +203,7 @@ if (nrow(new_shoes) > 0) {
     image_res <- image_res %>%
     mutate(
       success = furrr::future_pmap(., safe_dl_image),
-      result = purrr::map_lgl(success, ~ifelse(is.null(.$result), NA, .$result)),
+      result = purrr::map_int(success, ~ifelse(is.null(.$result), NA, .$result)),
       error = purrr::map_chr(success, ~ifelse(is.null(.$error), NA, .$error[[1]])))
   }
     

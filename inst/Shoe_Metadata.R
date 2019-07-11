@@ -258,3 +258,9 @@ git2r::commit(all = T, message = "Automatic Update")
 system("git pull")
 system("git push")
 # ------------------------------------------------------------------------------
+
+# set in Rprofile, ping healthchecks.io to update
+if (exists("ping_url")) {
+  httr::GET(ping_url) 
+} 
+

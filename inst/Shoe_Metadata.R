@@ -11,6 +11,8 @@ library(RSQLite)
 # ------------------------------------------------------------------------------
 
 setwd("~/Projects/CSAFE/ShoeScrapeR/")
+source(".Rprofile") # Just in case it doesn't source when running via cron
+
 # Parameters
 # ------------------------------------------------------------------------------
 db_location <- "extra/Scraped_Data.sqlite"

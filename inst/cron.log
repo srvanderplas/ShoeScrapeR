@@ -69,81 +69,11 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-11 new rows added
+5 new rows added
 [1] TRUE
- Progress: ──────────────────────────────────                               100% Progress: ──────────────────────────────────────────────                   100% Progress: ──────────────────────────────────────────────                   100% Progress: ────────────────────────────────────────────────────             100% Progress: ────────────────────────────────────────────────────             100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ─────────────────────────                                        100% Progress: ─────────────────────────                                        100% Progress: ──────────────────────────────────────                           100% Progress: ──────────────────────────────────────                           100% Progress: ──────────────────────────────────────                           100% Progress: ──────────────────────────────────────                           100% Progress: ───────────────────────────────────────────────────              100% Progress: ───────────────────────────────────────────────────              100% Progress: ───────────────────────────────────────────────────              100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/71QmQTlW7WL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81HhUdvqSWL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71aHsf2z6YL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71VAQyK-b9L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61aKkBV2WQL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71t7m9+n8sL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71KRFkhjubL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71hqgMFC0qL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/716l27BOLfL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71aiNMu2GOL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/718oQVgyz0L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/616HoEZkNiL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71wTI6Elr2L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61CUCu+J54L._SX1920_.jpg'
-Content type 'image/jpeg' length 196377 bytes (191 KB)
-================Content type 'image/jpeg' length 265796 bytes (259 KB)
-================Content type 'image/jpeg' length 225951 bytes (220 KB)
-===============================================
-downloaded 191 KB
-
-Content type 'image/jpeg' length 179442 bytes (175 KB)
-================================================Content type 'image/jpeg' length 171848 bytes (167 KB)
-=====================================
-downloaded 175 KB
-
-==============Content type 'image/jpeg' length 222026 bytes (216 KB)
-=======Content type 'image/jpeg' length 148431 bytes (144 KB)
-=============Content type 'image/jpeg' length 126954 bytes (123 KB)
-====================================
-downloaded 167 KB
-
-=================================================Content type 'image/jpeg' length 153195 bytes (149 KB)
-======================================
-downloaded 216 KB
-
-===========Content type 'image/jpeg' length 206269 bytes (201 KB)
-====================================
-downloaded 149 KB
-
-==========================================
-downloaded 259 KB
-
-=================
-downloaded 220 KB
-
-====Content type 'image/jpeg' length 124487 bytes (121 KB)
-=============Content type 'image/jpeg' length 116044 bytes (113 KB)
-=============Content type 'image/jpeg' length 193291 bytes (188 KB)
-=========================================
-downloaded 121 KB
-
-===================================================================
-downloaded 123 KB
-
-=========================
-downloaded 113 KB
-
-======
-downloaded 144 KB
-
-Content type 'image/jpeg' length 216512 bytes (211 KB)
-==================================================
-downloaded 211 KB
-
-=========================
-downloaded 201 KB
-
-=============================
-downloaded 188 KB
-
-56 new rows added
+35 new rows added
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/": Permission denied (13)
 rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [Receiver=3.1.2]
 Warning message:

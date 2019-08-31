@@ -69,46 +69,46 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-20 new rows added
+13 new rows added
 [1] TRUE
- Progress: ──────────────────────────────────────────────────────           100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ────────────────────────────────────────────                     100% Progress: ──────────────────────────────────────────────────────           100% Progress: ──────────────────────────────────────────────────────           100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/81lLWVV1imL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71w7SdZVU0L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71JoMfa1gpL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81dixI1AZ9L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71yBt5mVxVL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/716RYzuPfIL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61j6RFahUpL._SX1920_.jpg'
-Content type 'image/jpeg' length 326778 bytes (319 KB)
+trying URL 'https://m.media-amazon.com/images/I/81yYHHJbyxL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71ahft7wMwL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/713hPFzq7bL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/81Db45EOzLL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71K4Zr14TaL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/81kiG7MoqaL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71OPZ2nfRYL._SX1920_.jpg'
+Content type 'image/jpeg' length 302809 bytes (295 KB)
 ==================================================
-downloaded 319 KB
+downloaded 295 KB
 
-Content type 'image/jpeg' length 154456 bytes (150 KB)
-=====Content type 'image/jpeg' length 146890 bytes (143 KB)
-=====Content type 'image/jpeg' length 181178 bytes (176 KB)
-========================Content type 'image/jpeg' length 266890 bytes (260 KB)
-========Content type 'image/jpeg' length 257897 bytes (251 KB)
-===================================================
-downloaded 143 KB
+Content type 'image/jpeg' length 196927 bytes (192 KB)
+=================================Content type 'image/jpeg' length 139764 bytes (136 KB)
+======================
+downloaded 192 KB
 
-==========================================================
-downloaded 251 KB
+Content type 'image/jpeg' length 288394 bytes (281 KB)
+=====================================================
+downloaded 136 KB
 
-===================
-downloaded 150 KB
+Content type 'image/jpeg' length 275615 bytes (269 KB)
+========================================Content type 'image/jpeg' length 146088 bytes (142 KB)
+================================
+downloaded 281 KB
 
-=================================Content type 'image/jpeg' length 114994 bytes (112 KB)
-===================
-downloaded 260 KB
+==============================================================
+downloaded 269 KB
 
-====================================
-downloaded 112 KB
+========
+downloaded 142 KB
 
-==========================================
-downloaded 176 KB
+Content type 'image/jpeg' length 136361 bytes (133 KB)
+==================================================
+downloaded 133 KB
 
-91 new rows added
+56 new rows added
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/": Required key not available (126)
 rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [Receiver=3.1.2]
 Warning message:

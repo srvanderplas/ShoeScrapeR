@@ -66,7 +66,7 @@ initial_links <- get_useful_searches() %>%
   unnest(shoe_search) %>%
   mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
 
-initial_link_data <- unnest(initial_links) 
+initial_link_data <- unnest(initial_links, cols = c(shoe_page)) 
 
 initial_link_db <- dbReadTable(shoe_db_con, "initial_link")
 new_shoes <- suppressMessages(anti_join(initial_link_data, initial_link_db))
@@ -113,7 +113,7 @@ if (nrow(new_shoes) > 0) {
   # ------------------------------------------------------------------------------
   shoe_data_info <- shoe_data %>%
     select(url, color, image, brand, sku, ratingValue, ratingCount) %>%
-    unnest() %>%
+    unnest(brand) %>%
     select(-logo, -brand_link) %>% # Remove brand logo, brand link because that 
     # should be in a separate table
     unique() %>%
@@ -124,27 +124,28 @@ if (nrow(new_shoes) > 0) {
   
   categories <- shoe_data %>%
     select(url, category) %>%
-    unnest() %>%
+    unnest(category) %>%
     unique()
   
   sizes <- shoe_data %>%
     select(url, sizes) %>%
-    unnest() %>%
+    unnest(sizes) %>%
     unique()
   
   colors <- shoe_data %>%
     select(url, colors) %>%
-    unnest() %>%
+    mutate(colors = purrr::map(colors, mutate_all, as.character)) %>%
+    unnest(colors) %>%
     unique()
   
   widths <- shoe_data %>% 
     select(url, widths) %>%
-    unnest() %>%
+    unnest(widths) %>%
     unique()
   
   brands <- shoe_data %>%
     select(brand) %>%
-    unnest() %>%
+    unnest(brand) %>%
     unique() 
   
   description <- shoe_data %>%
@@ -155,7 +156,7 @@ if (nrow(new_shoes) > 0) {
         ~tibble(row = 1:length(.), text = as.character(.))
       )
     ) %>%
-    unnest() %>%
+    unnest(description) %>%
     unique()
   
   
@@ -185,7 +186,7 @@ if (nrow(new_shoes) > 0) {
   # Set up data frame with proper name
   image_files <- shoe_data %>%
     select(url, images) %>%
-    unnest() %>%
+    unnest(images) %>%
     rename(view = key, image_link = link) %>%
     mutate(view = str_remove(view, " View") %>% str_trim) %>%
     arrange(url) %>%

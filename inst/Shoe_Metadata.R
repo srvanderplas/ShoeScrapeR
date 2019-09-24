@@ -251,6 +251,12 @@ if (nrow(new_shoes) > 0) {
 dbDisconnect(shoe_db_con)
 # ------------------------------------------------------------------------------
 
+# set in Rprofile, ping healthchecks.io to update
+if (exists("ping_url")) {
+  httr::GET(ping_url) 
+} 
+
+
 # git housekeeping
 # ------------------------------------------------------------------------------
 git2r::add(path = db_location)
@@ -260,9 +266,3 @@ git2r::commit(all = T, message = "Automatic Update")
 system("git pull")
 system("git push")
 # ------------------------------------------------------------------------------
-
-# set in Rprofile, ping healthchecks.io to update
-if (exists("ping_url")) {
-  httr::GET(ping_url) 
-} 
-

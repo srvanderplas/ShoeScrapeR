@@ -236,6 +236,8 @@ if (nrow(new_shoes) > 0) {
   # Backup all images to LSS
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/all_photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))
   
+  try(system("rsync -rzu --no-perms --no-owner --no-group extra/Scraped_Data.sqlite /lss/research/csafe-shoeprints/ShoeNeuralNet/"))
+  
   # Make image manifest
   system("find extra/photos/ -type f -name '*.jpg' > image_manifest")
   flist <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")

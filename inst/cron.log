@@ -66,46 +66,81 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-139 new rows added
+206 new rows added
 [1] TRUE
- Progress: ─────────────────────────                                        100% Progress: ─────────────────────────────────────                            100% Progress: ────────────────────────────────────────────────────             100% Progress: ──────────────────────────────────────────────────────────       100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ──────────────────                                               100% Progress: ───────────────────────────────                                  100% Progress: ─────────────────────────────────────────                        100% Progress: ───────────────────────────────────────────────────              100% Progress: ────────────────────────────────────────────────────────         100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/81oerbTeoVL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71MbjcSpg7L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71WxVfH-KpL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81YoQJf+I4L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71EHy2jMmtL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81QFadaeZYL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71zYki9OOJL._SX1920_.jpg'
-Content type 'image/jpeg' length 227804 bytes (222 KB)
-==========Content type 'image/jpeg' length 215963 bytes (210 KB)
-========================================================================
-downloaded 210 KB
+trying URL 'https://m.media-amazon.com/images/I/71J9HIa1aFL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71SVlwcD66L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61GePjmBhYL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71LmUJV6ioL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/615e-u3-mLL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/714InTUBJtL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/618Lljug11L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71C2ne3nG0L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71VCCV+PM8L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71HYhcp+H5L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71jSP37k9zL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61I69VZEtxL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71sUbbvF55L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/615ZZbySv5L._SX1920_.jpg'
+Content type 'image/jpeg' length 193973 bytes (189 KB)
+=============================Content type 'image/jpeg' length 169590 bytes (165 KB)
+Content type 'image/jpeg' length 72647 bytes (70 KB)
+=======================================
+downloaded 189 KB
 
-==============Content type 'image/jpeg' length 285389 bytes (278 KB)
-======
-downloaded 222 KB
+================================================
+downloaded 70 KB
 
-======Content type 'image/jpeg' length 286678 bytes (279 KB)
-==================Content type 'image/jpeg' length 196159 bytes (191 KB)
-============================================================Content type 'image/jpeg'= length 298191 bytes (291 KB)
+==================================
+downloaded 165 KB
+
+Content type 'image/jpeg' length 184404 bytes (180 KB)
+====Content type 'image/jpeg' length 177932 bytes (173 KB)
+=============Content type 'image/jpeg' length 101291 bytes (98 KB)
+============Content type 'image/jpeg' length 91237 bytes (89 KB)
+=======================================================================================================================================
+downloaded 89 KB
+
+==
+downloaded 98 KB
+
+=======================Content type 'image/jpeg' length 199562 bytes (194 KB)
 ========
-downloaded 278 KB
+downloaded 173 KB
 
-==========================
-downloaded 191 KB
+===========
+downloaded 180 KB
 
-======Content type 'image/jpeg' length 172187 bytes (168 KB)
-========================================================
-downloaded 279 KB
+========Content type 'image/jpeg' length 163712 bytes (159 KB)
+============Content type 'image/jpeg' length 138837 bytes (135 KB)
+===============================================
+=downloaded 194 KB
 
-=========================================
-downloaded 168 KB
+=============================================Content type 'image/jpeg' length 117835 bytes (115 KB)
+==============
+downloaded 135 KB
 
-==========================
-downloaded 291 KB
+============================
+downloaded 159 KB
 
-462 new rows added
+=====================================
+downloaded 115 KB
+
+Content type 'image/jpeg' length 96631 bytes (94 KB)
+==================================================
+downloaded 94 KB
+
+Content type 'image/jpeg' length 171651 bytes (167 KB)
+==================================================
+downloaded 167 KB
+
+Content type 'image/jpeg' length 164028 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+496 new rows added
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/": Permission denied (13)
 rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [Receiver=3.1.2]
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/": Permission denied (13)
@@ -113,7 +148,7 @@ rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [
 Warning message:
 Sync stage reached 
 Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
-  Date: 2019-09-28 05:00
+  Date: 2019-09-28 11:00
   Status: 200
   Content-Type: text/plain; charset=utf-8
   Size: 2 B

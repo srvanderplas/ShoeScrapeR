@@ -68,149 +68,89 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 20 new rows added
 [1] TRUE
- Progress: ───────────────────────────────────────────────────              100% Progress: ─────────────────────────────────────────────────────────        100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ─────────────────────────────────────────                        100% Progress: ─────────────────────────────────────────────────────────        100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/71JCKd30P7L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71z-myxf8UL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71FCBzrtLfL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61+pRKiee0L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71Xcna9UgxL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71Vdc8GRcqL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71yQUBhv8yL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71NxxjyMJCL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/717DE+AD7sL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71sc9aGNizL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71c+eFy-qrL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71LzzXcdrxL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81k5VPVKRaL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71ZkT8EsdqL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81NYC15IYDL._SX1920_.jpg'
-Content type 'image/jpeg' length 251914 bytes (246 KB)
-======trying URL 'https://m.media-amazon.com/images/I/81gPCfqaitL._SX1920_.jpg'
-=============trying URL 'https://m.media-amazon.com/images/I/81Tn-Lr1U3L._SX1920_.jpg'
-============================trying URL 'https://m.media-amazon.com/images/I/71yL3DORzSL._SX1920_.jpg'
-===
-downloaded 246 KB
+trying URL 'https://m.media-amazon.com/images/I/716SPw+CcuL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71VoG0G9ITL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61oqrh9X7SL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71eihIb2LKL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61490UYCP4L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71EoGKPtX6L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61cEJGD88fL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71VSyBu5t9L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/719c9aoX+WL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/718LiZX9b6L._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71VFamwkgmL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61FaN1WDHqL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/71GJTPEUhfL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61JwLujFaoL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61fQKIDPdlL._SX1920_.jpg'
+trying URL 'https://m.media-amazon.com/images/I/61c2XqTZYFL._SX1920_.jpg'
+Content type 'image/jpeg' length 154076 bytes (150 KB)
+===============================Content type 'image/jpeg' length 210704 bytes (205 KB)
+=======Content type 'image/jpeg' length 130094 bytes (127 KB)
+===============================
+downloaded 150 KB
 
-trying URL 'https://m.media-amazon.com/images/I/713CAePW3LL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71jB5Hv-cCL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71u4sw7TPnL._SX1920_.jpg'
-Content type 'image/jpeg' length 155668 bytes (152 KB)
-==========trying URL 'https://m.media-amazon.com/images/I/61BlBu7ldPL._SX1920_.jpg'
-========================================
-downloaded 152 KB
-
-trying URL 'https://m.media-amazon.com/images/I/7133muf1KKL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71Pb1E7XtAL._SX1920_.jpg'
-Content type 'image/jpeg' length 115182 bytes (112 KB)
-======trying URL 'https://m.media-amazon.com/images/I/81oOpKhzWfL._SX1920_.jpg'
-============================================
-downloaded 112 KB
-
-Content type 'image/jpeg' length 151002 bytes (147 KB)
-==========Content type 'image/jpeg' length 198909 bytes (194 KB)
-========Content type 'image/jpeg' length 198785 bytes (194 KB)
-==============Content type 'image/jpeg' length 246225 bytes (240 KB)
-=============================================================================
-downloaded 147 KB
-
-=======================================Content type 'image/jpeg' length 372246 bytes (363 KB)
-==========
-downloaded 240 KB
-
-========================
-downloaded 194 KB
-
-Content type 'image/jpeg' length 202706 bytes (197 KB)
-=======Content type 'image/jpeg' length 244466 bytes (238 KB)
-====================================================================
-downloaded 197 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Xu3IvIWaL._SX1920_.jpg'
-Content type 'image/jpeg' length 243373 bytes (237 KB)
-==================================================Content type 'image/jpeg' length 139639 bytes (136 KB)
-====================================
-downloaded 237 KB
-
-======Content type 'image/jpeg' length 210114 bytes (205 KB)
-==================================
-downloaded 136 KB
-
-==================
-downloaded 363 KB
-
-================Content type 'image/jpeg' length 217998 bytes (212 KB)
-==================================
+=====================Content type 'image/jpeg' length 151618 bytes (148 KB)
+==========================
 downloaded 205 KB
 
+=======================Content type 'image/jpeg' length 84612 bytes (82 KB)
+======================================================
+downloaded 148 KB
+
+==========================
+downloaded 127 KB
+
 ===============================
-downloaded 194 KB
+downloaded 82 KB
 
-==Content type 'image/jpeg' length 300800 bytes (293 KB)
-=====================Content type 'image/jpeg' length 294889 bytes (287 KB)
-=======================Content type 'image/jpeg' length 164541 bytes (160 KB)
-==============================================
-downloaded 238 KB
-
-===========Content type 'image/jpeg' length 271416 bytes (265 KB)
-===================
-downloaded 212 KB
-
-=============================================================================================
-downloaded 160 KB
-
-=========
-=downloaded 287 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71qWRYPjv1L._SX1920_.jpg'
-============Content type 'image/jpeg' length 143019 bytes (139 KB)
+Content type 'image/jpeg' length 89539 bytes (87 KB)
+==================Content type 'image/jpeg' length 158067 bytes (154 KB)
 ====================================================
+downloaded 87 KB
 
-downloaded 265 KB
+==========Content type 'image/jpeg' length 144912 bytes (141 KB)
+===========Content type 'image/jpeg' length 155404 bytes (151 KB)
+==========Content type 'image/jpeg' length 120258 bytes (117 KB)
+==============================Content type 'image/jpeg' length 105333 bytes (102 KB)
+================Content type 'image/jpeg' length 208693 bytes (203 KB)
+==================================================================================================
+downloaded 151 KB
 
-downloaded 139 KB
+=============
+downloaded 117 KB
 
-Content type 'image/jpeg' length 237253 bytes (231 KB)
-===Content type 'image/jpeg' length 164242 bytes (160 KB)
-===================Content type 'image/jpeg' length 105295 bytes (102 KB)
-=================================================================================
+============
 downloaded 102 KB
 
-===========================
-downloaded 160 KB
-
-====Content type 'image/jpeg' length 265065 bytes (258 KB)
-======================================Content type 'image/jpeg' length 139959 bytes (136 KB)
-==============================================
-downloaded 293 KB
-
 =================
-downloaded 258 KB
+downloaded 141 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61niGncvSML._SX1920_.jpg'
-=======================================
-downloaded 136 KB
+Content type 'image/jpeg' length 133550 bytes (130 KB)
+==================Content type 'image/jpeg' length 92885 bytes (90 KB)
+=================================================
+downloaded 130 KB
 
-Content type 'image/jpeg' length 155737 bytes (152 KB)
+=================================
+downloaded 90 KB
+
+====================
+downloaded 154 KB
+
+Content type 'image/jpeg' length 185583 bytes (181 KB)
 ==================================================
-downloaded 152 KB
+downloaded 181 KB
 
-Content type 'image/jpeg' length 235736 bytes (230 KB)
-======================
-downloaded 231 KB
+===========================================
+downloaded 203 KB
 
-=======Content type 'image/jpeg' length 171372 bytes (167 KB)
+Content type 'image/jpeg' length 102257 bytes (99 KB)
 ==================================================
-downloaded 167 KB
+downloaded 99 KB
 
-=======================
-downloaded 230 KB
-
-Content type 'image/jpeg' length 106644 bytes (104 KB)
-==================================================
-downloaded 104 KB
-
-63 new rows added
+79 new rows added
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/": Permission denied (13)
 rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [Receiver=3.1.2]
 rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/": Permission denied (13)
@@ -218,7 +158,7 @@ rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [
 Warning message:
 Sync stage reached 
 Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
-  Date: 2019-10-05 17:00
+  Date: 2019-10-05 23:00
   Status: 200
   Content-Type: text/plain; charset=utf-8
   Size: 2 B

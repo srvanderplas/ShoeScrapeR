@@ -617,2000 +617,427 @@ downloaded 110 KB
 
 ===trying URL 'https://m.media-amazon.com/images/I/716MtMJUguL._SX1920_.jpg'
 trying URL 'https://m.media-amazon.com/images/I/61J2bOqWPGL._SX1920_.jpg'
-======Content type 'image/jpeg' length 88057 bytes (85 KB)
-========Content type 'image/jpeg' length 116799 bytes (114 KB)
-================================================Content type 'image/jpeg' length 101448 bytes (99 KB)
-==========================================================================================
-downloaded 151 KB
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-beige_product_9261404_color_43_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-comatulla-black_product_9261404_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-black_product_8412024_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-blue_product_8412024_color_158_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-cosmic-red_product_8412024_color_585_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-deandrala-black_product_9184459_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-navy_product_9019214_color_9_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-delorse-pink_product_9019214_color_559_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-black_product_9261491_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-dark-olive_product_9261491_color_341_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dionut-red_product_9261491_color_585_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-black_product_9261495_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-brown_product_9261495_color_6_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-dragana-navy_product_9261495_color_9_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-black_product_9280681_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elva-brown_product_9280681_color_6_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-elvera-black_product_9104953_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-fogo-black_product_8884719_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-bordeaux_product_8412053_color_189_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-galil-medium-brown_product_8412053_color_3561_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-brown_product_9261405_color_6_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-camel_product_9261405_color_1430_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaspare-navy_product_9261405_color_9_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gaye-chocolate-brown_product_9261406_color_289_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-black_product_9261407_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gemisola-brown_product_9261407_color_6_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-black_product_9261496_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-gwyneth-chocolate-brown_product_9261496_color_289_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-black-leather_product_7607253_color_72_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-happy-medium-brown_product_7607253_color_3561_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-black-leather_product_7639907_color_72_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-hope-brown-nubuck_product_7639907_color_222_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-black_product_9261497_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-cabernet_product_9261497_color_16215_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-dark-olive_product_9261497_color_341_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaimiva-navy_product_9261497_color_9_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-black_product_9261498_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-bordeaux_product_9261498_color_189_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-jaymiet-chocolate-brown_product_9261498_color_289_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-kasey-black-suede_product_9104962_color_106_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-lilou-black_product_8943449_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-melbourne-black_product_8276564_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-milagra-black_product_9104967_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-moogera-black_product_9280685_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-black_product_9184467_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-murna-bordeaux_product_9184467_color_189_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-black-suede_product_9261492_color_106_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-champagne_product_9261492_color_270_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nekomi-navy-suede_product_9261492_color_500_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-black-suede_product_9261499_color_106_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nikolina-brown-suede_product_9261499_color_231_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-black_product_9261500_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-bordeaux_product_9261500_color_189_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-camel_product_9261500_color_1430_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nomalee-pewter_product_9261500_color_552_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-beige-suede_product_9186917_color_2403_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-nonna-black-suede_product_9186917_color_106_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-rorie-black_product_8775868_color_3_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Bottom.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Front.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Left.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Pair.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Right.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-black-suede_product_9261503_color_106_Top.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-bordeaux-suede_product_9261503_color_4809_Back.jpg": Required key not available (126)
+rsync: recv_generator: failed to stat "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/spring-step-signe-bordeaux-suede_product_9261503_color_4809_Bottom.jpg": Required key not available (126)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1196) [sender=3.1.2]
+rsync: ERROR: cannot stat destination "/lss/research/csafe-shoeprints/ShoeNeuralNet/": Required key not available (126)
+rsync error: errors selecting input/output files, dirs (code 3) at main.c(653) [Receiver=3.1.2]
+Warning message:
+Sync stage reached 
+Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
+  Date: 2019-11-08 16:25
+  Status: 200
+  Content-Type: text/plain; charset=utf-8
+  Size: 2 B
 
-==================
-downloaded 99 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61nUd1sjlCL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61Q2OgEKQcL._SX1920_.jpg'
-==============================================
-downloaded 85 KB
-
-==
-downloaded 114 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81riOFbVdAL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61XExvipGfL._SX1920_.jpg'
-========
-downloaded 263 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71SLxN0lYXL._SX1920_.jpg'
-Content type 'image/jpeg' length 259963 bytes (253 KB)
-==============================Content type 'image/jpeg' length 229126 bytes (223 KB)
-=======================
-downloaded 253 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81U5jGhTtSL._SX1920_.jpg'
-==================Content type 'image/jpeg' length 102586 bytes (100 KB)
-===============Content type 'image/jpeg' length 257554 bytes (251 KB)
-==========================================Content type 'image/jpeg' length 204837 bytes (200 KB)
-============================================Content type 'image/jpeg' length 126374 bytes (123 KB)
-========
-downloaded 251 KB
-
-=========
-downloaded 100 KB
-
-=trying URL 'https://m.media-amazon.com/images/I/61kXidXo2yL._SX1920_.jpg'
-Content type 'image/jpeg' length 104855 bytes (102 KB)
-==================================================
-downloaded 102 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61uumo3P57L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71Ef3hhyXcL._SX1920_.jpg'
-=============
-downloaded 128 KB
-
-trying URL 'https://m.media-amazon.com/images/I/7144TI5paBL._SX1920_.jpg'
-Content type 'image/jpeg' length 206184 bytes (201 KB)
-=================================================================
-downloaded 123 KB
-
-Content type 'image/jpeg' length 214999 bytes (209 KB)
-=======trying URL 'https://m.media-amazon.com/images/I/716azcfZ3-L._SX1920_.jpg'
-==================================================
-downloaded 200 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/6195KAy3WQL._SX1920_.jpg'
-Content type 'image/jpeg' length 193138 bytes (188 KB)
-========================
-downloaded 209 KB
-
-Content type 'image/jpeg' length 141423 bytes (138 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/61xElJRWb8L._SX1920_.jpg'
-=========================================================================
-downloaded 223 KB
-
-=============trying URL 'https://m.media-amazon.com/images/I/71kukCrB8ML._SX1920_.jpg'
-==========================
-downloaded 138 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71hFGItTvZL._SX1920_.jpg'
-Content type 'image/jpeg' length 287867 bytes (281 KB)
-=====Content type 'image/jpeg' length 127984 bytes (124 KB)
-=============================================
-downloaded 201 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/61PhxbtmgGL._SX1920_.jpg'
-===================================Content type 'image/jpeg' length 104423 bytes (101 KB)
-================Content type 'image/jpeg' length 347191 bytes (339 KB)
-==========
-downloaded 124 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71NQgZED3LL._SX1920_.jpg'
-=====================================Content type 'image/jpeg' length 93409 bytes (91 KB)
-=================================
-downloaded 101 KB
-
-=================trying URL 'https://m.media-amazon.com/images/I/71iOergz7XL._SX1920_.jpg'
-Content type 'image/jpeg' length 148614 bytes (145 KB)
-=====================================================
-downloaded 145 KB
-
-========Content type 'image/jpeg'= length 107691 bytes (105 KB)
-======trying URL 'https://m.media-amazon.com/images/I/6173sXXhCsL._SX1920_.jpg'
-=====Content type 'image/jpeg' length 172320 bytes (168 KB)
-=============================================================================
-downloaded 105 KB
-
-====
-downloaded 188 KB
-
-trying URL 'https://m.media-amazon.com/images/I/710ts1fJ-GL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/716d8wNOS4L._SX1920_.jpg'
-=================================
-downloaded 91 KB
-
-===
-downloaded 339 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61d5rQdgaKL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71XAWqud35L._SX1920_.jpg'
-========
-downloaded 281 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/711UEGtAdQL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 135016 bytes (131 KB)
-==================================================
-downloaded 131 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71OOYwDnGJL._SX1920_.jpg'
-======================
-downloaded 168 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71HRYS6CQxL._SX1920_.jpg'
-Content type 'image/jpeg' length 275942 bytes (269 KB)
-=====Content type 'image/jpeg' length 87542 bytes (85 KB)
-================================================Content type 'image/jpeg' length 129654 bytes (126 KB)
-==================================================
-downloaded 126 KB
-
-=trying URL 'https://m.media-amazon.com/images/I/71Uj4N7AHBL._SX1920_.jpg'
-==========================
-downloaded 85 KB
-
-Content type 'image/jpeg' length 145181 bytes (141 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/61rrrEusvPL._SX1920_.jpg'
-==========================
-downloaded 269 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Z1T6UB2ML._SX1920_.jpg'
-Content type 'image/jpeg' length 167019 bytes (163 KB)
-====Content type 'image/jpeg' length 192250 bytes (187 KB)
-====Content type 'image/jpeg' length 91056 bytes (88 KB)
-=======================================================================
-downloaded 88 KB
-
-=============trying URL 'https://m.media-amazon.com/images/I/61WcZrYdsdL._SX1920_.jpg'
-=======================================
-downloaded 187 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71J+f4++w2L._SX1920_.jpg'
-======Content type 'image/jpeg' length 125787 bytes (122 KB)
-================================Content type 'image/jpeg' length 116602 bytes (113 KB)
-=========================================================
-downloaded 113 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61nQSFg+c+L._SX1920_.jpg'
-===============================
-downloaded 122 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61rTPiFahBL._SX1920_.jpg'
-Content type 'image/jpeg' length 173005 bytes (168 KB)
-====Content type 'image/jpeg' length 256889 bytes (250 KB)
-======Content type 'image/jpeg' length 191998 bytes (187 KB)
-============================================================================================
-downloaded 187 KB
-
-===========================trying URL 'https://m.media-amazon.com/images/I/61tsavklG6L._SX1920_.jpg'
-==
-downloaded 250 KB
-
-===========================
-downloaded 141 KB
-
-Content type 'image/jpeg' length 132717 bytes (129 KB)
-========
-downloaded 168 KB
-
-Content type 'image/jpeg' length 94660 bytes (92 KB)
-===============trying URL 'https://m.media-amazon.com/images/I/61CQc6xLSTL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/7129Fti80WL._SX1920_.jpg'
-=========Content type 'image/jpeg' length 203657 bytes (198 KB)
-==================================================
-downloaded 198 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71niLJT0PQL._SX1920_.jpg'
-===============================
-downloaded 92 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71c1slBYA+L._SX1920_.jpg'
-Content type 'image/jpeg' length 106682 bytes (104 KB)
-=======Content type 'image/jpeg' length 214976 bytes (209 KB)
-========================
-downloaded 163 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61XM-tHQoiL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 220926 bytes (215 KB)
-===================
-downloaded 129 KB
-
-Content type 'image/jpeg' length 135784 bytes (132 KB)
-=============trying URL 'https://m.media-amazon.com/images/I/61GbMnzeM7L._SX1920_.jpg'
-====================================Content type 'image/jpeg' length 207444 bytes (202 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/71EYJ6Ezb8L._SX1920_.jpg'
-============Content type 'image/jpeg' length 129503 bytes (126 KB)
-==================================================
-downloaded 126 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71fxiETJTNL._SX1920_.jpg'
-================
-downloaded 104 KB
-
-=================trying URL 'https://m.media-amazon.com/images/I/61Q27LLbUnL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 85023 bytes (83 KB)
-======================================================Content type 'image/jpeg' length 188954 bytes (184 KB)
-=======================
-downloaded 132 KB
-
-==
-downloaded 215 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/71d6Q9q5TYL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71cArqWGDAL._SX1920_.jpg'
-=================================Content type 'image/jpeg' length 174867 bytes (170 KB)
-==================================================
-downloaded 170 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71ZxMBs3CTL._SX1920_.jpg'
-=======================
-downloaded 202 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61nSHvDS8LL._SX1920_.jpg'
-Content type 'image/jpeg' length 71923 bytes (70 KB)
-==================================================
-downloaded 70 KB
-
-Content type 'image/jpeg' length 98727 bytes (96 KB)
-=======trying URL 'https://m.media-amazon.com/images/I/619SgoDBgKL._SX1920_.jpg'
-Content type 'image/jpeg' length 178928 bytes (174 KB)
-=================================================================
-downloaded 96 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/61614Jsb9qL._SX1920_.jpg'
-====================
-downloaded 209 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61on0hbKXpL._SX1920_.jpg'
-Content type 'image/jpeg' length 187163 bytes (182 KB)
-========================================
-downloaded 83 KB
-
-trying URL 'https://m.media-amazon.com/images/I/719IncS4rTL._SX1920_.jpg'
-===========================================
-downloaded 184 KB
-
-Content type 'image/jpeg' length 142551 bytes (139 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/61y6dhViTQL._SX1920_.jpg'
-========================
-downloaded 182 KB
-
-Content type 'image/jpeg' length 125051 bytes (122 KB)
-======trying URL 'https://m.media-amazon.com/images/I/614yhN-UU2L._SX1920_.jpg'
-======Content type 'image/jpeg' length 91592 bytes (89 KB)
-====================================================================================================
-downloaded 89 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/61YDVHQOxVL._SX1920_.jpg'
-========Content type 'image/jpeg' length 131898 bytes (128 KB)
-=====Content type 'image/jpeg' length 186873 bytes (182 KB)
-===============
-downloaded 122 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/61xmgnQ-VuL._SX1920_.jpg'
-============
-downloaded 139 KB
-
-Content type 'image/jpeg' length 261957 bytes (255 KB)
-================================trying URL 'https://m.media-amazon.com/images/I/71q78ebJMjL._SX1920_.jpg'
-========================================
-downloaded 128 KB
-
-=======Content type 'image/jpeg' length 259866 bytes (253 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/71rlbeDpCoL._SX1920_.jpg'
-=========================================================================
-downloaded 182 KB
-
-=========
-downloaded 253 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61QDDNHZiML._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71cqjq4viYL._SX1920_.jpg'
-=================
-==downloaded 255 KB
-
-===========
-downloaded 174 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71-gCJicXbL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71O8pM+QW5L._SX1920_.jpg'
-Content type 'image/jpeg' length 101771 bytes (99 KB)
-=======Content type 'image/jpeg' length 82598 bytes (80 KB)
-=================Content type 'image/jpeg' length 90923 bytes (88 KB)
-===============================================Content type 'image/jpeg' length 140639 bytes (137 KB)
-================
-downloaded 80 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71xWBImMwjL._SX1920_.jpg'
-=========================Content type 'image/jpeg' length 119627 bytes (116 KB)
-====================
-downloaded 99 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61nkQinQgwL._SX1920_.jpg'
-Content type 'image/jpeg' length 86889 bytes (84 KB)
-================================================================Content type 'image/jpeg' length 183040 bytes (178 KB)
-===================
-downloaded 88 KB
-
-====Content type 'image/jpeg' length 179385 bytes (175 KB)
-==========trying URL 'https://m.media-amazon.com/images/I/61rklOSpGHL._SX1920_.jpg'
-===========================================
-downloaded 116 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61d2223Y1cL._SX1920_.jpg'
-=============
-downloaded 84 KB
-
-trying URL 'https://m.media-amazon.com/images/I/6178nyCcCPL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 220240 bytes (215 KB)
-=======================Content type 'image/jpeg' length 107499 bytes (104 KB)
-==============================================================================================
-downloaded 104 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71x1-362+aL._SX1920_.jpg'
-==========
-downloaded 215 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71gu0ce+G+L._SX1920_.jpg'
-Content type 'image/jpeg' length 85053 bytes (83 KB)
-==================Content type 'image/jpeg' length 118241 bytes (115 KB)
-=============================================
-downloaded 83 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61OQFTqGBwL._SX1920_.jpg'
-================
-downloaded 137 KB
-
-=======Content type 'image/jpeg' length 181366 bytes (177 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/715xcgAHqyL._SX1920_.jpg'
-Content type 'image/jpeg' length 96630 bytes (94 KB)
-====================================================================
-downloaded 178 KB
-
-trying URL 'https://m.media-amazon.com/images/I/6178h6eVNlL._SX1920_.jpg'
-=================
-downloaded 115 KB
-
-==================trying URL 'https://m.media-amazon.com/images/I/61JiP4Zno5L._SX1920_.jpg'
-================
-downloaded 94 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Ecs6PIsJL._SX1920_.jpg'
-===================Content type 'image/jpeg' length 96953 bytes (94 KB)
-========Content type 'image/jpeg' length 120929 bytes (118 KB)
-================================================
-downloaded 94 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71a4Flkt5OL._SX1920_.jpg'
-============================
-downloaded 175 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/81XIYR+v30L._SX1920_.jpg'
-Content type 'image/jpeg' length 175761 bytes (171 KB)
-=====================
-downloaded 177 KB
-
-====================
-downloaded 118 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71RDLM7oRlL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/712ST0o4rmL._SX1920_.jpg'
-Content type 'image/jpeg' length 121312 bytes (118 KB)
-=============Content type 'image/jpeg' length 222554 bytes (217 KB)
-=============================================Content type 'image/jpeg' length 90159 bytes (88 KB)
-============Content type 'image/jpeg' length 93986 bytes (91 KB)
-==============================================
-downloaded 217 KB
-
-Content type 'image/jpeg' length 113205 bytes (110 KB)
-============trying URL 'https://m.media-amazon.com/images/I/61ewfvJjnAL._SX1920_.jpg'
-=========Content type 'image/jpeg' length 244373 bytes (238 KB)
-==============================================
-downloaded 118 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71Gzq7ociLL._SX1920_.jpg'
-=============
-downloaded 171 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71J0mltaSiL._SX1920_.jpg'
-=================================
-downloaded 88 KB
-
-==================trying URL 'https://m.media-amazon.com/images/I/61lgef0EhXL._SX1920_.jpg'
-=======
-downloaded 91 KB
-
-==================trying URL 'https://m.media-amazon.com/images/I/61P6QFglwkL._SX1920_.jpg'
-Content type 'image/jpeg' length 138331 bytes (135 KB)
-=====Content type 'image/jpeg' length 147857 bytes (144 KB)
-=========================================================================
-downloaded 110 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71N74dlzqcL._SX1920_.jpg'
-=================Content type 'image/jpeg' length 170667 bytes (166 KB)
-=============================================
-downloaded 238 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81DLtNkIzPL._SX1920_.jpg'
-=========
-downloaded 135 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/810-skQdyeL._SX1920_.jpg'
-===================================Content type 'image/jpeg' length 195424 bytes (190 KB)
-===============
-downloaded 166 KB
-
-Content type 'image/jpeg' length 73043 bytes (71 KB)
-=====Content type 'image/jpeg' length 110181 bytes (107 KB)
-=======trying URL 'https://m.media-amazon.com/images/I/61IDBaJf3+L._SX1920_.jpg'
-===========================================================================================================
-downloaded 71 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/61iqNT7VQ1L._SX1920_.jpg'
-=====
-downloaded 190 KB
-
-trying URL 'https://m.media-amazon.com/images/I/719PdhG45RL._SX1920_.jpg'
-Content type 'image/jpeg' length 126716 bytes (123 KB)
-==================================================
-downloaded 123 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61bD-eeVLDL._SX1920_.jpg'
-Content type 'image/jpeg' length 183060 bytes (178 KB)
-========Content type 'image/jpeg' length 347709 bytes (339 KB)
-==Content type 'image/jpeg' length 249641 bytes (243 KB)
-======================Content type 'image/jpeg' length 70534 bytes (68 KB)
-==========================================================
-downloaded 144 KB
-
-==============================trying URL 'https://m.media-amazon.com/images/I/81riOFbVdAL._SX1920_.jpg'
-=========
-downloaded 339 KB
-
-=======Content type 'image/jpeg' length 113469 bytes (110 KB)
-======trying URL 'https://m.media-amazon.com/images/I/71s-4KlpLIL._SX1920_.jpg'
-============================
-downloaded 68 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71DZduqELnL._SX1920_.jpg'
-Content type 'image/jpeg' length 192171 bytes (187 KB)
-============================
-downloaded 243 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71MyZy11fnL._SX1920_.jpg'
-======================Content type 'image/jpeg' length 119818 bytes (117 KB)
-================================================
-downloaded 178 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71S-UXk0tIL._SX1920_.jpg'
-===============
-downloaded 110 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71tVCY7AzIL._SX1920_.jpg'
-====================================Content type 'image/jpeg' length 107606 bytes (105 KB)
-====================
-downloaded 107 KB
-
-==========
-downloaded 117 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/613QTQN-CcL._SX1920_.jpg'
-====trying URL 'https://m.media-amazon.com/images/I/710v-n67xlL._SX1920_.jpg'
-============
-downloaded 187 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71YEMOFXyYL._SX1920_.jpg'
-===============================Content type 'image/jpeg' length 176119 bytes (171 KB)
-====Content type 'image/jpeg' length 192434 bytes (187 KB)
-========Content type 'image/jpeg' length 187130 bytes (182 KB)
-====Content type 'image/jpeg' length 121978 bytes (119 KB)
-===================================================================================Content type 'image/jpeg' length 146747 bytes (143 KB)
-========================================Content type 'image/jpeg' length 116223 bytes (113 KB)
-==================================================
-downloaded 119 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61vJ7si13PL._SX1920_.jpg'
-==========================Content type 'image/jpeg' length 188537 bytes (184 KB)
-===========
-downloaded 182 KB
-
-trying URL 'https://m.media-amazon.com/images/I/7159Odb0gVL._SX1920_.jpg'
-================
-downloaded 171 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/61JyeHublKL._SX1920_.jpg'
-=============================================================
-downloaded 113 KB
-
-trying URL 'https://m.media-amazon.com/images/I/816yoL1mI4L._SX1920_.jpg'
-Content type 'image/jpeg' length 347191 bytes (339 KB)
-============
-downloaded 143 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/61FtYOSmsOL._SX1920_.jpg'
-======================================Content type 'image/jpeg' length 340342 bytes (332 KB)
-=============================
-downloaded 339 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71XAWqud35L._SX1920_.jpg'
-===
-downloaded 184 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71oZhqreaAL._SX1920_.jpg'
-========
-downloaded 105 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61iEKy45MrL._SX1920_.jpg'
-=========Content type 'image/jpeg' length 264983 bytes (258 KB)
-==========================Content type 'image/jpeg' length 204472 bytes (199 KB)
-========Content type 'image/jpeg' length 83949 bytes (81 KB)
-=========Content type 'image/jpeg' length 214329 bytes (209 KB)
-===================================================
-downloaded 187 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/61supHsWPEL._SX1920_.jpg'
-==================
-downloaded 332 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/81QDG+ky3SL._SX1920_.jpg'
-===================
-downloaded 81 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71tRz8eQ5jL._SX1920_.jpg'
-======================================
-downloaded 199 KB
-
-trying URL 'https://m.media-amazon.com/images/I/717f46Ad83L._SX1920_.jpg'
-Content type 'image/jpeg' length 116997 bytes (114 KB)
-==================================================
-downloaded 114 KB
-
-Content type 'image/jpeg' length 165268 bytes (161 KB)
-====trying URL 'https://m.media-amazon.com/images/I/61WTvWocFgL._SX1920_.jpg'
-Content type 'image/jpeg' length 218268 bytes (213 KB)
-=============================Content type 'image/jpeg' length 78817 bytes (76 KB)
-========================Content type 'image/jpeg' length 175544 bytes (171 KB)
-===============================================================
-downloaded 258 KB
-
-=========================
-downloaded 76 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71TZEPwqEAL._SX1920_.jpg'
-Content type 'image/jpeg' length 220926 bytes (215 KB)
-========trying URL 'https://m.media-amazon.com/images/I/612WEUxXqXL._SX1920_.jpg'
-====Content type 'image/jpeg' length 334106 bytes (326 KB)
-=====Content type 'image/jpeg' length 143144 bytes (139 KB)
-=====================================================Content type 'image/jpeg' length 178725 bytes (174 KB)
-====================================================
-downloaded 215 KB
-
-================trying URL 'https://m.media-amazon.com/images/I/71d6Q9q5TYL._SX1920_.jpg'
-=========
-downloaded 139 KB
-
-=========Content type 'image/jpeg' length 70629 bytes (68 KB)
-================trying URL 'https://m.media-amazon.com/images/I/716F+idy3PL._SX1920_.jpg'
-===========================================
-downloaded 174 KB
-
-Content type 'image/jpeg' length 102250 bytes (99 KB)
-==================================================
-downloaded 99 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61INvRf4bVL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71X4qAS2viL._SX1920_.jpg'
-======================================
-downloaded 68 KB
-
-Content type 'image/jpeg' length 86321 bytes (84 KB)
-==================================================
-downloaded 84 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71SedGq-o4L._SX1920_.jpg'
-=========
-downloaded 209 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71TGgGCkIOL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61NQax4ekzL._SX1920_.jpg'
-Content type 'image/jpeg' length 174502 bytes (170 KB)
-========================================Content type 'image/jpeg' length 107606 bytes (105 KB)
-==========================
-downloaded 326 KB
-
-=====Content type 'image/jpeg' length 113764 bytes (111 KB)
-===============trying URL 'https://m.media-amazon.com/images/I/718Y+EAkqbL._SX1920_.jpg'
-============================
-downloaded 170 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71axbzkKwFL._SX1920_.jpg'
-=================================================================
-downloaded 161 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/81GDuk66EML._SX1920_.jpg'
-=============
-downloaded 213 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Idh4EPWlL._SX1920_.jpg'
-=====
-downloaded 105 KB
-
-Content type 'image/jpeg' length 191135 bytes (186 KB)
-====Content type 'image/jpeg' length 194386 bytes (189 KB)
-================trying URL 'https://m.media-amazon.com/images/I/71xCAxA03UL._SX1920_.jpg'
-========
-downloaded 111 KB
-
-Content type 'image/jpeg' length 158165 bytes (154 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/71+uo6sficL._SX1920_.jpg'
-Content type 'image/jpeg' length 123015 bytes (120 KB)
-======================Content type 'image/jpeg' length 214159 bytes (209 KB)
-=========================================
-downloaded 171 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/61h+KXJ62EL._SX1920_.jpg'
-===============================================================================================
-downloaded 186 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/61x3QY6KWcL._SX1920_.jpg'
-================
-downloaded 120 KB
-
-================
-downloaded 189 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61iqEs431fL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71UqmnDuntL._SX1920_.jpg'
-================Content type 'image/jpeg' length 179385 bytes (175 KB)
-===================
-downloaded 154 KB
-
-======
-downloaded 209 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/71G2mFmOX0L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71OIoBBqCEL._SX1920_.jpg'
-=========================================
-downloaded 175 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81XIYR+v30L._SX1920_.jpg'
-Content type 'image/jpeg' length 229948 bytes (224 KB)
-=======Content type 'image/jpeg' length 96104 bytes (93 KB)
-=======================================Content type 'image/jpeg' length 262884 bytes (256 KB)
-==============
-downloaded 224 KB
-
-======================trying URL 'https://m.media-amazon.com/images/I/71Wr9-qPuaL._SX1920_.jpg'
-====================================
-downloaded 93 KB
-
-trying URL 'https://m.media-amazon.com/images/I/710ZHMpoCKL._SX1920_.jpg'
-======================Content type 'image/jpeg' length 89714 bytes (87 KB)
-=================Content type 'image/jpeg' length 182967 bytes (178 KB)
-==================================================
-downloaded 87 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81ZWdfHWCZL._SX1920_.jpg'
-Content type 'image/jpeg' length 71105 bytes (69 KB)
-==================================Content type 'image/jpeg' length 219989 bytes (214 KB)
-===============================================
-downloaded 178 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81XwO7YH7QL._SX1920_.jpg'
-Content type 'image/jpeg' length 122119 bytes (119 KB)
-======================
-downloaded 69 KB
-
-Content type 'image/jpeg' length 97598 bytes (95 KB)
-=======Content type 'image/jpeg' length 344592 bytes (336 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/61hXJvdmHFL._SX1920_.jpg'
-================Content type 'image/jpeg' length 201707 bytes (196 KB)
-=======================================================Content type 'image/jpeg' length 172688 bytes (168 KB)
-========
-downloaded 95 KB
-
-===================trying URL 'https://m.media-amazon.com/images/I/61V84wddfCL._SX1920_.jpg'
-Content type 'image/jpeg' length 347709 bytes (339 KB)
-==========================================================================================
-downloaded 336 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/716q6t9HoEL._SX1920_.jpg'
-Content type 'image/jpeg' length 198898 bytes (194 KB)
-=====================================
-downloaded 119 KB
-
-======
-downloaded 339 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61d1ZAYXvkL._SX1920_.jpg'
-======================trying URL 'https://m.media-amazon.com/images/I/71s-4KlpLIL._SX1920_.jpg'
-============
-downloaded 168 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/61jFcNIF9DL._SX1920_.jpg'
-==================
-downloaded 256 KB
-
-=============trying URL 'https://m.media-amazon.com/images/I/71Cj7muwaEL._SX1920_.jpg'
-=====
-downloaded 194 KB
-
-trying URL 'https://m.media-amazon.com/images/I/712oRSAoHKL._SX1920_.jpg'
-Content type 'image/jpeg' length 183978 bytes (179 KB)
-====Content type 'image/jpeg' length 212118 bytes (207 KB)
-=============Content type 'image/jpeg' length 171555 bytes (167 KB)
-==================================================
-downloaded 207 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71pOrJD1BRL._SX1920_.jpg'
-======================================Content type 'image/jpeg' length 141544 bytes (138 KB)
-================================
-downloaded 167 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61A+vFBzm0L._SX1920_.jpg'
-Content type 'image/jpeg' length 104976 bytes (102 KB)
-=============================================================Content type 'image/jpeg' length 144068 bytes (140 KB)
-=================
-downloaded 102 KB
-
-======Content type 'image/jpeg' length 114507 bytes (111 KB)
-======================
-downloaded 138 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71gocEzdrTL._SX1920_.jpg'
-Content type 'image/jpeg' length 76795 bytes (74 KB)
-===================trying URL 'https://m.media-amazon.com/images/I/71V21pG4LrL._SX1920_.jpg'
-==========================
-downloaded 179 KB
-
-=====================trying URL 'https://m.media-amazon.com/images/I/71aBLG4ga-L._SX1920_.jpg'
-=============
-downloaded 74 KB
-
-==============trying URL 'https://m.media-amazon.com/images/I/71QlVneqAWL._SX1920_.jpg'
-======================================================
-downloaded 214 KB
-
-==============trying URL 'https://m.media-amazon.com/images/I/7106FqCs47L._SX1920_.jpg'
-=================
-downloaded 140 KB
-
-===============trying URL 'https://m.media-amazon.com/images/I/71re-80ECmL._SX1920_.jpg'
-
-downloaded 111 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61LW+XJjAhL._SX1920_.jpg'
-==========================
-downloaded 196 KB
-
-Content type 'image/jpeg' length 261922 bytes (255 KB)
-==trying URL 'https://m.media-amazon.com/images/I/71GQh9ORc9L._SX1920_.jpg'
-====Content type 'image/jpeg' length 224800 bytes (219 KB)
-=====================================================
-downloaded 219 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71x7UyW+3BL._SX1920_.jpg'
-===Content type 'image/jpeg' length 287086 bytes (280 KB)
-===================================Content type 'image/jpeg' length 165268 bytes (161 KB)
-Content type 'image/jpeg' length 88544 bytes (86 KB)
-==================================================================
-downloaded 280 KB
-
-===============trying URL 'https://m.media-amazon.com/images/I/81LV6vdjg7L._SX1920_.jpg'
-=====================
-downloaded 161 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81GDuk66EML._SX1920_.jpg'
-Content type 'image/jpeg' length 237367 bytes (231 KB)
-=============================================
-downloaded 86 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61d-8SH3dFL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 193695 bytes (189 KB)
-============================
-downloaded 231 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71DRz+IiYUL._SX1920_.jpg'
-Content type 'image/jpeg' length 212033 bytes (207 KB)
-==================================================
-downloaded 207 KB
-
-Content type 'image/jpeg' length 111893 bytes (109 KB)
-==============trying URL 'https://m.media-amazon.com/images/I/71km5Wul8ZL._SX1920_.jpg'
-============================================
-downloaded 109 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71ojjN-0k9L._SX1920_.jpg'
-Content type 'image/jpeg' length 89478 bytes (87 KB)
-===========================Content type 'image/jpeg' length 286766 bytes (280 KB)
-=========================
-downloaded 87 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71KWOdnA1PL._SX1920_.jpg'
-Content type 'image/jpeg' length 118239 bytes (115 KB)
-===================
-downloaded 255 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Ai9PBshgL._SX1920_.jpg'
-==================================
-downloaded 189 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71fAjvnbwQL._SX1920_.jpg'
-=====================Content type 'image/jpeg' length 251436 bytes (245 KB)
-===Content type 'image/jpeg' length 79067 bytes (77 KB)
-======================
-downloaded 115 KB
-
-==========Content type 'image/jpeg' length 136944 bytes (133 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/61i6JTZoCwL._SX1920_.jpg'
-==============================
-downloaded 77 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/61jJvkteuFL._SX1920_.jpg'
-============================================================Content type 'image/jpeg' length 169139 bytes (165 KB)
-========================
-downloaded 245 KB
-
-===============================
-downloaded 165 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81ujGGaZ9VL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61PjdDa8rnL._SX1920_.jpg'
-Content type 'image/jpeg' length 344592 bytes (336 KB)
-===Content type 'image/jpeg' length 104301 bytes (101 KB)
-==============================================================
-downloaded 336 KB
-
-Content type 'image/jpeg' length 187740 bytes (183 KB)
-====trying URL 'https://m.media-amazon.com/images/I/716q6t9HoEL._SX1920_.jpg'
-====Content type 'image/jpeg' length 178399 bytes (174 KB)
-====Content type 'image/jpeg' length 288189 bytes (281 KB)
-==Content type 'image/jpeg' length 207668 bytes (202 KB)
-======================================================================================================================================
-downloaded 202 KB
-
-==================
-downloaded 101 KB
-
-trying URL 'https://m.media-amazon.com/images/I/6193AQYI0hL._SX1920_.jpg'
-===trying URL 'https://m.media-amazon.com/images/I/71r2VHp-MZL._SX1920_.jpg'
-==
-downloaded 280 KB
-
-Content type 'image/jpeg' length 202928 bytes (198 KB)
-=======trying URL 'https://m.media-amazon.com/images/I/71jU5zMxQBL._SX1920_.jpg'
-===================================================Content type 'image/jpeg' length 142753 bytes (139 KB)
-======================Content type 'image/jpeg' length 158431 bytes (154 KB)
-======================
-downloaded 174 KB
-
-====Content type 'image/jpeg' length 237780 bytes (232 KB)
-========trying URL 'https://m.media-amazon.com/images/I/71Y5X9fcCvL._SX1920_.jpg'
-================
-downloaded 281 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61X1d4RySDL._SX1920_.jpg'
-======Content type 'image/jpeg' length 150597 bytes (147 KB)
-======================================================================================
-downloaded 133 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71VGIPwfq7L._SX1920_.jpg'
-Content type 'image/jpeg' length 187063 bytes (182 KB)
-=================
-downloaded 147 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71CRhMsVX3L._SX1920_.jpg'
-===================Content type 'image/jpeg' length 154384 bytes (150 KB)
-==================================
-downloaded 182 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Kcj5j22xL._SX1920_.jpg'
-================Content type 'image/jpeg' length 140010 bytes (136 KB)
-================================Content type 'image/jpeg' length 121674 bytes (118 KB)
-=========================
-downloaded 150 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/61FGL2iRbjL._SX1920_.jpg'
-===========================Content type 'image/jpeg' length 136944 bytes (133 KB)
-===============================================
-downloaded 118 KB
-
-====
-downloaded 136 KB
-
-==================trying URL 'https://m.media-amazon.com/images/I/61Ut3JO3eVL._SX1920_.jpg'
-======trying URL 'https://m.media-amazon.com/images/I/71tBOa1FNQL._SX1920_.jpg'
-=========
-downloaded 133 KB
-
-======================
-downloaded 183 KB
-
-Content type 'image/jpeg' length 131418 bytes (128 KB)
-==================================================
-downloaded 128 KB
-
-trying URL 'https://m.media-amazon.com/images/I/716SPw+CcuL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/716JyUReIGL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71YYqZBtW7L._SX1920_.jpg'
-=======================================
-downloaded 139 KB
-
-Content type 'image/jpeg' length 169129 bytes (165 KB)
-====Content type 'image/jpeg' length 129654 bytes (126 KB)
-======trying URL 'https://m.media-amazon.com/images/I/61LBAd8bo6L._SX1920_.jpg'
-=======================================
-downloaded 198 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/61xDiu3U17L._SX1920_.jpg'
-=====================================
-downloaded 126 KB
-
-==============trying URL 'https://m.media-amazon.com/images/I/71Uj4N7AHBL._SX1920_.jpg'
-===================================
-downloaded 154 KB
-
-=======
-downloaded 165 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Z0h5yT--L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/710lVEAqP1L._SX1920_.jpg'
-==============================
-downloaded 232 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71e3IVuBd5L._SX1920_.jpg'
-Content type 'image/jpeg' length 114250 bytes (111 KB)
-===========Content type 'image/jpeg' length 126442 bytes (123 KB)
-=======================Content type 'image/jpeg' length 85212 bytes (83 KB)
-===================================================Content type 'image/jpeg' length 317753 bytes (310 KB)
-==================================Content type 'image/jpeg' length 227646 bytes (222 KB)
-=======Content type 'image/jpeg' length 110368 bytes (107 KB)
-=========================
-downloaded 123 KB
-
-=====================
-downloaded 83 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71CHnnsIayL._SX1920_.jpg'
-============trying URL 'https://m.media-amazon.com/images/I/713reqgYCbL._SX1920_.jpg'
-============================================================
-downloaded 222 KB
-
-========
-downloaded 107 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Xumlqfc9L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/714PzTOtHjL._SX1920_.jpg'
-Content type 'image/jpeg' length 212922 bytes (207 KB)
-===Content type 'image/jpeg' length 133932 bytes (130 KB)
-==============================================================Content type 'image/jpeg' length 178928 bytes (174 KB)
-===============================
-downloaded 207 KB
-
-===========================trying URL 'https://m.media-amazon.com/images/I/81FJrrhVz-L._SX1920_.jpg'
-=============
-downloaded 130 KB
-
-==============
-downloaded 174 KB
-
-Content type 'image/jpeg' length 154076 bytes (150 KB)
-=====Content type 'image/jpeg' length 111885 bytes (109 KB)
-======trying URL 'https://m.media-amazon.com/images/I/71Fla65pcSL._SX1920_.jpg'
-=============trying URL 'https://m.media-amazon.com/images/I/71O8pM+QW5L._SX1920_.jpg'
-=====================================Content type 'image/jpeg' length 122623 bytes (119 KB)
-=========
-downloaded 150 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71VoG0G9ITL._SX1920_.jpg'
-Content type 'image/jpeg' length 81071 bytes (79 KB)
-==================================================
-downloaded 79 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61+XoQPdZBL._SX1920_.jpg'
-===============
-downloaded 111 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/619zpnF09kL._SX1920_.jpg'
-=============================================================
-downloaded 109 KB
-
-===========================
-downloaded 310 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61ILfFUnU2L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71yD2lXD51L._SX1920_.jpg'
-===========
-downloaded 119 KB
-
-Content type 'image/jpeg' length 156845 bytes (153 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/71CYblX57fL._SX1920_.jpg'
-Content type 'image/jpeg' length 212873 bytes (207 KB)
-============Content type 'image/jpeg' length 87136 bytes (85 KB)
-========================================================Content type 'image/jpeg' length 113291 bytes (110 KB)
-========================================================================Content type 'image/jpeg' length 223772 bytes (218 KB)
-=========================Content type 'image/jpeg' length 124472 bytes (121 KB)
-=======================================
-downloaded 218 KB
-
-=======
-downloaded 110 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71tR01D-m9L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/712rsQ636wL._SX1920_.jpg'
-=============
-downloaded 85 KB
-
-========
-downloaded 207 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/61G2GM5EpeL._SX1920_.jpg'
-========trying URL 'https://m.media-amazon.com/images/I/71b0rROrHfL._SX1920_.jpg'
-=========Content type 'image/jpeg' length 259411 bytes (253 KB)
-==========
-downloaded 153 KB
-
-trying URL 'https://m.media-amazon.com/images/I/616qeMhVNIL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 219185 bytes (214 KB)
-===========================Content type 'image/jpeg' length 156064 bytes (152 KB)
-================Content type 'image/jpeg' length 151748 bytes (148 KB)
-==========Content type 'image/jpeg' length 138331 bytes (135 KB)
-=============================================================================
-downloaded 135 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/81Bp-65F3ML._SX1920_.jpg'
-==================================================
-downloaded 214 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/71vWWXXn2dL._SX1920_.jpg'
-========================
-downloaded 152 KB
-
-===Content type 'image/jpeg' length 190739 bytes (186 KB)
-==============================================trying URL 'https://m.media-amazon.com/images/I/719dGRBF3gL._SX1920_.jpg'
-==========
-downloaded 186 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61chDaEZ9pL._SX1920_.jpg'
-======
-downloaded 253 KB
-
-trying URL 'https://m.media-amazon.com/images/I/7176cg0RUtL._SX1920_.jpg'
-Content type 'image/jpeg' length 250550 bytes (244 KB)
-===================Content type 'image/jpeg' length 193038 bytes (188 KB)
-=================================Content type 'image/jpeg' length 68074 bytes (66 KB)
-============================================
-downloaded 188 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/61XEHn+IBZL._SX1920_.jpg'
-=================
-downloaded 121 KB
-
-Content type 'image/jpeg' length 199929 bytes (195 KB)
-===trying URL 'https://m.media-amazon.com/images/I/61Ev0ImIB7L._SX1920_.jpg'
-=====
-downloaded 244 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81vU-SPLMrL._SX1920_.jpg'
-=================Content type 'image/jpeg' length 181967 bytes (177 KB)
-====Content type 'image/jpeg' length 316872 bytes (309 KB)
-==========================
-downloaded 66 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/71Fur7TbX0L._SX1920_.jpg'
-====Content type 'image/jpeg' length 104177 bytes (101 KB)
-==================================
-downloaded 148 KB
-
-=====================trying URL 'https://m.media-amazon.com/images/I/71qf59AfYvL._SX1920_.jpg'
-===========
-downloaded 177 KB
-
-==trying URL 'https://m.media-amazon.com/images/I/71KQWjGa91L._SX1920_.jpg'
-========================Content type 'image/jpeg' length 224221 bytes (218 KB)
-===============================
-downloaded 101 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61bq3+zj0bL._SX1920_.jpg'
-============================Content type 'image/jpeg' length 212551 bytes (207 KB)
-=======================================
-downloaded 195 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/61sqo2nyWEL._SX1920_.jpg'
-=======
-downloaded 218 KB
-
-Content type 'image/jpeg' length 153217 bytes (149 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/71IDV+RlVWL._SX1920_.jpg'
-================================================================
-downloaded 149 KB
-
-Content type 'image/jpeg' length 359515 bytes (351 KB)
-==trying URL 'https://m.media-amazon.com/images/I/61P3wS8vfaL._SX1920_.jpg'
-====================
-downloaded 207 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81xE+b1TmqL._SX1920_.jpg'
-====Content type 'image/jpeg' length 161491 bytes (157 KB)
-=======Content type 'image/jpeg' length 213224 bytes (208 KB)
-=====Content type 'image/jpeg' length 126415 bytes (123 KB)
-================================Content type 'image/jpeg'= length 190287 bytes (185 KB)
-======================================================================================================
-downloaded 208 KB
-
-====Content type 'image/jpeg' length 101052 bytes (98 KB)
-=====================================Content type 'image/jpeg' length 156976 bytes (153 KB)
-====trying URL 'https://m.media-amazon.com/images/I/61viCrCaQ5L._SX1920_.jpg'
-==============================
-downloaded 157 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71WexkIbA8L._SX1920_.jpg'
-========================
-downloaded 185 KB
-
-============trying URL 'https://m.media-amazon.com/images/I/61yiFaTZu5L._SX1920_.jpg'
-========================================
-downloaded 309 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71gPKqEXM0L._SX1920_.jpg'
-===================
-downloaded 123 KB
-
-Content type 'image/jpeg' length 183255 bytes (178 KB)
-=====================trying URL 'https://m.media-amazon.com/images/I/71RR1EK1fdL._SX1920_.jpg'
-=================
-downloaded 351 KB
-
-========
-downloaded 98 KB
-
-trying URL 'https://m.media-amazon.com/images/I/816XHdJmDAL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/51fTdDmbyQL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 210704 bytes (205 KB)
-==================================
-downloaded 153 KB
-
-====================
-downloaded 205 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/71ag+SUeGTL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61oqrh9X7SL._SX1920_.jpg'
-Content type 'image/jpeg' length 102402 bytes (100 KB)
-====================================================================
-downloaded 100 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/712W+zEWeLL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 118141 bytes (115 KB)
-==================================================
-downloaded 115 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81mPe8i4B-L._SX1920_.jpg'
-======
-downloaded 178 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61rmyHWpkNL._SX1920_.jpg'
-Content type 'image/jpeg' length 120299 bytes (117 KB)
-=============Content type 'image/jpeg' length 298585 bytes (291 KB)
-====================================Content type 'image/jpeg' length 141055 bytes (137 KB)
-========================================================
-downloaded 291 KB
-
-Content type 'image/jpeg' length 166689 bytes (162 KB)
-====trying URL 'https://m.media-amazon.com/images/I/61zDlZj4lhL._SX1920_.jpg'
-===========
-downloaded 117 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/71sn0eEKexL._SX1920_.jpg'
-=====Content type 'image/jpeg' length 194298 bytes (189 KB)
-========================================================
-==downloaded 162 KB
-
-==trying URL 'https://m.media-amazon.com/images/I/71tJ0z2ND4L._SX1920_.jpg'
-=======================================
-downloaded 137 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71DuyELR37L._SX1920_.jpg'
-Content type 'image/jpeg' length 116926 bytes (114 KB)
-==========================
-downloaded 189 KB
-
-Content type 'image/jpeg' length 205369 bytes (200 KB)
-=======================================trying URL 'https://m.media-amazon.com/images/I/71toYKoCZNL._SX1920_.jpg'
-===========
-downloaded 200 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71TLWi9DHAL._SX1920_.jpg'
-==============Content type 'image/jpeg' length 128830 bytes (125 KB)
-=========================================================
-downloaded 125 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61f9olE8HlL._SX1920_.jpg'
-================
-downloaded 114 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81Bp-65F3ML._SX1920_.jpg'
-Content type 'image/jpeg' length 128152 bytes (125 KB)
-============Content type 'image/jpeg' length 195353 bytes (190 KB)
-============Content type 'image/jpeg' length 270995 bytes (264 KB)
-==========================================Content type 'image/jpeg' length 241929 bytes (236 KB)
-=============Content type 'image/jpeg' length 118145 bytes (115 KB)
-======Content type 'image/jpeg' length 60175 bytes (58 KB)
-=========================================================
-downloaded 58 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/61ublU3PQLL._SX1920_.jpg'
-============================================
-downloaded 115 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71nkTeY5-eL._SX1920_.jpg'
-=======Content type 'image/jpeg' length 244426 bytes (238 KB)
-=====Content type 'image/jpeg' length 122425 bytes (119 KB)
-====================================Content type 'image/jpeg' length 158239 bytes (154 KB)
-===========Content type 'image/jpeg' length 90346 bytes (88 KB)
-==================================================
-downloaded 88 KB
-
-==============================trying URL 'https://m.media-amazon.com/images/I/81saQfMK2HL._SX1920_.jpg'
-===========================
-downloaded 119 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/716dGeW81KL._SX1920_.jpg'
-====================================
-downloaded 238 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71YiEIENF3L._SX1920_.jpg'
-Content type 'image/jpeg' length 114625 bytes (111 KB)
-====================================
-downloaded 190 KB
-
-Content type 'image/jpeg' length 359515 bytes (351 KB)
-==trying URL 'https://m.media-amazon.com/images/I/71V32PHrQVL._SX1920_.jpg'
-==Content type 'image/jpeg' length 146665 bytes (143 KB)
-======================================Content type 'image/jpeg' length 191525 bytes (187 KB)
-============
-downloaded 125 KB
-
-============Content type 'image/jpeg' length 298152 bytes (291 KB)
-=========================trying URL 'https://m.media-amazon.com/images/I/614lZ4lPYHL._SX1920_.jpg'
-===
-downloaded 351 KB
-
-============trying URL 'https://m.media-amazon.com/images/I/816XHdJmDAL._SX1920_.jpg'
-=======================================
-downloaded 264 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/71Od4PiGWlL._SX1920_.jpg'
-==============================================================
-downloaded 187 KB
-
-============trying URL 'https://m.media-amazon.com/images/I/61x+beoyAPL._SX1920_.jpg'
-=================
-downloaded 111 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71QPhokPUzL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 138720 bytes (135 KB)
-=============================Content type 'image/jpeg' length 133167 bytes (130 KB)
-Content type 'image/jpeg' length 108150 bytes (105 KB)
-========================
-downloaded 135 KB
-
-================================trying URL 'https://m.media-amazon.com/images/I/710x3AvM8sL._SX1920_.jpg'
-=======================================
-downloaded 291 KB
-
-===================
-downloaded 236 KB
-
-trying URL 'https://m.media-amazon.com/images/I/611mWQW-oSL._SX1920_.jpg'
-=======Content type 'image/jpeg' length 197881 bytes (193 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/61Fdgn+44pL._SX1920_.jpg'
-==========================Content type 'image/jpeg' length 149563 bytes (146 KB)
-=========
-downloaded 154 KB
-
-Content type 'image/jpeg' length 275717 bytes (269 KB)
-========================================trying URL 'https://m.media-amazon.com/images/I/61vE4lIwQhL._SX1920_.jpg'
-===========
-downloaded 130 KB
-
-=====
-downloaded 105 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71FbZYezQML._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61OgazofVJL._SX1920_.jpg'
-===============
-downloaded 269 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71vsNklGG-L._SX1920_.jpg'
-Content type 'image/jpeg' length 130094 bytes (127 KB)
-==================================================
-downloaded 127 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71eihIb2LKL._SX1920_.jpg'
-============================Content type 'image/jpeg' length 80637 bytes (78 KB)
-=======================================
-downloaded 193 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61tqgftXidL._SX1920_.jpg'
-============
-downloaded 143 KB
-
-Content type 'image/jpeg' length 194639 bytes (190 KB)
-===trying URL 'https://m.media-amazon.com/images/I/61oNg42P8yL._SX1920_.jpg'
-=========================
-downloaded 78 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61YjmB6j18L._SX1920_.jpg'
-Content type 'image/jpeg' length 275717 bytes (269 KB)
-=====Content type 'image/jpeg' length 238142 bytes (232 KB)
-==================Content type 'image/jpeg' length 95267 bytes (93 KB)
-=================================================
-downloaded 269 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71vsNklGG-L._SX1920_.jpg'
-=====================================
-downloaded 232 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/81I9y0gZfBL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 121370 bytes (118 KB)
-======================
-downloaded 93 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61XShh016KL._SX1920_.jpg'
-=====================================
-downloaded 118 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71YeLNTWg2L._SX1920_.jpg'
-=======================
-downloaded 146 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71vvQGlCxbL._SX1920_.jpg'
-Content type 'image/jpeg' length 178139 bytes (173 KB)
-===================================================
-downloaded 190 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61lxJsTkYBL._SX1920_.jpg'
-Content type 'image/jpeg' length 257287 bytes (251 KB)
-==Content type 'image/jpeg' length 101391 bytes (99 KB)
-====================================================Content type 'image/jpeg' length 151618 bytes (148 KB)
-=======
-downloaded 99 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71h4LIUaBnL._SX1920_.jpg'
-============Content type 'image/jpeg' length 177406 bytes (173 KB)
-========Content type 'image/jpeg' length 180337 bytes (176 KB)
-=============Content type 'image/jpeg' length 192730 bytes (188 KB)
-===========================================================================
-downloaded 173 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71JQ4eDnGRL._SX1920_.jpg'
-================================Content type 'image/jpeg' length 94303 bytes (92 KB)
-===================================
-downloaded 148 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61490UYCP4L._SX1920_.jpg'
-=========Content type 'image/jpeg' length 108381 bytes (105 KB)
-==========================
-downloaded 188 KB
-
-Content type 'image/jpeg' length 118869 bytes (116 KB)
-===============================================
-downloaded 173 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/61vR96QmIgL._SX1920_.jpg'
-Content type 'image/jpeg' length 111074 bytes (108 KB)
-trying URL 'https://m.media-amazon.com/images/I/617KGi53ynL._SX1920_.jpg'
-==============================================================================
-downloaded 92 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71X5bpoU4ZL._SX1920_.jpg'
-=====
-downloaded 105 KB
-
-===============trying URL 'https://m.media-amazon.com/images/I/71kpYrTNllL._SX1920_.jpg'
-=========Content type 'image/jpeg'= length 107017 bytes (104 KB)
-====================Content type 'image/jpeg' length 176872 bytes (172 KB)
-Content type 'image/jpeg' length 149365 bytes (145 KB)
-=====Content type 'image/jpeg'= length 451270 bytes (440 KB)
-======Content type 'image/jpeg'= length 149365 bytes (145 KB)
-==================================================================
-downloaded 108 KB
-
-=======Content type 'image/jpeg' length 112452 bytes (109 KB)
-=====================Content type 'image/jpeg'= length 110553 bytes (107 KB)
-===========================
-=downloaded 116 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/71MLGmTVCML._SX1920_.jpg'
-============================================================Content type 'image/jpeg' length 214695 bytes (209 KB)
-==================trying URL 'https://m.media-amazon.com/images/I/71mm3hVIXwL._SX1920_.jpg'
-==================================
-downloaded 104 KB
-
-================================================
-downloaded 145 KB
-
-======================
-=downloaded 145 KB
-
-============
-downloaded 172 KB
-
-==trying URL 'https://m.media-amazon.com/images/I/71a75Tr7eKL._SX1920_.jpg'
-=======================trying URL 'https://m.media-amazon.com/images/I/81qRk5tO44L._SX1920_.jpg'
-===========
-downloaded 251 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81qRk5tO44L._SX1920_.jpg'
-==trying URL 'https://m.media-amazon.com/images/I/71GOD2APk4L._SX1920_.jpg'
-======trying URL 'https://m.media-amazon.com/images/I/71cOEsVE28L._SX1920_.jpg'
-====================
-downloaded 440 KB
-
-==
-downloaded 107 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/81Y3emtv7BL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/718n-nQn6YL._SX1920_.jpg'
-=========================
-downloaded 109 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61jsQXnTLML._SX1920_.jpg'
-Content type 'image/jpeg' length 218630 bytes (213 KB)
-==================================================
-downloaded 213 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71y0Jf0R2NL._SX1920_.jpg'
-=======================
-downloaded 176 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61TUdEx7AbL._SX1920_.jpg'
-Content type 'image/jpeg' length 286498 bytes (279 KB)
-=================Content type 'image/jpeg' length 81060 bytes (79 KB)
-=============================================================
-downloaded 209 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61jCpF-TJ5L._SX1920_.jpg'
-==============================
-downloaded 279 KB
-
-====================
-downloaded 79 KB
-
-trying URL 'https://m.media-amazon.com/images/I/813OjjkzmTL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71SH1CVIBPL._SX1920_.jpg'
-Content type 'image/jpeg' length 166130 bytes (162 KB)
-=========Content type 'image/jpeg' length 143456 bytes (140 KB)
-==============================================
-downloaded 162 KB
-
-=trying URL 'https://m.media-amazon.com/images/I/71DUymSa1vL._SX1920_.jpg'
-============================================
-downloaded 140 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Wmyl2EzHL._SX1920_.jpg'
-Content type 'image/jpeg' length 87060 bytes (85 KB)
-==================Content type 'image/jpeg' length 84612 bytes (82 KB)
-=========Content type 'image/jpeg' length 66772 bytes (65 KB)
-==================================================
-downloaded 65 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61EiggtoDgL._SX1920_.jpg'
-==========Content type 'image/jpeg' length 156123 bytes (152 KB)
-==================================Content type 'image/jpeg' length 113467 bytes (110 KB)
-==============Content type 'image/jpeg' length 218818 bytes (213 KB)
-==================================================
-downloaded 85 KB
-
-==========Content type 'image/jpeg' length 135355 bytes (132 KB)
-===================
-downloaded 82 KB
-
-=====================================
-downloaded 132 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71vFPj59pNL._SX1920_.jpg'
-=========================================
-downloaded 213 KB
-
-================trying URL 'https://m.media-amazon.com/images/I/61o06UjfMSL._SX1920_.jpg'
-===
-downloaded 152 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61T697YPpAL._SX1920_.jpg'
-=============================Content type 'image/jpeg' length 214760 bytes (209 KB)
-===trying URL 'https://m.media-amazon.com/images/I/71m1YBlhqlL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71EoGKPtX6L._SX1920_.jpg'
-====Content type 'image/jpeg' length 144396 bytes (141 KB)
-===========Content type 'image/jpeg' length 315883 bytes (308 KB)
-=====Content type 'image/jpeg' length 72916 bytes (71 KB)
-======================Content type 'image/jpeg' length 160201 bytes (156 KB)
-====Content type 'image/jpeg' length 332431 bytes (324 KB)
-==Content type 'image/jpeg' length 332431 bytes (324 KB)
-======Content type 'image/jpeg' length 174740 bytes (170 KB)
-===============================Content type 'image/jpeg' length 198994 bytes (194 KB)
-=============================================================
-downloaded 71 KB
-
-==============trying URL 'https://m.media-amazon.com/images/I/71IuRkJHw4L._SX1920_.jpg'
-===================================================================
-downloaded 141 KB
-
-=========
-downloaded 194 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71-68aEAf1L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71CZGFTri9L._SX1920_.jpg'
-============================================
-downloaded 209 KB
-
-====================trying URL 'https://m.media-amazon.com/images/I/61W5K+BniWL._SX1920_.jpg'
-========================
-downloaded 324 KB
-
-=============
-downloaded 170 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71d1On2AjYL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61Y35kYCGfL._SX1920_.jpg'
-Content type 'image/jpeg'= length 192803 bytes (188 KB)
-======================================================
-downloaded 188 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/714ZI5CMjlL._SX1920_.jpg'
-==============
-downloaded 324 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71d1On2AjYL._SX1920_.jpg'
-Content type 'image/jpeg' length 162796 bytes (158 KB)
-=================
-downloaded 110 KB
-
-trying URL 'https://m.media-amazon.com/images/I/7180+PXB4YL._SX1920_.jpg'
-=====Content type 'image/jpeg' length 179544 bytes (175 KB)
-=================================Content type 'image/jpeg' length 385006 bytes (375 KB)
-====================================
-downloaded 175 KB
-
-=================trying URL 'https://m.media-amazon.com/images/I/61f202pF9sL._SX1920_.jpg'
-===
-downloaded 158 KB
-
-Content type 'image/jpeg' length 137008 bytes (133 KB)
-==================================================
-downloaded 133 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71KqpLE989L._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71Y7Z86otNL._SX1920_.jpg'
-===============================================================================
-downloaded 156 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61fz6yvh6bL._SX1920_.jpg'
-==========
-downloaded 308 KB
-
-==trying URL 'https://m.media-amazon.com/images/I/81kzYqhJ2GL._SX1920_.jpg'
-====Content type 'image/jpeg' length 123933 bytes (121 KB)
-==================================================
-downloaded 121 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Ss67PWumL._SX1920_.jpg'
-Content type 'image/jpeg' length 103244 bytes (100 KB)
-==================================================
-downloaded 100 KB
-
-Content type 'image/jpeg' length 119534 bytes (116 KB)
-=============trying URL 'https://m.media-amazon.com/images/I/71zLOzX7HcL._SX1920_.jpg'
-=====================================
-downloaded 116 KB
-
-Content type 'image/jpeg' length 160715 bytes (156 KB)
-====trying URL 'https://m.media-amazon.com/images/I/71uO5ANP53L._SX1920_.jpg'
-======Content type 'image/jpeg' length 92928 bytes (90 KB)
-=================Content type 'image/jpeg' length 120316 bytes (117 KB)
-==================================================
-downloaded 117 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71fIOOFTdOL._SX1920_.jpg'
-Content type 'image/jpeg' length 132335 bytes (129 KB)
-=======================================================================================================
-downloaded 90 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81jM9qu4EdL._SX1920_.jpg'
-====
-downloaded 375 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71ajLMrbRzL._SX1920_.jpg'
-=========================Content type 'image/jpeg' length 158067 bytes (154 KB)
-=====Content type 'image/jpeg' length 207216 bytes (202 KB)
-==================================
-downloaded 129 KB
-
-=====
-downloaded 156 KB
-
-trying URL 'https://m.media-amazon.com/images/I/616IGH7LkEL._SX1920_.jpg'
-=====trying URL 'https://m.media-amazon.com/images/I/71a0NZTAKjL._SX1920_.jpg'
-=======================Content type 'image/jpeg' length 125391 bytes (122 KB)
-================Content type 'image/jpeg' length 159027 bytes (155 KB)
-==============================
-downloaded 154 KB
-
-Content type 'image/jpeg' length 243278 bytes (237 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/61cEJGD88fL._SX1920_.jpg'
-==Content type 'image/jpeg' length 243278 bytes (237 KB)
-======Content type 'image/jpeg' length 242857 bytes (237 KB)
-===================================================Content type 'image/jpeg' length 181921 bytes (177 KB)
-=========================
-downloaded 202 KB
-
-======================
-downloaded 122 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/71HX4tP4ayL._SX1920_.jpg'
-=====Content type 'image/jpeg'Content type 'image/jpeg' length 80148 bytes (78 KB)
- length 86144 bytes (84 KB)
-===============================================================
-downloaded 84 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/81xZSTQXWEL._SX1920_.jpg'
-====================trying URL 'https://m.media-amazon.com/images/I/61cQJXIdJeL._SX1920_.jpg'
-========================
-downloaded 177 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/61tvI-sy4KL._SX1920_.jpg'
-======================================================
-downloaded 78 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/713bhmFUVzL._SX1920_.jpg'
-==========================================
-downloaded 155 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71sGgJtJZNL._SX1920_.jpg'
-Content type 'image/jpeg' length 144274 bytes (140 KB)
-==================
-downloaded 237 KB
-
-===
-downloaded 237 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81qF7xow1eL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/81qF7xow1eL._SX1920_.jpg'
-===========Content type 'image/jpeg' length 91791 bytes (89 KB)
-============================================Content type 'image/jpeg' length 223346 bytes (218 KB)
-=========
-downloaded 89 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/71F9lAF5zfL._SX1920_.jpg'
-===========================================
-downloaded 218 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71STdl0F+mL._SX1920_.jpg'
-Content type 'image/jpeg' length 368060 bytes (359 KB)
-====Content type 'image/jpeg' length 210640 bytes (205 KB)
-===================================================================
-downloaded 237 KB
-
-=======trying URL 'https://m.media-amazon.com/images/I/71UA+dcMjiL._SX1920_.jpg'
-========
-downloaded 205 KB
-
-Content type 'image/jpeg' length 207851 bytes (202 KB)
-===trying URL 'https://m.media-amazon.com/images/I/71KqZhE8sUL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 71987 bytes (70 KB)
-========================================================
-downloaded 140 KB
-
-=trying URL 'https://m.media-amazon.com/images/I/819cRGuOoBL._SX1920_.jpg'
-==========================================================
-downloaded 359 KB
-
-============trying URL 'https://m.media-amazon.com/images/I/713+qyBsWxL._SX1920_.jpg'
-=========
-downloaded 202 KB
-
-Content type 'image/jpeg' length 151165 bytes (147 KB)
-=====trying URL 'https://m.media-amazon.com/images/I/712cLD4MbgL._SX1920_.jpg'
-=====Content type 'image/jpeg' length 197583 bytes (192 KB)
-===Content type 'image/jpeg' length 146114 bytes (142 KB)
-=================================================================Content type 'image/jpeg' length 216967 bytes (211 KB)
-========================================Content type 'image/jpeg' length 90779 bytes (88 KB)
-==================================================
-downloaded 88 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/71rw5we4J-L._SX1920_.jpg'
-===============
-downloaded 142 KB
-
-Content type 'image/jpeg' length 320625 bytes (313 KB)
-==============================trying URL 'https://m.media-amazon.com/images/I/61XQ3t9+ufL._SX1920_.jpg'
-============
-downloaded 192 KB
-
-==Content type 'image/jpeg' length 78150 bytes (76 KB)
-==============trying URL 'https://m.media-amazon.com/images/I/61ohuu5KI7L._SX1920_.jpg'
-=====================
-downloaded 313 KB
-
-trying URL 'https://m.media-amazon.com/images/I/819xlmCCgtL._SX1920_.jpg'
-===============================================Content type 'image/jpeg' length 262756 bytes (256 KB)
-====================
-downloaded 76 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71Ow1UUDFoL._SX1920_.jpg'
-===Content type 'image/jpeg' length 124655 bytes (121 KB)
-===========
-downloaded 211 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/61PR1yYFbXL._SX1920_.jpg'
-==========================================
-downloaded 70 KB
-
-Content type 'image/jpeg' length 180104 bytes (175 KB)
-=================================trying URL 'https://m.media-amazon.com/images/I/617EdUcbLeL._SX1920_.jpg'
-========
-downloaded 121 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/61aqmHeAjXL._SX1920_.jpg'
-===================================Content type 'image/jpeg' length 89539 bytes (87 KB)
-=====================================
-downloaded 175 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71caRYDW4XL._SX1920_.jpg'
-========
-downloaded 256 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71sR-iNrEOL._SX1920_.jpg'
-==================
-downloaded 147 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61vHaIKFQ-L._SX1920_.jpg'
-Content type 'image/jpeg' length 146491 bytes (143 KB)
-===========Content type 'image/jpeg' length 294861 bytes (287 KB)
-========================================================================
-downloaded 143 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/61brsn0KavL._SX1920_.jpg'
-===Content type 'image/jpeg' length 192104 bytes (187 KB)
-=======
-downloaded 287 KB
-
-Content type 'image/jpeg' length 230167 bytes (224 KB)
-===========trying URL 'https://m.media-amazon.com/images/I/814WolawfIL._SX1920_.jpg'
-Content type 'image/jpeg' length 138559 bytes (135 KB)
-==================================================
-downloaded 135 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71Hc23ztTQL._SX1920_.jpg'
-================================================
-downloaded 87 KB
-
-============Content type 'image/jpeg' length 90363 bytes (88 KB)
-trying URL 'https://m.media-amazon.com/images/I/71X84CLGW-L._SX1920_.jpg'
-==================Content type 'image/jpeg' length 198562 bytes (193 KB)
-====================================================
-downloaded 88 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71ZQp5Z7V8L._SX1920_.jpg'
-
-downloaded 187 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71szLzjz-LL._SX1920_.jpg'
-Content type 'image/jpeg' length 229773 bytes (224 KB)
-=======================================Content type 'image/jpeg' length 192360 bytes (187 KB)
-================Content type 'image/jpeg' length 112506 bytes (109 KB)
-=====================================================
-downloaded 109 KB
-
-===
-downloaded 224 KB
-
-===========trying URL 'https://m.media-amazon.com/images/I/712j9EFtovL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61T7UCA7tdL._SX1920_.jpg'
-================================================
-downloaded 224 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71FFaQED2hL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 316615 bytes (309 KB)
-==================Content type 'image/jpeg' length 316615 bytes (309 KB)
-========================================================
-downloaded 193 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71w8u9wgaDL._SX1920_.jpg'
-============================
-downloaded 309 KB
-
-=
-downloaded 309 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71ZZWZAYzpL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71ZZWZAYzpL._SX1920_.jpg'
-Content type 'image/jpeg' length 196192 bytes (191 KB)
-==================================================
-downloaded 191 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71Tfy2gRsJL._SX1920_.jpg'
-Content type 'image/jpeg' length 123116 bytes (120 KB)
-=============Content type 'image/jpeg' length 374535 bytes (365 KB)
-==========================================
-downloaded 120 KB
-
-==trying URL 'https://m.media-amazon.com/images/I/71ne9JakfrL._SX1920_.jpg'
-=Content type 'image/jpeg' length 141420 bytes (138 KB)
-=====Content type 'image/jpeg' length 112450 bytes (109 KB)
-=====================Content type 'image/jpeg' length 261498 bytes (255 KB)
-============================================Content type 'image/jpeg' length 293444 bytes (286 KB)
-====================================
-downloaded 187 KB
-
-=========================
-downloaded 255 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71BiZjBYRIL._SX1920_.jpg'
-=============trying URL 'https://m.media-amazon.com/images/I/71GrMR7wWAL._SX1920_.jpg'
-======Content type 'image/jpeg' length 84955 bytes (82 KB)
-==================================================Content type 'image/jpeg' length 118515 bytes (115 KB)
-===========================================================
-downloaded 138 KB
-
-==================trying URL 'https://m.media-amazon.com/images/I/61cN8AAcF2L._SX1920_.jpg'
-==
-downloaded 365 KB
-
-=====
-downloaded 286 KB
-
-Content type 'image/jpeg'Content type 'image/jpeg' length 196405 bytes (191 KB)
- length 138341 bytes (135 KB)
-========trying URL 'https://m.media-amazon.com/images/I/719gA6lssJL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/71r5unTVOgL._SX1920_.jpg'
-====================================================
-downloaded 109 KB
-
-===================trying URL 'https://m.media-amazon.com/images/I/61JmbJepIWL._SX1920_.jpg'
-====================================
-==downloaded 135 KB
-
-===Content type 'image/jpeg' length 147185 bytes (143 KB)
-==============
-downloaded 115 KB
-
-=====trying URL 'https://m.media-amazon.com/images/I/718zxAYfPYL._SX1920_.jpg'
-=trying URL 'https://m.media-amazon.com/images/I/71ngmHmnnBL._SX1920_.jpg'
-============
-downloaded 82 KB
-
-trying URL 'https://m.media-amazon.com/images/I/710OQLo9v2L._SX1920_.jpg'
-=======================Content type 'image/jpeg' length 246506 bytes (240 KB)
-======================Content type 'image/jpeg' length 88628 bytes (86 KB)
-==============================Content type 'image/jpeg' length 110178 bytes (107 KB)
-====================
-downloaded 191 KB
-
-==========================trying URL 'https://m.media-amazon.com/images/I/71Sc9-ueRnL._SX1920_.jpg'
-=================
-downloaded 143 KB
-
-Content type 'image/jpeg' length 206085 bytes (201 KB)
-============trying URL 'https://m.media-amazon.com/images/I/61RKRlKJjlL._SX1920_.jpg'
-========================================================================
-downloaded 240 KB
-
-======================
-downloaded 86 KB
-
-====trying URL 'https://m.media-amazon.com/images/I/81bYjw1lSXL._SX1920_.jpg'
-========trying URL 'https://m.media-amazon.com/images/I/71sI-7TvDJL._SX1920_.jpg'
-==========
-downloaded 107 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/81D+eBL11OL._SX1920_.jpg'
-Content type 'image/jpeg' length 138302 bytes (135 KB)
-============
-downloaded 201 KB
-
-======trying URL 'https://m.media-amazon.com/images/I/71gyY8kQv3L._SX1920_.jpg'
-======Content type 'image/jpeg' length 140589 bytes (137 KB)
-=======================Content type 'image/jpeg' length 237051 bytes (231 KB)
-==========================================
-downloaded 137 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61yPxIMVQqL._SX1920_.jpg'
-============================
-downloaded 135 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71frxoyl+KL._SX1920_.jpg'
-Content type 'image/jpeg' length 78993 bytes (77 KB)
-===========================Content type 'image/jpeg' length 168959 bytes (164 KB)
-=============================================================
-downloaded 77 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71JiOj1I5HL._SX1920_.jpg'
-Content type 'image/jpeg' length 242481 bytes (236 KB)
-=======================================
-downloaded 231 KB
-
-=============trying URL 'https://m.media-amazon.com/images/I/71DPlyRt4RL._SX1920_.jpg'
-================================
-downloaded 236 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71-uOHonFuL._SX1920_.jpg'
-Content type 'image/jpeg' length 153136 bytes (149 KB)
-===Content type 'image/jpeg'= length 153136 bytes (149 KB)
-==============
-downloaded 164 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/71jSNd-kPoL._SX1920_.jpg'
-Content type 'image/jpeg' length 198412 bytes (193 KB)
-==================================================================================
-downloaded 193 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71WOH-neglL._SX1920_.jpg'
-Content type 'image/jpeg' length 224693 bytes (219 KB)
-=======Content type 'image/jpeg' length 136707 bytes (133 KB)
-=================================================Content type 'image/jpeg' length 109306 bytes (106 KB)
-===============
-downloaded 133 KB
-
-==============trying URL 'https://m.media-amazon.com/images/I/61N2Dx0ah6L._SX1920_.jpg'
-====Content type 'image/jpeg'= length 284351 bytes (277 KB)
-===============Content type 'image/jpeg' length 195065 bytes (190 KB)
-======================
-downloaded 219 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71x5ukKlfBL._SX1920_.jpg'
-=============Content type 'image/jpeg' length 176895 bytes (172 KB)
-=========================================================
-downloaded 106 KB
-
-===trying URL 'https://m.media-amazon.com/images/I/71acpqhkITL._SX1920_.jpg'
-=======================
-downloaded 190 KB
-
-===Content type 'image/jpeg' length 225531 bytes (220 KB)
-=======trying URL 'https://m.media-amazon.com/images/I/71ANkn0OabL._SX1920_.jpg'
-==============Content type 'image/jpeg' length 157496 bytes (153 KB)
-==========================================
-downloaded 220 KB
-
-Content type 'image/jpeg' length 220618 bytes (215 KB)
-=============trying URL 'https://m.media-amazon.com/images/I/61XaN4NE3-L._SX1920_.jpg'
-===Content type 'image/jpeg' length 89703 bytes (87 KB)
-======================Content type 'image/jpeg' length 79756 bytes (77 KB)
-=========Content type 'image/jpeg' length 190789 bytes (186 KB)
-==================================================================================================
-downloaded 87 KB
-
-===========================================
-downloaded 153 KB
-
-trying URL 'https://m.media-amazon.com/images/I/61Xf9MkuTOL._SX1920_.jpg'
-==========
-downloaded 77 KB
-
-==========trying URL 'https://m.media-amazon.com/images/I/81LHK32D7uL._SX1920_.jpg'
-==============
-downloaded 149 KB
-
-========================
-downloaded 149 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81GCqA4XszL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61C7A0UHw6L._SX1920_.jpg'
-===========trying URL 'https://m.media-amazon.com/images/I/81gSaz30MSL._SX1920_.jpg'
-==================
-downloaded 172 KB
-
-=========trying URL 'https://m.media-amazon.com/images/I/61gLq6uQvaL._SX1920_.jpg'
-===========
-downloaded 277 KB
-
-========trying URL 'https://m.media-amazon.com/images/I/71AzR-+FtBL._SX1920_.jpg'
 =============Content type 'image/jpeg' length 135325 bytes (132 KB)
 ===================
 downloaded 186 KB
@@ -4858,3 +3285,7 @@ Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
   Content-Type: text/plain; charset=utf-8
   Size: 2 B
 
+[5b7f5df] 2019-11-08: Automatic Update
+Already up to date.
+To github.com:srvanderplas/ShoeScrapeR.git
+   3f5088e..5b7f5df  master -> master

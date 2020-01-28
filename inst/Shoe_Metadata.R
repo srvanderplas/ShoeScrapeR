@@ -238,12 +238,13 @@ if (nrow(new_shoes) > 0) {
   
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/Scraped_Data.sqlite /lss/research/csafe-shoeprints/ShoeNeuralNet/"))
   
-
+  # Once Labelme is fixed, alter images
+  try(system("~/bin/autocrop-imgs extra/photos/"))
+  try(system("~/bin/imgs-to-jpg extra/photos/"))
   
   # Copy to Textures as well
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Textures/"))
-  try(system("~/bin/autocrop-imgs ~/Projects/CSAFE/LabelMe/Images/Textures/"))
-  try(system("~/bin/imgs-to-jpg ~/Projects/CSAFE/LabelMe/Images/Textures/"))
+
   
   # Make image manifest
   system("find extra/photos/ -type f -name '*.jpg' > image_manifest")

@@ -238,12 +238,25 @@ if (nrow(new_shoes) > 0) {
   
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/Scraped_Data.sqlite /lss/research/csafe-shoeprints/ShoeNeuralNet/"))
   
+
+  
+  # Copy to Textures as well
+  try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Textures/"))
+  try(system("~/bin/autocrop-imgs ~/Projects/CSAFE/LabelMe/Images/Textures/"))
+  try(system("~/bin/imgs-to-jpg ~/Projects/CSAFE/LabelMe/Images/Textures/"))
+  
   # Make image manifest
   system("find extra/photos/ -type f -name '*.jpg' > image_manifest")
-  flist <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
-  write.table(data.frame(collection = "Shoes", file = flist), sep = ",",
+  flist_shoes <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
+  flist_textures <- list.files("~/Projects/CSAFE/LabelMe/Images/Textures/", "\\.jpg$")
+  rbind(
+    data.frame(collection = "Shoes", file = flist_shoes),
+    data.frame(collection = "Textures", file = flist_textures)
+  ) %>%
+  write.table(., sep = ",",
               "~/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
               row.names = F, col.names = F, quote = F)
+  
 
 
   # ------------------------------------------------------------------------------

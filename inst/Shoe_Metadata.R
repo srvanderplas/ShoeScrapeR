@@ -249,11 +249,11 @@ if (nrow(new_shoes) > 0) {
   system("find extra/photos/ -type f -name '*.jpg' > image_manifest")
   flist_shoes <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
   flist_textures <- list.files("~/Projects/CSAFE/LabelMe/Images/Textures/", "\\.jpg$")
-  rbind(
+  im_manifest <- rbind(
     data.frame(collection = "Shoes", file = flist_shoes),
     data.frame(collection = "Textures", file = flist_textures)
-  ) %>%
-  write.table(., sep = ",",
+  )
+  write.table(im_manifest, sep = ",",
               "~/Projects/CSAFE/LabelMe/DirLists/labelme.txt", 
               row.names = F, col.names = F, quote = F)
   

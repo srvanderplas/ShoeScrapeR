@@ -60,13 +60,19 @@ shoe_db_con <- dbConnect(RSQLite::SQLite(), db_location)
 # Get initial zappos search page results - one tile for each shoe model
 # ------------------------------------------------------------------------------
 plan(multicore)
-initial_links <- get_useful_searches() %>%
-  mutate(search_page = paste0("http://www.zappos.com", href)) %>%
-  mutate(shoe_search = future_map(search_page, get_all_page_links)) %>%
-  unnest(shoe_search) %>%
-  mutate(shoe_page = future_map(shoe_search, get_all_shoes_on_page))
+get_all_shoes_on_page_safely <- safely(get_all_shoes_on_page)
 
-initial_link_data <- unnest(initial_links, cols = c(shoe_page)) 
+initial_links_to_search <- get_useful_searches() %>%
+  mutate(search_page = paste0("http://www.zappos.com", href)) %>%
+  mutate(shoe_search = future_map(search_page, get_all_page_links)) 
+initial_links_safe <- initial_links_to_search %>%
+  unnest(shoe_search) %>%
+  mutate(shoe_page_safe = future_map(shoe_search, get_all_shoes_on_page_safely)) %>%
+  mutate(shoe_page = purrr::map(shoe_page_safe, "result"),
+         shoe_page_err = purrr::map(shoe_page_safe, "error")) 
+
+initial_link_data <- unnest(initial_links_safe, cols = c(shoe_page)) %>%
+  select(-shoe_page_safe, -shoe_page_err)
 
 initial_link_db <- dbReadTable(shoe_db_con, "initial_link")
 new_shoes <- suppressMessages(anti_join(initial_link_data, initial_link_db))

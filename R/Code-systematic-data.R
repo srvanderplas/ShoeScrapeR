@@ -142,6 +142,11 @@ get_all_shoes_on_page <- function(url) {
 #' For a URL of a shoe, get all information about the shoe
 #' 
 #' @param url url of page with shoe information
+#' @import xml2
+#' @import rvest
+#' @import stringr
+#' @import tibble
+#' @import dplyr
 #' @export
 get_shoe_info <- function(url) {
   Sys.sleep(runif(1, min = 0.5, max = 5.5))
@@ -188,7 +193,7 @@ get_shoe_info <- function(url) {
            category = list(categories),
            sizes = list(sizes),
            colors = list(colors),
-           widths = as.list(widths),
+           widths = list(widths),
            description = list(description),
            images = list(images)) %>%
     mutate(widths = as.list(widths))

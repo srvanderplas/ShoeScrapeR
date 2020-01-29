@@ -205,7 +205,7 @@ if (nrow(new_shoes) > 0) {
   if (nrow(image_res) > 0) {
     image_res <- image_res %>%
     mutate(
-      success = furrr::future_pmap(., safe_dl_image),
+      success = purrr::pmap(., safe_dl_image),
       result = purrr::map_int(success, ~ifelse(is.null(.$result), NA, .$result)),
       error = purrr::map_chr(success, ~ifelse(is.null(.$error), NA, .$error[[1]])))
   }

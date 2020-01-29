@@ -93,9 +93,11 @@ Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
   Content-Type: text/plain; charset=utf-8
   Size: 2 B
 
-on.com/images/I/81Gv6SgynQL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61nHNUi2GOL._SX1920_.jpg'
-trying URL 'https://m.media-amazon.com/images/I/61NBoi9Uj+L._SX1920_.jpg'
+[e53d401] 2020-01-29: Automatic Update
+Already up to date.
+To github.com:srvanderplas/ShoeScrapeR.git
+   4a2d6d4..e53d401  master -> master
+dia-amazon.com/images/I/61NBoi9Uj+L._SX1920_.jpg'
 trying URL 'https://m.media-amazon.com/images/I/7122YopwcHL._SX1920_.jpg'
 trying URL 'https://m.media-amazon.com/images/I/61L8dX8ow4L._SX1920_.jpg'
 trying URL 'https://m.media-amazon.com/images/I/61DhhiOcNFL._SX1920_.jpg'
@@ -11598,3 +11600,24 @@ rsync: mkdir "/lss/research/csafe-shoeprints/ShoeNeuralNet" failed: No such file
 rsync error: error in file IO (code 11) at main.c(675) [Receiver=3.1.2]
 DIRECTORY FOUND (extra/photos/: directory) 
 convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/david-tate-lucia-gold-glitter-fabric-pat_product_9255048_color_822693.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: 7351 extraneous bytes before marker 0xd9 `extra/photos/steve-madden-oaklyn-heeled-sandal-black_product_9338961_color_3.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/new-balance-classics-zappos-20th-x-ml574zp-black-blue_product_9313390_color_2557.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/clarks-gracelin-wind-black-metallic-leather_product_9258184_color_20122.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/hush-puppies-bailey-chukka-boot-black-leather_product_9257952_color_72.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/mephisto-agatha-black-bucksoft_product_9282522_color_83850.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: 5598 extraneous bytes before marker 0xd9 `extra/photos/naturalizer-anna-pastel-multi-snake-print-leather_product_9247205_color_850587.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/native-shoes-jefferson-dublin-grey-transluscent_product_7707372_color_850523.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: 6008 extraneous bytes before marker 0xd9 `extra/photos/adidas-y-3-by-yohji-yamamoto-y-3-kaiwa-core-white-black-y3-footwear-white_product_9304063_color_836306.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+convert-im6.q16: Corrupt JPEG data: premature end of data segment `extra/photos/aerosoles-prism-grey-fabric_product_9389347_color_1761.jpg' @ warning/jpeg.c/JPEGWarningHandler/352.
+DIRECTORY FOUND (extra/photos/: directory) 
+Extensions: jpg
+directory
+Directory not mogrified
+Warning message:
+Sync stage reached 
+Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
+  Date: 2020-01-29 05:56
+  Status: 200
+  Content-Type: text/plain; charset=utf-8
+  Size: 2 B
+

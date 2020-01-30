@@ -228,12 +228,16 @@ if (nrow(new_shoes) > 0) {
   # ------------------------------------------------------------------------------
   warning("Sync stage reached")
   
-  image_files %>%
+  updated_imgs <- image_files %>%
     filter(view == "Bottom") %>%
     mutate(filename2 = str_replace(filename, "all_photos", "photos") %>% 
              str_remove("_Bottom")) %>%
     filter(!file.exists(filename2)) %>%
     mutate(copy = purrr::map2_lgl(filename, filename2, file.copy))
+  
+  try(dir.create("new_photos"))
+  try(file.remove(list.files("new_photos/", "*.*", full.names = T)))
+  try(file.copy(updated_imgs$filename2, "new_photos"))
   
   # Copy files to LabelMe Directory
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
@@ -245,8 +249,8 @@ if (nrow(new_shoes) > 0) {
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/Scraped_Data.sqlite /lss/research/csafe-shoeprints/ShoeNeuralNet/"))
   
   # Once Labelme is fixed, alter images
-  try(system("~/bin/autocrop-imgs extra/photos/"))
-  try(system("~/bin/imgs-to-jpg extra/photos/"))
+  # try(system("~/bin/autocrop-imgs extra/photos/"))
+  # try(system("~/bin/imgs-to-jpg extra/photos/"))
   
   # Copy to Textures as well
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Textures/"))

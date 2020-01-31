@@ -235,22 +235,24 @@ if (nrow(new_shoes) > 0) {
     filter(!file.exists(filename2)) %>%
     mutate(copy = purrr::map2_lgl(filename, filename2, file.copy))
   
-  try(dir.create("new_photos"))
-  try(file.remove(list.files("new_photos/", "*.*", full.names = T)))
-  try(file.copy(updated_imgs$filename2, "new_photos"))
+  try(dir.create("new-photos"))
+  try(file.remove(list.files("new-photos/", "*.*", full.names = T)))
+  try(file.copy(updated_imgs$filename2, "new-photos"))
+  
+  # Only modify new images
+  try(system("~/bin/autocrop-imgs extra/new-photos/"))
+  try(system("~/bin/imgs-to-jpg extra/new-photos/"))
+  
   
   # Copy files to LabelMe Directory
-  try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
+  try(system("rsync -rzu --no-perms --no-owner --no-group extra/new-photos/ ~/Projects/CSAFE/LabelMe/Images/Shoes/"))
   # Back up bottom images to LSS
   # try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeSoles/"))
   # Backup all images to LSS
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/all_photos/ /lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages/"))
   
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/Scraped_Data.sqlite /lss/research/csafe-shoeprints/ShoeNeuralNet/"))
-  
-  # Once Labelme is fixed, alter images
-  # try(system("~/bin/autocrop-imgs extra/photos/"))
-  # try(system("~/bin/imgs-to-jpg extra/photos/"))
+
   
   # Copy to Textures as well
   try(system("rsync -rzu --no-perms --no-owner --no-group extra/photos/ ~/Projects/CSAFE/LabelMe/Images/Textures/"))

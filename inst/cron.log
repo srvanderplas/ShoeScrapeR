@@ -578,3 +578,18 @@ Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
   Content-Type: text/plain; charset=utf-8
   Size: 2 B
 
+[e21bc5e] 2020-02-05: Automatic Update
+error: Your local changes to the following files would be overwritten by merge:
+	inst/cron.log
+Please commit your changes or stash them before you merge.
+error: The following untracked working tree files would be overwritten by merge:
+	extra/Scraped_Data.sqlite
+Please move or remove them before you merge.
+Aborting
+To github.com:srvanderplas/ShoeScrapeR.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:srvanderplas/ShoeScrapeR.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.

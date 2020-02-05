@@ -288,7 +288,7 @@ if (exists("ping_url")) {
 
 # git housekeeping
 # ------------------------------------------------------------------------------
-git2r::add(path = db_location)
+# git2r::add(path = db_location)
 git2r::add(path = "./image_manifest")
 git2r::add(path = "inst/cron.log")
 git2r::commit(all = T, message = "Automatic Update")

@@ -66,96 +66,391 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-239 new rows added
+270 new rows added
 [1] TRUE
- Progress: ──────────────                                                   100% Progress: ────────────────────                                             100% Progress: ──────────────────────────                                       100% Progress: ──────────────────────────────────                               100% Progress: ─────────────────────────────────────────                        100% Progress: ────────────────────────────────────────────────                 100% Progress: ──────────────────────────────────────────────────────           100% Progress: ─────────────────────────────────────────────────────────        100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ─────────────                                                    100% Progress: ─────────────────────                                            100% Progress: ────────────────────────────                                     100% Progress: ────────────────────────────────────                             100% Progress: ─────────────────────────────────────────                        100% Progress: ──────────────────────────────────────────────────               100% Progress: ─────────────────────────────────────────────────────────        100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/71-RR1PRcYL._SX1920_.jpg'
-Content type 'image/jpeg' length 150855 bytes (147 KB)
+trying URL 'https://m.media-amazon.com/images/I/81iDAwJERlL._SX1920_.jpg'
+Content type 'image/jpeg' length 266281 bytes (260 KB)
 ==================================================
-downloaded 147 KB
+downloaded 260 KB
 
-trying URL 'https://m.media-amazon.com/images/I/711vekxFQlL._SX1920_.jpg'
-Content type 'image/jpeg' length 140291 bytes (137 KB)
+trying URL 'https://m.media-amazon.com/images/I/71OLilFvNRL._SX1920_.jpg'
+Content type 'image/jpeg' length 225521 bytes (220 KB)
 ==================================================
-downloaded 137 KB
+downloaded 220 KB
 
-trying URL 'https://m.media-amazon.com/images/I/811+i1BvyNL._SX1920_.jpg'
-Content type 'image/jpeg' length 382180 bytes (373 KB)
+trying URL 'https://m.media-amazon.com/images/I/71X78NFy4XL._SX1920_.jpg'
+Content type 'image/jpeg' length 220415 bytes (215 KB)
 ==================================================
-downloaded 373 KB
+downloaded 215 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81RDngugviL._SX1920_.jpg'
-Content type 'image/jpeg' length 289855 bytes (283 KB)
+trying URL 'https://m.media-amazon.com/images/I/81JLs+wLg4L._SX1920_.jpg'
+Content type 'image/jpeg' length 273426 bytes (267 KB)
 ==================================================
-downloaded 283 KB
+downloaded 267 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81o0bjnd10L._SX1920_.jpg'
-Content type 'image/jpeg' length 329994 bytes (322 KB)
+trying URL 'https://m.media-amazon.com/images/I/71tKYziEYPL._SX1920_.jpg'
+Content type 'image/jpeg' length 167957 bytes (164 KB)
 ==================================================
-downloaded 322 KB
+downloaded 164 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81fZjj6N9rL._SX1920_.jpg'
-Content type 'image/jpeg' length 307709 bytes (300 KB)
+trying URL 'https://m.media-amazon.com/images/I/71y7RlCsmHL._SX1920_.jpg'
+Content type 'image/jpeg' length 251101 bytes (245 KB)
 ==================================================
-downloaded 300 KB
+downloaded 245 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71jeBbu0qZL._SX1920_.jpg'
-Content type 'image/jpeg' length 148590 bytes (145 KB)
+trying URL 'https://m.media-amazon.com/images/I/71Otl00SVRL._SX1920_.jpg'
+Content type 'image/jpeg' length 167161 bytes (163 KB)
 ==================================================
-downloaded 145 KB
+downloaded 163 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81zFmHakP7L._SX1920_.jpg'
-Content type 'image/jpeg' length 310180 bytes (302 KB)
+trying URL 'https://m.media-amazon.com/images/I/81xcqcfqACL._SX1920_.jpg'
+Content type 'image/jpeg' length 279813 bytes (273 KB)
 ==================================================
-downloaded 302 KB
+downloaded 273 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71Ta0dnTluL._SX1920_.jpg'
-Content type 'image/jpeg' length 160527 bytes (156 KB)
+trying URL 'https://m.media-amazon.com/images/I/81wTaXO5ezL._SX1920_.jpg'
+Content type 'image/jpeg' length 300686 bytes (293 KB)
 ==================================================
-downloaded 156 KB
+downloaded 293 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71sGXej39gL._SX1920_.jpg'
-Content type 'image/jpeg' length 156022 bytes (152 KB)
+trying URL 'https://m.media-amazon.com/images/I/81vm69xilxL._SX1920_.jpg'
+Content type 'image/jpeg' length 283406 bytes (276 KB)
 ==================================================
-downloaded 152 KB
+downloaded 276 KB
 
-trying URL 'https://m.media-amazon.com/images/I/619oW0snXJL._SX1920_.jpg'
-Content type 'image/jpeg' length 119244 bytes (116 KB)
+trying URL 'https://m.media-amazon.com/images/I/81EyEbFhuKL._SX1920_.jpg'
+Content type 'image/jpeg' length 302219 bytes (295 KB)
 ==================================================
-downloaded 116 KB
+downloaded 295 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71CyGPSrBQL._SX1920_.jpg'
-Content type 'image/jpeg' length 166666 bytes (162 KB)
+trying URL 'https://m.media-amazon.com/images/I/81oSp4bPwEL._SX1920_.jpg'
+Content type 'image/jpeg' length 325444 bytes (317 KB)
 ==================================================
-downloaded 162 KB
+downloaded 317 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71IiLvxRE7L._SX1920_.jpg'
-Content type 'image/jpeg' length 156066 bytes (152 KB)
+trying URL 'https://m.media-amazon.com/images/I/71FhJQuIopL._SX1920_.jpg'
+Content type 'image/jpeg' length 246967 bytes (241 KB)
 ==================================================
-downloaded 152 KB
+downloaded 241 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61PrrMls8RL._SX1920_.jpg'
-Content type 'image/jpeg' length 112305 bytes (109 KB)
+trying URL 'https://m.media-amazon.com/images/I/71mBSmerMUL._SX1920_.jpg'
+Content type 'image/jpeg' length 226828 bytes (221 KB)
+==================================================
+downloaded 221 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81efpDSeDlL._SX1920_.jpg'
+Content type 'image/jpeg' length 276101 bytes (269 KB)
+==================================================
+downloaded 269 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71OJQJxPuJL._SX1920_.jpg'
+Content type 'image/jpeg' length 160936 bytes (157 KB)
+==================================================
+downloaded 157 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71+Yozy9L9L._SX1920_.jpg'
+Content type 'image/jpeg' length 240391 bytes (234 KB)
+==================================================
+downloaded 234 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71XFRqatjWL._SX1920_.jpg'
+Content type 'image/jpeg' length 150040 bytes (146 KB)
+==================================================
+downloaded 146 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71acEs0PTyL._SX1920_.jpg'
+Content type 'image/jpeg' length 231221 bytes (225 KB)
+==================================================
+downloaded 225 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81hY2+Yw--L._SX1920_.jpg'
+Content type 'image/jpeg' length 349663 bytes (341 KB)
+==================================================
+downloaded 341 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81gnmlQI21L._SX1920_.jpg'
+Content type 'image/jpeg' length 263134 bytes (256 KB)
+==================================================
+downloaded 256 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71+7DdcEUML._SX1920_.jpg'
+Content type 'image/jpeg' length 225209 bytes (219 KB)
+==================================================
+downloaded 219 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71hFAh08OsL._SX1920_.jpg'
+Content type 'image/jpeg' length 139404 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://m.media-amazon.com/images/I/717Qx-aT-NL._SX1920_.jpg'
+Content type 'image/jpeg' length 224677 bytes (219 KB)
+==================================================
+downloaded 219 KB
+
+trying URL 'https://m.media-amazon.com/images/I/717QkEkxkwL._SX1920_.jpg'
+Content type 'image/jpeg' length 170874 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71acEs0PTyL._SX1920_.jpg'
+Content type 'image/jpeg' length 231221 bytes (225 KB)
+==================================================
+downloaded 225 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81hY2+Yw--L._SX1920_.jpg'
+Content type 'image/jpeg' length 349663 bytes (341 KB)
+==================================================
+downloaded 341 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81gnmlQI21L._SX1920_.jpg'
+Content type 'image/jpeg' length 263134 bytes (256 KB)
+==================================================
+downloaded 256 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71+7DdcEUML._SX1920_.jpg'
+Content type 'image/jpeg' length 225209 bytes (219 KB)
+==================================================
+downloaded 219 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71hFAh08OsL._SX1920_.jpg'
+Content type 'image/jpeg' length 139404 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://m.media-amazon.com/images/I/717Qx-aT-NL._SX1920_.jpg'
+Content type 'image/jpeg' length 224677 bytes (219 KB)
+==================================================
+downloaded 219 KB
+
+trying URL 'https://m.media-amazon.com/images/I/717QkEkxkwL._SX1920_.jpg'
+Content type 'image/jpeg' length 170874 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Rd99hsyOL._SX1920_.jpg'
+Content type 'image/jpeg' length 245759 bytes (239 KB)
+==================================================
+downloaded 239 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Ib3eIMlwL._SX1920_.jpg'
+Content type 'image/jpeg' length 206011 bytes (201 KB)
+==================================================
+downloaded 201 KB
+
+trying URL 'https://m.media-amazon.com/images/I/711HKR7NwML._SX1920_.jpg'
+Content type 'image/jpeg' length 156726 bytes (153 KB)
+==================================================
+downloaded 153 KB
+
+trying URL 'https://m.media-amazon.com/images/I/716+fpcoGRL._SX1920_.jpg'
+Content type 'image/jpeg' length 202314 bytes (197 KB)
+==================================================
+downloaded 197 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61K7cXlwzyL._SX1920_.jpg'
+Content type 'image/jpeg' length 114986 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://m.media-amazon.com/images/I/713+U9iY1BL._SX1920_.jpg'
+Content type 'image/jpeg' length 176707 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61rwMZXWHhL._SX1920_.jpg'
+Content type 'image/jpeg' length 125585 bytes (122 KB)
+==================================================
+downloaded 122 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Rd99hsyOL._SX1920_.jpg'
+Content type 'image/jpeg' length 245759 bytes (239 KB)
+==================================================
+downloaded 239 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Ib3eIMlwL._SX1920_.jpg'
+Content type 'image/jpeg' length 206011 bytes (201 KB)
+==================================================
+downloaded 201 KB
+
+trying URL 'https://m.media-amazon.com/images/I/711HKR7NwML._SX1920_.jpg'
+Content type 'image/jpeg' length 156726 bytes (153 KB)
+==================================================
+downloaded 153 KB
+
+trying URL 'https://m.media-amazon.com/images/I/716+fpcoGRL._SX1920_.jpg'
+Content type 'image/jpeg' length 202314 bytes (197 KB)
+==================================================
+downloaded 197 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61K7cXlwzyL._SX1920_.jpg'
+Content type 'image/jpeg' length 114986 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://m.media-amazon.com/images/I/713+U9iY1BL._SX1920_.jpg'
+Content type 'image/jpeg' length 176707 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61rwMZXWHhL._SX1920_.jpg'
+Content type 'image/jpeg' length 125585 bytes (122 KB)
+==================================================
+downloaded 122 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71X06q6aDtL._SX1920_.jpg'
+Content type 'image/jpeg' length 240666 bytes (235 KB)
+==================================================
+downloaded 235 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71i2-Y-CltL._SX1920_.jpg'
+Content type 'image/jpeg' length 181161 bytes (176 KB)
+==================================================
+downloaded 176 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Mct9munXL._SX1920_.jpg'
+Content type 'image/jpeg' length 174818 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71FGkfbdM-L._SX1920_.jpg'
+Content type 'image/jpeg' length 226425 bytes (221 KB)
+==================================================
+downloaded 221 KB
+
+trying URL 'https://m.media-amazon.com/images/I/610wUw4fvkL._SX1920_.jpg'
+Content type 'image/jpeg' length 112009 bytes (109 KB)
 ==================================================
 downloaded 109 KB
 
-trying URL 'https://m.media-amazon.com/images/I/617r7fSHfzL._SX1920_.jpg'
-Content type 'image/jpeg' length 79730 bytes (77 KB)
+trying URL 'https://m.media-amazon.com/images/I/716feHc2VgL._SX1920_.jpg'
+Content type 'image/jpeg' length 236491 bytes (230 KB)
 ==================================================
-downloaded 77 KB
+downloaded 230 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61FxkN3aO0L._SX1920_.jpg'
-Content type 'image/jpeg' length 103217 bytes (100 KB)
+trying URL 'https://m.media-amazon.com/images/I/61xYN5skJQL._SX1920_.jpg'
+Content type 'image/jpeg' length 111476 bytes (108 KB)
 ==================================================
-downloaded 100 KB
+downloaded 108 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61FcIMw8DJL._SX1920_.jpg'
-Content type 'image/jpeg' length 70967 bytes (69 KB)
+trying URL 'https://m.media-amazon.com/images/I/61uf35D342L._SX1920_.jpg'
+Content type 'image/jpeg' length 128966 bytes (125 KB)
 ==================================================
-downloaded 69 KB
+downloaded 125 KB
 
-220 new rows added
+trying URL 'https://m.media-amazon.com/images/I/71kCFfEdavL._SX1920_.jpg'
+Content type 'image/jpeg' length 176114 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71httg-ASqL._SX1920_.jpg'
+Content type 'image/jpeg' length 160270 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61QSGH7TOVL._SX1920_.jpg'
+Content type 'image/jpeg' length 126794 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61bho3OIQdL._SX1920_.jpg'
+Content type 'image/jpeg' length 75519 bytes (73 KB)
+==================================================
+downloaded 73 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61ufmvLYPML._SX1920_.jpg'
+Content type 'image/jpeg' length 122492 bytes (119 KB)
+==================================================
+downloaded 119 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61uKpMbql6L._SX1920_.jpg'
+Content type 'image/jpeg' length 69905 bytes (68 KB)
+==================================================
+downloaded 68 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81+PnbOJ20L._SX1920_.jpg'
+Content type 'image/jpeg' length 265703 bytes (259 KB)
+==================================================
+downloaded 259 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71YI39ZIggL._SX1920_.jpg'
+Content type 'image/jpeg' length 248425 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71MLb-aPFcL._SX1920_.jpg'
+Content type 'image/jpeg' length 186727 bytes (182 KB)
+==================================================
+downloaded 182 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71QOKDZbNbL._SX1920_.jpg'
+Content type 'image/jpeg' length 222459 bytes (217 KB)
+==================================================
+downloaded 217 KB
+
+trying URL 'https://m.media-amazon.com/images/I/717TkRX5CVL._SX1920_.jpg'
+Content type 'image/jpeg' length 135106 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://m.media-amazon.com/images/I/716YatSXRmL._SX1920_.jpg'
+Content type 'image/jpeg' length 190785 bytes (186 KB)
+==================================================
+downloaded 186 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61mpQ6HhaDL._SX1920_.jpg'
+Content type 'image/jpeg' length 116441 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81X0TOgJ4hL._SX1920_.jpg'
+Content type 'image/jpeg' length 360793 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81+a-s1He3L._SX1920_.jpg'
+Content type 'image/jpeg' length 355794 bytes (347 KB)
+==================================================
+downloaded 347 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71UEADG3gBL._SX1920_.jpg'
+Content type 'image/jpeg' length 227888 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://m.media-amazon.com/images/I/813MXPAYKnL._SX1920_.jpg'
+Content type 'image/jpeg' length 269641 bytes (263 KB)
+==================================================
+downloaded 263 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71iOrFg+-iL._SX1920_.jpg'
+Content type 'image/jpeg' length 207984 bytes (203 KB)
+==================================================
+downloaded 203 KB
+
+trying URL 'https://m.media-amazon.com/images/I/8184UGe40mL._SX1920_.jpg'
+Content type 'image/jpeg' length 262866 bytes (256 KB)
+==================================================
+downloaded 256 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71IBS04rWWL._SX1920_.jpg'
+Content type 'image/jpeg' length 173790 bytes (169 KB)
+==================================================
+downloaded 169 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71TYuYcPRNL._SX1920_.jpg'
+Content type 'image/jpeg' length 135141 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71TYuYcPRNL._SX1920_.jpg'
+Content type 'image/jpeg' length 135141 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+297 new rows added
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
 find: ‘extra/new-photos/’: No such file or directory
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
@@ -171,7 +466,7 @@ Warning messages:
 1: Sync stage reached 
 2: In dir.create("new-photos") : 'new-photos' already exists
 Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
-  Date: 2020-02-21 06:01
+  Date: 2020-02-21 12:02
   Status: 200
   Content-Type: text/plain; charset=utf-8
   Size: 2 B

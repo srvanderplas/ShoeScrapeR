@@ -66,26 +66,121 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-74 new rows added
+168 new rows added
 [1] TRUE
- Progress: ────────────────────────────────────────                         100% Progress: ──────────────────────────────────────────────────────           100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ─────────────────                                                100% Progress: ────────────────────────────                                     100% Progress: ───────────────────────────────────────                          100% Progress: ──────────────────────────────────────────────────               100% Progress: ────────────────────────────────────────────────────────         100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/71VQM2brjzL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 152605 bytes (149 KB)
+trying URL 'https://m.media-amazon.com/images/I/81UhjQbMsVL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 247510 bytes (241 KB)
 ==================================================
-downloaded 149 KB
+downloaded 241 KB
 
-trying URL 'https://m.media-amazon.com/images/I/712xuU1QHzL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 125351 bytes (122 KB)
+trying URL 'https://m.media-amazon.com/images/I/81IbXvCgH5L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 285814 bytes (279 KB)
 ==================================================
-downloaded 122 KB
+downloaded 279 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81Jz0HOiH6L._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 268710 bytes (262 KB)
+trying URL 'https://m.media-amazon.com/images/I/71SHiabAmpL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 128380 bytes (125 KB)
 ==================================================
-downloaded 262 KB
+downloaded 125 KB
 
-178 new rows added
+trying URL 'https://m.media-amazon.com/images/I/81poY5HHpWL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 199702 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71YyWf+hWaL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 87547 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81Y3cZPHIAL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 201174 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61lgT6CM-vL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 51643 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81p3Jr3Xn8L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 189996 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+trying URL 'https://m.media-amazon.com/images/I/712h4GWhXNL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 142404 bytes (139 KB)
+==================================================
+downloaded 139 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71+TYE97+7L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 124353 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Z59w6Y7LL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 96310 bytes (94 KB)
+==================================================
+downloaded 94 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71Y7o+SNXnL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 119554 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61IBuK0WTDL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 70595 bytes (68 KB)
+==================================================
+downloaded 68 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71+DV3faPAL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 101448 bytes (99 KB)
+==================================================
+downloaded 99 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61PihYFjNhL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 60830 bytes (59 KB)
+==================================================
+downloaded 59 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61CJFqshfpL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 42488 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61ejnA6aOiL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 50199 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61jKBaXo8-L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 60378 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61mJ+sVWAEL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 37094 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://m.media-amazon.com/images/I/517pSj9HQeL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 17581 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61yBvNaxz5L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 38380 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61YEgwyNlRL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 24520 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+280 new rows added
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
 find: ‘extra/new-photos/’: No such file or directory
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
@@ -101,7 +196,7 @@ Warning messages:
 1: Sync stage reached 
 2: In dir.create("new-photos") : 'new-photos' already exists
 Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
-  Date: 2020-04-28 17:00
+  Date: 2020-04-28 23:01
   Status: 200
   Content-Type: text/plain; charset=utf-8
   Size: 2 B

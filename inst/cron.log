@@ -66,91 +66,186 @@ Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
 Pagination not found. It may be that all items fit on the page.
-713 new rows added
+400 new rows added
 [1] TRUE
- Progress: ────                                                             100% Progress: ───────                                                          100% Progress: ──────────                                                       100% Progress: ─────────────                                                    100% Progress: ────────────────                                                 100% Progress: ──────────────────                                               100% Progress: ─────────────────────                                            100% Progress: ────────────────────────                                         100% Progress: ───────────────────────────                                      100% Progress: ─────────────────────────────                                    100% Progress: ────────────────────────────────                                 100% Progress: ───────────────────────────────────                              100% Progress: ──────────────────────────────────────                           100% Progress: ─────────────────────────────────────────                        100% Progress: ────────────────────────────────────────────                     100% Progress: ──────────────────────────────────────────────                   100% Progress: ─────────────────────────────────────────────────                100% Progress: ────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────          100% Progress: ─────────────────────────────────────────────────────────        100% Progress: ───────────────────────────────────────────────────────────      100% Progress: ────────────────────────────────────────────────────────────     100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
+ Progress: ────────                                                         100% Progress: ─────────────                                                    100% Progress: ─────────────────                                                100% Progress: ───────────────────────                                          100% Progress: ────────────────────────────                                     100% Progress: ────────────────────────────────                                 100% Progress: ────────────────────────────────────                             100% Progress: ─────────────────────────────────────────                        100% Progress: ───────────────────────────────────────────────                  100% Progress: ───────────────────────────────────────────────────              100% Progress: ───────────────────────────────────────────────────────          100% Progress: ──────────────────────────────────────────────────────────       100% Progress: ─────────────────────────────────────────────────────────────    100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ──────────────────────────────────────────────────────────────   100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ───────────────────────────────────────────────────────────────  100% Progress: ──────────────────────────────────────────────────────────────── 100%
 
-trying URL 'https://m.media-amazon.com/images/I/71pYk2Po1GL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 214246 bytes (209 KB)
+trying URL 'https://m.media-amazon.com/images/I/71plhG3r6UL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 100409 bytes (98 KB)
 ==================================================
-downloaded 209 KB
+downloaded 98 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71iiyoZisaL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 141620 bytes (138 KB)
+trying URL 'https://m.media-amazon.com/images/I/71hwcKtLGjL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 103266 bytes (100 KB)
 ==================================================
-downloaded 138 KB
+downloaded 100 KB
 
-trying URL 'https://m.media-amazon.com/images/I/617Svf0zNfL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 74805 bytes (73 KB)
+trying URL 'https://m.media-amazon.com/images/I/61f3qZWeUsL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 35370 bytes (34 KB)
 ==================================================
-downloaded 73 KB
+downloaded 34 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71QGvQzaxML._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 184127 bytes (179 KB)
+trying URL 'https://m.media-amazon.com/images/I/61b6R5fVlsL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 85705 bytes (83 KB)
 ==================================================
-downloaded 179 KB
+downloaded 83 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61XMhdB4ANL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 73085 bytes (71 KB)
+trying URL 'https://m.media-amazon.com/images/I/61aN0Ej229L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 50595 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61+LhsYqbiL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 86127 bytes (84 KB)
+==================================================
+downloaded 84 KB
+
+trying URL 'https://m.media-amazon.com/images/I/611ULkRDhiL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 52301 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81r5x1lJsZL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 260179 bytes (254 KB)
+==================================================
+downloaded 254 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81KtfzvTGJL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 233319 bytes (227 KB)
+==================================================
+downloaded 227 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71KqmauJGHL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 158538 bytes (154 KB)
+==================================================
+downloaded 154 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81t1IKAZGgL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 229006 bytes (223 KB)
+==================================================
+downloaded 223 KB
+
+trying URL 'https://m.media-amazon.com/images/I/712jRcYLR5L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 152779 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://m.media-amazon.com/images/I/819Dc3JrM-L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 232271 bytes (226 KB)
+==================================================
+downloaded 226 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71DTITXyBbL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 143249 bytes (139 KB)
+==================================================
+downloaded 139 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61CtZSjx-uL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 79620 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61PNuDqMZvL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 62141 bytes (60 KB)
+==================================================
+downloaded 60 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61MaGQs4mjL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 77223 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61edVzZk5JL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 61271 bytes (59 KB)
+==================================================
+downloaded 59 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61xZ3b8BjKL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 41162 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61dgV6srPDL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 64568 bytes (63 KB)
+==================================================
+downloaded 63 KB
+
+trying URL 'https://m.media-amazon.com/images/I/61Gm02xs9OL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 23359 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://m.media-amazon.com/images/I/811G+lnQDCL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 210257 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81QuNuXaEFL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 298822 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81k9-4n69vL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 238485 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://m.media-amazon.com/images/I/813bEDTNMmL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 240277 bytes (234 KB)
+==================================================
+downloaded 234 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71GQBiFOegL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 115651 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://m.media-amazon.com/images/I/81APfbrMN-L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 213424 bytes (208 KB)
+==================================================
+downloaded 208 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71-TWnd-ZgL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 73569 bytes (71 KB)
 ==================================================
 downloaded 71 KB
 
-trying URL 'https://m.media-amazon.com/images/I/71S99J3IDjL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 169670 bytes (165 KB)
+trying URL 'https://m.media-amazon.com/images/I/71HcpqBnmyL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 110250 bytes (107 KB)
 ==================================================
-downloaded 165 KB
+downloaded 107 KB
 
-trying URL 'https://m.media-amazon.com/images/I/61jsD5Bxv8L._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 81360 bytes (79 KB)
+trying URL 'https://m.media-amazon.com/images/I/81Jg0TzeGbL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 165714 bytes (161 KB)
 ==================================================
-downloaded 79 KB
+downloaded 161 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81V7EMbT0AL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 248716 bytes (242 KB)
+trying URL 'https://m.media-amazon.com/images/I/81Hy-VqGW2L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 163221 bytes (159 KB)
 ==================================================
-downloaded 242 KB
+downloaded 159 KB
 
-trying URL 'https://m.media-amazon.com/images/I/81Tn9+siCYL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 198702 bytes (194 KB)
-==================================================
-downloaded 194 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71mkCDapwjL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 99951 bytes (97 KB)
-==================================================
-downloaded 97 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81Z2QGwwt3L._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 208153 bytes (203 KB)
-==================================================
-downloaded 203 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71GCHSY7qlL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 134400 bytes (131 KB)
-==================================================
-downloaded 131 KB
-
-trying URL 'https://m.media-amazon.com/images/I/81CsHOaeWrL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 196351 bytes (191 KB)
-==================================================
-downloaded 191 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71kw-nk8yLL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 109359 bytes (106 KB)
-==================================================
-downloaded 106 KB
-
-trying URL 'https://m.media-amazon.com/images/I/71O797aMjcL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 90258 bytes (88 KB)
+trying URL 'https://m.media-amazon.com/images/I/71ELYafyCRL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 90860 bytes (88 KB)
 ==================================================
 downloaded 88 KB
 
-trying URL 'https://m.media-amazon.com/images/I/6123BwCoKAL._AC_SX1920_.jpg'
-Content type 'image/jpeg' length 42568 bytes (41 KB)
+trying URL 'https://m.media-amazon.com/images/I/61MimExv34L._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 46823 bytes (45 KB)
 ==================================================
-downloaded 41 KB
+downloaded 45 KB
 
-123 new rows added
+trying URL 'https://m.media-amazon.com/images/I/719MWOJU8PL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 94633 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+trying URL 'https://m.media-amazon.com/images/I/71sm6fUQ0yL._AC_SX1920_.jpg'
+Content type 'image/jpeg' length 61506 bytes (60 KB)
+==================================================
+downloaded 60 KB
+
+93 new rows added
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
 find: ‘extra/new-photos/’: No such file or directory
 DIRECTORY FOUND (extra/new-photos/: cannot open `extra/new-photos/' (No such file or directory)) 
@@ -162,105 +257,107 @@ rsync: mkdir "/lss/research/csafe-shoeprints/ShoeNeuralNet/ShoeImages" failed: N
 rsync error: error in file IO (code 11) at main.c(675) [Receiver=3.1.2]
 rsync: mkdir "/lss/research/csafe-shoeprints/ShoeNeuralNet" failed: No such file or directory (2)
 rsync error: error in file IO (code 11) at main.c(675) [Receiver=3.1.2]
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.badgley-mischka-zion-ivory_product_9409589_color_422.jpg.sckJ1r" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.badgley-mischka-zion-silver_product_9409589_color_632.jpg.vyUhQy" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-black-eva_product_9457537_color_13020.jpg.kDrYFF" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-metallic-anthracite-eva_product_9457537_color_822865.jpg.PXPbwM" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-white-eva_product_9457537_color_142471.jpg.CJz8mT" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-zinnia-eva_product_9457537_color_850156.jpg.V329d0" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.bogs-stewart-black_product_8541980_color_3.jpg.GkDu56" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-black-white-fiery-coral_product_9222008_color_633696.jpg.PB6gXd" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-green-teal-copper_product_9222008_color_870012.jpg.UczBPk" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-peacoat-light-blue-copper_product_9222008_color_870014.jpg.jqEqIr" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-glycerin-18-black-rose-gold-grey_product_9305369_color_866201.jpg.4iiYBy" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cienta-kids-shoes-133033-infant-toddler-black_product_9295006_color_3.jpg.RgchwF" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cole-haan-grand-ambition-wedge-sandal-silver-specchio-leather_product_9455071_color_122094.jpg.uLNzrM" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cole-haan-original-grand-stitchlite-wing-tip-oxford-safari-vintage-indigo-knit-ivory_product_9293952_color_853335.jpg.phKlnT" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.crewcuts-by-j-crew-fabric-knot-sandal-toddler-little-kid-big-kid-ivory-blue_product_9434524_color_173887.jpg.0agtj0" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.dc-kids-pure-little-kid-big-kid-white-navy-red_product_7300895_color_1089.jpg.vbdQf7" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.dr-martens-molly-quad-retro-black-buttero_product_9149520_color_73338.jpg.Gz0Kce" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.elephantito-mary-jane-toddler-little-kid-suede-blush_product_7764118_color_606327.jpg.RNdV9k" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-ginger-brown_product_8518003_color_6.jpg.WMHC7r" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-izzy-black_product_8515821_color_3.jpg.FeH25y" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-izzy-brown_product_8515821_color_6.jpg.47BW4F" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-black_product_8104148_color_3.jpg.nmPo4M" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-brown_product_8104148_color_6.jpg.SoVn4T" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-gold_product_8104148_color_385.jpg.ndLW40" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-red_product_8104148_color_585.jpg.kiCY57" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-white_product_8104148_color_14.jpg.zaCw7e" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-black-1_product_8768951_color_125647.jpg.Yz4p9l" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-brown_product_8768951_color_6.jpg.fBAZbt" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-gold_product_8768951_color_385.jpg.4xU7eA" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-millie-yellow_product_8841895_color_764.jpg.9yOKiH" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-sadie-black_product_8515847_color_3.jpg.ySAqnO" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-teva-camel_product_8515831_color_1430.jpg.LJOWsV" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-vera-black_product_8515832_color_3.jpg.2SnZy2" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-vera-tan_product_8515832_color_20.jpg.7lkzF9" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.frye-melissa-wallet-crossbody-beige_product_8965301_color_43.jpg.0QCSMg" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-dark-grey-royal_product_9313430_color_18409.jpg.pCceVn" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-navy-grey_product_9313430_color_506.jpg.ccaX3u" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-navy-orange_product_9313430_color_1416.jpg.phocdC" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.giesswein-ammern-classic-black_product_7687785_color_3.jpg.OWbSmJ" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-83639-brown_product_9348469_color_6.jpg.BQf5xQ" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-kt-83638-brown_product_9348490_color_6.jpg.CltsKX" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-kt-83860-8-non-metallic-safety-toe-brown_product_9348491_color_6.jpg.b857X4" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-coogee-low-little-kid-big-kid-blue-orange_product_9352162_color_7953.jpg.gjWVcc" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-coogee-low-little-kid-big-kid-dark-grey-rose_product_9352163_color_27139.jpg.pI7isj" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-mountain-attack-3-texapore-low-vc-toddler-little-kid-big-kid-dark-blue-rose_product_9355079_color_854678.jpg.KRRVHq" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-texapore-low-little-kid-big-kid-apricot-burgundy_product_9352175_color_854684.jpg.RDKNXx" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-texapore-low-little-kid-big-kid-lime-dark-green_product_9352176_color_368526.jpg.cx38dF" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-vent-low-little-kid-big-kid-black-blue_product_9352178_color_2557.jpg.TvUQuM" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-vent-low-little-kid-big-kid-pink-burgundy_product_9352177_color_11493.jpg.gIwTLT" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.lacoste-kids-ampthill-319-1-little-kid-big-kid-black-dark-grey_product_9352351_color_7778.jpg.fGep30" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.mini-melissa-beach-slide-sandal-lilo-stitch-toddler-little-kid-pink-blue_product_9428395_color_13366.jpg.slbql8" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.mini-melissa-francxs-cat-bb-toddler-little-kid-black-white_product_9428394_color_151.jpg.rdzJDf" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.native-kids-shoes-jefferson-little-kid-pigeon-grey-victoria-blue_product_8635574_color_797414.jpg.G5LmWm" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.new-balance-numeric-306-black-gum_product_9253773_color_4830.jpg.BVaufu" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.new-balance-numeric-nm212-white-gum_product_8845962_color_5060.jpg.eo07yB" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.nike-kids-air-max-excee-infant-toddler-white-university-blue-track-red_product_9366828_color_859321.jpg.bjulTI" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.nike-kids-air-max-excee-little-kid-white-university-blue-track-red_product_9366827_color_859321.jpg.Clb6dQ" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53836-toddler-little-kid-pink_product_9409951_color_559.jpg.R9WJAX" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-black_product_9410007_color_3.jpg.kjpWX4" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-off-white_product_9410007_color_527.jpg.ZyBrlc" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-rose_product_9410007_color_603.jpg.6QqgJj" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54297-toddler-little-kid-rose-gold-pink_product_9410043_color_198335.jpg.faNM7q" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54407-little-kid-big-kid-navy_product_9409877_color_9.jpg.UtgBwy" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54407-little-kid-big-kid-white-fuchsia_product_9410071_color_15586.jpg.1fiIVF" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54409-little-kid-big-kid-black-green_product_9409878_color_5743.jpg.eBwhlN" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.reef-kids-little-reef-beachy-infant-toddler-little-kid-orchid_product_9341415_color_1392.jpg.HGydLU" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.rockport-total-motion-amara-slide-black_product_9341864_color_3.jpg.GU3qb2" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.rockport-total-motion-amara-slide-raffia_product_9341864_color_37547.jpg.b1oUB9" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roper-barnyard-boot-multi_product_8117762_color_767.jpg.aHaF2g" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-costas-ii-little-kid-big-kid-multi_product_9337528_color_767.jpg.dPJ8to" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-finn-toddler-dark-navy_product_9161948_color_34214.jpg.GqyYVv" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-finn-toddler-pink-white_product_9161948_color_1841.jpg.xMV1nD" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-tw-bayshore-toddler-hot-pink_product_9085207_color_418.jpg.I0lPQK" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.salvatore-ferragamo-kay-khaki-green_product_9328394_color_25690.jpg.VvY7jS" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sanuk-kids-lil-walker-grateful-dead-little-kid-big-kid-dancing-bears_product_9356655_color_849560.jpg.kpnaOZ" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sanuk-kids-lil-walker-grateful-dead-toddler-little-kid-dancing-bears_product_9356619_color_849560.jpg.tQCqj7" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.skechers-kids-sport-ultra-flex-302161l-little-kid-big-kid-multi_product_9361509_color_767.jpg.EavMPe" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-kick-down-grey_product_9339280_color_401.jpg.RZxrmm" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-kick-down-tan_product_9339280_color_20.jpg.yqTCTt" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-pride-white-2_product_9148216_color_124205.jpg.7UbwrB" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-saybrook-slingback-ivory-nubuck-leather_product_9339705_color_878657.jpg.KvbUZI" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.spring-step-fusaro-white_product_9359184_color_14.jpg.b8jMyQ" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.swedish-hasbeens-swedish-husband-neon-yellow_product_8725117_color_106387.jpg.Ceic8X" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.toms-kids-alpargata-toddler-little-kid-multi-gradient-glitter_product_9308585_color_851213.jpg.pSzbI5" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.twisted-x-mca0039-black_product_9437104_color_3.jpg.UymFid" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.ugg-laton-fur-slide-black_product_9333558_color_3.jpg.zobvTk" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.under-armour-kids-surge-2-big-kid-black-white-mod-gray_product_9323785_color_840491.jpg.4IZ5vs" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.under-armour-kids-surge-2-big-kid-mod-gray-orange-spark-water_product_9323785_color_843409.jpg.jBU08z" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vagabond-shoemakers-alice-chocolate_product_9449994_color_18.jpg.OtBeMH" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vans-ultracush-slide-on-black-black_product_9150402_color_183092.jpg.nkqzqP" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vasque-breeze-lt-gtx-gargoyle-jet-black_product_9147265_color_786012.jpg.cDrD5W" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vionic-kora-silver-boa_product_9408755_color_276629.jpg.z1I3K4" failed: Permission denied (13)
-rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.walking-cradles-bronwyn-luggage-soft-maia_product_8818163_color_483274.jpg.mpfOqc" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.adidas-kids-tensaur-run-little-kid-big-kid-black-white_product_9318677_color_151.jpg.pXwdNh" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.badgley-mischka-zion-ivory_product_9409589_color_422.jpg.1DsJXh" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.badgley-mischka-zion-silver_product_9409589_color_632.jpg.XUYM8h" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-black-eva_product_9457537_color_13020.jpg.n37Tki" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-metallic-anthracite-eva_product_9457537_color_822865.jpg.5GuLxi" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-white-eva_product_9457537_color_142471.jpg.t648Ki" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.birkenstock-arizona-essentials-zinnia-eva_product_9457537_color_850156.jpg.zQlOYi" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.bogs-stewart-black_product_8541980_color_3.jpg.zrALcj" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-black-white-fiery-coral_product_9222008_color_633696.jpg.lXD1qj" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-green-teal-copper_product_9222008_color_870012.jpg.rtrNFj" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-adrenaline-gts-20-peacoat-light-blue-copper_product_9222008_color_870014.jpg.nmsfVj" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.brooks-glycerin-18-black-rose-gold-grey_product_9305369_color_866201.jpg.dWbqbk" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cienta-kids-shoes-133033-infant-toddler-black_product_9295006_color_3.jpg.7hE9rk" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.clarks-juliet-lora-blush-leather_product_9084453_color_15243.jpg.ZkQ5Mk" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cole-haan-grand-ambition-wedge-sandal-silver-specchio-leather_product_9455071_color_122094.jpg.bY4I8k" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.cole-haan-original-grand-stitchlite-wing-tip-oxford-safari-vintage-indigo-knit-ivory_product_9293952_color_853335.jpg.5lEevl" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.crewcuts-by-j-crew-fabric-knot-sandal-toddler-little-kid-big-kid-ivory-blue_product_9434524_color_173887.jpg.BtX4Rl" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.dc-kids-pure-little-kid-big-kid-white-navy-red_product_7300895_color_1089.jpg.34p9em" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.dr-martens-molly-quad-retro-black-buttero_product_9149520_color_73338.jpg.Hq7LCm" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.elephantito-mary-jane-toddler-little-kid-suede-blush_product_7764118_color_606327.jpg.1XOE0m" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-ginger-brown_product_8518003_color_6.jpg.J3U2on" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-izzy-black_product_8515821_color_3.jpg.P5SaOn" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-izzy-brown_product_8515821_color_6.jpg.FVGMdo" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-black_product_8104148_color_3.jpg.bVmWDo" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-brown_product_8104148_color_6.jpg.n62C4o" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-gold_product_8104148_color_385.jpg.brXRvp" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-red_product_8104148_color_585.jpg.VP0AXp" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-jillian-white_product_8104148_color_14.jpg.rnvPpq" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-black-1_product_8768951_color_125647.jpg.Vz0nSq" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-brown_product_8768951_color_6.jpg.PL1Elr" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-liat-gold_product_8768951_color_385.jpg.l1fuPr" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-millie-yellow_product_8841895_color_764.jpg.dGmOjs" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-sadie-black_product_8515847_color_3.jpg.5SabPs" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-teva-camel_product_8515831_color_1430.jpg.5tEnlt" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-vera-black_product_8515832_color_3.jpg.bYG6Rt" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.eric-michael-vera-tan_product_8515832_color_20.jpg.JI4lpu" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.frye-melissa-wallet-crossbody-beige_product_8965301_color_43.jpg.hTRkXu" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-dark-grey-royal_product_9313430_color_18409.jpg.frtlwv" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-navy-grey_product_9313430_color_506.jpg.LgeH5v" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.geox-kids-jr-alonisso-41-big-kid-navy-orange_product_9313430_color_1416.jpg.BcrzFw" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.giesswein-ammern-classic-black_product_7687785_color_3.jpg.75sTfx" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-83639-brown_product_9348469_color_6.jpg.NGLJRx" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-kt-83638-brown_product_9348490_color_6.jpg.zoTLuy" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.irish-setter-farmington-kt-83860-8-non-metallic-safety-toe-brown_product_9348491_color_6.jpg.Drv58y" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-coogee-low-little-kid-big-kid-blue-orange_product_9352162_color_7953.jpg.96axOz" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-coogee-low-little-kid-big-kid-dark-grey-rose_product_9352163_color_27139.jpg.zFyzuA" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-mountain-attack-3-texapore-low-vc-toddler-little-kid-big-kid-dark-blue-rose_product_9355079_color_854678.jpg.V7URaB" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-texapore-low-little-kid-big-kid-apricot-burgundy_product_9352175_color_854684.jpg.hwipRB" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-texapore-low-little-kid-big-kid-lime-dark-green_product_9352176_color_368526.jpg.TEVoyC" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-vent-low-little-kid-big-kid-black-blue_product_9352178_color_2557.jpg.LZJLfD" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.jack-wolfskin-kids-unleash-2-speed-vent-low-little-kid-big-kid-pink-burgundy_product_9352177_color_11493.jpg.FrtsXD" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.lacoste-kids-ampthill-319-1-little-kid-big-kid-black-dark-grey_product_9352351_color_7778.jpg.ThNBFE" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.mini-melissa-beach-slide-sandal-lilo-stitch-toddler-little-kid-pink-blue_product_9428395_color_13366.jpg.ttOfoF" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.mini-melissa-francxs-cat-bb-toddler-little-kid-black-white_product_9428394_color_151.jpg.7UPc7F" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.native-kids-shoes-jefferson-little-kid-pigeon-grey-victoria-blue_product_8635574_color_797414.jpg.z0OsQG" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.new-balance-numeric-306-black-gum_product_9253773_color_4830.jpg.nVmdAH" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.new-balance-numeric-nm212-white-gum_product_8845962_color_5060.jpg.hl9tkI" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.nike-kids-air-max-excee-infant-toddler-white-university-blue-track-red_product_9366828_color_859321.jpg.jlQj5I" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.nike-kids-air-max-excee-little-kid-white-university-blue-track-red_product_9366827_color_859321.jpg.5O2FQJ" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53836-toddler-little-kid-pink_product_9409951_color_559.jpg.bbHUDK" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-black_product_9410007_color_3.jpg.JbnGrL" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-off-white_product_9410007_color_527.jpg.np2JfM" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-53852-toddler-little-kid-big-kid-rose_product_9410007_color_603.jpg.rgY53M" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54297-toddler-little-kid-rose-gold-pink_product_9410043_color_198335.jpg.bRNdTN" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54407-little-kid-big-kid-navy_product_9409877_color_9.jpg.zkqCIO" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54407-little-kid-big-kid-white-fuchsia_product_9410071_color_15586.jpg.DriiyP" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.primigi-kids-54409-little-kid-big-kid-black-green_product_9409878_color_5743.jpg.V7QroQ" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.reef-kids-little-reef-beachy-infant-toddler-little-kid-orchid_product_9341415_color_1392.jpg.t2kYeR" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.rockport-total-motion-amara-slide-black_product_9341864_color_3.jpg.hRwK5R" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.rockport-total-motion-amara-slide-raffia_product_9341864_color_37547.jpg.tQwNWS" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roper-barnyard-boot-multi_product_8117762_color_767.jpg.niX6NT" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-costas-ii-little-kid-big-kid-multi_product_9337528_color_767.jpg.H7J9FU" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-finn-toddler-dark-navy_product_9161948_color_34214.jpg.dTVwyV" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-finn-toddler-pink-white_product_9161948_color_1841.jpg.twS7qW" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.roxy-kids-tw-bayshore-toddler-hot-pink_product_9085207_color_418.jpg.BhwtkX" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.salvatore-ferragamo-kay-khaki-green_product_9328394_color_25690.jpg.1fUkeY" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sanuk-kids-lil-walker-grateful-dead-little-kid-big-kid-dancing-bears_product_9356655_color_849560.jpg.x3ZV8Y" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sanuk-kids-lil-walker-grateful-dead-toddler-little-kid-dancing-bears_product_9356619_color_849560.jpg.TreK4Z" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.skechers-kids-sport-ultra-flex-302161l-little-kid-big-kid-multi_product_9361509_color_767.jpg.rAOD10" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-kick-down-grey_product_9339280_color_401.jpg.Rs0NY1" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-kick-down-tan_product_9339280_color_20.jpg.Ly5vW2" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-a-o-2-eye-pride-white-2_product_9148216_color_124205.jpg.fpLWU3" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.sperry-saybrook-slingback-ivory-nubuck-leather_product_9339705_color_878657.jpg.LKdRT4" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.spring-step-fusaro-white_product_9359184_color_14.jpg.DXngT5" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.swedish-hasbeens-swedish-husband-neon-yellow_product_8725117_color_106387.jpg.5QsdT6" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.toms-kids-alpargata-toddler-little-kid-multi-gradient-glitter_product_9308585_color_851213.jpg.rPIIT7" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.twisted-x-mca0039-black_product_9437104_color_3.jpg.tNsKU8" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.ugg-laton-fur-slide-black_product_9333558_color_3.jpg.pwC8V9" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.under-armour-kids-surge-2-big-kid-black-white-mod-gray_product_9323785_color_840491.jpg.jgdgZa" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.under-armour-kids-surge-2-big-kid-mod-gray-orange-spark-water_product_9323785_color_843409.jpg.zPIG2b" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vagabond-shoemakers-alice-chocolate_product_9449994_color_18.jpg.Zhxp6c" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vans-ultracush-slide-on-black-black_product_9150402_color_183092.jpg.11Tgbe" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vasque-breeze-lt-gtx-gargoyle-jet-black_product_9147265_color_786012.jpg.Z5iRgf" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.vionic-kora-silver-boa_product_9408755_color_276629.jpg.JSTMmg" failed: Permission denied (13)
+rsync: mkstemp "/home/srvander/Projects/CSAFE/LabelMe/Images/Textures/.walking-cradles-bronwyn-luggage-soft-maia_product_8818163_color_483274.jpg.jeA3sh" failed: Permission denied (13)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1196) [sender=3.1.2]
 Warning messages:
 1: Sync stage reached 
 2: In dir.create("new-photos") : 'new-photos' already exists
 Response [https://hc-ping.com/1636cae7-8471-4db9-a2c7-3ab7f7b09f84]
-  Date: 2020-05-11 11:02
+  Date: 2020-05-11 17:02
   Status: 200
   Content-Type: text/plain; charset=utf-8
   Size: 2 B

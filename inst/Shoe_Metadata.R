@@ -260,7 +260,7 @@ if (nrow(new_shoes) > 0) {
 
 
   # Make image manifest
-  system("find extra/fixed-photos/ -type f -name '*.jpg' > image_manifest")
+  system("find extra/fixed-photos/ -type f -name '*.jpg' > image_manifest_silicon")
   # flist_shoes <- list.files("~/Projects/CSAFE/LabelMe/Images/Shoes", "\\.jpg$")
   # flist_textures <- list.files("~/Projects/CSAFE/LabelMe/Images/Textures/", "\\.jpg$")
   # im_manifest <- rbind(
@@ -290,8 +290,8 @@ if (exists("ping_url")) {
 # git housekeeping
 # ------------------------------------------------------------------------------
 # git2r::add(path = db_location)
-# git2r::add(path = "./image_manifest")
-git2r::add(path = "inst/cron.log")
+git2r::add(path = "./image_manifest_silicon")
+# git2r::add(path = "inst/cron.log")
 git2r::commit(all = T, message = "Automatic Update")
 system("git pull")
 system("git push")

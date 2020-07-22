@@ -17,6 +17,7 @@ source(".Rprofile") # Just in case it doesn't source when running via cron
 # ------------------------------------------------------------------------------
 db_location <- "extra/Scraped_Data.sqlite"
 image_save <- "extra/all_photos"
+run_time <- Sys.time()
 # ------------------------------------------------------------------------------
 
 # Functions
@@ -76,6 +77,9 @@ initial_link_data <- unnest(initial_links_safe, cols = c(shoe_page)) %>%
 
 initial_link_db <- dbReadTable(shoe_db_con, "initial_link")
 new_shoes <- suppressMessages(anti_join(initial_link_data, initial_link_db))
+
+write_csv(new_shoes, file.path("extra", "initial_res_new", paste0(run_time, ".csv")))
+write_csv(initial_link_db, file.path("extra", "initial_res_full", paste0(run_time, ".csv")))
 
 # Write initial results to database
 dbWriteNewRows(shoe_db_con, "initial_link", new_shoes)
@@ -199,13 +203,11 @@ if (nrow(new_shoes) > 0) {
     mutate(
       ext = str_extract(image_link, ".[A-z]{1,}$"),
       filename = str_replace_all(url, c("/p/" = "", "/" = "_")) %>%
-        paste0(., "_", view, ext)) %>%
+        paste0(., "_", view, "_", run_time, ext)) %>%
     select(url, view, img_url = image_link, filename = filename) %>%
     mutate(filename = file.path(image_save, filename))
 
   image_res <- image_files %>%
-    mutate(dl = !file.exists(filename)) %>%
-    filter(dl) %>%
     select(url = img_url, filename)
 
   if (nrow(image_res) > 0) {

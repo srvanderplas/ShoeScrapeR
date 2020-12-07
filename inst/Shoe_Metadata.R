@@ -10,7 +10,7 @@ library(ShoeScrapeR)
 library(RSQLite)
 # ------------------------------------------------------------------------------
 
-setwd("~/Projects/Work/2020-ShoeScrapeR/")
+setwd("~/Projects/CSAFE/2020-ShoeScrapeR/")
 source(".Rprofile") # Just in case it doesn't source when running via cron
 
 # Parameters

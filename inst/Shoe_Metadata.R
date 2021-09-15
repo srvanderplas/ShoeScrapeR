@@ -106,8 +106,12 @@ if (nrow(new_shoes) > 0) {
   # ------------------------------------------------------------------------------
   shoe_data <- purrr::map(shoe_info, "result") %>%
     bind_rows(.id = "url") %>%
-    mutate(url = urls[as.numeric(url)]) %>%
+    mutate(url = urls[as.numeric(url)])
+
+  if ("reviewCount ratingCount" %in% names(shoe_data)) {
+    shoe_data <- shoe_data %>%
     rename(ratingCount = `reviewCount ratingCount`)
+  }
 
   shoe_error_list <- purrr::map(shoe_info, "error")
   idxs <- purrr::map_lgl(shoe_error_list, ~!is.null(.)) %>% which()
@@ -122,7 +126,7 @@ if (nrow(new_shoes) > 0) {
   # Split shoe info into separate tables
   # ------------------------------------------------------------------------------
   shoe_data_info <- shoe_data %>%
-    select(url, color, image, brand, sku, ratingValue, ratingCount) %>%
+    select(any_of(c("url", "color", "image", "brand", "sku", "ratingValue", "ratingCount")) %>%
     unnest(brand) %>%
     select(-logo, -brand_link) %>% # Remove brand logo, brand link because that
     # should be in a separate table
@@ -132,43 +136,56 @@ if (nrow(new_shoes) > 0) {
            color_num = str_extract(url, "color/\\d{1,}/") %>%
              str_remove_all("\\D"))
 
-  categories <- shoe_data %>%
-    select(url, category) %>%
-    unnest(category) %>%
-    unique()
+  if ("category" %in% names(shoe_data)) {
+    categories <- shoe_data %>%
+      select(url, category) %>%
+      unnest(category) %>%
+      unique()
+  }
+  if ("sizes" %in% names(shoe_data)) {
+    sizes <- shoe_data %>%
+      select(url, sizes) %>%
+      unnest(sizes) %>%
+      unique()
+  }
 
-  sizes <- shoe_data %>%
-    select(url, sizes) %>%
-    unnest(sizes) %>%
-    unique()
 
-  colors <- shoe_data %>%
-    select(url, colors) %>%
-    mutate(colors = purrr::map(colors, mutate_all, as.character)) %>%
-    unnest(colors) %>%
-    unique()
+  if ("colors" %in% names(shoe_data)) {
+    colors <- shoe_data %>%
+      select(url, colors) %>%
+      mutate(colors = purrr::map(colors, mutate_all, as.character)) %>%
+      unnest(colors) %>%
+      unique()
+  }
+  if ("widths" %in% names(shoe_data)) {
+    widths <- shoe_data %>%
+      select(url, widths) %>%
+      unnest(widths) %>%
+      unique()
+  }
+  if("brands" %in% names(shoe_data)) {
+    brands <- shoe_data %>%
+      select(brand) %>%
+      unnest(brand) %>%
+      unique()
+  }
+  if ("description" %in% names(shoe_data)) {
+    description <- shoe_data %>%
+      select(url, description) %>%
+      mutate(
+        description = purrr::map(
+          description,
+          ~tibble(row = 1:length(.), text = as.character(.))
+        )
+      ) %>%
+      unnest(description) %>%
+      unique()
+  }
 
-  widths <- shoe_data %>%
-    select(url, widths) %>%
-    unnest(widths) %>%
-    unique()
-
-  brands <- shoe_data %>%
-    select(brand) %>%
-    unnest(brand) %>%
-    unique()
-
-  description <- shoe_data %>%
-    select(url, description) %>%
-    mutate(
-      description = purrr::map(
-        description,
-        ~tibble(row = 1:length(.), text = as.character(.))
-      )
-    ) %>%
-    unnest(description) %>%
-    unique()
-
+  # try write new rows
+  trynewrows <- function(...) {
+    try(dbWriteNewRows(...))
+  }
 
   # Record whether sub-tables actually succeed
   shoe_data_tables <- tibble(
@@ -176,7 +193,7 @@ if (nrow(new_shoes) > 0) {
                   "widths", "brand_info", "description"),
     data = list(shoe_data_info, categories, sizes, colors,
                 widths, brands, description),
-    success = purrr::map2_lgl(tablename, data, dbWriteNewRows,
+    success = purrr::map2_lgl(tablename, data, trynewrows,
                               con = shoe_db_con, purge = T))
 
   rm(categories, sizes, colors, widths, brands, description, shoe_data_info)
